@@ -1,3 +1,5 @@
 pages.json
 pages-cname.json
 https.json
+set-cname.json
+clear-cname.json

@@ -4,34 +4,121 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HELLO LED 개인정보처리방침</title>
-  <meta name="description" content="HELLO LED는 문구와 설정을 기기에만 저장합니다. 계정 없이 운영 서버로 문구를 보내지 않습니다.">
+  <meta name="description" content="HELLO LED 개인정보처리방침. 2026년 9월 21일부터 적용됩니다.">
   <link rel="canonical" href="https://helloled.yodams.com/privacy.html">
   <meta name="robots" content="index,follow">
-  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" type="image/png" href="favicon.png" sizes="256x256">
+  <link rel="icon" type="image/png" href="favicon-32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    body { margin: 0; background: #000000; color: #f2f2f2; font-family: "Pretendard", "Apple SD Gothic Neo", sans-serif; }
-    main { max-width: 40rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
-    a { color: #00E5FF; }
-    h1 { font-size: 1.5rem; font-weight: 600; }
-    h2 { font-size: 1rem; margin-top: 2rem; }
-    p { color: #c6c6c6; line-height: 1.6; }
-    .back { display: inline-block; margin-bottom: 1.5rem; color: #b3b3b3; text-decoration: none; }
-    .back:hover { color: #00E5FF; }
+    body { margin: 0; background: #ffffff; color: #0a0a0a; font-family: "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; }
+    main { max-width: 42rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+    a { color: #0a0a0a; }
+    h1 { font-size: 1.5rem; font-weight: 700; margin: 0 0 1.5rem; }
+    h2 { font-size: 1.05rem; font-weight: 700; margin: 2rem 0 0.5rem; }
+    p { color: #374151; line-height: 1.7; white-space: pre-line; margin: 0; }
+    .back { display: inline-block; margin-bottom: 1.5rem; color: #6b7280; text-decoration: none; }
+    .back:hover { color: #0a0a0a; }
+    .lang-switch { position: relative; display: inline-flex; }
+    #lang {
+      appearance: none;
+      -webkit-appearance: none;
+      box-sizing: border-box;
+      width: 5.5rem;
+      height: 32px;
+      color: transparent;
+      border-radius: 999px;
+      border: 1px solid #e5e7eb;
+      background-color: #fff;
+      padding: 0 1.05rem;
+      font: 600 0.8125rem/1 "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M2.5 4.5 6 8l3.5-3.5' fill='none' stroke='%230a0a0a' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.35rem center;
+      background-size: 0.55rem;
+    }
+    #lang option { color: #0a0a0a; }
+    .lang-switch-label {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+      font: 600 0.8125rem/1 "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
+    }
   </style>
 </head>
 <body>
   <main>
-    <a class="back" href="/">← HELLO LED 홈</a>
-    <h1>HELLO LED 개인정보처리방침</h1>
-    <p>HELLO LED는 문구와 설정을 기기 안에만 저장합니다. 계정을 만들지 않고, 운영 서버로 문구를 보내지 않습니다.</p>
-    <h2>저장하는 것</h2>
-    <p>입력한 문구, 색, 폰트, 즐겨찾기, 광고 보상으로 연 기능, 광고 동의 상태는 이 기기의 로컬 저장소에 있습니다.</p>
-    <h2>광고</h2>
-    <p>광고가 켜져 있을 때 Google AdMob이 광고 식별자와 대략적인 위치 같은 광고 데이터를 처리할 수 있습니다. 전광판 표시 화면에는 광고를 넣지 않습니다. 동의는 Google UMP 화면에서 바꿀 수 있습니다.</p>
-    <h2>사진과 근처 기기</h2>
-    <p>이미지 변환은 고른 사진을 기기에서만 처리합니다. 폰 동기화는 같은 Wi-Fi의 다른 HELLO LED에 문구를 보내며, 인터넷 서버를 거치지 않습니다.</p>
-    <h2>연락</h2>
-    <p><a href="mailto:helloled.app@gmail.com">helloled.app@gmail.com</a></p>
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:1.5rem;">
+      <a class="back" href="/" data-home-link data-i18n="privacyBack" style="margin-bottom:0">← HELLO LED 홈</a>
+      <label class="sr-only" for="lang" data-i18n="langLabel" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">언어</label>
+      <div class="lang-switch">
+        <select id="lang" aria-label="언어" data-i18n-aria="langLabel">
+          <option value="ko">한국어</option>
+          <option value="en">English</option>
+          <option value="ja">日本語</option>
+          <option value="zh">中文</option>
+          <option value="es">Español</option>
+          <option value="es_419">Español (LatAm)</option>
+        </select>
+        <span class="lang-switch-label" aria-hidden="true">한국어</span>
+      </div>
+    </div>
+    <h1 data-i18n="privacyTitle">HELLO LED 개인정보처리방침</h1>
+    <p data-i18n="privacyIntro">HELLO LED(이하 “회사”)는 개인정보보호법 등 관련 법령상의 개인정보보호 규정을 준수하며, 개인정보처리방침은 아래와 같습니다. 이 개인정보처리방침은 2026년 9월 21일부터 적용되며, 법령 및 방침에 따른 변경내용의 추가, 삭제 및 정정이 있는 경우에는 변경사항의 시행 7일 전부터 앱 내 공지를 통해 고지할 것입니다.</p>
+    <h2 data-i18n="privacyPurposeTitle">1조. 개인정보의 처리 목적</h2>
+    <p data-i18n="privacyPurposeBody">회사는 다음의 목적을 위해 개인정보를 처리합니다. 처리한 개인정보는 다음의 목적 이외의 용도로는 사용되지 않으며, 이용 목적이 변경될 시에는 사전 동의를 구할 예정입니다.
+가. 앱 서비스 제공: 전광판 문구 표시, 즐겨찾기 저장, 시계·디데이·타이머 표시, 이미지 도트 변환
+나. 광고 제공: 무료 서비스 운영을 위한 맞춤형·비맞춤형 광고 게재
+다. 서비스 개선: 오류 분석, 이용 통계(익명·집계 형태)</p>
+    <h2 data-i18n="privacyRetentionTitle">2조. 개인정보 처리 및 보유기간</h2>
+    <p data-i18n="privacyRetentionBody">회사는 원칙적으로 이용자의 개인정보를 서버에 저장하지 않습니다. 문구, 색상, 폰트, 즐겨찾기, 광고 동의 상태 등은 이용자의 기기 내 로컬 저장소에 보관되며, 앱 삭제 시 함께 삭제됩니다.
+광고 식별자 등 광고 SDK가 수집하는 정보는 각 제공사의 정책에 따르며, 회사는 이를 별도 서버에 장기 보관하지 않습니다.</p>
+    <h2 data-i18n="privacyThirdPartyTitle">3조. 개인정보 제3자 제공에 관한 사항</h2>
+    <p data-i18n="privacyThirdPartyBody">회사는 이용자의 개인정보를 원칙적으로 외부에 제공하지 않습니다. 다만, 광고 게재를 위해 아래와 같이 광고 파트너가 기기 정보를 처리할 수 있습니다.
+가. 제공 받는 기관/자: Google LLC (Google AdMob)
+나. 제공 근거 및 목적: 이용자 동의, 맞춤형·비맞춤형 광고 제공
+다. 제공하는 개인정보 항목: 광고 ID, 기기 정보, 대략적 위치, 앱 상호작용 정보
+라. 제공받는자의 개인정보 보유 및 이용 기간: Google 개인정보처리방침에 따름</p>
+    <h2 data-i18n="privacyDelegateTitle">4조. 개인정보처리 위탁에 관한 사항</h2>
+    <p data-i18n="privacyDelegateBody">회사는 원활한 서비스 제공을 위해 아래와 같이 개인정보 처리를 위탁할 수 있습니다.
+가. 위탁하는 업무 내용: 광고 게재 및 광고 성과 측정
+나. 수탁업체명: Google LLC (Google AdMob)
+위탁계약 시 개인정보보호 관련 법규의 준수, 개인정보에 관한 제3자 제공 금지 및 책임부담 등을 명확히 규정하고, 당해 계약내용을 전자적으로 보관하고 있습니다. 업체 변경 시 공지 및 개인정보처리방침을 통해 고지하겠습니다.</p>
+    <h2 data-i18n="privacyRightsTitle">5조. 정보주체 권리·의무 및 그 행사방법에 관한 사항</h2>
+    <p data-i18n="privacyRightsBody">이용자는 개인정보주체로서 다음과 같은 권리를 행사할 수 있습니다.
+가. 개인정보 열람·정정·삭제 요구
+나. 처리정지 요구
+다. 동의 철회(앱 내 광고 설정 또는 기기 설정에서 변경)
+권리 행사는 아래 연락처로 요청할 수 있으며, 회사는 지체 없이 조치하겠습니다.</p>
+    <h2 data-i18n="privacyItemsTitle">6조. 처리하는 개인정보 항목</h2>
+    <p data-i18n="privacyItemsBody">가. 필수 항목: 없음 (회원가입 및 서버 계정을 운영하지 않음)
+나. 선택 항목: 즐겨찾기 문구, 전광판 설정값(기기 저장), 광고 식별자(광고 SDK), 사진(이미지 변환 시 기기 내 처리)</p>
+    <h2 data-i18n="privacyDeletionTitle">7조. 개인정보 파기 절차 및 방법</h2>
+    <p data-i18n="privacyDeletionBody">회사는 개인정보 보유기간의 경과, 처리 목적 달성 등 개인정보가 불필요하게 되었을 때에는 지체 없이 해당 개인정보를 파기합니다.
+가. 파기절차: 앱 삭제 또는 이용자가 즐겨찾기·설정을 삭제하면 기기 내 데이터가 제거됩니다.
+나. 파기방법: 전자적 파일은 복구 불가능한 방법으로 삭제합니다.</p>
+    <h2 data-i18n="privacySecurityTitle">8조. 개인정보 안전성 확보 조치</h2>
+    <p data-i18n="privacySecurityBody">회사는 개인정보의 안전성 확보를 위해 다음과 같은 조치를 취하고 있습니다.
+가. 문구·설정 데이터의 서버 전송 없이 기기 내 저장
+나. 광고 SDK 이용 시 제공사의 보안 정책 준수
+다. 최소한의 권한만 요청(사진 선택 시 갤러리 접근 등)</p>
+    <h2 data-i18n="privacyRemedyTitle">9조. 권익침해 구제방법</h2>
+    <p data-i18n="privacyRemedyBody">개인정보주체는 개인정보침해로 인한 구제를 받기 위하여 한국인터넷진흥원 개인정보침해신고센터 등에 분쟁해결이나 상담 등을 신청할 수 있습니다.
+※ 개인정보 침해신고 센터: 국번없이 118번
+※ 개인정보 분쟁조정위원회: 1833-6972
+※ 대검찰청 사이버수사과: 1301
+※ 경찰청 사이버수사국: 182</p>
+    <h2 data-i18n="privacyContactTitle">10조. 개인정보보호(분야별)책임관 및 담당자 연락처</h2>
+    <p data-i18n-html="privacyContactHtml">가. 개인정보 보호(분야별)책임관: HELLO LED 운영
+나. 담당자: HELLO LED 고객지원
+연락처: <a href="mailto:helloled@yodams.com">helloled@yodams.com</a></p>
   </main>
+  <script src="i18n.js"></script>
 </body>
 </html>

@@ -3,36 +3,39 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HELLO LED - 스마트폰 LED 전광판</title>
-  <meta name="description" content="HELLO LED는 스마트폰을 LED 전광판으로 바꿉니다. 콘서트 응원, 매장 세일, 공항 환영 문구를 띄우고, 전광판 화면에는 광고가 없습니다.">
-  <meta name="robots" content="index,follow">
+  <title>HELLO LED | 스마트폰 LED 전광판 - 콘서트·매장·공항</title>
+  <meta name="description" content="HELLO LED는 스마트폰 화면을 LED 전광판으로 바꾸는 무료 앱입니다. 콘서트 응원, 매장 세일, 공항 환영 문구 등 다양한 환경에서 손쉽게 활용할 수 있습니다.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="canonical" href="https://helloled.yodams.com/">
-  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" type="image/png" href="favicon.png" sizes="256x256">
+  <link rel="icon" type="image/png" href="favicon-32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ko_KR">
   <meta property="og:site_name" content="HELLO LED">
-  <meta property="og:title" content="HELLO LED - 스마트폰 LED 전광판">
-  <meta property="og:description" content="스마트폰 하나로 만드는 가장 크고 선명한 LED 전광판. 콘서트 응원, 매장 홍보, 환영 문구를 지금 바로 띄워보세요.">
+  <meta property="og:title" content="HELLO LED | 스마트폰 LED 전광판">
+  <meta property="og:description" content="HELLO LED는 스마트폰 화면을 LED 전광판으로 바꾸는 무료 앱입니다. 콘서트 응원, 매장 세일, 공항 환영 문구를 손쉽게 띄울 수 있습니다.">
   <meta property="og:url" content="https://helloled.yodams.com/">
   <meta property="og:image" content="https://helloled.yodams.com/og.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="HELLO LED - 스마트폰 LED 전광판">
-  <meta name="twitter:description" content="스마트폰을 LED 전광판으로. 콘서트·매장·공항 문구. 전광판 화면 무광고.">
+  <meta name="twitter:title" content="HELLO LED | 스마트폰 LED 전광판">
+  <meta name="twitter:description" content="HELLO LED는 스마트폰 화면을 LED 전광판으로 바꾸는 무료 앱입니다. 콘서트 응원, 매장 세일, 공항 환영 문구를 손쉽게 띄울 수 있습니다.">
   <meta name="twitter:image" content="https://helloled.yodams.com/og.png">
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            trueblack: '#000000',
-            surface: '#121212',
-            surfaceHigh: '#171717',
-            muted: '#B3B3B3',
+            ink: '#0a0a0a',
+            muted: '#6b7280',
+            soft: '#f4f4f5',
+            line: '#e5e7eb',
             neon: '#00E5FF',
             neonBlue: '#3BA3FF',
             neonGreen: '#2EE59D',
@@ -41,7 +44,7 @@
             neonRed: '#FF3B4A',
           },
           fontFamily: {
-            sans: ['Pretendard', 'Apple SD Gothic Neo', 'system-ui', 'sans-serif'],
+            sans: ['"Noto Sans KR"', 'Apple SD Gothic Neo', 'system-ui', 'sans-serif'],
           },
           keyframes: {
             marquee: {
@@ -82,50 +85,69 @@
       60% { transform: rotate(-90deg); }
     }
     html { scroll-behavior: smooth; }
-    body { background: #000; color: #fff; font-family: Pretendard, "Apple SD Gothic Neo", system-ui, sans-serif; }
+    body {
+      background: #fff;
+      color: #0a0a0a;
+      font-family: "Noto Sans KR", "Apple SD Gothic Neo", system-ui, sans-serif;
+    }
     .neon-word {
-      background: linear-gradient(105deg, #00E5FF 0%, #3BA3FF 55%, #7DD3FC 100%);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      text-shadow: 0 0 28px rgba(0, 229, 255, 0.45);
-      filter: drop-shadow(0 0 12px rgba(59, 163, 255, 0.55));
+      color: #0e7490;
     }
-    .logo-glow {
-      color: #00E5FF;
-      text-shadow: 0 0 18px rgba(0, 229, 255, 0.7), 0 0 40px rgba(0, 229, 255, 0.35);
-    }
-    .reveal {
+    .js .reveal {
       opacity: 0;
-      transform: translateY(28px);
-      transition: opacity 0.7s ease, transform 0.7s ease;
+      transform: translateY(20px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
     }
-    .reveal.is-visible {
+    .js .reveal.is-visible {
       opacity: 1;
       transform: translateY(0);
+    }
+    .hero-wash {
+      background:
+        radial-gradient(520px 240px at 18% 0%, rgba(255, 92, 168, 0.14), transparent 70%),
+        radial-gradient(480px 260px at 88% 8%, rgba(59, 163, 255, 0.16), transparent 68%),
+        radial-gradient(420px 220px at 50% 100%, rgba(46, 229, 157, 0.12), transparent 70%);
+    }
+    .device {
+      background: linear-gradient(180deg, #2a2a2a, #111);
+      box-shadow:
+        0 30px 70px rgba(15, 23, 42, 0.16),
+        inset 0 1px 0 rgba(255, 255, 255, 0.18);
     }
     .store-badge {
       display: inline-flex;
       align-items: center;
       gap: 0.75rem;
       min-height: 3.25rem;
-      padding: 0.55rem 1.1rem 0.55rem 0.9rem;
-      border-radius: 0.75rem;
-      background: #1a1a1a;
-      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.08), 0 8px 24px rgba(0,0,0,0.45);
-      transition: background 0.2s ease, transform 0.2s ease;
+      padding: 0.55rem 1.15rem 0.55rem 0.9rem;
+      border-radius: 9999px;
+      background: #0a0a0a;
+      color: #fff;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+      transition: transform 0.2s ease, background 0.2s ease;
     }
     .store-badge:hover { background: #222; transform: translateY(-1px); }
     .store-badge:focus-visible {
-      outline: 2px solid #00E5FF;
+      outline: 2px solid #374151;
       outline-offset: 3px;
     }
+    .store-badge-light {
+      background: #fff;
+      color: #0a0a0a;
+      box-shadow: inset 0 0 0 1px #e5e7eb, 0 4px 16px rgba(0, 0, 0, 0.04);
+    }
+    .store-badge-light:hover { background: #f9fafb; }
     .marquee-track {
       display: flex;
       width: max-content;
       animation: marquee 12s linear infinite;
     }
+    .led-screen {
+      container-type: size;
+    }
     .led-text {
+      font-size: 75.25cqh;
+      line-height: 1;
       font-weight: 800;
       letter-spacing: 0.04em;
       white-space: nowrap;
@@ -133,9 +155,59 @@
       text-shadow: 0 0 10px rgba(0, 229, 255, 0.9), 0 0 28px rgba(59, 163, 255, 0.7);
       animation: led-blink 2.4s ease-in-out infinite;
     }
+    .lang-switch { position: relative; display: inline-flex; }
+    #lang {
+      appearance: none;
+      -webkit-appearance: none;
+      box-sizing: border-box;
+      width: 5.5rem;
+      height: 32px;
+      min-height: 0;
+      color: transparent;
+      font-size: 0.8125rem;
+      padding-left: 1.05rem;
+      padding-right: 1.05rem;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M2.5 4.5 6 8l3.5-3.5' fill='none' stroke='%230a0a0a' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.35rem center;
+      background-size: 0.55rem;
+    }
+    #lang option { color: #0a0a0a; }
+    .lang-switch-label {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+      font-size: 0.8125rem;
+      font-weight: 600;
+    }
+    .store-badge-img {
+      display: block;
+      height: 40px;
+      width: 135px;
+      object-fit: contain;
+      object-position: center;
+    }
+    .fact-featured {
+      background:
+        linear-gradient(#fff, #fff) padding-box,
+        linear-gradient(135deg, #FF5CA8, #F5C518, #2EE59D, #3BA3FF) border-box;
+      border: 2px solid transparent;
+    }
+    details summary {
+      list-style: none;
+    }
+    details summary::-webkit-details-marker {
+      display: none;
+    }
+    details[open] .faq-chevron {
+      transform: rotate(180deg);
+    }
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
-      .reveal { opacity: 1; transform: none; transition: none; }
+      .js .reveal { opacity: 1; transform: none; transition: none; }
       .marquee-track, .led-text, .animate-phone-tilt { animation: none !important; }
     }
   </style>
@@ -148,8 +220,11 @@
         "@id": "https://helloled.yodams.com/#organization",
         "name": "HELLO LED",
         "url": "https://helloled.yodams.com/",
-        "email": "helloled.app@gmail.com",
-        "logo": "https://helloled.yodams.com/favicon.png"
+        "email": "helloled@yodams.com",
+        "logo": "https://helloled.yodams.com/favicon.png",
+        "sameAs": [
+          "https://play.google.com/store/apps/details?id=kr.helloled.app"
+        ]
       },
       {
         "@type": "WebSite",
@@ -163,283 +238,288 @@
         "@type": "WebPage",
         "@id": "https://helloled.yodams.com/#webpage",
         "url": "https://helloled.yodams.com/",
-        "name": "HELLO LED - 스마트폰 LED 전광판",
-        "description": "HELLO LED는 스마트폰을 LED 전광판으로 바꿉니다. 콘서트 응원, 매장 세일, 공항 환영 문구를 띄우고, 전광판 화면에는 광고가 없습니다.",
+        "name": "HELLO LED | 스마트폰 LED 전광판 - 콘서트·매장·공항",
+        "description": "HELLO LED는 스마트폰 화면을 LED 전광판으로 바꾸는 무료 앱입니다. 콘서트 응원, 매장 세일, 공항 환영 문구 등 다양한 환경에서 손쉽게 활용할 수 있습니다.",
         "inLanguage": "ko",
         "isPartOf": { "@id": "https://helloled.yodams.com/#website" },
-        "about": { "@id": "https://helloled.yodams.com/#app" }
+        "about": { "@id": "https://helloled.yodams.com/#app" },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://helloled.yodams.com/og.png"
+        }
       },
       {
         "@type": ["SoftwareApplication", "MobileApplication"],
         "@id": "https://helloled.yodams.com/#app",
         "name": "HELLO LED",
+        "alternateName": "헬로 LED",
         "applicationCategory": "UtilitiesApplication",
         "operatingSystem": "Android, iOS",
-        "description": "스마트폰 화면을 가로 전체화면 LED 전광판으로 바꾸는 앱. 콘서트 응원, 매장 세일, 공항 환영 문구용. 전광판 표시 화면에는 광고가 없습니다.",
+        "description": "스마트폰 화면을 LED 전광판으로 바꾸는 무료 앱. 콘서트 응원, 매장 세일, 공항 환영 문구용.",
         "url": "https://helloled.yodams.com/",
+        "downloadUrl": "https://play.google.com/store/apps/details?id=kr.helloled.app",
         "offers": {
           "@type": "Offer",
           "price": "0",
           "priceCurrency": "KRW"
-        }
+        },
+        "publisher": { "@id": "https://helloled.yodams.com/#organization" }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://helloled.yodams.com/#howto",
+        "name": "스마트폰을 LED 전광판으로 만드는 방법",
+        "description": "HELLO LED 앱으로 문구를 입력하고 색·속도를 맞춘 뒤, 휴대폰을 가로로 돌려 전체화면 전광판을 켭니다.",
+        "inLanguage": "ko",
+        "totalTime": "PT1M",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "문구 입력",
+            "text": "응원, 세일, 환영 문장을 직접 쓰거나 프리셋에서 선택합니다."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "색·속도·폰트 조정",
+            "text": "네온 색과 스크롤 속도, 글꼴을 골라 멀리서도 읽히게 조정합니다."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "가로 전체화면으로 표시",
+            "text": "휴대폰을 가로로 돌리면 화면 전체가 전광판이 됩니다."
+          }
+        ]
       }
     ]
   }
   </script>
 </head>
-<body class="bg-trueblack text-white antialiased">
-  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[60] focus:rounded-lg focus:bg-neon focus:px-4 focus:py-2 focus:text-black">본문으로 건너뛰기</a>
+<body class="bg-white text-ink antialiased">
+  <script>document.documentElement.classList.add('js');</script>
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[60] focus:rounded-full focus:bg-ink focus:px-4 focus:py-2 focus:text-white" data-i18n="skip">본문으로 건너뛰기</a>
 
-  <header class="sticky top-0 z-50 bg-trueblack/90 backdrop-blur-md">
-    <nav class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-4" aria-label="주요">
-      <a href="/" class="logo-glow text-xl font-extrabold tracking-tight" aria-label="HELLO LED 홈">HELLO LED</a>
-      <ul class="flex items-center gap-1 overflow-x-auto text-sm text-muted sm:gap-2 sm:text-base">
-        <li><a class="inline-flex min-h-11 items-center px-3 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neon" href="#features">주요 기능</a></li>
-        <li><a class="inline-flex min-h-11 items-center px-3 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neon" href="#examples">활용 예시</a></li>
-        <li><a class="inline-flex min-h-11 items-center rounded-full bg-white/5 px-4 font-semibold text-white hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neon" href="#download">다운로드</a></li>
-      </ul>
+  <header class="sticky top-0 z-50 border-b border-line/60 bg-white/90 backdrop-blur-md">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between gap-3 px-5 py-3.5" aria-label="주요" data-i18n-aria="navLabel">
+      <a href="/" class="inline-flex min-h-11 items-center gap-2 font-extrabold tracking-tight" aria-label="HELLO LED 홈" data-i18n-aria="homeLabel">
+        <span class="flex gap-0.5" aria-hidden="true">
+          <span class="h-2 w-2 rounded-full bg-neonPink"></span>
+          <span class="h-2 w-2 rounded-full bg-neonRed"></span>
+          <span class="h-2 w-2 rounded-full bg-neonYellow"></span>
+          <span class="h-2 w-2 rounded-full bg-neonGreen"></span>
+          <span class="h-2 w-2 rounded-full bg-neonBlue"></span>
+        </span>
+        HELLO LED
+      </a>
+      <div class="flex items-center gap-2">
+        <label class="sr-only" for="lang" data-i18n="langLabel">언어</label>
+        <div class="lang-switch">
+          <select id="lang" class="rounded-full border border-line bg-white font-semibold text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" aria-label="언어" data-i18n-aria="langLabel">
+            <option value="ko">한국어</option>
+            <option value="en">English</option>
+            <option value="ja">日本語</option>
+            <option value="zh">中文</option>
+            <option value="es">Español</option>
+            <option value="es_419">Español (LatAm)</option>
+          </select>
+          <span class="lang-switch-label" aria-hidden="true">한국어</span>
+        </div>
+      </div>
     </nav>
   </header>
 
   <main id="main">
     <!-- Hero -->
-    <section class="relative overflow-hidden px-5 pb-20 pt-16 sm:pt-24">
-      <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(0,229,255,0.12),_transparent_55%)]" aria-hidden="true"></div>
-      <div class="relative mx-auto grid max-w-6xl items-center gap-14 lg:grid-cols-2 lg:gap-16">
-        <div>
-          <p class="mb-4 text-sm font-semibold tracking-wide text-neon">HELLO LED</p>
-          <h1 class="text-[clamp(2.4rem,6vw,4.5rem)] font-extrabold leading-[1.08] tracking-[-0.04em]">
-            전하고 싶은 마음,<br>
-            <span class="neon-word">불빛</span>으로 <span class="neon-word">크게.</span>
-          </h1>
-          <p class="mt-6 max-w-xl text-lg leading-relaxed text-muted sm:text-xl">
-            스마트폰 하나로 만드는 가장 크고 선명한 LED 전광판. 콘서트 응원, 매장 홍보, 환영 문구를 지금 바로 띄워보세요.
-          </p>
-          <div class="mt-8 flex flex-wrap items-center gap-3" id="download-hero">
-            <a class="store-badge" href="https://play.google.com/store/apps/details?id=kr.helloled.app" rel="noopener noreferrer">
-              <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00E5FF" d="M3.6 2.2 14.2 12 3.6 21.8A1.5 1.5 0 0 1 3 20.6V3.4a1.5 1.5 0 0 1 .6-1.2Zm12.1 8.3 2.4-1.4 3.3 1.9c.8.5.8 1.5 0 2l-3.3 1.9-2.4-1.4L13.5 12l2.2-1.5ZM4.9 22.5l8.2-8.2 2.6 1.8-8.3 4.8a1.6 1.6 0 0 1-2.5-1.4Zm0-21 2.5 1.4 8.3 4.8-2.6 1.8L4.9 1.5Z"/></svg>
-              <span class="text-left leading-tight">
-                <span class="block text-[10px] uppercase tracking-wider text-muted">Get it on</span>
-                <span class="block text-base font-semibold">Google Play</span>
-              </span>
-            </a>
-            <!-- App Store URL: replace href when live -->
-            <a class="store-badge" href="#download" aria-label="App Store 다운로드 (곧 공개)">
-              <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M16.4 12.9c0-2.2 1.8-3.3 1.9-3.4-1-1.5-2.6-1.7-3.2-1.7-1.4-.1-2.6.8-3.3.8-.7 0-1.8-.8-3-.8-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.7 1.1 8.9.8 1.1 1.7 2.3 2.9 2.2 1.2 0 1.6-.7 3-.7s1.8.7 3 .7 2-.1 2.9-2.2c1-.1.7-2.1.7-2.1s-2.6-1-2.6-4Zm-2.4-7c.6-.8 1.1-1.9.9-3-.9 0-2 .6-2.6 1.4-.6.7-1.1 1.8-.9 2.9 1 .1 2-.5 2.6-1.3Z"/></svg>
-              <span class="text-left leading-tight">
-                <span class="block text-[10px] uppercase tracking-wider text-muted">Download on the</span>
-                <span class="block text-base font-semibold">App Store</span>
-              </span>
-            </a>
-            <a class="inline-flex min-h-11 items-center rounded-xl px-5 text-sm font-semibold text-neon underline-offset-4 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neon" href="#try">웹에서 바로 쓰기</a>
-          </div>
-        </div>
-
-        <!-- Phone mock (landscape) + try -->
-        <div class="reveal mx-auto w-full max-w-xl">
-          <div class="mx-auto w-full max-w-[520px] rounded-[1.6rem] bg-neutral-900 p-2.5 shadow-[0_0_60px_rgba(0,229,255,0.15)] sm:rounded-[1.8rem] sm:p-3" aria-hidden="true">
-            <div class="relative overflow-hidden rounded-[1.2rem] bg-black sm:rounded-[1.4rem]" style="aspect-ratio: 19.5 / 9;">
-              <div class="absolute left-2 top-1/2 z-10 h-16 w-1.5 -translate-y-1/2 rounded-full bg-neutral-950 sm:h-20 sm:w-2"></div>
-              <div class="absolute inset-0 flex items-center overflow-hidden bg-[#050505]">
-                <div class="marquee-track gap-16 px-6" id="marquee-track">
-                  <span class="led-text text-2xl sm:text-3xl" id="led-a">✨최애 피클맨 사랑해!✨</span>
-                  <span class="led-text text-2xl text-neonPink sm:text-3xl" id="led-b">WELCOME TO KOREA</span>
-                  <span class="led-text text-2xl sm:text-3xl" id="led-c">✨최애 피클맨 사랑해!✨</span>
-                  <span class="led-text text-2xl text-neonPink sm:text-3xl" id="led-d">WELCOME TO KOREA</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div id="try" class="mt-8 rounded-2xl bg-surface p-5">
-            <label for="led-input" class="mb-2 block text-sm font-semibold text-white">웹에서 바로 쓰기</label>
-            <p class="mb-3 text-sm text-muted">아래에 문구를 입력하면 위 전광판에 바로 반영됩니다. 설치 없이 미리 볼 수 있습니다.</p>
-            <input
-              id="led-input"
-              type="text"
-              maxlength="80"
-              autocomplete="off"
-              placeholder="예: 오늘 전 품목 30% 세일"
-              class="w-full rounded-xl bg-surfaceHigh px-4 py-3 text-base text-white placeholder:text-neutral-500 focus:outline-none focus:ring-2 focus:ring-neon"
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Definition (AEO) -->
-    <section class="bg-surface px-5 py-20" aria-labelledby="what-is">
-      <div class="reveal mx-auto max-w-3xl">
-        <h2 id="what-is" class="text-2xl font-bold tracking-tight sm:text-3xl">HELLO LED는 무엇인가요?</h2>
-        <p class="mt-5 text-lg leading-relaxed text-muted">
-          HELLO LED는 스마트폰 화면을 가로 전체화면 LED 전광판으로 바꾸는 앱입니다. 콘서트 응원, 매장 세일, 공항 환영 문구를 바로 띄울 수 있습니다. 입력한 문구와 설정은 기기에만 남고, <strong class="font-semibold text-white">전광판 표시 화면에는 광고가 없습니다.</strong> Android와 iOS에서 무료로 사용할 수 있습니다.
+    <section class="hero-wash relative overflow-hidden px-5 pb-12 pt-12 sm:pb-16 sm:pt-16">
+      <div class="relative mx-auto max-w-3xl text-center">
+        <p class="mb-4 text-sm font-semibold tracking-wide text-muted" data-i18n="kicker">스마트폰 LED 전광판</p>
+        <h1 class="text-[clamp(2.15rem,5.4vw,3.75rem)] font-extrabold leading-[1.18] tracking-[-0.035em]">
+          <span data-i18n="heroLine1">전하고 싶은 마음을</span><br>
+          <span class="neon-word" data-i18n="heroAccent">LED</span><span data-i18n="heroLine2">로 크고 화려하게</span>
+        </h1>
+        <p class="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted sm:text-lg" data-i18n-html="heroBody">
+          <strong class="font-semibold text-ink">HELLO LED</strong>는 스마트폰 화면을 LED 전광판으로 바꾸는 무료 앱입니다.<br>
+          콘서트 응원, 매장 세일, 공항 환영 문구 등 다양한 환경에서 손쉽게 활용할 수 있습니다.
         </p>
+        <div class="mt-8 flex flex-wrap items-center justify-center gap-2" id="download-hero">
+          <a class="inline-flex min-h-11 items-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="https://play.google.com/store/apps/details?id=kr.helloled.app" rel="noopener noreferrer">
+            <img class="store-badge-img" data-badge="play" src="badges/play-ko.png" alt="Google Play에서 다운로드" data-i18n-alt="playAlt" width="135" height="40">
+          </a>
+          <a class="inline-flex min-h-11 items-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="https://apps.apple.com/kr/search?term=HELLO%20LED" rel="noopener noreferrer">
+            <img class="store-badge-img" data-badge="apple" src="badges/apple-ko.svg" alt="App Store에서 다운로드" data-i18n-alt="appleAlt" width="135" height="40">
+          </a>
+        </div>
       </div>
-    </section>
 
-    <!-- Features -->
-    <section id="features" class="px-5 py-24" aria-labelledby="features-title">
-      <div class="mx-auto max-w-6xl">
-        <h2 id="features-title" class="reveal text-center text-3xl font-extrabold tracking-tight sm:text-4xl">주요 기능</h2>
-        <p class="reveal mx-auto mt-4 max-w-2xl text-center text-muted">색과 속도부터 가로 전체화면까지, 멀리서도 읽히는 전광판을 만듭니다.</p>
-        <div class="mt-14 grid gap-6 md:grid-cols-3">
-          <article class="reveal rounded-2xl bg-surface p-6 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)]">
-            <h3 class="text-xl font-bold">자유로운 커스텀</h3>
-            <p class="mt-2 text-sm font-medium text-neon">색상, 배경, 속도, 폰트까지 내 마음대로</p>
-            <p class="mt-3 text-muted">네온 빨강·노랑·초록·파랑·분홍 중 고르고, 스크롤 속도와 글꼴을 맞춰 응원·세일·환영 톤을 바꿉니다.</p>
-            <div class="mt-6 space-y-4" aria-hidden="true">
-              <div class="h-1.5 overflow-hidden rounded-full bg-white/10">
-                <div class="h-full w-2/3 rounded-full bg-neon"></div>
-              </div>
-              <div class="flex gap-2">
-                <span class="h-7 w-7 rounded-full bg-neonRed"></span>
-                <span class="h-7 w-7 rounded-full bg-neonYellow"></span>
-                <span class="h-7 w-7 rounded-full bg-neonGreen"></span>
-                <span class="h-7 w-7 rounded-full bg-neonBlue"></span>
-                <span class="h-7 w-7 rounded-full bg-neonPink"></span>
+      <div class="mx-auto mt-10 w-full max-w-3xl px-1 sm:mt-12">
+        <div class="device mx-auto w-full max-w-[620px] rounded-[1.85rem] p-2.5 sm:rounded-[2.1rem] sm:p-3" aria-hidden="true">
+          <div class="led-screen relative overflow-hidden rounded-[1.35rem] bg-black sm:rounded-[1.5rem]" style="aspect-ratio: 19.5 / 9;">
+            <div class="absolute left-2 top-1/2 z-10 h-16 w-1.5 -translate-y-1/2 rounded-full bg-neutral-950 sm:h-20 sm:w-2"></div>
+            <div class="absolute inset-0 flex items-center overflow-hidden bg-[#050505]">
+              <div class="marquee-track items-center gap-16 px-6" id="marquee-track">
+                <span class="led-text" id="led-a">효은아 사랑해 ♥</span>
+                <span class="led-text" id="led-b">효은아 사랑해 ♥</span>
+                <span class="led-text" id="led-c">효은아 사랑해 ♥</span>
+                <span class="led-text" id="led-d">효은아 사랑해 ♥</span>
               </div>
             </div>
-          </article>
+          </div>
+        </div>
 
-          <article class="reveal rounded-2xl bg-surface p-6 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)]">
-            <h3 class="text-xl font-bold">압도적인 시인성</h3>
-            <p class="mt-2 text-sm font-medium text-neon">멀리서도 선명한 전체 화면 &amp; 가로 모드</p>
-            <p class="mt-3 text-muted">가로로 눕히면 화면 전체가 전광판이 됩니다. 공연장 뒤쪽이나 카운터 맞은편에서도 문구가 읽히도록 밝기와 크기를 키울 수 있습니다.</p>
-            <div class="mt-8 flex justify-center" aria-hidden="true">
-              <div class="h-16 w-10 rounded-md bg-neutral-800 shadow-[0_0_20px_rgba(0,229,255,0.25)]" style="animation: phone-tilt 5s ease-in-out infinite;"></div>
-            </div>
-          </article>
-
-          <article class="reveal rounded-2xl bg-surface p-6 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)]">
-            <h3 class="text-xl font-bold">언제 어디서나</h3>
-            <p class="mt-2 text-sm font-medium text-neon">콘서트 응원부터 매장 홍보, 공항 환영까지</p>
-            <p class="mt-3 text-muted">상황별 프리셋 문구로 바로 채우고, 저장한 즐겨찾기는 이 기기에만 남습니다.</p>
-            <div class="mt-6 flex flex-wrap gap-2">
-              <span class="rounded-full bg-white/5 px-3 py-1.5 text-sm text-muted">#콘서트응원</span>
-              <span class="rounded-full bg-white/5 px-3 py-1.5 text-sm text-muted">#매장세일</span>
-              <span class="rounded-full bg-white/5 px-3 py-1.5 text-sm text-muted">#공항피켓</span>
-            </div>
-          </article>
+        <div id="try" class="mx-auto mt-8 max-w-xl rounded-3xl border border-line bg-white p-5 text-left shadow-sm sm:p-6">
+          <label for="led-input" class="mb-3 block text-sm font-semibold text-ink" data-i18n="previewLabel">HELLO LED 전광판 미리보기</label>
+          <input
+            id="led-input"
+            type="text"
+            maxlength="80"
+            autocomplete="off"
+            placeholder="문구를 입력하세요."
+            data-i18n-placeholder="previewPlaceholder"
+            class="w-full rounded-2xl border border-line bg-soft px-4 py-3.5 text-base text-ink placeholder:text-neutral-400 focus:border-ink focus:outline-none focus:ring-2 focus:ring-ink/20"
+          >
         </div>
       </div>
     </section>
 
-    <!-- Use cases -->
-    <section id="examples" class="bg-surface px-5 py-24" aria-labelledby="examples-title">
+    <!-- Features + use cases bento -->
+    <section id="features" class="bg-soft px-5 py-20 sm:py-28" aria-labelledby="features-title">
       <div class="mx-auto max-w-6xl">
-        <h2 id="examples-title" class="reveal text-center text-3xl font-extrabold tracking-tight sm:text-4xl">활용 예시</h2>
-        <p class="reveal mx-auto mt-4 max-w-2xl text-center text-muted">앱에 들어 있는 한국어 문구처럼, 바로 쓸 수 있는 상황입니다.</p>
-        <div class="mt-14 grid gap-6 md:grid-cols-3">
-          <article class="reveal rounded-2xl bg-surfaceHigh p-6">
-            <p class="text-xs font-semibold uppercase tracking-wider text-neon">콘서트</p>
-            <p class="mt-3 text-2xl font-extrabold tracking-tight text-neonPink">○○○ 사랑해</p>
-            <p class="mt-4 text-muted">응원봉 대신 휴대폰을 들면, 객석 어디서도 보이는 스크롤 응원 문구를 만들 수 있습니다.</p>
+        <div class="mx-auto max-w-3xl text-center">
+          <h2 id="features-title" class="reveal text-3xl font-extrabold tracking-tight sm:text-5xl" data-i18n="featuresTitle">HELLO LED의 주요 기능</h2>
+          <p class="reveal mx-auto mt-5 text-lg leading-relaxed text-muted" data-i18n="featuresLead">
+            멀리서도 읽히는 밝기와 스크롤, 상황별 프리셋으로 응원·홍보·환영 문구를 바로 만듭니다.
+          </p>
+        </div>
+
+        <div class="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-5">
+          <article class="reveal rounded-[1.75rem] bg-white p-6 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-md sm:p-7 lg:col-span-2">
+            <h3 class="text-xl font-bold sm:text-2xl" data-i18n="customTitle">색·속도·폰트 커스텀</h3>
+            <p class="mt-2 text-sm font-medium text-ink/70" data-i18n="customKicker">네온 색상부터 스크롤 속도까지</p>
+            <p class="mt-3 text-muted" data-i18n="customBody">빨강·노랑·초록·파랑·분홍 등 네온 색을 고르고, 스크롤 속도와 글꼴을 맞춰 콘서트·세일·환영 톤을 바꿉니다.</p>
+            <div class="mt-8 space-y-5" aria-hidden="true">
+              <div class="h-2 overflow-hidden rounded-full bg-soft">
+                <div class="h-full w-2/3 rounded-full bg-ink"></div>
+              </div>
+              <div class="flex gap-2.5">
+                <span class="h-8 w-8 rounded-full bg-neonRed shadow-sm"></span>
+                <span class="h-8 w-8 rounded-full bg-neonYellow shadow-sm"></span>
+                <span class="h-8 w-8 rounded-full bg-neonGreen shadow-sm"></span>
+                <span class="h-8 w-8 rounded-full bg-neonBlue shadow-sm"></span>
+                <span class="h-8 w-8 rounded-full bg-neonPink shadow-sm"></span>
+              </div>
+            </div>
           </article>
-          <article class="reveal rounded-2xl bg-surfaceHigh p-6">
-            <p class="text-xs font-semibold uppercase tracking-wider text-neon">매장</p>
-            <p class="mt-3 text-2xl font-extrabold tracking-tight text-neonYellow">오늘 전 품목 30% 세일</p>
-            <p class="mt-4 text-muted">카운터나 쇼윈도에 세워 두면 지나가는 손님에게 세일·오픈 이벤트를 크게 알릴 수 있습니다.</p>
+
+          <article class="reveal rounded-[1.75rem] bg-white p-6 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-md sm:p-7">
+            <h3 class="text-xl font-bold" data-i18n="wideTitle">가로 전체화면 전광판</h3>
+            <p class="mt-2 text-sm font-medium text-ink/70" data-i18n="wideKicker">멀리서도 선명한 시인성</p>
+            <p class="mt-3 text-muted" data-i18n="wideBody">휴대폰을 가로로 눕히면 화면 전체가 LED 전광판이 됩니다. 공연장 뒤쪽이나 카운터 맞은편에서도 문구가 읽히도록 설계했습니다.</p>
+            <div class="mt-10 flex justify-center" aria-hidden="true">
+              <div class="h-20 w-12 rounded-xl bg-ink shadow-lg" style="animation: phone-tilt 5s ease-in-out infinite;"></div>
+            </div>
           </article>
-          <article class="reveal rounded-2xl bg-surfaceHigh p-6">
-            <p class="text-xs font-semibold uppercase tracking-wider text-neon">공항</p>
-            <p class="mt-3 text-2xl font-extrabold tracking-tight text-neon">Welcome to Seoul</p>
-            <p class="mt-4 text-muted">입국장에서 이름·환영 문구를 피켓처럼 띄워, 멀리서도 찾는 사람을 바로 알아볼 수 있게 합니다.</p>
+
+          <article id="examples" class="reveal rounded-[1.75rem] bg-[#fff1f6] p-6 transition duration-200 hover:-translate-y-1 hover:shadow-md sm:p-7">
+            <h3 class="text-xs font-semibold uppercase tracking-wider text-neonPink" data-i18n="concertTitle">콘서트 응원 전광판</h3>
+            <p class="mt-3 text-2xl font-extrabold tracking-tight text-ink sm:text-3xl" data-i18n="concertSample">○○○ 사랑해</p>
+            <p class="mt-4 text-muted" data-i18n="concertBody">응원봉 대신 스마트폰으로 객석 어디서도 잘 보이는 LED 전광판으로 만들 수 있습니다.</p>
+          </article>
+
+          <article class="reveal rounded-[1.75rem] bg-[#fff8e6] p-6 transition duration-200 hover:-translate-y-1 hover:shadow-md sm:p-7">
+            <h3 class="text-xs font-semibold uppercase tracking-wider text-amber-600" data-i18n="storeTitle">매장 세일 전광판</h3>
+            <p class="mt-3 text-2xl font-extrabold tracking-tight text-ink sm:text-3xl" data-i18n="storeSample">오늘 전 품목 30% 세일</p>
+            <p class="mt-4 text-muted" data-i18n="storeBody">카운터·쇼윈도에 세워 세일·오픈 이벤트를 지나가는 손님에게 크게 알립니다.</p>
+          </article>
+
+          <article class="reveal rounded-[1.75rem] bg-[#eef8ff] p-6 transition duration-200 hover:-translate-y-1 hover:shadow-md sm:col-span-2 sm:p-7 lg:col-span-1">
+            <h3 class="text-xs font-semibold uppercase tracking-wider text-neonBlue" data-i18n="airportTitle">공항 환영 피켓</h3>
+            <p class="mt-3 text-2xl font-extrabold tracking-tight text-ink sm:text-3xl" data-i18n="airportSample">Welcome to Seoul</p>
+            <p class="mt-4 text-muted" data-i18n="airportBody">입국장에서 이름·환영 문구를 피켓처럼 띄워, 멀리서도 찾는 사람을 바로 알아볼 수 있게 합니다.</p>
           </article>
         </div>
       </div>
     </section>
 
     <!-- How to -->
-    <section class="px-5 py-24" aria-labelledby="how-title">
-      <div class="reveal mx-auto max-w-3xl">
-        <h2 id="how-title" class="text-3xl font-extrabold tracking-tight sm:text-4xl">스마트폰을 LED 전광판으로 쓰는 방법</h2>
-        <ol class="mt-8 space-y-6 text-muted">
-          <li class="flex gap-4">
-            <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-neon text-sm font-bold text-black">1</span>
-            <div>
-              <p class="font-semibold text-white">문구를 입력합니다</p>
-              <p class="mt-1">응원, 세일, 환영 문장을 직접 쓰거나 프리셋에서 고릅니다.</p>
-            </div>
+    <section class="px-5 py-20 sm:py-28" aria-labelledby="how-title">
+      <div class="mx-auto max-w-6xl">
+        <div class="reveal max-w-2xl">
+          <h2 id="how-title" class="text-3xl font-extrabold tracking-tight sm:text-4xl" data-i18n="howTitle">스마트폰을 LED 전광판으로 만드는 방법</h2>
+          <p class="mt-3 text-muted" data-i18n="howLead">누구나 손쉽게 스마트폰을 LED 전광판으로 사용할 수 있습니다.</p>
+        </div>
+        <ol class="mt-10 grid gap-4 text-muted md:grid-cols-3">
+          <li class="reveal rounded-[1.75rem] bg-soft p-6 sm:p-7">
+            <span class="flex h-10 w-10 items-center justify-center rounded-full bg-[#FF5CA8] text-sm font-bold text-white">1</span>
+            <p class="mt-5 font-semibold text-ink" data-i18n="step1Title">문구를 입력합니다</p>
+            <p class="mt-2" data-i18n="step1Body">응원, 세일, 환영 문장을 직접 쓰거나 프리셋에서 선택합니다.</p>
           </li>
-          <li class="flex gap-4">
-            <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-neon text-sm font-bold text-black">2</span>
-            <div>
-              <p class="font-semibold text-white">색·속도·폰트를 맞춥니다</p>
-              <p class="mt-1">네온 색과 스크롤 속도, 글꼴을 골라 멀리서도 읽히게 조정합니다.</p>
-            </div>
+          <li class="reveal rounded-[1.75rem] bg-soft p-6 sm:p-7">
+            <span class="flex h-10 w-10 items-center justify-center rounded-full bg-[#F5C518] text-sm font-bold text-ink">2</span>
+            <p class="mt-5 font-semibold text-ink" data-i18n="step2Title">색·속도·폰트를 맞춥니다</p>
+            <p class="mt-2" data-i18n="step2Body">네온 색과 스크롤 속도, 글꼴을 골라 멀리서도 읽히게 조정합니다.</p>
           </li>
-          <li class="flex gap-4">
-            <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-neon text-sm font-bold text-black">3</span>
-            <div>
-              <p class="font-semibold text-white">가로 전체화면으로 켭니다</p>
-              <p class="mt-1">휴대폰을 가로로 돌리면 화면 전체가 전광판이 됩니다. 전광판 화면에는 광고가 없습니다.</p>
-            </div>
+          <li class="reveal rounded-[1.75rem] bg-soft p-6 sm:p-7">
+            <span class="flex h-10 w-10 items-center justify-center rounded-full bg-[#3BA3FF] text-sm font-bold text-white">3</span>
+            <p class="mt-5 font-semibold text-ink" data-i18n="step3Title">가로 전체화면으로 켭니다</p>
+            <p class="mt-2" data-i18n="step3Body">휴대폰을 가로로 돌리면 화면 전체가 전광판이 됩니다.</p>
           </li>
         </ol>
       </div>
     </section>
 
-    <!-- Q&A (no FAQPage schema) -->
-    <section class="bg-surface px-5 py-24" aria-labelledby="qa-title">
+    <!-- Q&A accordion (visible answers for AEO; no FAQPage schema) -->
+    <section id="qa" class="px-5 py-20 sm:py-28" aria-labelledby="qa-title">
       <div class="mx-auto max-w-3xl">
-        <h2 id="qa-title" class="reveal text-3xl font-extrabold tracking-tight sm:text-4xl">자주 묻는 질문</h2>
-        <div class="mt-10 space-y-10">
-          <div class="reveal">
-            <h3 class="text-xl font-bold">콘서트에서 광고가 뜨나요?</h3>
-            <p class="mt-3 text-muted">전광판 표시 화면에는 광고를 넣지 않습니다. 응원 문구가 가려지지 않습니다.</p>
-          </div>
-          <div class="reveal">
-            <h3 class="text-xl font-bold">문구가 서버에 저장되나요?</h3>
-            <p class="mt-3 text-muted">계정을 만들지 않으며, 문구와 설정은 이 기기의 로컬 저장소에만 남습니다. 운영 서버로 문구를 보내지 않습니다.</p>
-          </div>
-          <div class="reveal">
-            <h3 class="text-xl font-bold">웹에서 미리 볼 수 있나요?</h3>
-            <p class="mt-3 text-muted">이 페이지 상단의 <a class="text-neon underline-offset-2 hover:underline" href="#try">웹에서 바로 쓰기</a> 입력칸에 문구를 넣으면, 스마트폰 목업 전광판에서 바로 확인할 수 있습니다.</p>
-          </div>
-          <div class="reveal">
-            <h3 class="text-xl font-bold">무료인가요?</h3>
-            <p class="mt-3 text-muted">HELLO LED는 무료 앱입니다. 앱 안에 광고가 있을 수 있지만, 전광판 표시 화면에는 광고가 없습니다. Android와 iOS에서 사용할 수 있습니다.</p>
-          </div>
+        <h2 id="qa-title" class="reveal text-center text-3xl font-extrabold tracking-tight sm:text-5xl" data-i18n="faqTitle">자주 묻는 질문</h2>
+        <div class="mt-10 divide-y divide-line border-y border-line">
+          <details class="reveal group">
+            <summary class="flex min-h-14 cursor-pointer items-center justify-between gap-4 py-4 text-left text-lg font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
+              <span data-i18n="faq1q">HELLO LED 전광판에 광고가 나오나요?</span>
+              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
+            </summary>
+            <p class="pb-5 text-muted" data-i18n="faq1a">아니요. HELLO LED의 전광판 표시 화면에는 광고를 넣지 않습니다. 응원 문구가 가려지지 않습니다.</p>
+          </details>
+          <details class="reveal group">
+            <summary class="flex min-h-14 cursor-pointer items-center justify-between gap-4 py-4 text-left text-lg font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
+              <span data-i18n="faq2q">HELLO LED는 어떤 기기에서 사용이 가능한가요?</span>
+              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
+            </summary>
+            <p class="pb-5 text-muted" data-i18n-html="faq2a">스마트폰, 태블릿 등 모든 모바일 기기에서 사용하실 수 있습니다.<br>Android는 Google Play에서, iOS는 App Store에서 설치하실 수 있습니다.</p>
+          </details>
         </div>
       </div>
     </section>
 
     <!-- Footer CTA -->
-    <section id="download" class="relative overflow-hidden px-5 py-28" aria-labelledby="cta-title">
-      <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(46,229,157,0.18),_transparent_50%),radial-gradient(ellipse_at_60%_40%,_rgba(0,229,255,0.22),_transparent_45%)]" aria-hidden="true"></div>
+    <section id="download" class="relative overflow-hidden px-5 py-24 sm:py-32" aria-labelledby="cta-title">
       <div class="relative mx-auto max-w-3xl text-center">
-        <h2 id="cta-title" class="reveal text-3xl font-extrabold tracking-tight sm:text-5xl">HELLO LED로 당신의 메시지를<br class="hidden sm:block"> 지금 보여주세요</h2>
-        <p class="reveal mx-auto mt-5 max-w-xl text-muted">Google Play에서 바로 설치하고, App Store는 곧 공개됩니다. Android와 iOS, 가격 0원.</p>
-        <div class="reveal mt-10 flex flex-wrap items-center justify-center gap-3">
-          <a class="store-badge" href="https://play.google.com/store/apps/details?id=kr.helloled.app" rel="noopener noreferrer">
-            <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00E5FF" d="M3.6 2.2 14.2 12 3.6 21.8A1.5 1.5 0 0 1 3 20.6V3.4a1.5 1.5 0 0 1 .6-1.2Zm12.1 8.3 2.4-1.4 3.3 1.9c.8.5.8 1.5 0 2l-3.3 1.9-2.4-1.4L13.5 12l2.2-1.5ZM4.9 22.5l8.2-8.2 2.6 1.8-8.3 4.8a1.6 1.6 0 0 1-2.5-1.4Zm0-21 2.5 1.4 8.3 4.8-2.6 1.8L4.9 1.5Z"/></svg>
-            <span class="text-left leading-tight">
-              <span class="block text-[10px] uppercase tracking-wider text-muted">Get it on</span>
-              <span class="block text-base font-semibold">Google Play</span>
-            </span>
+        <h2 id="cta-title" class="reveal text-3xl font-extrabold tracking-tight sm:text-5xl" data-i18n-html="ctaTitle">스마트폰 LED 전광판<br>지금 바로 사용해보세요</h2>
+        <p class="reveal mx-auto mt-5 max-w-xl text-muted" data-i18n="ctaBody">HELLO LED는 Google Play와 App Store에서 무료로 만날 수 있습니다.</p>
+        <div class="reveal mt-10 flex flex-wrap items-center justify-center gap-2">
+          <a class="inline-flex min-h-11 items-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="https://play.google.com/store/apps/details?id=kr.helloled.app" rel="noopener noreferrer">
+            <img class="store-badge-img" data-badge="play" src="badges/play-ko.png" alt="Google Play에서 다운로드" data-i18n-alt="playAlt" width="135" height="40">
           </a>
-          <a class="store-badge" href="#download" aria-label="App Store 다운로드 (곧 공개)">
-            <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M16.4 12.9c0-2.2 1.8-3.3 1.9-3.4-1-1.5-2.6-1.7-3.2-1.7-1.4-.1-2.6.8-3.3.8-.7 0-1.8-.8-3-.8-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.7 1.1 8.9.8 1.1 1.7 2.3 2.9 2.2 1.2 0 1.6-.7 3-.7s1.8.7 3 .7 2-.1 2.9-2.2c1-.1.7-2.1.7-2.1s-2.6-1-2.6-4Zm-2.4-7c.6-.8 1.1-1.9.9-3-.9 0-2 .6-2.6 1.4-.6.7-1.1 1.8-.9 2.9 1 .1 2-.5 2.6-1.3Z"/></svg>
-            <span class="text-left leading-tight">
-              <span class="block text-[10px] uppercase tracking-wider text-muted">Download on the</span>
-              <span class="block text-base font-semibold">App Store</span>
-            </span>
+          <a class="inline-flex min-h-11 items-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="https://apps.apple.com/kr/search?term=HELLO%20LED" rel="noopener noreferrer">
+            <img class="store-badge-img" data-badge="apple" src="badges/apple-ko.svg" alt="App Store에서 다운로드" data-i18n-alt="appleAlt" width="135" height="40">
           </a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="border-t-0 bg-trueblack px-5 pb-12 pt-4">
+  <footer class="border-t border-line px-5 pb-10 pt-10">
     <div class="mx-auto flex max-w-6xl flex-col gap-4 text-sm text-muted sm:flex-row sm:items-center sm:justify-between">
-      <p><span class="logo-glow font-bold">HELLO LED</span></p>
+      <p class="font-bold text-ink">HELLO LED</p>
       <div class="flex flex-wrap gap-4">
-        <a class="hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neon" href="/privacy.html">개인정보처리방침</a>
-        <a class="hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neon" href="mailto:helloled.app@gmail.com">helloled.app@gmail.com</a>
+        <a class="hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="/privacy.html" data-privacy-link data-i18n="privacyLink">개인정보처리방침</a>
+        <a class="hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="mailto:helloled@yodams.com">helloled@yodams.com</a>
       </div>
     </div>
   </footer>
 
+  <script src="i18n.js"></script>
   <script>
     (function () {
       var input = document.getElementById('led-input');
@@ -449,17 +529,10 @@
         document.getElementById('led-c'),
         document.getElementById('led-d')
       ];
-      var defaults = ['✨최애 피클맨 사랑해!✨', 'WELCOME TO KOREA'];
+      var fallback = '효은아 사랑해 ♥';
 
       function applyText(value) {
-        var text = (value || '').trim();
-        if (!text) {
-          spans[0].textContent = defaults[0];
-          spans[1].textContent = defaults[1];
-          spans[2].textContent = defaults[0];
-          spans[3].textContent = defaults[1];
-          return;
-        }
+        var text = (value || '').trim() || fallback;
         spans.forEach(function (el) { el.textContent = text; });
       }
 
