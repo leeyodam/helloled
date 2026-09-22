@@ -7,9 +7,9 @@ window.HELLO_I18N = {
     "navLabel": "주요",
     "download": "다운로드",
     "kicker": "스마트폰 LED 전광판",
-    "heroLine1": "전하고 싶은 마음을",
-    "heroAccent": "LED",
-    "heroLine2": "로 크고 화려하게",
+    "heroLine1": "스마트폰을 LED 전광판으로",
+    "heroAccent": "HELLO LED",
+    "heroLine2": "",
     "heroBody": "<strong class=\"font-semibold text-ink\">HELLO LED</strong>는 스마트폰 화면을 LED 전광판으로 바꾸는 무료 앱입니다.<br>콘서트 응원, 매장 세일, 공항 환영 문구 등 다양한 환경에서 손쉽게 활용할 수 있습니다.",
     "previewLabel": "HELLO LED 전광판 미리보기",
     "previewPlaceholder": "문구를 입력하세요.",
@@ -42,9 +42,9 @@ window.HELLO_I18N = {
     "faq1q": "HELLO LED 전광판에 광고가 나오나요?",
     "faq1a": "아니요. HELLO LED의 전광판 표시 화면에는 광고를 넣지 않습니다. 응원 문구가 가려지지 않습니다.",
     "faq2q": "HELLO LED는 어떤 기기에서 사용이 가능한가요?",
-    "faq2a": "스마트폰, 태블릿 등 모든 모바일 기기에서 사용하실 수 있습니다.<br>Android는 Google Play에서, iOS는 App Store에서 설치하실 수 있습니다.",
-    "ctaTitle": "스마트폰 LED 전광판<br>지금 바로 사용해보세요",
-    "ctaBody": "HELLO LED는 Google Play와 App Store에서 무료로 만날 수 있습니다.",
+    "faq2a": "스마트폰·태블릿 등 Android 기기에서 사용할 수 있습니다.<br>Google Play 공개를 준비 중이며, 출시되면 이 페이지에서 안내합니다.",
+    "ctaTitle": "스마트폰 LED 전광판<br>스토어 출시 준비 중",
+    "ctaBody": "Google Play 공개를 준비 중입니다. 출시되면 이 페이지에 다운로드 링크를 안내합니다.",
     "privacyLink": "개인정보처리방침",
     "playAlt": "Google Play에서 다운로드",
     "appleAlt": "App Store에서 다운로드",
@@ -74,7 +74,26 @@ window.HELLO_I18N = {
     "privacyRemedyBody": "개인정보주체는 개인정보침해로 인한 구제를 받기 위하여 한국인터넷진흥원 개인정보침해신고센터 등에 분쟁해결이나 상담 등을 신청할 수 있습니다.\n※ 개인정보 침해신고 센터: 국번없이 118번\n※ 개인정보 분쟁조정위원회: 1833-6972\n※ 대검찰청 사이버수사과: 1301\n※ 경찰청 사이버수사국: 182",
     "privacyContactTitle": "10조. 개인정보보호(분야별)책임관 및 담당자 연락처",
     "privacyContactBody": "가. 개인정보 보호(분야별)책임관: HELLO LED 운영\n나. 담당자: HELLO LED 고객지원\n연락처: helloled@yodams.com",
-    "privacyContactHtml": "가. 개인정보 보호(분야별)책임관: HELLO LED 운영\n나. 담당자: HELLO LED 고객지원\n연락처: <a href=\"mailto:helloled@yodams.com\">helloled@yodams.com</a>"
+    "privacyContactHtml": "가. 개인정보 보호(분야별)책임관: HELLO LED 운영\n나. 담당자: HELLO LED 고객지원\n연락처: <a href=\"mailto:helloled@yodams.com\">helloled@yodams.com</a>",
+    "comingSoonKicker": "스토어 출시 준비 중",
+    "comingSoonTitle": "Google Play 공개를 준비 중입니다",
+    "comingSoonBody": "앱스토어 상세 페이지가 열리면 이 안내를 다운로드 링크로 바꿉니다. 지금은 출시 소식을 메일로 문의해 주세요.",
+    "comingSoonCta": "출시 문의하기",
+    "previewCaption": "HELLO LED 가로 전체화면 전광판 미리보기",
+    "clockTitle": "시계·디데이·타이머",
+    "clockKicker": "문구 대신 시간을 크게",
+    "clockBody": "전광판에 현재 시각, 디데이 카운트다운, 타이머를 띄워 행사·매장·대기 시간을 멀리서도 확인할 수 있습니다.",
+    "clockCaption": "앱 화면 예시: 가로 전광판에 표시된 시계",
+    "photoTitle": "사진을 도트 전광판으로",
+    "photoKicker": "이미지 도트 변환",
+    "photoBody": "갤러리 사진을 기기 안에서 도트 패턴으로 바꿔 전광판에 띄웁니다. 서버로 사진을 올리지 않습니다.",
+    "photoCaption": "앱 화면 예시: 사진을 도트 패턴으로 변환한 전광판",
+    "favTitle": "즐겨찾기 문구",
+    "favKicker": "자주 쓰는 문장을 저장",
+    "favBody": "응원·세일·환영 문구를 기기 안에 저장해 두고, 필요할 때 바로 전광판에 불러옵니다.",
+    "faq3q": "지금 어디서 받을 수 있나요?",
+    "faq3a": "스토어 상세가 아직 공개되지 않았습니다.<br>출시 소식은 <a class=\"underline\" href=\"mailto:helloled@yodams.com\">helloled@yodams.com</a>으로 문의해 주세요.",
+    "operator": "운영: HELLO LED 운영 · 고객지원: HELLO LED 고객지원"
   },
   "en": {
     "htmlLang": "en",
@@ -84,9 +103,9 @@ window.HELLO_I18N = {
     "navLabel": "Primary",
     "download": "Download",
     "kicker": "Phone LED board",
-    "heroLine1": "Say what you feel,",
-    "heroAccent": "LED",
-    "heroLine2": ", big and brilliant",
+    "heroLine1": "Turn your phone into an LED board",
+    "heroAccent": "HELLO LED",
+    "heroLine2": "",
     "heroBody": "<strong class=\"font-semibold text-ink\">HELLO LED</strong> is a free app that turns your phone into an LED board.<br>Use it for concert cheers, shop sales, airport welcomes, and more.",
     "previewLabel": "HELLO LED board preview",
     "previewPlaceholder": "Type a message.",
@@ -119,9 +138,9 @@ window.HELLO_I18N = {
     "faq1q": "Does the HELLO LED board show ads?",
     "faq1a": "No. The board screen does not show ads, so your message is never covered.",
     "faq2q": "Which devices can use HELLO LED?",
-    "faq2a": "Phones, tablets, and other mobile devices.<br>Install it from Google Play on Android and from the App Store on iOS.",
-    "ctaTitle": "A phone LED board<br>Try it now",
-    "ctaBody": "HELLO LED is free on Google Play and the App Store.",
+    "faq2a": "It runs on Android phones and tablets.<br>A Google Play listing is in progress and will be linked here when it is live.",
+    "ctaTitle": "Phone LED board<br>Store listing coming soon",
+    "ctaBody": "Google Play release is in progress. Download links will appear here when the listing opens.",
     "privacyLink": "Privacy policy",
     "playAlt": "Get it on Google Play",
     "appleAlt": "Download on the App Store",
@@ -151,7 +170,26 @@ window.HELLO_I18N = {
     "privacyRemedyBody": "You may ask the Korea Internet & Security Agency (KISA) Personal Information Infringement Report Center, and the bodies below, for dispute resolution or advice.\n- KISA report center: 118 (no area code)\n- Personal Information Dispute Mediation Committee: 1833-6972\n- Supreme Prosecutors Office Cyber Investigation Division: 1301\n- Korean National Police Agency Cyber Bureau: 182",
     "privacyContactTitle": "10. Privacy contact",
     "privacyContactBody": "a. Privacy officer: HELLO LED operations\nb. Contact: HELLO LED support\nEmail: helloled@yodams.com",
-    "privacyContactHtml": "a. Privacy officer: HELLO LED operations\nb. Contact: HELLO LED support\nEmail: <a href=\"mailto:helloled@yodams.com\">helloled@yodams.com</a>"
+    "privacyContactHtml": "a. Privacy officer: HELLO LED operations\nb. Contact: HELLO LED support\nEmail: <a href=\"mailto:helloled@yodams.com\">helloled@yodams.com</a>",
+    "comingSoonKicker": "Store listing coming soon",
+    "comingSoonTitle": "Google Play release is in progress",
+    "comingSoonBody": "When the store page opens, this notice becomes a download link. For launch updates, email us.",
+    "comingSoonCta": "Ask about the launch",
+    "previewCaption": "HELLO LED full-screen landscape board preview",
+    "clockTitle": "Clock, countdown, and timer",
+    "clockKicker": "Show time instead of text",
+    "clockBody": "Put the current time, a countdown, or a timer on the board so people can read it from across a venue or shop.",
+    "clockCaption": "App screen example: clock on the landscape board",
+    "photoTitle": "Photo to dot board",
+    "photoKicker": "On-device image conversion",
+    "photoBody": "Turn a gallery photo into a dot pattern on the board. Photos stay on the device and are not uploaded.",
+    "photoCaption": "App screen example: photo converted to dots",
+    "favTitle": "Favorite lines",
+    "favKicker": "Save phrases you reuse",
+    "favBody": "Save cheers, sales, and welcome lines on the device, then load them onto the board when you need them.",
+    "faq3q": "Where can I download it now?",
+    "faq3a": "The store listing is not public yet.<br>Email <a class=\"underline\" href=\"mailto:helloled@yodams.com\">helloled@yodams.com</a> for launch updates.",
+    "operator": "Operated by HELLO LED · Support: HELLO LED customer support"
   },
   "ja": {
     "htmlLang": "ja",
@@ -161,9 +199,9 @@ window.HELLO_I18N = {
     "navLabel": "メイン",
     "download": "ダウンロード",
     "kicker": "スマホLED電光掲示",
-    "heroLine1": "伝えたい気持ちを",
-    "heroAccent": "LED",
-    "heroLine2": "で大きく華やかに",
+    "heroLine1": "スマホをLED電光掲示板に",
+    "heroAccent": "HELLO LED",
+    "heroLine2": "",
     "heroBody": "<strong class=\"font-semibold text-ink\">HELLO LED</strong>は、スマホの画面をLED電光掲示に変える無料アプリです。<br>コンサートの応援、店舗のセール、空港の歓迎など、さまざまな場面ですぐ使えます。",
     "previewLabel": "HELLO LED電光掲示プレビュー",
     "previewPlaceholder": "メッセージを入力してください。",
@@ -196,9 +234,9 @@ window.HELLO_I18N = {
     "faq1q": "HELLO LEDの電光掲示に広告は出ますか？",
     "faq1a": "いいえ。電光掲示の表示画面には広告を入れないので、メッセージが隠れません。",
     "faq2q": "HELLO LEDはどの機器で使えますか？",
-    "faq2a": "スマートフォン、タブレットなど、モバイル機器で使えます。<br>AndroidはGoogle Play、iOSはApp Storeからインストールできます。",
-    "ctaTitle": "スマホLED電光掲示<br>今すぐ使ってみる",
-    "ctaBody": "HELLO LEDはGoogle PlayとApp Storeで無料です。",
+    "faq2a": "Androidのスマートフォン・タブレットで使えます。<br>Google Play公開を準備中で、公開後はこのページで案内します。",
+    "ctaTitle": "スマホLED電光掲示板<br>ストア公開準備中",
+    "ctaBody": "Google Play公開を準備しています。公開後、このページにダウンロードリンクを案内します。",
     "privacyLink": "プライバシーポリシー",
     "playAlt": "Google Playで手に入れよう",
     "appleAlt": "App Storeからダウンロード",
@@ -228,7 +266,26 @@ window.HELLO_I18N = {
     "privacyRemedyBody": "個人情報の侵害について、韓国インターネット振興院（KISA）個人情報侵害申告センターなどに紛争解決や相談を申請できます。\n- 個人情報侵害申告センター: 118（市外局番なし）\n- 個人情報紛争調整委員会: 1833-6972\n- 大検察庁サイバー捜査課: 1301\n- 警察庁サイバー捜査局: 182",
     "privacyContactTitle": "10. 個人情報の問い合わせ先",
     "privacyContactBody": "a. 個人情報保護責任者: HELLO LED 運営\nb. 担当: HELLO LED サポート\nメール: helloled@yodams.com",
-    "privacyContactHtml": "a. 個人情報保護責任者: HELLO LED 運営\nb. 担当: HELLO LED サポート\nメール: <a href=\"mailto:helloled@yodams.com\">helloled@yodams.com</a>"
+    "privacyContactHtml": "a. 個人情報保護責任者: HELLO LED 運営\nb. 担当: HELLO LED サポート\nメール: <a href=\"mailto:helloled@yodams.com\">helloled@yodams.com</a>",
+    "comingSoonKicker": "ストア公開準備中",
+    "comingSoonTitle": "Google Play公開を準備しています",
+    "comingSoonBody": "ストアページが公開されたら、この案内をダウンロードリンクに差し替えます。公開情報はメールでお問い合わせください。",
+    "comingSoonCta": "公開について問い合わせる",
+    "previewCaption": "HELLO LED横向き全画面電光掲示板のプレビュー",
+    "clockTitle": "時計・カウントダウン・タイマー",
+    "clockKicker": "文字の代わりに時間を大きく",
+    "clockBody": "現在時刻、カウントダウン、タイマーを電光掲示板に表示し、会場や店舗の向こうからも確認できます。",
+    "clockCaption": "アプリ画面例: 横向き掲示板の時計",
+    "photoTitle": "写真をドット電光板に",
+    "photoKicker": "画像のドット変換",
+    "photoBody": "ギャラリーの写真を端末内でドット模様に変換して表示します。サーバーへ写真は送りません。",
+    "photoCaption": "アプリ画面例: 写真をドット化した電光板",
+    "favTitle": "お気に入り文言",
+    "favKicker": "よく使う文を保存",
+    "favBody": "応援・セール・歓迎の文を端末に保存し、必要なときにすぐ掲示板へ呼び出せます。",
+    "faq3q": "今どこで入手できますか？",
+    "faq3a": "ストア詳細はまだ公開されていません。<br>公開情報は <a class=\"underline\" href=\"mailto:helloled@yodams.com\">helloled@yodams.com</a> までお問い合わせください。",
+    "operator": "運営: HELLO LED運営 · サポート: HELLO LEDカスタマーサポート"
   },
   "zh": {
     "htmlLang": "zh",
@@ -238,9 +295,9 @@ window.HELLO_I18N = {
     "navLabel": "主导航",
     "download": "下载",
     "kicker": "手机 LED 灯牌",
-    "heroLine1": "想说的话，用",
-    "heroAccent": "LED",
-    "heroLine2": "变得又大又闪耀",
+    "heroLine1": "把手机变成LED灯牌",
+    "heroAccent": "HELLO LED",
+    "heroLine2": "",
     "heroBody": "<strong class=\"font-semibold text-ink\">HELLO LED</strong> 是一款把手机屏幕变成 LED 灯牌的免费应用。<br>演唱会应援、店铺促销、机场迎接，各种场合都能轻松使用。",
     "previewLabel": "HELLO LED 灯牌预览",
     "previewPlaceholder": "请输入文字。",
@@ -273,9 +330,9 @@ window.HELLO_I18N = {
     "faq1q": "HELLO LED 灯牌上会出现广告吗？",
     "faq1a": "不会。灯牌显示画面不放广告，文字不会被挡住。",
     "faq2q": "HELLO LED 可以在哪些设备上使用？",
-    "faq2a": "手机、平板等移动设备都可以使用。<br>Android 请到 Google Play 安装，iOS 请到 App Store 安装。",
-    "ctaTitle": "手机 LED 灯牌<br>现在就试试",
-    "ctaBody": "HELLO LED 可在 Google Play 和 App Store 免费下载。",
+    "faq2a": "可在 Android 手机和平板使用。<br>正在准备 Google Play 上架，开放后会在本页说明。",
+    "ctaTitle": "手机 LED 灯牌<br>应用商店即将上线",
+    "ctaBody": "正在准备 Google Play 上架。详情页开放后，本页会提供下载链接。",
     "privacyLink": "隐私政策",
     "playAlt": "在 Google Play 下载",
     "appleAlt": "在 App Store 下载",
@@ -305,7 +362,26 @@ window.HELLO_I18N = {
     "privacyRemedyBody": "个人信息主体可向韩国互联网振兴院（KISA）个人信息侵权举报中心等机构申请纠纷解决或咨询。\n- 个人信息侵权举报中心：118（无需区号）\n- 个人信息纠纷调解委员会：1833-6972\n- 大检察厅网络调查课：1301\n- 警察厅网络调查局：182",
     "privacyContactTitle": "10. 个人信息保护负责人",
     "privacyContactBody": "a. 个人信息保护负责人：HELLO LED 运营\nb. 联系人：HELLO LED 客服\n邮箱：helloled@yodams.com",
-    "privacyContactHtml": "a. 个人信息保护负责人：HELLO LED 运营\nb. 联系人：HELLO LED 客服\n邮箱：<a href=\"mailto:helloled@yodams.com\">helloled@yodams.com</a>"
+    "privacyContactHtml": "a. 个人信息保护负责人：HELLO LED 运营\nb. 联系人：HELLO LED 客服\n邮箱：<a href=\"mailto:helloled@yodams.com\">helloled@yodams.com</a>",
+    "comingSoonKicker": "应用商店即将上线",
+    "comingSoonTitle": "正在准备 Google Play 上架",
+    "comingSoonBody": "商店详情页开放后，这里会换成下载链接。如需上线消息，请发邮件联系我们。",
+    "comingSoonCta": "咨询上线进度",
+    "previewCaption": "HELLO LED 横屏全屏灯牌预览",
+    "clockTitle": "时钟、倒计时与计时器",
+    "clockKicker": "用大号时间代替文字",
+    "clockBody": "在灯牌上显示当前时间、倒计时或计时器，方便在活动现场或店铺对面也能看清。",
+    "clockCaption": "应用界面示例：横屏灯牌上的时钟",
+    "photoTitle": "照片转点阵灯牌",
+    "photoKicker": "设备内图像转换",
+    "photoBody": "将相册照片在设备内转为点阵图案并显示在灯牌上，不会上传到服务器。",
+    "photoCaption": "应用界面示例：照片转为点阵灯牌",
+    "favTitle": "收藏常用文案",
+    "favKicker": "保存常写的句子",
+    "favBody": "把应援、促销、欢迎文案保存在设备中，需要时立刻调到灯牌上。",
+    "faq3q": "现在可以在哪里下载？",
+    "faq3a": "商店详情页尚未公开。<br>上线消息请发邮件至 <a class=\"underline\" href=\"mailto:helloled@yodams.com\">helloled@yodams.com</a>。",
+    "operator": "运营：HELLO LED 运营 · 客服：HELLO LED 客户支持"
   },
   "es": {
     "htmlLang": "es",
@@ -315,9 +391,9 @@ window.HELLO_I18N = {
     "navLabel": "Principal",
     "download": "Descargar",
     "kicker": "Cartel LED en el móvil",
-    "heroLine1": "Lo que quieres decir, en",
-    "heroAccent": "LED",
-    "heroLine2": " grande y brillante",
+    "heroLine1": "Convierte el móvil en un panel LED",
+    "heroAccent": "HELLO LED",
+    "heroLine2": "",
     "heroBody": "<strong class=\"font-semibold text-ink\">HELLO LED</strong> es una app gratuita que convierte la pantalla del móvil en un cartel LED.<br>Sirve para ánimos en conciertos, rebajas en tiendas, bienvenidas en el aeropuerto y mucho más.",
     "previewLabel": "Vista previa del cartel HELLO LED",
     "previewPlaceholder": "Escribe un mensaje.",
@@ -350,9 +426,9 @@ window.HELLO_I18N = {
     "faq1q": "¿El cartel de HELLO LED muestra anuncios?",
     "faq1a": "No. La pantalla del cartel no muestra anuncios, así que el mensaje no queda tapado.",
     "faq2q": "¿En qué dispositivos se puede usar HELLO LED?",
-    "faq2a": "En móviles, tabletas y otros dispositivos móviles.<br>En Android se instala desde Google Play y en iOS desde App Store.",
-    "ctaTitle": "Un cartel LED en el móvil<br>Pruébalo ahora",
-    "ctaBody": "HELLO LED es gratis en Google Play y en App Store.",
+    "faq2a": "Funciona en móviles y tabletas Android.<br>La ficha de Google Play está en preparación y se enlazará aquí cuando esté pública.",
+    "ctaTitle": "Panel LED para el móvil<br>Ficha de tienda en preparación",
+    "ctaBody": "Estamos preparando Google Play. Los enlaces de descarga aparecerán aquí cuando la ficha esté abierta.",
     "privacyLink": "Política de privacidad",
     "playAlt": "Disponible en Google Play",
     "appleAlt": "Consíguelo en el App Store",
@@ -382,7 +458,26 @@ window.HELLO_I18N = {
     "privacyRemedyBody": "Puedes pedir mediación o asesoramiento al centro de denuncias de la Agencia de Internet y Seguridad de Corea (KISA) y a los organismos siguientes.\n- Centro de denuncias de KISA: 118 (sin prefijo)\n- Comité de mediación de datos personales: 1833-6972\n- División de investigación cibernética de la Fiscalía Suprema: 1301\n- Oficina cibernética de la Policía Nacional de Corea: 182",
     "privacyContactTitle": "10. Contacto de privacidad",
     "privacyContactBody": "a. Responsable de privacidad: operaciones de HELLO LED\nb. Contacto: soporte de HELLO LED\nCorreo: helloled@yodams.com",
-    "privacyContactHtml": "a. Responsable de privacidad: operaciones de HELLO LED\nb. Contacto: soporte de HELLO LED\nCorreo: <a href=\"mailto:helloled@yodams.com\">helloled@yodams.com</a>"
+    "privacyContactHtml": "a. Responsable de privacidad: operaciones de HELLO LED\nb. Contacto: soporte de HELLO LED\nCorreo: <a href=\"mailto:helloled@yodams.com\">helloled@yodams.com</a>",
+    "comingSoonKicker": "Ficha de tienda en preparación",
+    "comingSoonTitle": "Estamos preparando el lanzamiento en Google Play",
+    "comingSoonBody": "Cuando la ficha esté abierta, este aviso se convertirá en un enlace de descarga. Para novedades, escríbenos.",
+    "comingSoonCta": "Consultar el lanzamiento",
+    "previewCaption": "Vista previa del panel LED a pantalla completa en horizontal",
+    "clockTitle": "Reloj, cuenta atrás y temporizador",
+    "clockKicker": "Muestra la hora en grande",
+    "clockBody": "Pon la hora actual, una cuenta atrás o un temporizador en el panel para leerlo desde lejos en un local o un evento.",
+    "clockCaption": "Ejemplo de pantalla: reloj en el panel horizontal",
+    "photoTitle": "Foto a panel de puntos",
+    "photoKicker": "Conversión de imagen en el dispositivo",
+    "photoBody": "Convierte una foto de la galería en un patrón de puntos en el panel. La foto no se sube a un servidor.",
+    "photoCaption": "Ejemplo de pantalla: foto convertida en puntos",
+    "favTitle": "Frases favoritas",
+    "favKicker": "Guarda frases que reutilizas",
+    "favBody": "Guarda animaciones, ofertas y bienvenidas en el dispositivo y cárgalas en el panel cuando las necesites.",
+    "faq3q": "¿Dónde puedo descargarla ahora?",
+    "faq3a": "La ficha de la tienda aún no es pública.<br>Escribe a <a class=\"underline\" href=\"mailto:helloled@yodams.com\">helloled@yodams.com</a> para novedades del lanzamiento.",
+    "operator": "Operado por HELLO LED · Soporte: atención al cliente de HELLO LED"
   },
   "es_419": {
     "htmlLang": "es",
@@ -392,9 +487,9 @@ window.HELLO_I18N = {
     "navLabel": "Principal",
     "download": "Descargar",
     "kicker": "Letrero LED en el celular",
-    "heroLine1": "Lo que quieres decir, con",
-    "heroAccent": "LED",
-    "heroLine2": " grande y brillante",
+    "heroLine1": "Convierte el celular en un panel LED",
+    "heroAccent": "HELLO LED",
+    "heroLine2": "",
     "heroBody": "<strong class=\"font-semibold text-ink\">HELLO LED</strong> es una app gratuita que convierte la pantalla del celular en un letrero LED.<br>Sirve para porras en conciertos, ofertas en tiendas, bienvenidas en el aeropuerto y mucho más.",
     "previewLabel": "Vista previa del letrero HELLO LED",
     "previewPlaceholder": "Escribe un mensaje.",
@@ -427,9 +522,9 @@ window.HELLO_I18N = {
     "faq1q": "¿El letrero de HELLO LED muestra anuncios?",
     "faq1a": "No. La pantalla del letrero no muestra anuncios, así que el mensaje no queda tapado.",
     "faq2q": "¿En qué dispositivos se puede usar HELLO LED?",
-    "faq2a": "En celulares, tabletas y otros dispositivos móviles.<br>En Android se instala desde Google Play y en iOS desde App Store.",
-    "ctaTitle": "Un letrero LED en el celular<br>Pruébalo ahora",
-    "ctaBody": "HELLO LED es gratis en Google Play y en App Store.",
+    "faq2a": "Funciona en celulares y tablets Android.<br>La ficha de Google Play está en preparación y se enlazará aquí cuando esté pública.",
+    "ctaTitle": "Panel LED para el celular<br>Ficha de tienda en preparación",
+    "ctaBody": "Estamos preparando Google Play. Los enlaces de descarga aparecerán aquí cuando la ficha esté abierta.",
     "privacyLink": "Política de privacidad",
     "playAlt": "Disponible en Google Play",
     "appleAlt": "Consíguelo en el App Store",
@@ -459,32 +554,66 @@ window.HELLO_I18N = {
     "privacyRemedyBody": "Puedes pedir mediación o asesoramiento al centro de denuncias de la Agencia de Internet y Seguridad de Corea (KISA) y a los organismos siguientes.\n- Centro de denuncias de KISA: 118 (sin código de área)\n- Comité de mediación de datos personales: 1833-6972\n- División de investigación cibernética de la Fiscalía Suprema: 1301\n- Oficina cibernética de la Policía Nacional de Corea: 182",
     "privacyContactTitle": "10. Contacto de privacidad",
     "privacyContactBody": "a. Responsable de privacidad: operaciones de HELLO LED\nb. Contacto: soporte de HELLO LED\nCorreo: helloled@yodams.com",
-    "privacyContactHtml": "a. Responsable de privacidad: operaciones de HELLO LED\nb. Contacto: soporte de HELLO LED\nCorreo: <a href=\"mailto:helloled@yodams.com\">helloled@yodams.com</a>"
+    "privacyContactHtml": "a. Responsable de privacidad: operaciones de HELLO LED\nb. Contacto: soporte de HELLO LED\nCorreo: <a href=\"mailto:helloled@yodams.com\">helloled@yodams.com</a>",
+    "comingSoonKicker": "Ficha de tienda en preparación",
+    "comingSoonTitle": "Estamos preparando el lanzamiento en Google Play",
+    "comingSoonBody": "Cuando la ficha esté abierta, este aviso se convertirá en un enlace de descarga. Para novedades, escríbenos.",
+    "comingSoonCta": "Consultar el lanzamiento",
+    "previewCaption": "Vista previa del panel LED a pantalla completa en horizontal",
+    "clockTitle": "Reloj, cuenta regresiva y temporizador",
+    "clockKicker": "Muestra la hora en grande",
+    "clockBody": "Pon la hora actual, una cuenta regresiva o un temporizador en el panel para leerlo desde lejos en un local o un evento.",
+    "clockCaption": "Ejemplo de pantalla: reloj en el panel horizontal",
+    "photoTitle": "Foto a panel de puntos",
+    "photoKicker": "Conversión de imagen en el dispositivo",
+    "photoBody": "Convierte una foto de la galería en un patrón de puntos en el panel. La foto no se sube a un servidor.",
+    "photoCaption": "Ejemplo de pantalla: foto convertida en puntos",
+    "favTitle": "Frases favoritas",
+    "favKicker": "Guarda frases que reutilizas",
+    "favBody": "Guarda porras, ofertas y bienvenidas en el dispositivo y cárgalas en el panel cuando las necesites.",
+    "faq3q": "¿Dónde puedo descargarla ahora?",
+    "faq3a": "La ficha de la tienda aún no es pública.<br>Escribe a <a class=\"underline\" href=\"mailto:helloled@yodams.com\">helloled@yodams.com</a> para novedades del lanzamiento.",
+    "operator": "Operado por HELLO LED · Soporte: atención al cliente de HELLO LED"
   }
 };
 
 (function () {
   var packs = window.HELLO_I18N;
-  var order = ["ko", "en", "ja", "zh", "es", "es_419"];
 
-  function detect() {
+  function detectExplicitLang() {
     var params = new URLSearchParams(location.search);
     var fromUrl = params.get("lang");
     if (fromUrl && packs[fromUrl]) return fromUrl;
-    try {
-      var saved = localStorage.getItem("helloled-lang");
-      if (saved && packs[saved]) return saved;
-    } catch (e) {}
-    var nav = (navigator.languages && navigator.languages[0] || navigator.language || "ko").toLowerCase();
-    if (nav.indexOf("es") === 0) {
-      if (nav === "es" || nav === "es-es") return "es";
-      return "es_419";
+    return null;
+  }
+
+  function syncLangChrome(lang) {
+    var select = document.getElementById("lang");
+    if (!select) return;
+    select.value = lang;
+    var label = select.parentElement && select.parentElement.querySelector(".lang-switch-label");
+    var selected = select.options[select.selectedIndex];
+    if (label && selected) {
+      label.textContent = selected.textContent;
+      var probe = document.createElement("span");
+      var cs = getComputedStyle(label);
+      probe.textContent = selected.textContent;
+      probe.style.cssText = "position:fixed;left:-9999px;top:0;white-space:nowrap;visibility:hidden;font:" + cs.fontWeight + " " + cs.fontSize + " " + cs.fontFamily;
+      document.body.appendChild(probe);
+      var scs = getComputedStyle(select);
+      var width = probe.getBoundingClientRect().width
+        + parseFloat(scs.paddingLeft)
+        + parseFloat(scs.paddingRight)
+        + parseFloat(scs.borderLeftWidth)
+        + parseFloat(scs.borderRightWidth);
+      probe.remove();
+      select.style.width = Math.ceil(width) + "px";
     }
-    if (nav.indexOf("zh") === 0) return "zh";
-    if (nav.indexOf("ja") === 0) return "ja";
-    if (nav.indexOf("ko") === 0) return "ko";
-    if (nav.indexOf("en") === 0) return "en";
-    return "ko";
+  }
+
+  function localePath(lang, base) {
+    if (!lang || lang === "ko") return base;
+    return base + (base.indexOf("?") >= 0 ? "&" : "?") + "lang=" + encodeURIComponent(lang);
   }
 
   function apply(lang) {
@@ -520,46 +649,36 @@ window.HELLO_I18N = {
     if (description) {
       description.setAttribute("content", document.getElementById("features") ? pack.pageDescription : pack.privacyDescription);
     }
-    var select = document.getElementById("lang");
-    if (select) {
-      select.value = lang;
-      var label = select.parentElement && select.parentElement.querySelector(".lang-switch-label");
-      var selected = select.options[select.selectedIndex];
-      if (label && selected) {
-        label.textContent = selected.textContent;
-        var probe = document.createElement("span");
-        var cs = getComputedStyle(label);
-        probe.textContent = selected.textContent;
-        probe.style.cssText = "position:fixed;left:-9999px;top:0;white-space:nowrap;visibility:hidden;font:" + cs.fontWeight + " " + cs.fontSize + " " + cs.fontFamily;
-        document.body.appendChild(probe);
-        var scs = getComputedStyle(select);
-        var width = probe.getBoundingClientRect().width
-          + parseFloat(scs.paddingLeft)
-          + parseFloat(scs.paddingRight)
-          + parseFloat(scs.borderLeftWidth)
-          + parseFloat(scs.borderRightWidth);
-        probe.remove();
-        select.style.width = Math.ceil(width) + "px";
-      }
-    }
+    syncLangChrome(lang);
     document.querySelectorAll("[data-privacy-link]").forEach(function (link) {
-      link.href = "/privacy.html?lang=" + encodeURIComponent(lang);
+      link.href = localePath(lang, "/privacy.html");
     });
     document.querySelectorAll("[data-home-link]").forEach(function (link) {
-      link.href = "/?lang=" + encodeURIComponent(lang);
+      link.href = localePath(lang, "/");
     });
     try { localStorage.setItem("helloled-lang", lang); } catch (e) {}
   }
 
-  var current = detect();
-  apply(current);
+  // Canonical documents ship Korean HTML. Do not rewrite from navigator.language
+  // or localStorage before the user chooses a language (or ?lang= is explicit).
+  var current = detectExplicitLang();
+  if (current) {
+    apply(current);
+  } else {
+    syncLangChrome("ko");
+  }
   var select = document.getElementById("lang");
   if (select) {
     select.addEventListener("change", function () {
       apply(select.value);
       var url = new URL(location.href);
-      url.searchParams.set("lang", select.value);
+      if (select.value === "ko") {
+        url.searchParams.delete("lang");
+      } else {
+        url.searchParams.set("lang", select.value);
+      }
       history.replaceState(null, "", url);
     });
   }
 })();
+
