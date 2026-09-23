@@ -34,9 +34,8 @@
       50% { opacity: 0.72; }
     }
     @keyframes phone-tilt {
-      0%, 100% { transform: rotate(0deg); }
-      40% { transform: rotate(-90deg); }
-      60% { transform: rotate(-90deg); }
+      0%, 100% { transform: rotate(-6deg); }
+      50% { transform: rotate(6deg); }
     }
     html { scroll-behavior: smooth; }
     body {
@@ -113,10 +112,30 @@
     details summary { list-style: none; }
     details summary::-webkit-details-marker { display: none; }
     details[open] .faq-chevron { transform: rotate(180deg); }
+    .phone-stage {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1.5rem;
+      padding: 1.75rem 0;
+    }
+    .phone-tilt {
+      position: relative;
+      width: 94%;
+      aspect-ratio: 19.5 / 9;
+      animation: phone-tilt 5s ease-in-out infinite;
+    }
+    .phone-screen {
+      position: absolute;
+      inset: 5%;
+      border-radius: 0.85rem;
+      background: #050505;
+    }
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
       .js .reveal { opacity: 1; transform: none; transition: none; }
       .marquee-track, .led-text { animation: none !important; }
+      .phone-tilt { animation: none !important; transform: none; }
     }
   </style>
   <script type="application/ld+json">
@@ -268,10 +287,10 @@
               <div class="absolute left-2 top-1/2 z-10 h-16 w-1.5 -translate-y-1/2 rounded-full bg-neutral-950 sm:h-20 sm:w-2" aria-hidden="true"></div>
               <div class="absolute inset-0 flex items-center overflow-hidden bg-[#050505]">
                 <div class="marquee-track items-center gap-16 px-6" id="marquee-track">
-                  <span class="led-text" id="led-a">효은아 사랑해 ♥</span>
-                  <span class="led-text" id="led-b">효은아 사랑해 ♥</span>
-                  <span class="led-text" id="led-c">효은아 사랑해 ♥</span>
-                  <span class="led-text" id="led-d">효은아 사랑해 ♥</span>
+                  <span class="led-text" id="led-a">HELLO LED</span>
+                  <span class="led-text" id="led-b">HELLO LED</span>
+                  <span class="led-text" id="led-c">HELLO LED</span>
+                  <span class="led-text" id="led-d">HELLO LED</span>
                 </div>
               </div>
             </div>
@@ -303,8 +322,8 @@
           </p>
         </div>
 
-        <div class="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-5">
-          <article class="reveal rounded-[1.75rem] bg-white p-6 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-md sm:p-7 lg:col-span-2">
+        <div class="mt-14 grid gap-4 sm:grid-cols-2 lg:gap-5">
+          <article class="reveal rounded-[1.75rem] bg-white p-6 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-md sm:p-7">
             <h3 class="text-xl font-bold sm:text-2xl" data-i18n="customTitle">색·속도·폰트 커스텀</h3>
             <p class="mt-2 text-sm font-medium text-ink/70" data-i18n="customKicker">네온 색상부터 스크롤 속도까지</p>
             <p class="mt-3 text-muted" data-i18n="customBody">빨강·노랑·초록·파랑·분홍 등 네온 색을 고르고, 스크롤 속도와 글꼴을 맞춰 콘서트·세일·환영 톤을 바꿉니다.</p>
@@ -318,7 +337,7 @@
                   height="540"
                   loading="lazy"
                   decoding="async"
-                  alt="HELLO LED 문구 전광판 화면 예시: 분홍 네온으로 응원 문구 표시"
+                  alt="HELLO LED 문구 전광판 화면 예시: 분홍 네온으로 LOVE HE 표시"
                 >
               </picture>
               <figcaption id="custom-caption" class="mt-2 text-xs text-muted" data-i18n="customCaption">앱 화면: 색·폰트를 맞춘 가로 전광판 문구</figcaption>
@@ -336,8 +355,10 @@
             <h3 class="text-xl font-bold" data-i18n="wideTitle">가로 전체화면 전광판</h3>
             <p class="mt-2 text-sm font-medium text-ink/70" data-i18n="wideKicker">멀리서도 선명한 시인성</p>
             <p class="mt-3 text-muted" data-i18n="wideBody">휴대폰을 가로로 눕히면 화면 전체가 LED 전광판이 됩니다. 공연장 뒤쪽이나 카운터 맞은편에서도 문구가 읽히도록 설계했습니다.</p>
-            <div class="mt-10 flex justify-center" aria-hidden="true">
-              <div class="h-20 w-12 rounded-xl bg-ink shadow-lg" style="animation: phone-tilt 5s ease-in-out infinite;"></div>
+            <div class="phone-stage mt-6" aria-hidden="true">
+              <div class="phone-tilt device rounded-[1.35rem] sm:rounded-[1.6rem]">
+                <span class="phone-screen"></span>
+              </div>
             </div>
           </article>
 
@@ -383,29 +404,6 @@
             </figure>
           </article>
 
-          <article class="reveal rounded-[1.75rem] bg-white p-6 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-md sm:p-7">
-            <h3 class="text-xl font-bold" data-i18n="favTitle">즐겨찾기 문구</h3>
-            <p class="mt-2 text-sm font-medium text-ink/70" data-i18n="favKicker">자주 쓰는 문장을 저장</p>
-            <p class="mt-3 text-muted" data-i18n="favBody">응원·세일·환영 문구를 기기 안에 저장해 두고, 필요할 때 바로 전광판에 불러옵니다.</p>
-          </article>
-
-          <article id="examples" class="reveal rounded-[1.75rem] bg-[#fff1f6] p-6 transition duration-200 hover:-translate-y-1 hover:shadow-md sm:p-7">
-            <h3 class="text-xs font-semibold uppercase tracking-wider text-neonPink" data-i18n="concertTitle">콘서트 응원 전광판</h3>
-            <p class="mt-3 text-2xl font-extrabold tracking-tight text-ink sm:text-3xl" data-i18n="concertSample">○○○ 사랑해</p>
-            <p class="mt-4 text-muted" data-i18n="concertBody">응원봉 대신 스마트폰으로 객석 어디서도 잘 보이는 LED 전광판으로 만들 수 있습니다.</p>
-          </article>
-
-          <article class="reveal rounded-[1.75rem] bg-[#fff8e6] p-6 transition duration-200 hover:-translate-y-1 hover:shadow-md sm:p-7">
-            <h3 class="text-xs font-semibold uppercase tracking-wider text-amber-600" data-i18n="storeTitle">매장 세일 전광판</h3>
-            <p class="mt-3 text-2xl font-extrabold tracking-tight text-ink sm:text-3xl" data-i18n="storeSample">오늘 전 품목 30% 세일</p>
-            <p class="mt-4 text-muted" data-i18n="storeBody">카운터·쇼윈도에 세워 세일·오픈 이벤트를 지나가는 손님에게 크게 알립니다.</p>
-          </article>
-
-          <article class="reveal rounded-[1.75rem] bg-[#eef8ff] p-6 transition duration-200 hover:-translate-y-1 hover:shadow-md sm:col-span-2 sm:p-7 lg:col-span-1">
-            <h3 class="text-xs font-semibold uppercase tracking-wider text-neonBlue" data-i18n="airportTitle">공항 환영 피켓</h3>
-            <p class="mt-3 text-2xl font-extrabold tracking-tight text-ink sm:text-3xl" data-i18n="airportSample">Welcome to Seoul</p>
-            <p class="mt-4 text-muted" data-i18n="airportBody">입국장에서 이름·환영 문구를 피켓처럼 띄워, 멀리서도 찾는 사람을 바로 알아볼 수 있게 합니다.</p>
-          </article>
         </div>
       </div>
     </section>
@@ -480,8 +478,6 @@
     <div class="mx-auto flex max-w-6xl flex-col gap-4 text-sm text-muted sm:flex-row sm:items-start sm:justify-between">
       <div>
         <p class="font-bold text-ink">HELLO LED</p>
-        <p class="mt-1" data-i18n="operator">운영: HELLO LED 운영 · 고객지원: HELLO LED 고객지원</p>
-        <p class="mt-1"><time datetime="2026-09-23" data-i18n="updatedOn">페이지 업데이트: 2026-09-23</time></p>
       </div>
       <div class="flex flex-wrap gap-4">
         <a class="hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="/privacy.html" data-privacy-link data-i18n="privacyLink">개인정보처리방침</a>
@@ -500,7 +496,7 @@
         document.getElementById('led-c'),
         document.getElementById('led-d')
       ];
-      var fallback = '효은아 사랑해 ♥';
+      var fallback = 'HELLO LED';
 
       function applyText(value) {
         var text = (value || '').trim() || fallback;
