@@ -110,34 +110,6 @@
       text-shadow: 0 0 10px rgba(0, 229, 255, 0.9), 0 0 28px rgba(59, 163, 255, 0.7);
       animation: led-blink 2.4s ease-in-out infinite;
     }
-    .mock-board {
-      aspect-ratio: 19.5 / 9;
-      border-radius: 0.85rem;
-      background: #050505;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-      color: #00E5FF;
-      font-weight: 800;
-      letter-spacing: 0.04em;
-      text-shadow: 0 0 10px rgba(0, 229, 255, 0.9);
-    }
-    .dot-grid {
-      display: grid;
-      grid-template-columns: repeat(8, 1fr);
-      gap: 3px;
-      width: 70%;
-      max-width: 9rem;
-    }
-    .dot-grid span {
-      aspect-ratio: 1;
-      border-radius: 9999px;
-      background: #00E5FF;
-      box-shadow: 0 0 6px rgba(0, 229, 255, 0.8);
-      opacity: 0.25;
-    }
-    .dot-grid span.on { opacity: 1; }
     details summary { list-style: none; }
     details summary::-webkit-details-marker { display: none; }
     details[open] .faq-chevron { transform: rotate(180deg); }
@@ -176,6 +148,7 @@
         "inLanguage": "ko",
         "isPartOf": { "@id": "https://helloled.yodams.com/#website" },
         "about": { "@id": "https://helloled.yodams.com/#app" },
+        "dateModified": "2026-09-23",
         "primaryImageOfPage": {
           "@type": "ImageObject",
           "url": "https://helloled.yodams.com/og.png"
@@ -190,6 +163,11 @@
         "operatingSystem": "Android",
         "description": "스마트폰 화면을 LED 전광판으로 바꾸는 무료 앱. 콘서트 응원, 매장 세일, 공항 환영 문구용. 시계·디데이·타이머·이미지 도트 변환 지원.",
         "url": "https://helloled.yodams.com/",
+        "screenshot": [
+          "https://helloled.yodams.com/screens/led-marquee.png",
+          "https://helloled.yodams.com/screens/led-clock.png",
+          "https://helloled.yodams.com/screens/led-dots.png"
+        ],
         "offers": {
           "@type": "Offer",
           "price": "0",
@@ -330,17 +308,24 @@
             <h3 class="text-xl font-bold sm:text-2xl" data-i18n="customTitle">색·속도·폰트 커스텀</h3>
             <p class="mt-2 text-sm font-medium text-ink/70" data-i18n="customKicker">네온 색상부터 스크롤 속도까지</p>
             <p class="mt-3 text-muted" data-i18n="customBody">빨강·노랑·초록·파랑·분홍 등 네온 색을 고르고, 스크롤 속도와 글꼴을 맞춰 콘서트·세일·환영 톤을 바꿉니다.</p>
-            <div class="mt-8 space-y-5" aria-hidden="true">
-              <div class="h-2 overflow-hidden rounded-full bg-soft">
-                <div class="h-full w-2/3 rounded-full bg-ink"></div>
-              </div>
-              <div class="flex gap-2.5">
+            <figure class="mt-6" aria-labelledby="custom-caption">
+              <img
+                class="w-full rounded-xl border border-line bg-black"
+                src="screens/led-marquee.png"
+                width="960"
+                height="540"
+                loading="lazy"
+                decoding="async"
+                alt="HELLO LED 문구 전광판 화면 예시: 분홍 네온으로 응원 문구 표시"
+              >
+              <figcaption id="custom-caption" class="mt-2 text-xs text-muted" data-i18n="customCaption">앱 화면 예시: 색·폰트를 맞춘 가로 전광판 문구</figcaption>
+            </figure>
+            <div class="mt-6 flex gap-2.5" aria-hidden="true">
                 <span class="h-8 w-8 rounded-full bg-neonRed shadow-sm"></span>
                 <span class="h-8 w-8 rounded-full bg-neonYellow shadow-sm"></span>
                 <span class="h-8 w-8 rounded-full bg-neonGreen shadow-sm"></span>
                 <span class="h-8 w-8 rounded-full bg-neonBlue shadow-sm"></span>
                 <span class="h-8 w-8 rounded-full bg-neonPink shadow-sm"></span>
-              </div>
             </div>
           </article>
 
@@ -358,7 +343,15 @@
             <p class="mt-2 text-sm font-medium text-ink/70" data-i18n="clockKicker">문구 대신 시간을 크게</p>
             <p class="mt-3 text-muted" data-i18n="clockBody">전광판에 현재 시각, 디데이 카운트다운, 타이머를 띄워 행사·매장·대기 시간을 멀리서도 확인할 수 있습니다.</p>
             <figure class="mt-6" aria-labelledby="clock-caption">
-              <div class="mock-board text-2xl sm:text-3xl" role="img" aria-label="시계 전광판 화면 예시">21:48</div>
+              <img
+                class="w-full rounded-xl border border-line bg-black"
+                src="screens/led-clock.png"
+                width="960"
+                height="540"
+                loading="lazy"
+                decoding="async"
+                alt="HELLO LED 시계 전광판 화면 예시: 가로 모드에 21:48 표시"
+              >
               <figcaption id="clock-caption" class="mt-2 text-xs text-muted" data-i18n="clockCaption">앱 화면 예시: 가로 전광판에 표시된 시계</figcaption>
             </figure>
           </article>
@@ -368,14 +361,15 @@
             <p class="mt-2 text-sm font-medium text-ink/70" data-i18n="photoKicker">이미지 도트 변환</p>
             <p class="mt-3 text-muted" data-i18n="photoBody">갤러리 사진을 기기 안에서 도트 패턴으로 바꿔 전광판에 띄웁니다. 서버로 사진을 올리지 않습니다.</p>
             <figure class="mt-6" aria-labelledby="photo-caption">
-              <div class="mock-board" role="img" aria-label="사진 도트 변환 화면 예시">
-                <div class="dot-grid" aria-hidden="true">
-                  <span class="on"></span><span></span><span class="on"></span><span class="on"></span><span></span><span class="on"></span><span></span><span class="on"></span>
-                  <span class="on"></span><span class="on"></span><span></span><span class="on"></span><span class="on"></span><span></span><span class="on"></span><span></span>
-                  <span></span><span class="on"></span><span class="on"></span><span></span><span class="on"></span><span class="on"></span><span></span><span class="on"></span>
-                  <span class="on"></span><span></span><span class="on"></span><span class="on"></span><span></span><span class="on"></span><span class="on"></span><span></span>
-                </div>
-              </div>
+              <img
+                class="w-full rounded-xl border border-line bg-black"
+                src="screens/led-dots.png"
+                width="960"
+                height="540"
+                loading="lazy"
+                decoding="async"
+                alt="HELLO LED 사진 도트 변환 화면 예시: 하트 형태 도트 전광판"
+              >
               <figcaption id="photo-caption" class="mt-2 text-xs text-muted" data-i18n="photoCaption">앱 화면 예시: 사진을 도트 패턴으로 변환한 전광판</figcaption>
             </figure>
           </article>
@@ -478,6 +472,7 @@
       <div>
         <p class="font-bold text-ink">HELLO LED</p>
         <p class="mt-1" data-i18n="operator">운영: HELLO LED 운영 · 고객지원: HELLO LED 고객지원</p>
+        <p class="mt-1"><time datetime="2026-09-23" data-i18n="updatedOn">페이지 업데이트: 2026-09-23</time></p>
       </div>
       <div class="flex flex-wrap gap-4">
         <a class="hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="/privacy.html" data-privacy-link data-i18n="privacyLink">개인정보처리방침</a>

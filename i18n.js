@@ -93,7 +93,9 @@ window.HELLO_I18N = {
     "favBody": "응원·세일·환영 문구를 기기 안에 저장해 두고, 필요할 때 바로 전광판에 불러옵니다.",
     "faq3q": "지금 어디서 받을 수 있나요?",
     "faq3a": "스토어 상세가 아직 공개되지 않았습니다.<br>출시 소식은 <a class=\"underline\" href=\"mailto:helloled@yodams.com\">helloled@yodams.com</a>으로 문의해 주세요.",
-    "operator": "운영: HELLO LED 운영 · 고객지원: HELLO LED 고객지원"
+    "operator": "운영: HELLO LED 운영 · 고객지원: HELLO LED 고객지원",
+    "customCaption": "앱 화면 예시: 색·폰트를 맞춘 가로 전광판 문구",
+    "updatedOn": "페이지 업데이트: 2026-09-23"
   },
   "en": {
     "htmlLang": "en",
@@ -189,7 +191,9 @@ window.HELLO_I18N = {
     "favBody": "Save cheers, sales, and welcome lines on the device, then load them onto the board when you need them.",
     "faq3q": "Where can I download it now?",
     "faq3a": "The store listing is not public yet.<br>Email <a class=\"underline\" href=\"mailto:helloled@yodams.com\">helloled@yodams.com</a> for launch updates.",
-    "operator": "Operated by HELLO LED · Support: HELLO LED customer support"
+    "operator": "Operated by HELLO LED · Support: HELLO LED customer support",
+    "customCaption": "App screen example: landscape board text with color and typeface",
+    "updatedOn": "Page updated: 2026-09-23"
   },
   "ja": {
     "htmlLang": "ja",
@@ -285,7 +289,9 @@ window.HELLO_I18N = {
     "favBody": "応援・セール・歓迎の文を端末に保存し、必要なときにすぐ掲示板へ呼び出せます。",
     "faq3q": "今どこで入手できますか？",
     "faq3a": "ストア詳細はまだ公開されていません。<br>公開情報は <a class=\"underline\" href=\"mailto:helloled@yodams.com\">helloled@yodams.com</a> までお問い合わせください。",
-    "operator": "運営: HELLO LED運営 · サポート: HELLO LEDカスタマーサポート"
+    "operator": "運営: HELLO LED運営 · サポート: HELLO LEDカスタマーサポート",
+    "customCaption": "アプリ画面例: 色・書体を合わせた横向き電光板の文言",
+    "updatedOn": "ページ更新: 2026-09-23"
   },
   "zh": {
     "htmlLang": "zh",
@@ -381,7 +387,9 @@ window.HELLO_I18N = {
     "favBody": "把应援、促销、欢迎文案保存在设备中，需要时立刻调到灯牌上。",
     "faq3q": "现在可以在哪里下载？",
     "faq3a": "商店详情页尚未公开。<br>上线消息请发邮件至 <a class=\"underline\" href=\"mailto:helloled@yodams.com\">helloled@yodams.com</a>。",
-    "operator": "运营：HELLO LED 运营 · 客服：HELLO LED 客户支持"
+    "operator": "运营：HELLO LED 运营 · 客服：HELLO LED 客户支持",
+    "customCaption": "应用界面示例：配色与字体调整后的横屏灯牌文案",
+    "updatedOn": "页面更新：2026-09-23"
   },
   "es": {
     "htmlLang": "es",
@@ -477,7 +485,9 @@ window.HELLO_I18N = {
     "favBody": "Guarda animaciones, ofertas y bienvenidas en el dispositivo y cárgalas en el panel cuando las necesites.",
     "faq3q": "¿Dónde puedo descargarla ahora?",
     "faq3a": "La ficha de la tienda aún no es pública.<br>Escribe a <a class=\"underline\" href=\"mailto:helloled@yodams.com\">helloled@yodams.com</a> para novedades del lanzamiento.",
-    "operator": "Operado por HELLO LED · Soporte: atención al cliente de HELLO LED"
+    "operator": "Operado por HELLO LED · Soporte: atención al cliente de HELLO LED",
+    "customCaption": "Ejemplo de pantalla: texto del panel horizontal con color y tipografía",
+    "updatedOn": "Página actualizada: 2026-09-23"
   },
   "es_419": {
     "htmlLang": "es",
@@ -573,9 +583,12 @@ window.HELLO_I18N = {
     "favBody": "Guarda porras, ofertas y bienvenidas en el dispositivo y cárgalas en el panel cuando las necesites.",
     "faq3q": "¿Dónde puedo descargarla ahora?",
     "faq3a": "La ficha de la tienda aún no es pública.<br>Escribe a <a class=\"underline\" href=\"mailto:helloled@yodams.com\">helloled@yodams.com</a> para novedades del lanzamiento.",
-    "operator": "Operado por HELLO LED · Soporte: atención al cliente de HELLO LED"
+    "operator": "Operado por HELLO LED · Soporte: atención al cliente de HELLO LED",
+    "customCaption": "Ejemplo de pantalla: texto del panel horizontal con color y tipografía",
+    "updatedOn": "Página actualizada: 2026-09-23"
   }
 };
+
 
 (function () {
   var packs = window.HELLO_I18N;
