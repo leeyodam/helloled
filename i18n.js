@@ -46,7 +46,7 @@ window.HELLO_I18N = {
     "privacyDescription": "HELLO LED 개인정보처리방침. 2026년 9월 21일부터 적용됩니다.",
     "privacyIntro": "HELLO LED(이하 “회사”)는 개인정보보호법 등 관련 법령상의 개인정보보호 규정을 준수하며, 개인정보처리방침은 아래와 같습니다. 이 개인정보처리방침은 2026년 9월 21일부터 적용되며, 법령 및 방침에 따른 변경내용의 추가, 삭제 및 정정이 있는 경우에는 변경사항의 시행 7일 전부터 앱 내 공지를 통해 고지할 것입니다.",
     "privacyPurposeTitle": "1조. 개인정보의 처리 목적",
-    "privacyPurposeBody": "회사는 다음의 목적을 위해 개인정보를 처리합니다. 처리한 개인정보는 다음의 목적 이외의 용도로는 사용되지 않으며, 이용 목적이 변경될 시에는 사전 동의를 구할 예정입니다.\n가. 앱 서비스 제공: 전광판 문구 표시, 즐겨찾기 저장, 시계·디데이·타이머 표시, 이미지 도트 변환\n나. 광고 제공: 무료 서비스 운영을 위한 맞춤형·비맞춤형 광고 게재\n다. 서비스 개선: 오류 분석, 이용 통계(익명·집계 형태)",
+    "privacyPurposeBody": "회사는 다음의 목적을 위해 개인정보를 처리합니다. 처리한 개인정보는 다음의 목적 이외의 용도로는 사용되지 않으며, 이용 목적이 변경될 시에는 사전 동의를 구할 예정입니다.\n가. 앱 서비스 제공: 전광판 문구 표시, 즐겨찾기 저장, 시계·디데이·타이머 표시, 이미지 도트 변환\n나. 광고 제공: 무료 서비스 운영을 위한 맞춤형·비맞춤형 광고 게재",
     "privacyRetentionTitle": "2조. 개인정보 처리 및 보유기간",
     "privacyRetentionBody": "회사는 원칙적으로 이용자의 개인정보를 서버에 저장하지 않습니다. 문구, 색상, 폰트, 즐겨찾기, 광고 동의 상태 등은 이용자의 기기 내 로컬 저장소에 보관되며, 앱 삭제 시 함께 삭제됩니다.\n광고 식별자 등 광고 SDK가 수집하는 정보는 각 제공사의 정책에 따르며, 회사는 이를 별도 서버에 장기 보관하지 않습니다.",
     "privacyThirdPartyTitle": "3조. 개인정보 제3자 제공에 관한 사항",
@@ -54,7 +54,7 @@ window.HELLO_I18N = {
     "privacyDelegateTitle": "4조. 개인정보처리 위탁에 관한 사항",
     "privacyDelegateBody": "회사는 원활한 서비스 제공을 위해 아래와 같이 개인정보 처리를 위탁할 수 있습니다.\n가. 위탁하는 업무 내용: 광고 게재 및 광고 성과 측정\n나. 수탁업체명: Google LLC (Google AdMob)\n위탁계약 시 개인정보보호 관련 법규의 준수, 개인정보에 관한 제3자 제공 금지 및 책임부담 등을 명확히 규정하고, 당해 계약내용을 전자적으로 보관하고 있습니다. 업체 변경 시 공지 및 개인정보처리방침을 통해 고지하겠습니다.",
     "privacyRightsTitle": "5조. 정보주체 권리·의무 및 그 행사방법에 관한 사항",
-    "privacyRightsBody": "이용자는 개인정보주체로서 다음과 같은 권리를 행사할 수 있습니다.\n가. 개인정보 열람·정정·삭제 요구\n나. 처리정지 요구\n다. 동의 철회(앱 내 광고 설정 또는 기기 설정에서 변경)\n권리 행사는 아래 연락처로 요청할 수 있으며, 회사는 지체 없이 조치하겠습니다.",
+    "privacyRightsBody": "이용자는 개인정보주체로서 다음과 같은 권리를 행사할 수 있습니다.\n가. 개인정보 열람·정정·삭제 요구\n나. 처리정지 요구\n다. 동의 철회(기기 개인정보·광고 설정, 또는 앱의 광고 동의 화면)\n권리 행사는 아래 연락처로 요청할 수 있으며, 회사는 지체 없이 조치하겠습니다.",
     "privacyItemsTitle": "6조. 처리하는 개인정보 항목",
     "privacyItemsBody": "가. 필수 항목: 없음 (회원가입 및 서버 계정을 운영하지 않음)\n나. 선택 항목: 즐겨찾기 문구, 전광판 설정값(기기 저장), 광고 식별자(광고 SDK), 사진(이미지 변환 시 기기 내 처리)",
     "privacyDeletionTitle": "7조. 개인정보 파기 절차 및 방법",
@@ -130,7 +130,7 @@ window.HELLO_I18N = {
     "privacyDescription": "HELLO LED privacy policy. Applies from 21 September 2026.",
     "privacyIntro": "HELLO LED (the “company”) complies with applicable privacy laws, including the Personal Information Protection Act of Korea. This policy applies from 21 September 2026. If the law or this policy changes, the company will announce the change in the app at least 7 days before it takes effect.",
     "privacyPurposeTitle": "1. Why personal information is processed",
-    "privacyPurposeBody": "The company processes personal information for the purposes below and will not use it for other purposes. If a purpose changes, the company will ask for consent first.\na. Providing the app: LED messages, favorites, clock, countdown, timer, and photo-to-dot conversion\nb. Advertising: personalized and non-personalized ads that support the free service\nc. Improvement: error analysis and aggregated, anonymous usage statistics",
+    "privacyPurposeBody": "The company processes personal information for the purposes below and will not use it for other purposes. If a purpose changes, the company will ask for consent first.\na. Providing the app: LED messages, favorites, clock, countdown, timer, and photo-to-dot conversion\nb. Advertising: personalized and non-personalized ads that support the free service",
     "privacyRetentionTitle": "2. How long personal information is kept",
     "privacyRetentionBody": "The company does not store your personal information on its servers. Messages, colors, fonts, favorites, and ad-consent status stay in storage on your device and are removed when you delete the app.\nInformation an advertising SDK collects, such as an advertising identifier, follows that provider policy. The company does not keep it on a separate server.",
     "privacyThirdPartyTitle": "3. Sharing with third parties",
@@ -138,7 +138,7 @@ window.HELLO_I18N = {
     "privacyDelegateTitle": "4. Processors",
     "privacyDelegateBody": "The company may entrust processing as follows so the service can run.\na. Work entrusted: delivering ads and measuring ad performance\nb. Processor: Google LLC (Google AdMob)\nThe contract requires compliance with privacy law, prohibits providing the information to another party, and states who is responsible. The company keeps that contract electronically. If the processor changes, the company will announce it and update this policy.",
     "privacyRightsTitle": "5. Your rights and how to use them",
-    "privacyRightsBody": "You may exercise the following rights.\na. Ask to access, correct, or delete personal information\nb. Ask the company to stop processing it\nc. Withdraw consent in the app ad settings or in your device settings\nSend a request to the contact below. The company will act without delay.",
+    "privacyRightsBody": "You may exercise the following rights.\na. Ask to access, correct, or delete personal information\nb. Ask the company to stop processing it\nc. Withdraw consent in the system privacy or ad settings, or when the app shows the ad-consent form again\nSend a request to the contact below. The company will act without delay.",
     "privacyItemsTitle": "6. Items that are processed",
     "privacyItemsBody": "a. Required: none (there is no sign-up and no server account)\nb. Optional: favorite messages, board settings stored on the device, an advertising identifier from the ad SDK, and photos processed on the device when you convert an image",
     "privacyDeletionTitle": "7. How personal information is deleted",
@@ -214,7 +214,7 @@ window.HELLO_I18N = {
     "privacyDescription": "HELLO LEDのプライバシーポリシー。2026年9月21日から適用されます。",
     "privacyIntro": "HELLO LED（以下「当社」）は、韓国の個人情報保護法を含む関係法令の個人情報保護規定を守ります。このポリシーは2026年9月21日から適用されます。法令または本ポリシーの追加、削除、訂正がある場合は、施行の7日前からアプリ内で告知します。",
     "privacyPurposeTitle": "1. 個人情報を取り扱う目的",
-    "privacyPurposeBody": "当社は次の目的のために個人情報を取り扱います。扱った個人情報は、次の目的以外には使いません。目的が変わるときは、あらかじめ同意を求めます。\na. アプリの提供: 電光掲示のメッセージ、お気に入り、時計・カウントダウン・タイマー、写真のドット変換\nb. 広告: 無料サービスのためのパーソナライズ広告および非パーソナライズ広告\nc. 改善: エラー分析、匿名で集計した利用統計",
+    "privacyPurposeBody": "当社は次の目的のために個人情報を取り扱います。扱った個人情報は、次の目的以外には使いません。目的が変わるときは、あらかじめ同意を求めます。\na. アプリの提供: 電光掲示のメッセージ、お気に入り、時計・カウントダウン・タイマー、写真のドット変換\nb. 広告: 無料サービスのためのパーソナライズ広告および非パーソナライズ広告",
     "privacyRetentionTitle": "2. 保有期間",
     "privacyRetentionBody": "当社は、原則として利用者の個人情報をサーバーに保存しません。メッセージ、色、フォント、お気に入り、広告への同意状態は端末内に保存され、アプリを削除すると一緒に削除されます。\n広告識別子など広告SDKが収集する情報は各提供者の方針に従い、当社は別のサーバーに長期間保管しません。",
     "privacyThirdPartyTitle": "3. 第三者への提供",
@@ -222,7 +222,7 @@ window.HELLO_I18N = {
     "privacyDelegateTitle": "4. 委託",
     "privacyDelegateBody": "当社はサービス提供のため、次のとおり個人情報の取り扱いを委託することがあります。\na. 委託する業務: 広告配信と成果測定\nb. 委託先: Google LLC（Google AdMob）\n契約では、個人情報保護に関する法令の遵守、第三者提供の禁止、責任の所在を定め、契約内容を電子的に保管します。委託先が変わるときは告知し、本ポリシーを更新します。",
     "privacyRightsTitle": "5. 利用者の権利",
-    "privacyRightsBody": "利用者は次の権利を行使できます。\na. 個人情報の開示、訂正、削除の請求\nb. 取り扱い停止の請求\nc. 同意の撤回（アプリの広告設定または端末設定で変更）\n下記の連絡先に請求できます。当社は遅滞なく対応します。",
+    "privacyRightsBody": "利用者は次の権利を行使できます。\na. 個人情報の開示、訂正、削除の請求\nb. 取り扱い停止の請求\nc. 同意の撤回（端末のプライバシー・広告設定、またはアプリの広告同意画面）\n下記の連絡先に請求できます。当社は遅滞なく対応します。",
     "privacyItemsTitle": "6. 取り扱う項目",
     "privacyItemsBody": "a. 必須項目: なし（会員登録もサーバーアカウントもありません）\nb. 任意項目: お気に入りのメッセージ、端末に保存するボード設定、広告識別子（広告SDK）、写真（画像変換時に端末内で処理）",
     "privacyDeletionTitle": "7. 削除の手続きと方法",
@@ -298,7 +298,7 @@ window.HELLO_I18N = {
     "privacyDescription": "HELLO LED 隐私政策。自 2026 年 9 月 21 日起适用。",
     "privacyIntro": "HELLO LED（下称“本公司”）遵守韩国《个人信息保护法》等相关法律中的个人信息保护规定。本政策自 2026 年 9 月 21 日起适用。如因法律或本政策发生新增、删除或更正，本公司将在生效至少 7 日前在应用内公告。",
     "privacyPurposeTitle": "1. 处理个人信息的目的",
-    "privacyPurposeBody": "本公司为下列目的处理个人信息，不会用于其他用途。目的变更时，将事先征得同意。\na. 提供应用服务：灯牌文字、收藏、时钟、倒计时、计时器、图片转点阵\nb. 投放广告：为维持免费服务而展示个性化或非个性化广告\nc. 改进服务：错误分析，以及匿名汇总的使用统计",
+    "privacyPurposeBody": "本公司为下列目的处理个人信息，不会用于其他用途。目的变更时，将事先征得同意。\na. 提供应用服务：灯牌文字、收藏、时钟、倒计时、计时器、图片转点阵\nb. 投放广告：为维持免费服务而展示个性化或非个性化广告",
     "privacyRetentionTitle": "2. 处理与保存期限",
     "privacyRetentionBody": "本公司原则上不把用户的个人信息保存在服务器上。文字、颜色、字体、收藏和广告同意状态保存在用户设备本地，删除应用时一并删除。\n广告 SDK 收集的广告标识等信息遵循各提供方的政策，本公司不会长期另存到服务器。",
     "privacyThirdPartyTitle": "3. 向第三方提供",
@@ -306,7 +306,7 @@ window.HELLO_I18N = {
     "privacyDelegateTitle": "4. 委托处理",
     "privacyDelegateBody": "为提供服务，本公司可能按下列方式委托处理个人信息。\na. 委托内容：投放广告并衡量广告效果\nb. 受托方：Google LLC（Google AdMob）\n委托合同明确要求遵守个人信息保护法规、禁止再向第三方提供，并约定责任。本公司以电子方式保存该合同。受托方变更时，将公告并更新本政策。",
     "privacyRightsTitle": "5. 用户权利及行使方式",
-    "privacyRightsBody": "用户可以行使下列权利。\na. 要求查阅、更正或删除个人信息\nb. 要求停止处理\nc. 撤回同意（在应用的广告设置或设备设置中更改）\n可通过下方联系方式提出。本公司将及时处理。",
+    "privacyRightsBody": "用户可以行使下列权利。\na. 要求查阅、更正或删除个人信息\nb. 要求停止处理\nc. 撤回同意（在系统隐私或广告设置中，或在应用再次显示广告同意表单时）\n可通过下方联系方式提出。本公司将及时处理。",
     "privacyItemsTitle": "6. 处理的个人信息项目",
     "privacyItemsBody": "a. 必要项目：无（不提供注册，也不使用服务器账号）\nb. 可选项目：收藏的文字、保存在设备上的灯牌设置、广告标识（广告 SDK）、照片（转换图片时在设备内处理）",
     "privacyDeletionTitle": "7. 销毁程序与方式",
@@ -382,7 +382,7 @@ window.HELLO_I18N = {
     "privacyDescription": "Política de privacidad de HELLO LED. Aplica desde el 21 de septiembre de 2026.",
     "privacyIntro": "HELLO LED (la «empresa») cumple la normativa de protección de datos aplicable, incluida la Ley de protección de datos personales de Corea. Esta política se aplica desde el 21 de septiembre de 2026. Si la ley o esta política cambian, la empresa lo anunciará en la app al menos 7 días antes de que entre en vigor.",
     "privacyPurposeTitle": "1. Finalidad del tratamiento",
-    "privacyPurposeBody": "La empresa trata datos personales para los fines siguientes y no los usará para otros fines. Si cambia un fin, pedirá consentimiento antes.\na. Prestar la app: mensajes del cartel, favoritos, reloj, cuenta atrás, temporizador y conversión de foto a puntos\nb. Publicidad: anuncios personalizados y no personalizados que sostienen el servicio gratuito\nc. Mejora: análisis de errores y estadísticas de uso anónimas y agregadas",
+    "privacyPurposeBody": "La empresa trata datos personales para los fines siguientes y no los usará para otros fines. Si cambia un fin, pedirá consentimiento antes.\na. Prestar la app: mensajes del cartel, favoritos, reloj, cuenta atrás, temporizador y conversión de foto a puntos\nb. Publicidad: anuncios personalizados y no personalizados que sostienen el servicio gratuito",
     "privacyRetentionTitle": "2. Plazo de conservación",
     "privacyRetentionBody": "La empresa no guarda tus datos personales en sus servidores. Los mensajes, colores, fuentes, favoritos y el estado del consentimiento de anuncios permanecen en el almacenamiento del dispositivo y se eliminan al borrar la app.\nLa información que recoge un SDK de publicidad, como un identificador publicitario, sigue la política de ese proveedor. La empresa no la conserva en un servidor aparte.",
     "privacyThirdPartyTitle": "3. Cesión a terceros",
@@ -390,7 +390,7 @@ window.HELLO_I18N = {
     "privacyDelegateTitle": "4. Encargados del tratamiento",
     "privacyDelegateBody": "La empresa puede encargar el tratamiento de este modo para prestar el servicio.\na. Encargo: mostrar anuncios y medir su resultado\nb. Encargado: Google LLC (Google AdMob)\nEl contrato exige cumplir la normativa de privacidad, prohíbe ceder los datos a otro tercero y fija la responsabilidad. La empresa conserva el contrato de forma electrónica. Si cambia el encargado, lo anunciará y actualizará esta política.",
     "privacyRightsTitle": "5. Tus derechos",
-    "privacyRightsBody": "Puedes ejercer estos derechos.\na. Pedir acceso, rectificación o supresión\nb. Pedir que se deje de tratar la información\nc. Retirar el consentimiento en los ajustes de anuncios de la app o en los ajustes del dispositivo\nEscribe a los datos de contacto de abajo. La empresa actuará sin demora.",
+    "privacyRightsBody": "Puedes ejercer estos derechos.\na. Pedir acceso, rectificación o supresión\nb. Pedir que se deje de tratar la información\nc. Retirar el consentimiento en la configuración de privacidad o anuncios del dispositivo, o cuando la app muestre de nuevo el formulario de consentimiento\nEscribe a los datos de contacto de abajo. La empresa actuará sin demora.",
     "privacyItemsTitle": "6. Datos que se tratan",
     "privacyItemsBody": "a. Obligatorios: ninguno (no hay registro ni cuenta en un servidor)\nb. Opcionales: mensajes favoritos, ajustes del cartel guardados en el dispositivo, identificador publicitario del SDK y fotos procesadas en el dispositivo al convertir una imagen",
     "privacyDeletionTitle": "7. Supresión",
@@ -466,7 +466,7 @@ window.HELLO_I18N = {
     "privacyDescription": "Política de privacidad de HELLO LED. Aplica desde el 21 de septiembre de 2026.",
     "privacyIntro": "HELLO LED (la «empresa») cumple la normativa de protección de datos aplicable, incluida la Ley de protección de datos personales de Corea. Esta política se aplica desde el 21 de septiembre de 2026. Si la ley o esta política cambian, la empresa lo anunciará en la app al menos 7 días antes de que entre en vigor.",
     "privacyPurposeTitle": "1. Finalidad del tratamiento",
-    "privacyPurposeBody": "La empresa trata datos personales para los fines siguientes y no los usará para otros fines. Si cambia un fin, pedirá consentimiento antes.\na. Prestar la app: mensajes del letrero, favoritos, reloj, cuenta regresiva, temporizador y conversión de foto a puntos\nb. Publicidad: anuncios personalizados y no personalizados que sostienen el servicio gratuito\nc. Mejora: análisis de errores y estadísticas de uso anónimas y agregadas",
+    "privacyPurposeBody": "La empresa trata datos personales para los fines siguientes y no los usará para otros fines. Si cambia un fin, pedirá consentimiento antes.\na. Prestar la app: mensajes del letrero, favoritos, reloj, cuenta regresiva, temporizador y conversión de foto a puntos\nb. Publicidad: anuncios personalizados y no personalizados que sostienen el servicio gratuito",
     "privacyRetentionTitle": "2. Plazo de conservación",
     "privacyRetentionBody": "La empresa no guarda tus datos personales en sus servidores. Los mensajes, colores, fuentes, favoritos y el estado del consentimiento de anuncios permanecen en el almacenamiento del dispositivo y se eliminan al borrar la app.\nLa información que recoge un SDK de publicidad, como un identificador publicitario, sigue la política de ese proveedor. La empresa no la conserva en un servidor aparte.",
     "privacyThirdPartyTitle": "3. Cesión a terceros",
@@ -474,7 +474,7 @@ window.HELLO_I18N = {
     "privacyDelegateTitle": "4. Encargados del tratamiento",
     "privacyDelegateBody": "La empresa puede encargar el tratamiento de este modo para prestar el servicio.\na. Encargo: mostrar anuncios y medir su resultado\nb. Encargado: Google LLC (Google AdMob)\nEl contrato exige cumplir la normativa de privacidad, prohíbe entregar los datos a otro tercero y fija la responsabilidad. La empresa conserva el contrato de forma electrónica. Si cambia el encargado, lo anunciará y actualizará esta política.",
     "privacyRightsTitle": "5. Tus derechos",
-    "privacyRightsBody": "Puedes ejercer estos derechos.\na. Pedir acceso, corrección o eliminación\nb. Pedir que se deje de tratar la información\nc. Retirar el consentimiento en la configuración de anuncios de la app o en la configuración del dispositivo\nEscribe a los datos de contacto de abajo. La empresa actuará sin demora.",
+    "privacyRightsBody": "Puedes ejercer estos derechos.\na. Pedir acceso, corrección o eliminación\nb. Pedir que se deje de tratar la información\nc. Retirar el consentimiento en la configuración de privacidad o anuncios del dispositivo, o cuando la app muestre de nuevo el formulario de consentimiento\nEscribe a los datos de contacto de abajo. La empresa actuará sin demora.",
     "privacyItemsTitle": "6. Datos que se tratan",
     "privacyItemsBody": "a. Obligatorios: ninguno (no hay registro ni cuenta en un servidor)\nb. Opcionales: mensajes favoritos, configuración del letrero guardada en el dispositivo, identificador publicitario del SDK y fotos procesadas en el dispositivo al convertir una imagen",
     "privacyDeletionTitle": "7. Eliminación",
@@ -509,12 +509,42 @@ window.HELLO_I18N = {
 
 (function () {
   var packs = window.HELLO_I18N;
+  var localeDirs = {
+    ko: "",
+    en: "en",
+    ja: "ja",
+    zh: "zh",
+    es: "es",
+    es_419: "es-419"
+  };
 
-  function detectExplicitLang() {
-    var params = new URLSearchParams(location.search);
-    var fromUrl = params.get("lang");
-    if (fromUrl && packs[fromUrl]) return fromUrl;
-    return null;
+  function pageLangFromPath() {
+    var parts = location.pathname.replace(/\/+$/, "").split("/").filter(Boolean);
+    var head = parts[0] || "";
+    if (head === "en") return "en";
+    if (head === "ja") return "ja";
+    if (head === "zh") return "zh";
+    if (head === "es") return "es";
+    if (head === "es-419") return "es_419";
+    return "ko";
+  }
+
+  function isPrivacyPath() {
+    return /(?:^|\/)privacy\.html$/i.test(location.pathname);
+  }
+
+  function homePath(lang) {
+    var dir = localeDirs[lang];
+    return dir ? "/" + dir + "/" : "/";
+  }
+
+  function privacyPath(lang) {
+    var dir = localeDirs[lang];
+    return dir ? "/" + dir + "/privacy.html" : "/privacy.html";
+  }
+
+  function localePath(lang) {
+    return isPrivacyPath() ? privacyPath(lang) : homePath(lang);
   }
 
   function syncLangChrome(lang) {
@@ -541,14 +571,10 @@ window.HELLO_I18N = {
     }
   }
 
-  function localePath(lang, base) {
-    if (!lang || lang === "ko") return base;
-    return base + (base.indexOf("?") >= 0 ? "&" : "?") + "lang=" + encodeURIComponent(lang);
-  }
-
   function apply(lang) {
     var pack = packs[lang] || packs.ko;
     document.documentElement.lang = pack.htmlLang || "ko";
+    document.documentElement.setAttribute("data-page-lang", lang);
     document.querySelectorAll("[data-i18n]").forEach(function (el) {
       var key = el.getAttribute("data-i18n");
       if (pack[key] != null) el.textContent = pack[key];
@@ -571,7 +597,7 @@ window.HELLO_I18N = {
     });
     document.querySelectorAll("[data-badge]").forEach(function (img) {
       var kind = img.getAttribute("data-badge");
-      img.src = "badges/" + kind + "-" + lang + (kind === "apple" ? ".svg" : ".png");
+      img.src = "/badges/" + kind + "-" + lang + (kind === "apple" ? ".svg" : ".png");
     });
     if (pack.pageTitle && document.getElementById("features")) document.title = pack.pageTitle;
     if (pack.privacyTitle && document.getElementById("lang") && !document.getElementById("features")) document.title = pack.privacyTitle;
@@ -581,33 +607,41 @@ window.HELLO_I18N = {
     }
     syncLangChrome(lang);
     document.querySelectorAll("[data-privacy-link]").forEach(function (link) {
-      link.href = localePath(lang, "/privacy.html");
+      link.href = privacyPath(lang);
     });
     document.querySelectorAll("[data-home-link]").forEach(function (link) {
-      link.href = localePath(lang, "/");
+      link.href = homePath(lang);
     });
     try { localStorage.setItem("helloled-lang", lang); } catch (e) {}
   }
 
-  // Canonical documents ship Korean HTML. Do not rewrite from navigator.language
-  // or localStorage before the user chooses a language (or ?lang= is explicit).
-  var current = detectExplicitLang();
-  if (current) {
-    apply(current);
-  } else {
-    syncLangChrome("ko");
+  // Legacy ?lang= bookmarks → locale paths (static hosting cannot 301).
+  var params = new URLSearchParams(location.search);
+  var fromQuery = params.get("lang");
+  if (fromQuery && packs[fromQuery] && fromQuery !== pageLangFromPath()) {
+    location.replace(localePath(fromQuery) + location.hash);
+    return;
   }
+
+  var current = document.documentElement.getAttribute("data-page-lang") || pageLangFromPath();
+  if (!packs[current]) current = "ko";
+  // Pages are pre-rendered per locale; only sync chrome / localStorage here.
+  syncLangChrome(current);
+  try { localStorage.setItem("helloled-lang", current); } catch (e) {}
+  document.querySelectorAll("[data-privacy-link]").forEach(function (link) {
+    link.href = privacyPath(current);
+  });
+  document.querySelectorAll("[data-home-link]").forEach(function (link) {
+    link.href = homePath(current);
+  });
+
   var select = document.getElementById("lang");
   if (select) {
     select.addEventListener("change", function () {
-      apply(select.value);
-      var url = new URL(location.href);
-      if (select.value === "ko") {
-        url.searchParams.delete("lang");
-      } else {
-        url.searchParams.set("lang", select.value);
-      }
-      history.replaceState(null, "", url);
+      var next = select.value;
+      if (!packs[next]) return;
+      try { localStorage.setItem("helloled-lang", next); } catch (e) {}
+      location.assign(localePath(next) + location.hash);
     });
   }
 })();
