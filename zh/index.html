@@ -35,6 +35,9 @@
   <meta name="twitter:title" content="HELLO LED | 手机 LED 灯牌">
   <meta name="twitter:description" content="HELLO LED 是一款把手机屏幕变成 LED 灯牌的免费应用，可用于演唱会应援、店铺促销和机场迎接。">
   <meta name="twitter:image" content="https://helloled.yodams.com/og.png">
+  <link rel="dns-prefetch" href="https://play.google.com">
+  <link rel="preconnect" href="https://play.google.com" crossorigin>
+  <link rel="preload" href="/styles.css" as="style">
   <link rel="stylesheet" href="/styles.css">
   <style>
     @keyframes marquee {
@@ -158,18 +161,60 @@
         "@type": "Organization",
         "@id": "https://helloled.yodams.com/#organization",
         "name": "HELLO LED",
+        "legalName": "요담",
         "url": "https://helloled.yodams.com/",
         "email": "helloled@yodams.com",
-        "logo": "https://helloled.yodams.com/favicon.png"
+        "logo": "https://helloled.yodams.com/favicon.png",
+        "description": "运营 HELLO LED 的 Yodam，开发把手机变成 LED 灯牌的应用。",
+        "sameAs": [
+          "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+          "https://yodams.com/",
+          "https://github.com/leeyodam/helloled"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "helloled@yodams.com",
+          "telephone": "+82-10-3332-1570",
+          "availableLanguage": [
+            "ko",
+            "en",
+            "ja",
+            "zh",
+            "es"
+          ]
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "탑동로29번길 36, 2층 201호(탑동)",
+          "addressLocality": "수원시 권선구",
+          "addressRegion": "경기도",
+          "postalCode": "16603",
+          "addressCountry": "KR"
+        }
       },
       {
         "@type": "WebSite",
         "@id": "https://helloled.yodams.com/#website",
         "url": "https://helloled.yodams.com/",
         "name": "HELLO LED",
-        "inLanguage": "zh",
+        "description": "HELLO LED 官方网站。可在 Google Play 安装手机 LED 灯牌应用。",
+        "inLanguage": "zh-Hans",
         "publisher": {
           "@id": "https://helloled.yodams.com/#organization"
+        },
+        "potentialAction": {
+          "@type": "DownloadAction",
+          "name": "下载 HELLO LED",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+            "actionPlatform": [
+              "https://schema.org/DesktopWebPlatform",
+              "https://schema.org/MobileWebPlatform",
+              "https://schema.org/AndroidPlatform"
+            ]
+          }
         }
       },
       {
@@ -178,18 +223,34 @@
         "url": "https://helloled.yodams.com/zh/",
         "name": "HELLO LED | 手机 LED 灯牌",
         "description": "HELLO LED 是一款把手机屏幕变成 LED 灯牌的免费应用，可用于演唱会应援、店铺促销和机场迎接。",
-        "inLanguage": "zh",
+        "inLanguage": "zh-Hans",
         "isPartOf": {
           "@id": "https://helloled.yodams.com/#website"
         },
         "about": {
           "@id": "https://helloled.yodams.com/#app"
         },
-        "dateModified": "2026-09-23",
+        "breadcrumb": {
+          "@id": "https://helloled.yodams.com/zh/#breadcrumb"
+        },
+        "datePublished": "2026-09-21",
+        "dateModified": "2026-10-02",
         "primaryImageOfPage": {
           "@type": "ImageObject",
           "url": "https://helloled.yodams.com/og.png"
         }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://helloled.yodams.com/zh/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://helloled.yodams.com/zh/"
+          }
+        ]
       },
       {
         "@type": [
@@ -202,6 +263,10 @@
         "operatingSystem": "Android",
         "description": "HELLO LED 是一款把手机屏幕变成 LED 灯牌的免费应用，可用于演唱会应援、店铺促销和机场迎接。",
         "url": "https://helloled.yodams.com/zh/",
+        "installUrl": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+        "sameAs": [
+          "https://play.google.com/store/apps/details?id=com.yodam.helloled"
+        ],
         "screenshot": [
           "https://helloled.yodams.com/screens/led-marquee.png",
           "https://helloled.yodams.com/screens/led-clock.png",
@@ -211,7 +276,8 @@
           "@type": "Offer",
           "price": "0",
           "priceCurrency": "KRW",
-          "availability": "https://schema.org/PreOrder"
+          "availability": "https://schema.org/InStock",
+          "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled"
         },
         "publisher": {
           "@id": "https://helloled.yodams.com/#organization"
@@ -292,10 +358,20 @@
         </h1>
         <p class="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted sm:text-lg" data-i18n-html="heroBody"><strong class="font-semibold text-ink">HELLO LED</strong> 是一款把手机屏幕变成 LED 灯牌的免费应用。<br>演唱会应援、店铺促销、机场迎接，各种场合都能轻松使用。</p>
         <div class="mx-auto mt-8 max-w-xl rounded-3xl border border-line bg-white p-5 text-left shadow-sm sm:p-6" id="download-hero">
-          <p class="text-sm font-semibold uppercase tracking-wide text-muted" data-i18n="comingSoonKicker">应用商店即将上线</p>
-          <p class="mt-2 text-lg font-bold text-ink" data-i18n="comingSoonTitle">正在准备 Google Play 上架</p>
-          <p class="mt-2 text-muted" data-i18n="comingSoonBody">商店详情页开放后，这里会换成下载链接。如需上线消息，请发邮件联系我们。</p>
-          <a class="mt-4 inline-flex min-h-11 items-center rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-white hover:bg-neutral-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="mailto:helloled@yodams.com" data-i18n="comingSoonCta">咨询上线进度</a>
+          <p class="text-sm font-semibold uppercase tracking-wide text-muted" data-i18n="downloadKicker">在 Google Play 获取</p>
+          <p class="mt-2 text-lg font-bold text-ink" data-i18n="downloadTitle">立即安装 HELLO LED</p>
+          <p class="mt-2 text-muted" data-i18n="downloadBody">演唱会应援、店铺促销、机场迎接用的 LED 灯牌应用，可在 Google Play 免费下载。</p>
+          <a class="inline-flex" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" target="_blank" rel="noopener noreferrer" aria-label="在 Google Play 下载">
+            <img
+              data-badge="play"
+              data-i18n-alt="playAlt"
+              src="/badges/play-zh.png"
+              width="215"
+              height="64"
+              class="h-14 w-auto"
+              alt="在 Google Play 下载"
+            >
+          </a>
         </div>
       </div>
 
@@ -467,14 +543,14 @@
               <span data-i18n="faq2q">HELLO LED 可以在哪些设备上使用？</span>
               <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
             </summary>
-            <p class="pb-5 text-muted" data-i18n-html="faq2a">可在 Android 手机和平板使用。<br>正在准备 Google Play 上架，开放后会在本页说明。</p>
+            <p class="pb-5 text-muted" data-i18n-html="faq2a">可在 Android 手机和平板使用。<br>请前往 <a class="underline" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" rel="noopener noreferrer" target="_blank">Google Play</a> 安装。</p>
           </details>
           <details class="reveal group">
             <summary class="flex min-h-14 cursor-pointer items-center justify-between gap-4 py-4 text-left text-lg font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
               <span data-i18n="faq3q">现在可以在哪里下载？</span>
               <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
             </summary>
-            <p class="pb-5 text-muted" data-i18n-html="faq3a">商店详情页尚未公开。<br>上线消息请发邮件至 <a class="underline" href="mailto:helloled@yodams.com">helloled@yodams.com</a>。</p>
+            <p class="pb-5 text-muted" data-i18n-html="faq3a">Android 版 HELLO LED 可在 <a class="underline" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" rel="noopener noreferrer" target="_blank">Google Play</a> 下载。</p>
           </details>
         </div>
       </div>
@@ -482,10 +558,20 @@
 
     <section id="download" class="relative overflow-hidden px-5 py-24 sm:py-32" aria-labelledby="cta-title">
       <div class="relative mx-auto max-w-3xl text-center">
-        <h2 id="cta-title" class="reveal text-3xl font-extrabold tracking-tight sm:text-5xl" data-i18n-html="ctaTitle">手机 LED 灯牌<br>应用商店即将上线</h2>
-        <p class="reveal mx-auto mt-5 max-w-xl text-muted" data-i18n="ctaBody">正在准备 Google Play 上架。详情页开放后，本页会提供下载链接。</p>
+        <h2 id="cta-title" class="reveal text-3xl font-extrabold tracking-tight sm:text-5xl" data-i18n-html="ctaTitle">手机 LED 灯牌<br>在 Google Play 下载</h2>
+        <p class="reveal mx-auto mt-5 max-w-xl text-muted" data-i18n="ctaBody">在 Google Play 免费安装 HELLO LED，调整文字、颜色和速度后立刻当灯牌用。</p>
         <div class="reveal mt-10">
-          <a class="inline-flex min-h-11 items-center rounded-full bg-ink px-6 py-3 text-sm font-semibold text-white hover:bg-neutral-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="mailto:helloled@yodams.com" data-i18n="comingSoonCta">咨询上线进度</a>
+          <a class="inline-flex" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" target="_blank" rel="noopener noreferrer" aria-label="在 Google Play 下载">
+            <img
+              data-badge="play"
+              data-i18n-alt="playAlt"
+              src="/badges/play-zh.png"
+              width="215"
+              height="64"
+              class="h-14 w-auto"
+              alt="在 Google Play 下载"
+            >
+          </a>
         </div>
       </div>
     </section>

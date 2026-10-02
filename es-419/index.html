@@ -35,6 +35,9 @@
   <meta name="twitter:title" content="HELLO LED | Letrero LED en el celular">
   <meta name="twitter:description" content="HELLO LED es una app gratuita que convierte el celular en un letrero LED para conciertos, tiendas y aeropuertos.">
   <meta name="twitter:image" content="https://helloled.yodams.com/og.png">
+  <link rel="dns-prefetch" href="https://play.google.com">
+  <link rel="preconnect" href="https://play.google.com" crossorigin>
+  <link rel="preload" href="/styles.css" as="style">
   <link rel="stylesheet" href="/styles.css">
   <style>
     @keyframes marquee {
@@ -158,18 +161,60 @@
         "@type": "Organization",
         "@id": "https://helloled.yodams.com/#organization",
         "name": "HELLO LED",
+        "legalName": "요담",
         "url": "https://helloled.yodams.com/",
         "email": "helloled@yodams.com",
-        "logo": "https://helloled.yodams.com/favicon.png"
+        "logo": "https://helloled.yodams.com/favicon.png",
+        "description": "Yodam publica HELLO LED, una app de letrero LED para el celular.",
+        "sameAs": [
+          "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+          "https://yodams.com/",
+          "https://github.com/leeyodam/helloled"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "helloled@yodams.com",
+          "telephone": "+82-10-3332-1570",
+          "availableLanguage": [
+            "ko",
+            "en",
+            "ja",
+            "zh",
+            "es"
+          ]
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "탑동로29번길 36, 2층 201호(탑동)",
+          "addressLocality": "수원시 권선구",
+          "addressRegion": "경기도",
+          "postalCode": "16603",
+          "addressCountry": "KR"
+        }
       },
       {
         "@type": "WebSite",
         "@id": "https://helloled.yodams.com/#website",
         "url": "https://helloled.yodams.com/",
         "name": "HELLO LED",
-        "inLanguage": "es",
+        "description": "Sitio oficial de HELLO LED. Instala la app de letrero LED en Google Play.",
+        "inLanguage": "es-419",
         "publisher": {
           "@id": "https://helloled.yodams.com/#organization"
+        },
+        "potentialAction": {
+          "@type": "DownloadAction",
+          "name": "Descargar HELLO LED",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+            "actionPlatform": [
+              "https://schema.org/DesktopWebPlatform",
+              "https://schema.org/MobileWebPlatform",
+              "https://schema.org/AndroidPlatform"
+            ]
+          }
         }
       },
       {
@@ -178,18 +223,34 @@
         "url": "https://helloled.yodams.com/es-419/",
         "name": "HELLO LED | Letrero LED en el celular",
         "description": "HELLO LED es una app gratuita que convierte el celular en un letrero LED para conciertos, tiendas y aeropuertos.",
-        "inLanguage": "es",
+        "inLanguage": "es-419",
         "isPartOf": {
           "@id": "https://helloled.yodams.com/#website"
         },
         "about": {
           "@id": "https://helloled.yodams.com/#app"
         },
-        "dateModified": "2026-09-23",
+        "breadcrumb": {
+          "@id": "https://helloled.yodams.com/es-419/#breadcrumb"
+        },
+        "datePublished": "2026-09-21",
+        "dateModified": "2026-10-02",
         "primaryImageOfPage": {
           "@type": "ImageObject",
           "url": "https://helloled.yodams.com/og.png"
         }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://helloled.yodams.com/es-419/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://helloled.yodams.com/es-419/"
+          }
+        ]
       },
       {
         "@type": [
@@ -202,6 +263,10 @@
         "operatingSystem": "Android",
         "description": "HELLO LED es una app gratuita que convierte el celular en un letrero LED para conciertos, tiendas y aeropuertos.",
         "url": "https://helloled.yodams.com/es-419/",
+        "installUrl": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+        "sameAs": [
+          "https://play.google.com/store/apps/details?id=com.yodam.helloled"
+        ],
         "screenshot": [
           "https://helloled.yodams.com/screens/led-marquee.png",
           "https://helloled.yodams.com/screens/led-clock.png",
@@ -211,7 +276,8 @@
           "@type": "Offer",
           "price": "0",
           "priceCurrency": "KRW",
-          "availability": "https://schema.org/PreOrder"
+          "availability": "https://schema.org/InStock",
+          "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled"
         },
         "publisher": {
           "@id": "https://helloled.yodams.com/#organization"
@@ -292,10 +358,20 @@
         </h1>
         <p class="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted sm:text-lg" data-i18n-html="heroBody"><strong class="font-semibold text-ink">HELLO LED</strong> es una app gratuita que convierte la pantalla del celular en un letrero LED.<br>Sirve para porras en conciertos, ofertas en tiendas, bienvenidas en el aeropuerto y mucho más.</p>
         <div class="mx-auto mt-8 max-w-xl rounded-3xl border border-line bg-white p-5 text-left shadow-sm sm:p-6" id="download-hero">
-          <p class="text-sm font-semibold uppercase tracking-wide text-muted" data-i18n="comingSoonKicker">Ficha de tienda en preparación</p>
-          <p class="mt-2 text-lg font-bold text-ink" data-i18n="comingSoonTitle">Estamos preparando el lanzamiento en Google Play</p>
-          <p class="mt-2 text-muted" data-i18n="comingSoonBody">Cuando la ficha esté abierta, este aviso se convertirá en un enlace de descarga. Para novedades, escríbenos.</p>
-          <a class="mt-4 inline-flex min-h-11 items-center rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-white hover:bg-neutral-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="mailto:helloled@yodams.com" data-i18n="comingSoonCta">Consultar el lanzamiento</a>
+          <p class="text-sm font-semibold uppercase tracking-wide text-muted" data-i18n="downloadKicker">Disponible en Google Play</p>
+          <p class="mt-2 text-lg font-bold text-ink" data-i18n="downloadTitle">Instala HELLO LED ahora</p>
+          <p class="mt-2 text-muted" data-i18n="downloadBody">Consigue gratis en Google Play la app de letrero LED para conciertos, tiendas y aeropuertos.</p>
+          <a class="inline-flex" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" target="_blank" rel="noopener noreferrer" aria-label="Disponible en Google Play">
+            <img
+              data-badge="play"
+              data-i18n-alt="playAlt"
+              src="/badges/play-es_419.png"
+              width="215"
+              height="64"
+              class="h-14 w-auto"
+              alt="Disponible en Google Play"
+            >
+          </a>
         </div>
       </div>
 
@@ -467,14 +543,14 @@
               <span data-i18n="faq2q">¿En qué dispositivos se puede usar HELLO LED?</span>
               <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
             </summary>
-            <p class="pb-5 text-muted" data-i18n-html="faq2a">Funciona en celulares y tablets Android.<br>La ficha de Google Play está en preparación y se enlazará aquí cuando esté pública.</p>
+            <p class="pb-5 text-muted" data-i18n-html="faq2a">Funciona en celulares y tablets Android.<br>Instálala desde <a class="underline" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" rel="noopener noreferrer" target="_blank">Google Play</a>.</p>
           </details>
           <details class="reveal group">
             <summary class="flex min-h-14 cursor-pointer items-center justify-between gap-4 py-4 text-left text-lg font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
               <span data-i18n="faq3q">¿Dónde puedo descargarla ahora?</span>
               <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
             </summary>
-            <p class="pb-5 text-muted" data-i18n-html="faq3a">La ficha de la tienda aún no es pública.<br>Escribe a <a class="underline" href="mailto:helloled@yodams.com">helloled@yodams.com</a> para novedades del lanzamiento.</p>
+            <p class="pb-5 text-muted" data-i18n-html="faq3a">HELLO LED para Android está en <a class="underline" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" rel="noopener noreferrer" target="_blank">Google Play</a>.</p>
           </details>
         </div>
       </div>
@@ -482,10 +558,20 @@
 
     <section id="download" class="relative overflow-hidden px-5 py-24 sm:py-32" aria-labelledby="cta-title">
       <div class="relative mx-auto max-w-3xl text-center">
-        <h2 id="cta-title" class="reveal text-3xl font-extrabold tracking-tight sm:text-5xl" data-i18n-html="ctaTitle">Panel LED para el celular<br>Ficha de tienda en preparación</h2>
-        <p class="reveal mx-auto mt-5 max-w-xl text-muted" data-i18n="ctaBody">Estamos preparando Google Play. Los enlaces de descarga aparecerán aquí cuando la ficha esté abierta.</p>
+        <h2 id="cta-title" class="reveal text-3xl font-extrabold tracking-tight sm:text-5xl" data-i18n-html="ctaTitle">Panel LED para el celular<br>Disponible en Google Play</h2>
+        <p class="reveal mx-auto mt-5 max-w-xl text-muted" data-i18n="ctaBody">Instala HELLO LED gratis en Google Play y ajusta texto, color y velocidad para tu letrero.</p>
         <div class="reveal mt-10">
-          <a class="inline-flex min-h-11 items-center rounded-full bg-ink px-6 py-3 text-sm font-semibold text-white hover:bg-neutral-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="mailto:helloled@yodams.com" data-i18n="comingSoonCta">Consultar el lanzamiento</a>
+          <a class="inline-flex" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" target="_blank" rel="noopener noreferrer" aria-label="Disponible en Google Play">
+            <img
+              data-badge="play"
+              data-i18n-alt="playAlt"
+              src="/badges/play-es_419.png"
+              width="215"
+              height="64"
+              class="h-14 w-auto"
+              alt="Disponible en Google Play"
+            >
+          </a>
         </div>
       </div>
     </section>

@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://helloled.yodams.com/sitemap.xml
+
+#DaumWebMasterTool:14ef0467acd77ce6d31fcc458f8bb53191a63091eacbbf80525145297bba97ea:TjfWRIg4AvRIXkF+EGam5Q==
