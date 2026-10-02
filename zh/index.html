@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>HELLO LED | 手机 LED 灯牌</title>
   <meta name="description" content="HELLO LED 是一款把手机屏幕变成 LED 灯牌的免费应用，可用于演唱会应援、店铺促销和机场迎接。">
   <meta name="robots" content="index,follow,max-image-preview:large">
@@ -194,6 +195,39 @@
         }
       },
       {
+        "@type": "Service",
+        "@id": "https://helloled.yodams.com/#service",
+        "name": "HELLO LED 手机 LED 灯牌",
+        "serviceType": "移动端 LED 灯牌应用",
+        "description": "把手机屏幕变成 LED 灯牌，用于演唱会应援、店铺促销和机场迎接的服务。",
+        "url": "https://helloled.yodams.com/zh/",
+        "provider": {
+          "@id": "https://helloled.yodams.com/#organization"
+        },
+        "isRelatedTo": {
+          "@id": "https://helloled.yodams.com/#app"
+        },
+        "areaServed": "Worldwide",
+        "availableChannel": {
+          "@type": "ServiceChannel",
+          "serviceUrl": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+          "availableLanguage": [
+            "ko",
+            "en",
+            "ja",
+            "zh",
+            "es"
+          ]
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "KRW",
+          "availability": "https://schema.org/InStock",
+          "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled"
+        }
+      },
+      {
         "@type": "WebSite",
         "@id": "https://helloled.yodams.com/#website",
         "url": "https://helloled.yodams.com/",
@@ -227,9 +261,14 @@
         "isPartOf": {
           "@id": "https://helloled.yodams.com/#website"
         },
-        "about": {
-          "@id": "https://helloled.yodams.com/#app"
-        },
+        "about": [
+          {
+            "@id": "https://helloled.yodams.com/#app"
+          },
+          {
+            "@id": "https://helloled.yodams.com/#service"
+          }
+        ],
         "breadcrumb": {
           "@id": "https://helloled.yodams.com/zh/#breadcrumb"
         },
@@ -362,15 +401,18 @@
           <p class="mt-2 text-lg font-bold text-ink" data-i18n="downloadTitle">立即安装 HELLO LED</p>
           <p class="mt-2 text-muted" data-i18n="downloadBody">演唱会应援、店铺促销、机场迎接用的 LED 灯牌应用，可在 Google Play 免费下载。</p>
           <a class="inline-flex" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" target="_blank" rel="noopener noreferrer" aria-label="在 Google Play 下载">
-            <img
-              data-badge="play"
-              data-i18n-alt="playAlt"
-              src="/badges/play-zh.png"
-              width="215"
-              height="64"
-              class="h-14 w-auto"
-              alt="在 Google Play 下载"
-            >
+            <picture>
+              <source type="image/webp" srcset="/badges/play-zh.webp">
+              <img
+                data-badge="play"
+                data-i18n-alt="playAlt"
+                src="/badges/play-zh.png"
+                width="215"
+                height="64"
+                class="h-14 w-auto"
+                alt="在 Google Play 下载"
+              >
+            </picture>
           </a>
         </div>
       </div>
@@ -562,15 +604,18 @@
         <p class="reveal mx-auto mt-5 max-w-xl text-muted" data-i18n="ctaBody">在 Google Play 免费安装 HELLO LED，调整文字、颜色和速度后立刻当灯牌用。</p>
         <div class="reveal mt-10">
           <a class="inline-flex" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" target="_blank" rel="noopener noreferrer" aria-label="在 Google Play 下载">
-            <img
-              data-badge="play"
-              data-i18n-alt="playAlt"
-              src="/badges/play-zh.png"
-              width="215"
-              height="64"
-              class="h-14 w-auto"
-              alt="在 Google Play 下载"
-            >
+            <picture>
+              <source type="image/webp" srcset="/badges/play-zh.webp">
+              <img
+                data-badge="play"
+                data-i18n-alt="playAlt"
+                src="/badges/play-zh.png"
+                width="215"
+                height="64"
+                class="h-14 w-auto"
+                alt="在 Google Play 下载"
+              >
+            </picture>
           </a>
         </div>
       </div>

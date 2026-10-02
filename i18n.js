@@ -591,7 +591,15 @@ window.HELLO_I18N = {
     });
     document.querySelectorAll("[data-badge]").forEach(function (img) {
       var kind = img.getAttribute("data-badge");
-      img.src = "/badges/" + kind + "-" + lang + (kind === "apple" ? ".svg" : ".png");
+      var base = "/badges/" + kind + "-" + lang;
+      if (kind === "apple") {
+        img.src = base + ".svg";
+        return;
+      }
+      img.src = base + ".png";
+      var picture = img.parentElement;
+      var source = picture && picture.querySelector('source[type="image/webp"]');
+      if (source) source.setAttribute("srcset", base + ".webp");
     });
     if (pack.pageTitle && document.getElementById("features")) document.title = pack.pageTitle;
     if (pack.privacyTitle && document.getElementById("lang") && !document.getElementById("features")) document.title = pack.privacyTitle;

@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>HELLO LED | 스마트폰 LED 전광판 - 콘서트·매장·공항</title>
   <meta name="description" content="HELLO LED는 스마트폰 화면을 LED 전광판으로 바꾸는 무료 앱입니다. 콘서트 응원, 매장 세일, 공항 환영 문구 등 다양한 환경에서 손쉽게 활용할 수 있습니다.">
   <meta name="robots" content="index,follow,max-image-preview:large">
@@ -194,6 +195,39 @@
         }
       },
       {
+        "@type": "Service",
+        "@id": "https://helloled.yodams.com/#service",
+        "name": "HELLO LED 스마트폰 LED 전광판",
+        "serviceType": "모바일 LED 전광판 앱",
+        "description": "스마트폰 화면을 LED 전광판으로 바꿔 콘서트 응원, 매장 세일, 공항 환영 문구 등을 표시하는 서비스입니다.",
+        "url": "https://helloled.yodams.com/",
+        "provider": {
+          "@id": "https://helloled.yodams.com/#organization"
+        },
+        "isRelatedTo": {
+          "@id": "https://helloled.yodams.com/#app"
+        },
+        "areaServed": "Worldwide",
+        "availableChannel": {
+          "@type": "ServiceChannel",
+          "serviceUrl": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+          "availableLanguage": [
+            "ko",
+            "en",
+            "ja",
+            "zh",
+            "es"
+          ]
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "KRW",
+          "availability": "https://schema.org/InStock",
+          "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled"
+        }
+      },
+      {
         "@type": "WebSite",
         "@id": "https://helloled.yodams.com/#website",
         "url": "https://helloled.yodams.com/",
@@ -227,9 +261,14 @@
         "isPartOf": {
           "@id": "https://helloled.yodams.com/#website"
         },
-        "about": {
-          "@id": "https://helloled.yodams.com/#app"
-        },
+        "about": [
+          {
+            "@id": "https://helloled.yodams.com/#app"
+          },
+          {
+            "@id": "https://helloled.yodams.com/#service"
+          }
+        ],
         "breadcrumb": {
           "@id": "https://helloled.yodams.com/#breadcrumb"
         },
@@ -363,15 +402,18 @@
           <p class="mt-2 text-lg font-bold text-ink" data-i18n="downloadTitle">지금 HELLO LED를 설치하세요</p>
           <p class="mt-2 text-muted" data-i18n="downloadBody">콘서트 응원, 매장 세일, 공항 환영 문구를 위한 LED 전광판 앱을 Google Play에서 무료로 받을 수 있습니다.</p>
           <a class="inline-flex" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" target="_blank" rel="noopener noreferrer" aria-label="Google Play에서 다운로드">
-            <img
-              data-badge="play"
-              data-i18n-alt="playAlt"
-              src="/badges/play-ko.png"
-              width="215"
-              height="64"
-              class="h-14 w-auto"
-              alt="Google Play에서 다운로드"
-            >
+            <picture>
+              <source type="image/webp" srcset="/badges/play-ko.webp">
+              <img
+                data-badge="play"
+                data-i18n-alt="playAlt"
+                src="/badges/play-ko.png"
+                width="215"
+                height="64"
+                class="h-14 w-auto"
+                alt="Google Play에서 다운로드"
+              >
+            </picture>
           </a>
         </div>
       </div>
@@ -563,15 +605,18 @@
         <p class="reveal mx-auto mt-5 max-w-xl text-muted" data-i18n="ctaBody">HELLO LED를 Google Play에서 무료로 설치하고, 문구·색·속도를 맞춰 바로 전광판으로 쓰세요.</p>
         <div class="reveal mt-10">
           <a class="inline-flex" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" target="_blank" rel="noopener noreferrer" aria-label="Google Play에서 다운로드">
-            <img
-              data-badge="play"
-              data-i18n-alt="playAlt"
-              src="/badges/play-ko.png"
-              width="215"
-              height="64"
-              class="h-14 w-auto"
-              alt="Google Play에서 다운로드"
-            >
+            <picture>
+              <source type="image/webp" srcset="/badges/play-ko.webp">
+              <img
+                data-badge="play"
+                data-i18n-alt="playAlt"
+                src="/badges/play-ko.png"
+                width="215"
+                height="64"
+                class="h-14 w-auto"
+                alt="Google Play에서 다운로드"
+              >
+            </picture>
           </a>
         </div>
       </div>

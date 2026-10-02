@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>HELLO LED | Letrero LED en el celular</title>
   <meta name="description" content="HELLO LED es una app gratuita que convierte el celular en un letrero LED para conciertos, tiendas y aeropuertos.">
   <meta name="robots" content="index,follow,max-image-preview:large">
@@ -194,6 +195,39 @@
         }
       },
       {
+        "@type": "Service",
+        "@id": "https://helloled.yodams.com/#service",
+        "name": "HELLO LED letrero LED para celular",
+        "serviceType": "App de letrero LED móvil",
+        "description": "Servicio que convierte la pantalla del celular en un letrero LED para conciertos, tiendas y aeropuertos.",
+        "url": "https://helloled.yodams.com/es-419/",
+        "provider": {
+          "@id": "https://helloled.yodams.com/#organization"
+        },
+        "isRelatedTo": {
+          "@id": "https://helloled.yodams.com/#app"
+        },
+        "areaServed": "Worldwide",
+        "availableChannel": {
+          "@type": "ServiceChannel",
+          "serviceUrl": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+          "availableLanguage": [
+            "ko",
+            "en",
+            "ja",
+            "zh",
+            "es"
+          ]
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "KRW",
+          "availability": "https://schema.org/InStock",
+          "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled"
+        }
+      },
+      {
         "@type": "WebSite",
         "@id": "https://helloled.yodams.com/#website",
         "url": "https://helloled.yodams.com/",
@@ -227,9 +261,14 @@
         "isPartOf": {
           "@id": "https://helloled.yodams.com/#website"
         },
-        "about": {
-          "@id": "https://helloled.yodams.com/#app"
-        },
+        "about": [
+          {
+            "@id": "https://helloled.yodams.com/#app"
+          },
+          {
+            "@id": "https://helloled.yodams.com/#service"
+          }
+        ],
         "breadcrumb": {
           "@id": "https://helloled.yodams.com/es-419/#breadcrumb"
         },
@@ -362,15 +401,18 @@
           <p class="mt-2 text-lg font-bold text-ink" data-i18n="downloadTitle">Instala HELLO LED ahora</p>
           <p class="mt-2 text-muted" data-i18n="downloadBody">Consigue gratis en Google Play la app de letrero LED para conciertos, tiendas y aeropuertos.</p>
           <a class="inline-flex" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" target="_blank" rel="noopener noreferrer" aria-label="Disponible en Google Play">
-            <img
-              data-badge="play"
-              data-i18n-alt="playAlt"
-              src="/badges/play-es_419.png"
-              width="215"
-              height="64"
-              class="h-14 w-auto"
-              alt="Disponible en Google Play"
-            >
+            <picture>
+              <source type="image/webp" srcset="/badges/play-es_419.webp">
+              <img
+                data-badge="play"
+                data-i18n-alt="playAlt"
+                src="/badges/play-es_419.png"
+                width="215"
+                height="64"
+                class="h-14 w-auto"
+                alt="Disponible en Google Play"
+              >
+            </picture>
           </a>
         </div>
       </div>
@@ -562,15 +604,18 @@
         <p class="reveal mx-auto mt-5 max-w-xl text-muted" data-i18n="ctaBody">Instala HELLO LED gratis en Google Play y ajusta texto, color y velocidad para tu letrero.</p>
         <div class="reveal mt-10">
           <a class="inline-flex" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" target="_blank" rel="noopener noreferrer" aria-label="Disponible en Google Play">
-            <img
-              data-badge="play"
-              data-i18n-alt="playAlt"
-              src="/badges/play-es_419.png"
-              width="215"
-              height="64"
-              class="h-14 w-auto"
-              alt="Disponible en Google Play"
-            >
+            <picture>
+              <source type="image/webp" srcset="/badges/play-es_419.webp">
+              <img
+                data-badge="play"
+                data-i18n-alt="playAlt"
+                src="/badges/play-es_419.png"
+                width="215"
+                height="64"
+                class="h-14 w-auto"
+                alt="Disponible en Google Play"
+              >
+            </picture>
           </a>
         </div>
       </div>

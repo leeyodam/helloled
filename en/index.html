@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>HELLO LED | Phone LED board</title>
   <meta name="description" content="HELLO LED is a free app that turns your phone into an LED board for concert cheers, shop sales, and airport welcomes.">
   <meta name="robots" content="index,follow,max-image-preview:large">
@@ -194,6 +195,39 @@
         }
       },
       {
+        "@type": "Service",
+        "@id": "https://helloled.yodams.com/#service",
+        "name": "HELLO LED phone LED board",
+        "serviceType": "Mobile LED banner app",
+        "description": "A service that turns a phone screen into an LED board for concert cheers, shop sales, and airport welcomes.",
+        "url": "https://helloled.yodams.com/en/",
+        "provider": {
+          "@id": "https://helloled.yodams.com/#organization"
+        },
+        "isRelatedTo": {
+          "@id": "https://helloled.yodams.com/#app"
+        },
+        "areaServed": "Worldwide",
+        "availableChannel": {
+          "@type": "ServiceChannel",
+          "serviceUrl": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+          "availableLanguage": [
+            "ko",
+            "en",
+            "ja",
+            "zh",
+            "es"
+          ]
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "KRW",
+          "availability": "https://schema.org/InStock",
+          "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled"
+        }
+      },
+      {
         "@type": "WebSite",
         "@id": "https://helloled.yodams.com/#website",
         "url": "https://helloled.yodams.com/",
@@ -227,9 +261,14 @@
         "isPartOf": {
           "@id": "https://helloled.yodams.com/#website"
         },
-        "about": {
-          "@id": "https://helloled.yodams.com/#app"
-        },
+        "about": [
+          {
+            "@id": "https://helloled.yodams.com/#app"
+          },
+          {
+            "@id": "https://helloled.yodams.com/#service"
+          }
+        ],
         "breadcrumb": {
           "@id": "https://helloled.yodams.com/en/#breadcrumb"
         },
@@ -362,15 +401,18 @@
           <p class="mt-2 text-lg font-bold text-ink" data-i18n="downloadTitle">Install HELLO LED now</p>
           <p class="mt-2 text-muted" data-i18n="downloadBody">Get the free LED banner app for concert cheers, shop sales, and airport welcomes on Google Play.</p>
           <a class="inline-flex" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" target="_blank" rel="noopener noreferrer" aria-label="Get it on Google Play">
-            <img
-              data-badge="play"
-              data-i18n-alt="playAlt"
-              src="/badges/play-en.png"
-              width="215"
-              height="64"
-              class="h-14 w-auto"
-              alt="Get it on Google Play"
-            >
+            <picture>
+              <source type="image/webp" srcset="/badges/play-en.webp">
+              <img
+                data-badge="play"
+                data-i18n-alt="playAlt"
+                src="/badges/play-en.png"
+                width="215"
+                height="64"
+                class="h-14 w-auto"
+                alt="Get it on Google Play"
+              >
+            </picture>
           </a>
         </div>
       </div>
@@ -562,15 +604,18 @@
         <p class="reveal mx-auto mt-5 max-w-xl text-muted" data-i18n="ctaBody">Install HELLO LED free on Google Play, then set text, color, and speed for your board.</p>
         <div class="reveal mt-10">
           <a class="inline-flex" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" target="_blank" rel="noopener noreferrer" aria-label="Get it on Google Play">
-            <img
-              data-badge="play"
-              data-i18n-alt="playAlt"
-              src="/badges/play-en.png"
-              width="215"
-              height="64"
-              class="h-14 w-auto"
-              alt="Get it on Google Play"
-            >
+            <picture>
+              <source type="image/webp" srcset="/badges/play-en.webp">
+              <img
+                data-badge="play"
+                data-i18n-alt="playAlt"
+                src="/badges/play-en.png"
+                width="215"
+                height="64"
+                class="h-14 w-auto"
+                alt="Get it on Google Play"
+              >
+            </picture>
           </a>
         </div>
       </div>
