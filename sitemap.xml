@@ -1,51 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://helloled.yodams.com/</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-06</lastmod>
+    <image:image>
+      <image:loc>https://helloled.yodams.com/screens/led-marquee.png</image:loc>
+      <image:caption>HELLO LED 문구 전광판 화면 예시: 분홍 네온으로 LOVE HE 표시</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://helloled.yodams.com/screens/led-clock.png</image:loc>
+      <image:caption>HELLO LED 시계 전광판 화면 예시: 가로 모드에 21:48 표시</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://helloled.yodams.com/screens/led-dots.png</image:loc>
+      <image:caption>HELLO LED 사진 도트 변환 화면 예시: 분홍 하트 두 개</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://helloled.yodams.com/privacy.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-06</lastmod>
   </url>
   <url>
     <loc>https://helloled.yodams.com/en/</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-06</lastmod>
+    <image:image>
+      <image:loc>https://helloled.yodams.com/screens/led-marquee.png</image:loc>
+      <image:caption>HELLO LED screen: pink neon text reading LOVE HE</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://helloled.yodams.com/screens/led-clock.png</image:loc>
+      <image:caption>HELLO LED screen: landscape clock showing 21:48</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://helloled.yodams.com/screens/led-dots.png</image:loc>
+      <image:caption>HELLO LED screen: two pink hearts made of dots</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://helloled.yodams.com/en/privacy.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-06</lastmod>
   </url>
   <url>
     <loc>https://helloled.yodams.com/ja/</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-06</lastmod>
+    <image:image>
+      <image:loc>https://helloled.yodams.com/screens/led-marquee.png</image:loc>
+      <image:caption>HELLO LEDの画面例: ピンクのネオン文字 LOVE HE</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://helloled.yodams.com/screens/led-clock.png</image:loc>
+      <image:caption>HELLO LEDの画面例: 横向きの時計 21:48</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://helloled.yodams.com/screens/led-dots.png</image:loc>
+      <image:caption>HELLO LEDの画面例: 写真から作ったピンクのハート2つ</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://helloled.yodams.com/ja/privacy.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-06</lastmod>
   </url>
   <url>
     <loc>https://helloled.yodams.com/zh/</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-06</lastmod>
+    <image:image>
+      <image:loc>https://helloled.yodams.com/screens/led-marquee.png</image:loc>
+      <image:caption>HELLO LED 界面示例：粉色霓虹文字 LOVE HE</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://helloled.yodams.com/screens/led-clock.png</image:loc>
+      <image:caption>HELLO LED 界面示例：横屏时钟 21:48</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://helloled.yodams.com/screens/led-dots.png</image:loc>
+      <image:caption>HELLO LED 界面示例：由照片转成的两个粉色心形点阵</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://helloled.yodams.com/zh/privacy.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-06</lastmod>
   </url>
   <url>
     <loc>https://helloled.yodams.com/es/</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-06</lastmod>
+    <image:image>
+      <image:loc>https://helloled.yodams.com/screens/led-marquee.png</image:loc>
+      <image:caption>Pantalla de HELLO LED: texto LOVE HE en neón rosa</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://helloled.yodams.com/screens/led-clock.png</image:loc>
+      <image:caption>Pantalla de HELLO LED: reloj 21:48 en horizontal</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://helloled.yodams.com/screens/led-dots.png</image:loc>
+      <image:caption>Pantalla de HELLO LED: dos corazones rosas hechos de puntos</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://helloled.yodams.com/es/privacy.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-06</lastmod>
   </url>
   <url>
     <loc>https://helloled.yodams.com/es-419/</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-06</lastmod>
+    <image:image>
+      <image:loc>https://helloled.yodams.com/screens/led-marquee.png</image:loc>
+      <image:caption>Pantalla de HELLO LED: texto LOVE HE en neón rosa</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://helloled.yodams.com/screens/led-clock.png</image:loc>
+      <image:caption>Pantalla de HELLO LED: reloj 21:48 en horizontal</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://helloled.yodams.com/screens/led-dots.png</image:loc>
+      <image:caption>Pantalla de HELLO LED: dos corazones rosas hechos de puntos</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://helloled.yodams.com/es-419/privacy.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-06</lastmod>
   </url>
 </urlset>
