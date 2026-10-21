@@ -153,9 +153,10 @@
           "width": 256,
           "height": 256
         },
-        "description": "HELLO LED 是由 요담（Yodam）开发的免费 Android 手机 LED 灯牌与滚动字幕应用。",
+        "description": "HELLO LED 是由 요담（Yodam）开发的免费手机 LED 灯牌应用，支持 Android 和 iPhone。",
         "sameAs": [
           "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+          "https://apps.apple.com/app/id6816627023",
           "https://yodams.com/",
           "https://github.com/leeyodam/helloled"
         ],
@@ -179,24 +180,35 @@
         "url": "https://helloled.yodams.com/",
         "name": "HELLO LED",
         "alternateName": "헬로 LED",
-        "description": "HELLO LED 官方网站。在 Google Play 免费安装手机 LED 灯牌应用。",
+        "description": "HELLO LED 官方网站。在 Google Play 和 App Store 免费安装手机 LED 灯牌应用。",
         "inLanguage": "zh-Hans",
         "publisher": {
           "@id": "https://helloled.yodams.com/#organization"
         },
-        "potentialAction": {
-          "@type": "DownloadAction",
-          "name": "下载 HELLO LED",
-          "target": {
-            "@type": "EntryPoint",
-            "urlTemplate": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
-            "actionPlatform": [
-              "https://schema.org/DesktopWebPlatform",
-              "https://schema.org/MobileWebPlatform",
-              "https://schema.org/AndroidPlatform"
-            ]
+        "potentialAction": [
+          {
+            "@type": "DownloadAction",
+            "name": "下载 HELLO LED",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+              "actionPlatform": [
+                "https://schema.org/AndroidPlatform"
+              ]
+            }
+          },
+          {
+            "@type": "DownloadAction",
+            "name": "下载 HELLO LED",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://apps.apple.com/app/id6816627023",
+              "actionPlatform": [
+                "https://schema.org/IOSPlatform"
+              ]
+            }
           }
-        }
+        ]
       },
       {
         "@type": "WebPage",
@@ -215,7 +227,7 @@
           "@id": "https://helloled.yodams.com/zh/privacy.html#breadcrumb"
         },
         "datePublished": "2026-09-21",
-        "dateModified": "2026-10-20",
+        "dateModified": "2026-10-21",
         "primaryImageOfPage": {
           "@type": "ImageObject",
           "url": "https://helloled.yodams.com/og.png",
@@ -312,7 +324,7 @@ c. 只申请必要权限（例如选择照片时访问相册）</p>
     <p data-i18n-html="privacyContactHtml">a. 个人信息保护负责人：<span lang="ko">요담</span>（Yodam）
 b. 联系人：<span lang="ko">요담</span>（Yodam）
 邮箱：<a href="mailto:helloled@yodams.com">helloled@yodams.com</a></p>
-    <p data-i18n-html="publisherLine" style="margin-top:2rem;color:#374151;"><span lang="en">HELLO LED</span> 是由<a href="https://yodams.com/" lang="ko">요담</a>（Yodam）开发的 Android 应用。</p>
+    <p data-i18n-html="publisherLine" style="margin-top:2rem;color:#374151;"><span lang="en">HELLO LED</span> 是由<a href="https://yodams.com/" lang="ko">요담</a>（Yodam）开发的应用。</p>
     <nav aria-label="语言" data-i18n-aria="langLinksLabel" style="display:flex;flex-wrap:wrap;gap:12px 16px;margin-top:0.75rem;font-size:0.875rem;">
       <a data-lang="ko" href="https://helloled.yodams.com/privacy.html" style="display:inline-flex;align-items:center;min-height:44px;">한국어</a>
       <a data-lang="en" href="https://helloled.yodams.com/en/privacy.html" style="display:inline-flex;align-items:center;min-height:44px;">English</a>

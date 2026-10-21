@@ -64,6 +64,8 @@
   <meta name="twitter:image:alt" content="青い円の中に HELLO LED と書かれたロゴ">
   <link rel="dns-prefetch" href="https://play.google.com">
   <link rel="preconnect" href="https://play.google.com" crossorigin>
+  <link rel="dns-prefetch" href="https://apps.apple.com">
+  <link rel="preconnect" href="https://apps.apple.com" crossorigin>
   <link rel="preload" href="/styles.css" as="style">
   <link rel="stylesheet" href="/styles.css">
   <style>
@@ -221,9 +223,10 @@
           "width": 256,
           "height": 256
         },
-        "description": "HELLO LEDは、요담（Yodam）が開発したスマホ画面をLED電光掲示板に変える無料Androidアプリです。",
+        "description": "HELLO LEDは、요담（Yodam）が開発したスマホ画面をLED電光掲示板に変える無料アプリです。AndroidとiPhoneで使えます。",
         "sameAs": [
           "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+          "https://apps.apple.com/app/id6816627023",
           "https://yodams.com/",
           "https://github.com/leeyodam/helloled"
         ],
@@ -246,7 +249,7 @@
         "@id": "https://helloled.yodams.com/#service",
         "name": "HELLO LED",
         "serviceType": "スマホLED電光掲示板アプリ",
-        "description": "HELLO LEDは、요담（Yodam）が開発したスマホ画面をLED電光掲示板に変える無料Androidアプリです。",
+        "description": "HELLO LEDは、요담（Yodam）が開発したスマホ画面をLED電光掲示板に変える無料アプリです。AndroidとiPhoneで使えます。",
         "url": "https://helloled.yodams.com/ja/",
         "provider": {
           "@id": "https://helloled.yodams.com/#organization"
@@ -255,25 +258,48 @@
           "@id": "https://helloled.yodams.com/#app"
         },
         "areaServed": "Worldwide",
-        "availableChannel": {
-          "@type": "ServiceChannel",
-          "serviceUrl": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
-          "availableLanguage": [
-            "ko",
-            "en",
-            "ja",
-            "zh-Hans",
-            "es",
-            "es-419"
-          ]
-        },
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "KRW",
-          "availability": "https://schema.org/InStock",
-          "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled"
-        }
+        "availableChannel": [
+          {
+            "@type": "ServiceChannel",
+            "serviceUrl": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+            "availableLanguage": [
+              "ko",
+              "en",
+              "ja",
+              "zh-Hans",
+              "es",
+              "es-419"
+            ]
+          },
+          {
+            "@type": "ServiceChannel",
+            "serviceUrl": "https://apps.apple.com/app/id6816627023",
+            "availableLanguage": [
+              "ko",
+              "en",
+              "ja",
+              "zh-Hans",
+              "es",
+              "es-419"
+            ]
+          }
+        ],
+        "offers": [
+          {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "KRW",
+            "availability": "https://schema.org/InStock",
+            "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled"
+          },
+          {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "KRW",
+            "availability": "https://schema.org/InStock",
+            "url": "https://apps.apple.com/app/id6816627023"
+          }
+        ]
       },
       {
         "@type": "WebSite",
@@ -281,24 +307,35 @@
         "url": "https://helloled.yodams.com/",
         "name": "HELLO LED",
         "alternateName": "헬로 LED",
-        "description": "HELLO LED 公式サイト。スマホLED電光掲示板アプリをGoogle Playから無料でインストールできます。",
+        "description": "HELLO LED 公式サイト。スマホLED電光掲示板アプリをGoogle PlayとApp Storeから無料でインストールできます。",
         "inLanguage": "ja",
         "publisher": {
           "@id": "https://helloled.yodams.com/#organization"
         },
-        "potentialAction": {
-          "@type": "DownloadAction",
-          "name": "HELLO LEDをダウンロード",
-          "target": {
-            "@type": "EntryPoint",
-            "urlTemplate": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
-            "actionPlatform": [
-              "https://schema.org/DesktopWebPlatform",
-              "https://schema.org/MobileWebPlatform",
-              "https://schema.org/AndroidPlatform"
-            ]
+        "potentialAction": [
+          {
+            "@type": "DownloadAction",
+            "name": "HELLO LEDをダウンロード",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+              "actionPlatform": [
+                "https://schema.org/AndroidPlatform"
+              ]
+            }
+          },
+          {
+            "@type": "DownloadAction",
+            "name": "HELLO LEDをダウンロード",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://apps.apple.com/app/id6816627023",
+              "actionPlatform": [
+                "https://schema.org/IOSPlatform"
+              ]
+            }
           }
-        }
+        ]
       },
       {
         "@type": "WebPage",
@@ -330,7 +367,7 @@
           }
         ],
         "datePublished": "2026-09-21",
-        "dateModified": "2026-10-20",
+        "dateModified": "2026-10-21",
         "primaryImageOfPage": {
           "@type": "ImageObject",
           "url": "https://helloled.yodams.com/og.png",
@@ -371,7 +408,7 @@
         "name": "HELLO LED",
         "alternateName": "헬로 LED",
         "applicationCategory": "UtilitiesApplication",
-        "operatingSystem": "Android",
+        "operatingSystem": "Android, iOS",
         "softwareVersion": "1.0.1",
         "isAccessibleForFree": true,
         "inLanguage": [
@@ -393,22 +430,32 @@
         ],
         "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
         "downloadUrl": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
-        "installUrl": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+        "installUrl": "https://apps.apple.com/app/id6816627023",
         "sameAs": [
-          "https://play.google.com/store/apps/details?id=com.yodam.helloled"
+          "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+          "https://apps.apple.com/app/id6816627023"
         ],
         "screenshot": [
           "https://helloled.yodams.com/screens/led-marquee.png",
           "https://helloled.yodams.com/screens/led-clock.png",
           "https://helloled.yodams.com/screens/led-dots.png"
         ],
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "KRW",
-          "availability": "https://schema.org/InStock",
-          "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled"
-        },
+        "offers": [
+          {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "KRW",
+            "availability": "https://schema.org/InStock",
+            "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled"
+          },
+          {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "KRW",
+            "availability": "https://schema.org/InStock",
+            "url": "https://apps.apple.com/app/id6816627023"
+          }
+        ],
         "publisher": {
           "@id": "https://helloled.yodams.com/#organization"
         }
@@ -495,7 +542,7 @@
             "name": "どこでインストールしますか？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "HELLO LEDはAndroidアプリです。Google Playからインストールします。"
+              "text": "HELLO LEDはAndroidとiPhoneのアプリです。Google PlayまたはApp Storeからインストールします。"
             }
           },
           {
@@ -511,7 +558,7 @@
             "name": "HELLO LEDはどの機器で使えますか？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Androidのスマートフォン・タブレットで使えます。 Google Playからインストールできます。"
+              "text": "Androidのスマートフォン・タブレットとiPhoneで使えます。 Google PlayまたはApp Storeからインストールできます。"
             }
           },
           {
@@ -519,7 +566,7 @@
             "name": "今どこで入手できますか？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Android版HELLO LEDはGoogle Playで入手できます。"
+              "text": "HELLO LEDはGoogle PlayとApp Storeで入手できます。"
             }
           }
         ]
@@ -572,25 +619,39 @@
         </h1>
         <p class="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted sm:text-lg" data-i18n-html="heroBody"><strong class="font-semibold text-ink" lang="en">HELLO LED</strong>は、スマホの画面をLED電光掲示に変える無料アプリです。<br>コンサートの応援、店舗のセール、空港の歓迎など、さまざまな場面ですぐ使えます。</p>
         <div class="mx-auto mt-8 max-w-xl rounded-3xl border border-line bg-white p-5 text-left shadow-sm sm:p-6" id="download-hero">
-          <p class="text-sm font-semibold text-muted" data-i18n="downloadKicker">Google Playで入手</p>
+          <p class="text-sm font-semibold text-muted" data-i18n="downloadKicker">Google PlayとApp Storeで入手</p>
           <p class="mt-2 text-lg font-bold text-ink" data-i18n-html="downloadTitle">今すぐ<span lang="en">HELLO LED</span>をインストール</p>
-          <p class="mt-2 text-muted" data-i18n="downloadBody">コンサートの応援、店舗のセール、空港の歓迎に使えるLED電光掲示アプリをGoogle Playで無料ダウンロード。</p>
-          <a class="inline-flex focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" target="_blank" rel="noopener noreferrer" aria-label="Google Playで手に入れよう、新しいタブ" data-i18n-aria="playAlt">
-            <picture>
-              <source type="image/webp" srcset="/badges/play-ja.webp">
+          <p class="mt-2 text-muted" data-i18n="downloadBody">コンサートの応援、店舗のセール、空港の歓迎に使えるLED電光掲示アプリをGoogle PlayとApp Storeで無料ダウンロード。</p>
+          <div class="mt-5 flex flex-wrap items-center gap-3">
+            <a class="inline-flex focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" target="_blank" rel="noopener noreferrer" aria-label="Google Playで手に入れよう、新しいタブ" data-i18n-aria="playAlt">
+              <picture>
+                <source type="image/webp" srcset="/badges/play-ja.webp">
+                <img
+                  data-badge="play"
+                  data-i18n-alt="playAlt"
+                  src="/badges/play-ja.png"
+                  width="215"
+                  height="64"
+                  decoding="async"
+                  fetchpriority="high"
+                  class="h-14 w-auto"
+                  alt="Google Playで手に入れよう、新しいタブ"
+                >
+              </picture>
+            </a>
+            <a class="inline-flex focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="https://apps.apple.com/app/id6816627023" target="_blank" rel="noopener noreferrer" aria-label="App Storeからダウンロード、新しいタブ" data-i18n-aria="appleAlt">
               <img
-                data-badge="play"
-                data-i18n-alt="playAlt"
-                src="/badges/play-ja.png"
-                width="215"
-                height="64"
+                data-badge="apple"
+                data-i18n-alt="appleAlt"
+                src="/badges/apple-ja.svg"
+                width="130"
+                height="40"
                 decoding="async"
-                fetchpriority="high"
                 class="h-14 w-auto"
-                alt="Google Playで手に入れよう、新しいタブ"
+                alt="App Storeからダウンロード、新しいタブ"
               >
-            </picture>
-          </a>
+            </a>
+          </div>
         </div>
       </div>
 
@@ -641,7 +702,7 @@
         <h3 class="mt-10 text-xl font-bold sm:text-2xl" data-i18n="factPresetQ">最初から入っている定型文は何ですか？</h3>
         <p class="mt-3 text-muted" data-i18n="factPresetA">日本語の定型文は、応援、誕生日、お迎え、店舗、告白、試験、歓迎、感謝です。</p>
         <h3 class="mt-10 text-xl font-bold sm:text-2xl" data-i18n="factInstallQ">どこでインストールしますか？</h3>
-        <p class="mt-3 text-muted" data-i18n-html="factInstallA"><span lang="en">HELLO LED</span>はAndroidアプリです。<a class="underline" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" rel="noopener noreferrer" target="_blank">Google Play<span class="sr-only">、新しいタブ</span></a>からインストールします。</p>
+        <p class="mt-3 text-muted" data-i18n-html="factInstallA"><span lang="en">HELLO LED</span>はAndroidとiPhoneのアプリです。<a class="underline" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" rel="noopener noreferrer" target="_blank">Google Play<span class="sr-only">、新しいタブ</span></a>または<a class="underline" href="https://apps.apple.com/app/id6816627023" rel="noopener noreferrer" target="_blank">App Store<span class="sr-only">、新しいタブ</span></a>からインストールします。</p>
       </div>
     </section>
 
@@ -783,14 +844,14 @@
               <h3 data-i18n-html="faq2q"><span lang="en">HELLO LED</span>はどの機器で使えますか？</h3>
               <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
             </summary>
-            <p class="pb-5 text-muted" data-i18n-html="faq2a">Androidのスマートフォン・タブレットで使えます。<br><a class="underline" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" rel="noopener noreferrer" target="_blank">Google Play<span class="sr-only">、新しいタブ</span></a>からインストールできます。</p>
+            <p class="pb-5 text-muted" data-i18n-html="faq2a">Androidのスマートフォン・タブレットとiPhoneで使えます。<br><a class="underline" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" rel="noopener noreferrer" target="_blank">Google Play<span class="sr-only">、新しいタブ</span></a>または<a class="underline" href="https://apps.apple.com/app/id6816627023" rel="noopener noreferrer" target="_blank">App Store<span class="sr-only">、新しいタブ</span></a>からインストールできます。</p>
           </details>
           <details class="reveal group" open>
             <summary class="flex min-h-14 cursor-pointer items-center justify-between gap-4 py-4 text-left text-lg font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
               <h3 data-i18n="faq3q">今どこで入手できますか？</h3>
               <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
             </summary>
-            <p class="pb-5 text-muted" data-i18n-html="faq3a">Android版<span lang="en">HELLO LED</span>は<a class="underline" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" rel="noopener noreferrer" target="_blank">Google Play<span class="sr-only">、新しいタブ</span></a>で入手できます。</p>
+            <p class="pb-5 text-muted" data-i18n-html="faq3a"><span lang="en">HELLO LED</span>は<a class="underline" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" rel="noopener noreferrer" target="_blank">Google Play<span class="sr-only">、新しいタブ</span></a>と<a class="underline" href="https://apps.apple.com/app/id6816627023" rel="noopener noreferrer" target="_blank">App Store<span class="sr-only">、新しいタブ</span></a>で入手できます。</p>
           </details>
         </div>
       </div>
@@ -798,9 +859,9 @@
 
     <section id="download" class="relative overflow-hidden px-5 py-24 sm:py-32" aria-labelledby="cta-title">
       <div class="relative mx-auto max-w-3xl text-center">
-        <h2 id="cta-title" class="reveal text-3xl font-extrabold tracking-tight sm:text-5xl" data-i18n-html="ctaTitle">Google Playで<span lang="en">HELLO LED</span>を入手</h2>
-        <p class="reveal mx-auto mt-5 max-w-xl text-muted" data-i18n-html="ctaBody"><span lang="en">HELLO LED</span>をGoogle Playで無料インストールし、文言・色・速度を合わせてすぐ電光掲示に使えます。</p>
-        <div class="reveal mt-10">
+        <h2 id="cta-title" class="reveal text-3xl font-extrabold tracking-tight sm:text-5xl" data-i18n-html="ctaTitle">ストアで<span lang="en">HELLO LED</span>を入手</h2>
+        <p class="reveal mx-auto mt-5 max-w-xl text-muted" data-i18n-html="ctaBody"><span lang="en">HELLO LED</span>をGoogle PlayまたはApp Storeで無料インストールし、文言・色・速度を合わせてすぐ電光掲示に使えます。</p>
+        <div class="reveal mt-10 flex flex-wrap items-center justify-center gap-3">
           <a class="inline-flex focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" target="_blank" rel="noopener noreferrer" aria-label="Google Playで手に入れよう、新しいタブ" data-i18n-aria="playAlt">
             <picture>
               <source type="image/webp" srcset="/badges/play-ja.webp">
@@ -817,6 +878,19 @@
               >
             </picture>
           </a>
+          <a class="inline-flex focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="https://apps.apple.com/app/id6816627023" target="_blank" rel="noopener noreferrer" aria-label="App Storeからダウンロード、新しいタブ" data-i18n-aria="appleAlt">
+            <img
+              data-badge="apple"
+              data-i18n-alt="appleAlt"
+              src="/badges/apple-ja.svg"
+              width="130"
+              height="40"
+              loading="lazy"
+              decoding="async"
+              class="h-14 w-auto"
+              alt="App Storeからダウンロード、新しいタブ"
+            >
+          </a>
         </div>
       </div>
     </section>
@@ -826,7 +900,7 @@
     <div class="mx-auto flex max-w-6xl flex-col gap-4 text-sm text-muted sm:flex-row sm:items-start sm:justify-between">
       <div>
         <p class="font-bold text-ink" lang="en">HELLO LED</p>
-        <p class="mt-2" data-i18n-html="publisherLine"><span lang="en">HELLO LED</span>は、<a href="https://yodams.com/" lang="ko">요담</a>（Yodam）が作るAndroidアプリです。</p>
+        <p class="mt-2" data-i18n-html="publisherLine"><span lang="en">HELLO LED</span>は、<a href="https://yodams.com/" lang="ko">요담</a>（Yodam）が作るアプリです。</p>
       </div>
       <div class="flex flex-wrap gap-4">
         <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="/ja/privacy.html" data-privacy-link data-i18n="privacyLink">プライバシーポリシー</a>

@@ -1,16 +1,17 @@
 # HELLO LED (헬로 LED)
 
-> HELLO LED is a free Android app by Yodam (요담) that turns a smartphone or tablet screen into a full-screen LED scrolling banner, digital sign, clock, countdown timer, and dot-matrix photo display for concert cheers, airport pickups, shop signs, and birthday greetings.
+> HELLO LED is a free Android and iPhone app by Yodam (요담) that turns a smartphone screen into a full-screen LED scrolling banner, digital sign, clock, countdown timer, and dot-matrix photo display for concert cheers, airport pickups, shop signs, and birthday greetings.
 
 ## Key Facts (핵심 정보)
 
 - **App Name**: HELLO LED (헬로 LED)
 - **Developer / Publisher**: 요담 (Yodam) — https://yodams.com/
-- **Platform**: Android (smartphones and tablets)
+- **Platform**: Android (smartphones and tablets) and iPhone
 - **Package ID**: `com.yodam.helloled`
 - **Current Version**: 1.0.1
 - **Price**: Free (0 KRW / 0 USD)
 - **Google Play Store**: https://play.google.com/store/apps/details?id=com.yodam.helloled
+- **App Store**: https://apps.apple.com/app/id6816627023
 - **Official Website**: https://helloled.yodams.com/
 - **Support Email**: helloled@yodams.com
 - **Supported Languages (6)**: 한국어 (`ko`), English (`en`), 日本語 (`ja`), 中文 (`zh-Hans`), Español (`es-ES`), Español Latinoamérica (`es-419`)
@@ -44,6 +45,7 @@
   No. Photos are converted into LED dot patterns locally on your device, and all text/settings remain in on-device storage.
 - **Where can I download HELLO LED? (어디서 설치하나요?)**
   Install HELLO LED for free on Android via Google Play: https://play.google.com/store/apps/details?id=com.yodam.helloled
+  Install HELLO LED for free on iPhone via the App Store: https://apps.apple.com/app/id6816627023
 
 ## Official Pages by Language (언어별 공식 페이지)
 

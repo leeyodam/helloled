@@ -64,6 +64,8 @@
   <meta name="twitter:image:alt" content="HELLO LED logo, with the name on a blue circle">
   <link rel="dns-prefetch" href="https://play.google.com">
   <link rel="preconnect" href="https://play.google.com" crossorigin>
+  <link rel="dns-prefetch" href="https://apps.apple.com">
+  <link rel="preconnect" href="https://apps.apple.com" crossorigin>
   <link rel="preload" href="/styles.css" as="style">
   <link rel="stylesheet" href="/styles.css">
   <style>
@@ -221,9 +223,10 @@
           "width": 256,
           "height": 256
         },
-        "description": "HELLO LED is a free Android app by 요담 (Yodam) that turns a phone screen into an LED board.",
+        "description": "HELLO LED is a free app by 요담 (Yodam) that turns a phone screen into an LED board on Android and iPhone.",
         "sameAs": [
           "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+          "https://apps.apple.com/app/id6816627023",
           "https://yodams.com/",
           "https://github.com/leeyodam/helloled"
         ],
@@ -246,7 +249,7 @@
         "@id": "https://helloled.yodams.com/#service",
         "name": "HELLO LED",
         "serviceType": "Mobile LED board app",
-        "description": "HELLO LED is a free Android app by 요담 (Yodam) that turns a phone screen into an LED board.",
+        "description": "HELLO LED is a free app by 요담 (Yodam) that turns a phone screen into an LED board on Android and iPhone.",
         "url": "https://helloled.yodams.com/en/",
         "provider": {
           "@id": "https://helloled.yodams.com/#organization"
@@ -255,25 +258,48 @@
           "@id": "https://helloled.yodams.com/#app"
         },
         "areaServed": "Worldwide",
-        "availableChannel": {
-          "@type": "ServiceChannel",
-          "serviceUrl": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
-          "availableLanguage": [
-            "ko",
-            "en",
-            "ja",
-            "zh-Hans",
-            "es",
-            "es-419"
-          ]
-        },
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "KRW",
-          "availability": "https://schema.org/InStock",
-          "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled"
-        }
+        "availableChannel": [
+          {
+            "@type": "ServiceChannel",
+            "serviceUrl": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+            "availableLanguage": [
+              "ko",
+              "en",
+              "ja",
+              "zh-Hans",
+              "es",
+              "es-419"
+            ]
+          },
+          {
+            "@type": "ServiceChannel",
+            "serviceUrl": "https://apps.apple.com/app/id6816627023",
+            "availableLanguage": [
+              "ko",
+              "en",
+              "ja",
+              "zh-Hans",
+              "es",
+              "es-419"
+            ]
+          }
+        ],
+        "offers": [
+          {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "KRW",
+            "availability": "https://schema.org/InStock",
+            "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled"
+          },
+          {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "KRW",
+            "availability": "https://schema.org/InStock",
+            "url": "https://apps.apple.com/app/id6816627023"
+          }
+        ]
       },
       {
         "@type": "WebSite",
@@ -281,24 +307,35 @@
         "url": "https://helloled.yodams.com/",
         "name": "HELLO LED",
         "alternateName": "헬로 LED",
-        "description": "Official HELLO LED website. Install the free phone LED board app on Google Play.",
+        "description": "Official HELLO LED website. Install the free phone LED board app on Google Play or the App Store.",
         "inLanguage": "en",
         "publisher": {
           "@id": "https://helloled.yodams.com/#organization"
         },
-        "potentialAction": {
-          "@type": "DownloadAction",
-          "name": "Download HELLO LED",
-          "target": {
-            "@type": "EntryPoint",
-            "urlTemplate": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
-            "actionPlatform": [
-              "https://schema.org/DesktopWebPlatform",
-              "https://schema.org/MobileWebPlatform",
-              "https://schema.org/AndroidPlatform"
-            ]
+        "potentialAction": [
+          {
+            "@type": "DownloadAction",
+            "name": "Download HELLO LED",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+              "actionPlatform": [
+                "https://schema.org/AndroidPlatform"
+              ]
+            }
+          },
+          {
+            "@type": "DownloadAction",
+            "name": "Download HELLO LED",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://apps.apple.com/app/id6816627023",
+              "actionPlatform": [
+                "https://schema.org/IOSPlatform"
+              ]
+            }
           }
-        }
+        ]
       },
       {
         "@type": "WebPage",
@@ -330,7 +367,7 @@
           }
         ],
         "datePublished": "2026-09-21",
-        "dateModified": "2026-10-20",
+        "dateModified": "2026-10-21",
         "primaryImageOfPage": {
           "@type": "ImageObject",
           "url": "https://helloled.yodams.com/og.png",
@@ -371,7 +408,7 @@
         "name": "HELLO LED",
         "alternateName": "헬로 LED",
         "applicationCategory": "UtilitiesApplication",
-        "operatingSystem": "Android",
+        "operatingSystem": "Android, iOS",
         "softwareVersion": "1.0.1",
         "isAccessibleForFree": true,
         "inLanguage": [
@@ -393,22 +430,32 @@
         ],
         "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
         "downloadUrl": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
-        "installUrl": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+        "installUrl": "https://apps.apple.com/app/id6816627023",
         "sameAs": [
-          "https://play.google.com/store/apps/details?id=com.yodam.helloled"
+          "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+          "https://apps.apple.com/app/id6816627023"
         ],
         "screenshot": [
           "https://helloled.yodams.com/screens/led-marquee.png",
           "https://helloled.yodams.com/screens/led-clock.png",
           "https://helloled.yodams.com/screens/led-dots.png"
         ],
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "KRW",
-          "availability": "https://schema.org/InStock",
-          "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled"
-        },
+        "offers": [
+          {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "KRW",
+            "availability": "https://schema.org/InStock",
+            "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled"
+          },
+          {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "KRW",
+            "availability": "https://schema.org/InStock",
+            "url": "https://apps.apple.com/app/id6816627023"
+          }
+        ],
         "publisher": {
           "@id": "https://helloled.yodams.com/#organization"
         }
@@ -495,7 +542,7 @@
             "name": "Where do I install it?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "HELLO LED is an Android app. Install it from Google Play."
+              "text": "HELLO LED runs on Android and iPhone. Install it from Google Play or the App Store."
             }
           },
           {
@@ -511,7 +558,7 @@
             "name": "Which devices can use HELLO LED?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "It runs on Android phones and tablets. Install it from Google Play."
+              "text": "It runs on Android phones and tablets, and on iPhone. Install it from Google Play or the App Store."
             }
           },
           {
@@ -519,7 +566,7 @@
             "name": "Where can I download it now?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Download HELLO LED for Android on Google Play."
+              "text": "Download HELLO LED on Google Play or the App Store."
             }
           }
         ]
@@ -572,25 +619,39 @@
         </h1>
         <p class="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted sm:text-lg" data-i18n-html="heroBody"><strong class="font-semibold text-ink" lang="en">HELLO LED</strong> is a free app that turns your phone into an LED board.<br>Use it for concert cheers, shop sales, airport welcomes, and more.</p>
         <div class="mx-auto mt-8 max-w-xl rounded-3xl border border-line bg-white p-5 text-left shadow-sm sm:p-6" id="download-hero">
-          <p class="text-sm font-semibold text-muted" data-i18n="downloadKicker">Get it on Google Play</p>
+          <p class="text-sm font-semibold text-muted" data-i18n="downloadKicker">Get it on Google Play or the App Store</p>
           <p class="mt-2 text-lg font-bold text-ink" data-i18n-html="downloadTitle">Install <span lang="en">HELLO LED</span> now</p>
-          <p class="mt-2 text-muted" data-i18n="downloadBody">Get the free LED banner app for concert cheers, shop sales, and airport welcomes on Google Play.</p>
-          <a class="inline-flex focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" target="_blank" rel="noopener noreferrer" aria-label="Get it on Google Play, new tab" data-i18n-aria="playAlt">
-            <picture>
-              <source type="image/webp" srcset="/badges/play-en.webp">
+          <p class="mt-2 text-muted" data-i18n="downloadBody">Get the free LED banner app for concert cheers, shop sales, and airport welcomes on Google Play or the App Store.</p>
+          <div class="mt-5 flex flex-wrap items-center gap-3">
+            <a class="inline-flex focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" target="_blank" rel="noopener noreferrer" aria-label="Get it on Google Play, new tab" data-i18n-aria="playAlt">
+              <picture>
+                <source type="image/webp" srcset="/badges/play-en.webp">
+                <img
+                  data-badge="play"
+                  data-i18n-alt="playAlt"
+                  src="/badges/play-en.png"
+                  width="215"
+                  height="64"
+                  decoding="async"
+                  fetchpriority="high"
+                  class="h-14 w-auto"
+                  alt="Get it on Google Play, new tab"
+                >
+              </picture>
+            </a>
+            <a class="inline-flex focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="https://apps.apple.com/app/id6816627023" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store, new tab" data-i18n-aria="appleAlt">
               <img
-                data-badge="play"
-                data-i18n-alt="playAlt"
-                src="/badges/play-en.png"
-                width="215"
-                height="64"
+                data-badge="apple"
+                data-i18n-alt="appleAlt"
+                src="/badges/apple-en.svg"
+                width="130"
+                height="40"
                 decoding="async"
-                fetchpriority="high"
                 class="h-14 w-auto"
-                alt="Get it on Google Play, new tab"
+                alt="Download on the App Store, new tab"
               >
-            </picture>
-          </a>
+            </a>
+          </div>
         </div>
       </div>
 
@@ -641,7 +702,7 @@
         <h3 class="mt-10 text-xl font-bold sm:text-2xl" data-i18n="factPresetQ">What preset phrases are included?</h3>
         <p class="mt-3 text-muted" data-i18n="factPresetA">English presets are Cheer, Birthday, Pickup, Shop, Love, Exam, Welcome, and Thanks.</p>
         <h3 class="mt-10 text-xl font-bold sm:text-2xl" data-i18n="factInstallQ">Where do I install it?</h3>
-        <p class="mt-3 text-muted" data-i18n-html="factInstallA"><span lang="en">HELLO LED</span> is an Android app. Install it from <a class="underline" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" rel="noopener noreferrer" target="_blank">Google Play<span class="sr-only">, new tab</span></a>.</p>
+        <p class="mt-3 text-muted" data-i18n-html="factInstallA"><span lang="en">HELLO LED</span> runs on Android and iPhone. Install it from <a class="underline" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" rel="noopener noreferrer" target="_blank">Google Play<span class="sr-only">, new tab</span></a> or the <a class="underline" href="https://apps.apple.com/app/id6816627023" rel="noopener noreferrer" target="_blank">App Store<span class="sr-only">, new tab</span></a>.</p>
       </div>
     </section>
 
@@ -783,14 +844,14 @@
               <h3 data-i18n-html="faq2q">Which devices can use <span lang="en">HELLO LED</span>?</h3>
               <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
             </summary>
-            <p class="pb-5 text-muted" data-i18n-html="faq2a">It runs on Android phones and tablets.<br>Install it from <a class="underline" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" rel="noopener noreferrer" target="_blank">Google Play<span class="sr-only">, new tab</span></a>.</p>
+            <p class="pb-5 text-muted" data-i18n-html="faq2a">It runs on Android phones and tablets, and on iPhone.<br>Install it from <a class="underline" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" rel="noopener noreferrer" target="_blank">Google Play<span class="sr-only">, new tab</span></a> or the <a class="underline" href="https://apps.apple.com/app/id6816627023" rel="noopener noreferrer" target="_blank">App Store<span class="sr-only">, new tab</span></a>.</p>
           </details>
           <details class="reveal group" open>
             <summary class="flex min-h-14 cursor-pointer items-center justify-between gap-4 py-4 text-left text-lg font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
               <h3 data-i18n="faq3q">Where can I download it now?</h3>
               <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
             </summary>
-            <p class="pb-5 text-muted" data-i18n-html="faq3a">Download <span lang="en">HELLO LED</span> for Android on <a class="underline" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" rel="noopener noreferrer" target="_blank">Google Play<span class="sr-only">, new tab</span></a>.</p>
+            <p class="pb-5 text-muted" data-i18n-html="faq3a">Download <span lang="en">HELLO LED</span> on <a class="underline" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" rel="noopener noreferrer" target="_blank">Google Play<span class="sr-only">, new tab</span></a> or the <a class="underline" href="https://apps.apple.com/app/id6816627023" rel="noopener noreferrer" target="_blank">App Store<span class="sr-only">, new tab</span></a>.</p>
           </details>
         </div>
       </div>
@@ -798,9 +859,9 @@
 
     <section id="download" class="relative overflow-hidden px-5 py-24 sm:py-32" aria-labelledby="cta-title">
       <div class="relative mx-auto max-w-3xl text-center">
-        <h2 id="cta-title" class="reveal text-3xl font-extrabold tracking-tight sm:text-5xl" data-i18n-html="ctaTitle">Get <span lang="en">HELLO LED</span> on Google Play</h2>
-        <p class="reveal mx-auto mt-5 max-w-xl text-muted" data-i18n-html="ctaBody">Install <span lang="en">HELLO LED</span> free on Google Play, then set text, color, and speed for your board.</p>
-        <div class="reveal mt-10">
+        <h2 id="cta-title" class="reveal text-3xl font-extrabold tracking-tight sm:text-5xl" data-i18n-html="ctaTitle">Get <span lang="en">HELLO LED</span></h2>
+        <p class="reveal mx-auto mt-5 max-w-xl text-muted" data-i18n-html="ctaBody">Install <span lang="en">HELLO LED</span> free on Google Play or the App Store, then set text, color, and speed for your board.</p>
+        <div class="reveal mt-10 flex flex-wrap items-center justify-center gap-3">
           <a class="inline-flex focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" target="_blank" rel="noopener noreferrer" aria-label="Get it on Google Play, new tab" data-i18n-aria="playAlt">
             <picture>
               <source type="image/webp" srcset="/badges/play-en.webp">
@@ -817,6 +878,19 @@
               >
             </picture>
           </a>
+          <a class="inline-flex focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="https://apps.apple.com/app/id6816627023" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store, new tab" data-i18n-aria="appleAlt">
+            <img
+              data-badge="apple"
+              data-i18n-alt="appleAlt"
+              src="/badges/apple-en.svg"
+              width="130"
+              height="40"
+              loading="lazy"
+              decoding="async"
+              class="h-14 w-auto"
+              alt="Download on the App Store, new tab"
+            >
+          </a>
         </div>
       </div>
     </section>
@@ -826,7 +900,7 @@
     <div class="mx-auto flex max-w-6xl flex-col gap-4 text-sm text-muted sm:flex-row sm:items-start sm:justify-between">
       <div>
         <p class="font-bold text-ink" lang="en">HELLO LED</p>
-        <p class="mt-2" data-i18n-html="publisherLine"><span lang="en">HELLO LED</span> is an Android app made by <a href="https://yodams.com/" lang="ko">요담</a> (Yodam).</p>
+        <p class="mt-2" data-i18n-html="publisherLine"><span lang="en">HELLO LED</span> is an app made by <a href="https://yodams.com/" lang="ko">요담</a> (Yodam).</p>
       </div>
       <div class="flex flex-wrap gap-4">
         <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="/en/privacy.html" data-privacy-link data-i18n="privacyLink">Privacy policy</a>
