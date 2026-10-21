@@ -78,20 +78,17 @@
       50% { opacity: 0.72; }
     }
     @keyframes phone-tilt {
-      0%, 100% { transform: rotate(-6deg); }
-      50% { transform: rotate(6deg); }
+      0%, 100% { transform: rotate(-3deg); }
+      50% { transform: rotate(3deg); }
     }
     html { scroll-behavior: smooth; }
-    #features, #how, #qa, #download, #facts { scroll-margin-top: 3rem; }
+    #features, #how, #qa, #download { scroll-margin-top: 3rem; }
     #main { scroll-margin-top: 6.5rem; }
-    #main:focus h1 {
-      outline: 2px solid #374151;
-      outline-offset: 4px;
-    }
+    #main:focus { outline: none; }
     #features .max-w-3xl > p,
     #how li > p { color: #374151; }
-    #qa summary h3 { margin: 0; min-width: 0; font-size: 1.125rem; font-weight: 600; }
-    #facts a:focus-visible,
+    #qa summary h3 { margin: 0; min-width: 0; font-size: 1.0625rem; font-weight: 700; line-height: 1.45; }
+    #qa .faq-list p { color: #374151; }
     #qa a:focus-visible { outline: 2px solid #374151; outline-offset: 2px; }
     #led-input::placeholder { color: #4b5563; opacity: 1; }
     [data-i18n-html="publisherLine"] a { text-decoration: underline; text-underline-offset: 0.15em; }
@@ -171,32 +168,131 @@
     details summary { list-style: none; }
     details summary::-webkit-details-marker { display: none; }
     details[open] .faq-chevron { transform: rotate(180deg); }
+    .store-badge {
+      display: block;
+      width: 11.75rem;
+      height: 3.5rem;
+      object-fit: contain;
+      object-position: center;
+    }
+    .feature-card {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      border-radius: 1.75rem;
+      background: #fff;
+      box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
+    }
+    .feature-card figure { margin: 0; }
+    .feature-card img { display: block; width: 100%; height: auto; }
+    .feature-copy {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      padding: 1.35rem 1.5rem 1.5rem;
+    }
+    .feature-kicker { margin-top: 0.35rem; font-size: 0.875rem; font-weight: 600; color: #374151; }
+    .feature-body { margin-top: 0.7rem; color: #374151; line-height: 1.6; }
+    .feature-note { margin-top: auto; padding-top: 1rem; font-size: 0.75rem; color: #6b7280; }
+    .swatches { display: flex; gap: 0.55rem; margin-top: 0.9rem; }
+    .swatches span { width: 1.35rem; height: 1.35rem; border-radius: 999px; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.06); }
     .phone-stage {
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-top: 1.5rem;
-      padding: 1.75rem 0;
+      margin: 0;
+      padding: 1.35rem 1.15rem;
+      background:
+        radial-gradient(120% 80% at 50% 50%, rgba(0, 229, 255, 0.16), transparent 62%),
+        #050505;
+      aspect-ratio: 16 / 9;
     }
     .phone-tilt {
       position: relative;
-      width: 94%;
+      width: 100%;
+      container-type: size;
       aspect-ratio: 19.5 / 9;
       animation: phone-tilt 5s ease-in-out infinite;
     }
     .phone-screen {
       position: absolute;
-      inset: 5%;
+      inset: 7% 3%;
       border-radius: 0.85rem;
       background: #050505;
       display: flex;
       align-items: center;
       justify-content: center;
+      overflow: hidden;
       color: #00E5FF;
       font-weight: 800;
-      letter-spacing: 0.04em;
-      font-size: clamp(1.25rem, 4vw, 2rem);
-      text-shadow: 0 0 10px rgba(0, 229, 255, 0.9);
+      letter-spacing: 0.03em;
+      line-height: 1;
+      white-space: nowrap;
+      font-size: clamp(2.75rem, 15cqw, 5.75rem);
+      text-shadow: 0 0 12px rgba(0, 229, 255, 0.95), 0 0 28px rgba(59, 163, 255, 0.7);
+    }
+    .how-list {
+      display: grid;
+      gap: 1rem;
+      margin: 2.75rem 0 0;
+      padding: 0;
+      list-style: none;
+    }
+    .how-step {
+      position: relative;
+      border: 1px solid #ececec;
+      border-radius: 1.5rem;
+      background: #fff;
+      padding: 1.5rem 1.4rem 1.6rem;
+      box-shadow: 0 12px 32px rgba(15, 23, 42, 0.05);
+    }
+    .how-index {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      width: 2.75rem;
+      height: 2.75rem;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      font-weight: 800;
+      color: #0a0a0a;
+    }
+    .how-step h3 { margin: 1.1rem 0 0; font-size: 1.125rem; font-weight: 700; color: #0a0a0a; }
+    .how-step p { margin: 0.45rem 0 0; color: #6b7280; line-height: 1.6; }
+    .faq-list {
+      margin-top: 2.5rem;
+      overflow: hidden;
+      border-radius: 1.75rem;
+      background: #fff;
+      box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
+    }
+    .faq-list details + details { border-top: 1px solid #e5e7eb; }
+    .faq-list summary { padding: 1.15rem 1.35rem; }
+    .faq-list details[open] summary { background: transparent; }
+    .faq-list p { margin: 0; padding: 0 1.35rem 1.25rem; line-height: 1.65; }
+    .faq-chevron {
+      display: inline-flex;
+      width: 2rem;
+      height: 2rem;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      background: transparent;
+      box-shadow: inset 0 0 0 1px #e5e7eb;
+      font-size: 0.85rem;
+    }
+    @media (min-width: 768px) {
+      .how-list { grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+      .how-step:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        top: 2.85rem;
+        left: calc(1.4rem + 2.75rem + 0.55rem);
+        right: -1.25rem;
+        height: 2px;
+        background: #e5e7eb;
+      }
     }
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
@@ -499,54 +595,6 @@
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "広告はどこに出ますか？",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "全画面の電光掲示にバナー広告は出ません。編集画面にはバナーが出ることがあり、全画面を開く前に全画面広告が出ることがあります。"
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "写真はどこへ行きますか？",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "ギャラリーの写真は端末の中でドット模様に変換され、電光掲示に表示されます。サーバーには送信されません。"
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "アカウントは必要ですか？",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "アカウントは不要です。文言と設定は端末に保存されます。"
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "どの言語に対応していますか？",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "アプリとこのサイトは、한국어、English、日本語、中文、Español、Español (LatAm) に対応しています。"
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "最初から入っている定型文は何ですか？",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "日本語の定型文は、応援、誕生日、お迎え、店舗、告白、試験、歓迎、感謝です。"
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "どこでインストールしますか？",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "HELLO LEDはAndroidとiPhoneのアプリです。Google PlayまたはApp Storeからインストールします。"
-            }
-          },
-          {
-            "@type": "Question",
             "name": "複数の文言を順番に流したり、画面が消えないようにできますか？",
             "acceptedAnswer": {
               "@type": "Answer",
@@ -579,9 +627,9 @@
   <script>document.documentElement.classList.add('js');</script>
   <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[60] focus:rounded-full focus:bg-ink focus:px-4 focus:py-2 focus:text-white" data-i18n="skip">本文へスキップ</a>
 
-  <header class="sticky top-0 z-50 border-b border-line/60 bg-white/90 backdrop-blur-md">
-    <nav class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-5 py-3.5" aria-label="メイン" data-i18n-aria="navLabel">
-      <a href="/ja/" class="inline-flex min-h-11 items-center gap-2 font-extrabold tracking-tight focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" data-home-link>
+  <header class="sticky top-0 z-50 border-b border-line/80 bg-white/80 backdrop-blur-md">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between gap-3 px-5 py-2.5" aria-label="メイン" data-i18n-aria="navLabel">
+      <a href="/ja/" class="inline-flex min-h-11 shrink-0 items-center gap-2 whitespace-nowrap font-extrabold tracking-tight focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" data-home-link>
         <span class="flex gap-0.5" aria-hidden="true">
           <span class="h-2 w-2 rounded-full bg-neonPink"></span>
           <span class="h-2 w-2 rounded-full bg-neonRed"></span>
@@ -617,12 +665,8 @@
           <span data-i18n="heroLine1">スマホをLED電光掲示板に</span><br>
           <span class="neon-word" lang="en" data-i18n="heroAccent">HELLO LED</span>
         </h1>
-        <p class="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted sm:text-lg" data-i18n-html="heroBody"><strong class="font-semibold text-ink" lang="en">HELLO LED</strong>は、スマホの画面をLED電光掲示に変える無料アプリです。<br>コンサートの応援、店舗のセール、空港の歓迎など、さまざまな場面ですぐ使えます。</p>
-        <div class="mx-auto mt-8 max-w-xl rounded-3xl border border-line bg-white p-5 text-left shadow-sm sm:p-6" id="download-hero">
-          <p class="text-sm font-semibold text-muted" data-i18n="downloadKicker">Google PlayとApp Storeで入手</p>
-          <p class="mt-2 text-lg font-bold text-ink" data-i18n-html="downloadTitle">今すぐ<span lang="en">HELLO LED</span>をインストール</p>
-          <p class="mt-2 text-muted" data-i18n="downloadBody">コンサートの応援、店舗のセール、空港の歓迎に使えるLED電光掲示アプリをGoogle PlayとApp Storeで無料ダウンロード。</p>
-          <div class="mt-5 flex flex-wrap items-center gap-3">
+        <p class="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted sm:text-lg" data-i18n-html="heroBody"><strong class="font-semibold text-ink" lang="en">HELLO LED</strong>は、スマホの画面をLED電光掲示に変える無料アプリです。 コンサートの応援、店舗のセール、空港の歓迎など、さまざまな場面ですぐ使えます。</p>
+        <div class="mx-auto mt-8 flex max-w-xl flex-wrap items-center justify-center gap-3" id="download-hero">
             <a class="inline-flex focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" target="_blank" rel="noopener noreferrer" aria-label="Google Playで手に入れよう、新しいタブ" data-i18n-aria="playAlt">
               <picture>
                 <source type="image/webp" srcset="/badges/play-ja.webp">
@@ -634,7 +678,7 @@
                   height="64"
                   decoding="async"
                   fetchpriority="high"
-                  class="h-14 w-auto"
+                  class="store-badge"
                   alt="Google Playで手に入れよう、新しいタブ"
                 >
               </picture>
@@ -647,16 +691,15 @@
                 width="130"
                 height="40"
                 decoding="async"
-                class="h-14 w-auto"
+                class="store-badge"
                 alt="App Storeからダウンロード、新しいタブ"
               >
             </a>
-          </div>
         </div>
       </div>
 
-      <div class="mx-auto mt-10 w-full max-w-3xl px-1 sm:mt-12">
-        <figure class="mx-auto w-full max-w-[620px]">
+      <div class="mx-auto mt-8 w-full max-w-3xl px-1 sm:mt-10">
+        <figure class="mx-auto w-full max-w-[720px]">
           <div class="device rounded-[1.85rem] p-2.5 sm:rounded-[2.1rem] sm:p-3" aria-hidden="true">
             <div class="led-screen relative overflow-hidden rounded-[1.35rem] bg-black sm:rounded-[1.5rem]" style="aspect-ratio: 19.5 / 9;">
               <div class="absolute left-2 top-1/2 z-10 h-16 w-1.5 -translate-y-1/2 rounded-full bg-neutral-950 sm:h-20 sm:w-2"></div>
@@ -673,8 +716,8 @@
           <figcaption id="preview-caption" class="sr-only" data-i18n-html="previewCaption"><span lang="en">HELLO LED</span>横向き全画面電光掲示板のプレビュー</figcaption>
         </figure>
 
-        <div id="try" class="mx-auto mt-8 max-w-xl rounded-3xl border border-line bg-white p-5 text-left shadow-sm sm:p-6">
-          <label for="led-input" class="mb-3 block text-sm font-semibold text-ink" data-i18n-html="previewLabel"><span lang="en">HELLO LED</span>電光掲示プレビュー</label>
+        <div id="try" class="mx-auto mt-6 max-w-xl">
+          <label for="led-input" class="mb-2 block text-center text-sm font-semibold text-ink" data-i18n-html="previewLabel"><span lang="en">HELLO LED</span>電光掲示プレビュー</label>
           <input
             id="led-input"
             type="text"
@@ -682,47 +725,25 @@
             autocomplete="off"
             placeholder="メッセージを入力してください。"
             data-i18n-placeholder="previewPlaceholder"
-            class="w-full rounded-2xl border border-line bg-soft px-4 py-3.5 text-base text-ink placeholder:text-neutral-400 focus:border-ink focus:outline-none focus:ring-2 focus:ring-ink/20"
+            class="w-full rounded-2xl border border-line bg-white px-4 py-3.5 text-base text-ink placeholder:text-neutral-400 focus:border-ink focus:outline-none focus:ring-2 focus:ring-ink/20"
           >
         </div>
       </div>
     </section>
 
-    <section id="facts" class="border-t border-line px-5 py-20 sm:py-28" aria-labelledby="facts-title">
-      <div class="mx-auto max-w-3xl">
-        <h2 id="facts-title" class="text-3xl font-extrabold tracking-tight sm:text-4xl" data-i18n-html="factsLabel"><span lang="en">HELLO LED</span>について</h2>
-        <h3 class="mt-10 text-xl font-bold sm:text-2xl" data-i18n="factAdsQ">広告はどこに出ますか？</h3>
-        <p class="mt-3 text-muted" data-i18n="factAdsA">全画面の電光掲示にバナー広告は出ません。編集画面にはバナーが出ることがあり、全画面を開く前に全画面広告が出ることがあります。</p>
-        <h3 class="mt-10 text-xl font-bold sm:text-2xl" data-i18n="factPhotoQ">写真はどこへ行きますか？</h3>
-        <p class="mt-3 text-muted" data-i18n="factPhotoA">ギャラリーの写真は端末の中でドット模様に変換され、電光掲示に表示されます。サーバーには送信されません。</p>
-        <h3 class="mt-10 text-xl font-bold sm:text-2xl" data-i18n="factAccountQ">アカウントは必要ですか？</h3>
-        <p class="mt-3 text-muted" data-i18n="factAccountA">アカウントは不要です。文言と設定は端末に保存されます。</p>
-        <h3 class="mt-10 text-xl font-bold sm:text-2xl" data-i18n="factLangQ">どの言語に対応していますか？</h3>
-        <p class="mt-3 text-muted" data-i18n-html="factLangA">アプリとこのサイトは、<span lang="ko">한국어</span>、<span lang="en">English</span>、日本語、<span lang="zh-Hans">中文</span>、<span lang="es">Español</span>、<span lang="es">Español (LatAm)</span> に対応しています。</p>
-        <h3 class="mt-10 text-xl font-bold sm:text-2xl" data-i18n="factPresetQ">最初から入っている定型文は何ですか？</h3>
-        <p class="mt-3 text-muted" data-i18n="factPresetA">日本語の定型文は、応援、誕生日、お迎え、店舗、告白、試験、歓迎、感謝です。</p>
-        <h3 class="mt-10 text-xl font-bold sm:text-2xl" data-i18n="factInstallQ">どこでインストールしますか？</h3>
-        <p class="mt-3 text-muted" data-i18n-html="factInstallA"><span lang="en">HELLO LED</span>はAndroidとiPhoneのアプリです。<a class="underline" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" rel="noopener noreferrer" target="_blank">Google Play<span class="sr-only">、新しいタブ</span></a>または<a class="underline" href="https://apps.apple.com/app/id6816627023" rel="noopener noreferrer" target="_blank">App Store<span class="sr-only">、新しいタブ</span></a>からインストールします。</p>
-      </div>
-    </section>
-
-    <section id="features" class="bg-soft px-5 py-20 sm:py-28" aria-labelledby="features-title">
+    <section id="features" class="px-5 py-20 sm:py-28" aria-labelledby="features-title">
       <div class="mx-auto max-w-6xl">
         <div class="mx-auto max-w-3xl text-center">
           <h2 id="features-title" class="reveal text-3xl font-extrabold tracking-tight sm:text-5xl" data-i18n-html="featuresTitle"><span lang="en">HELLO LED</span>の主な機能</h2>
           <p class="reveal mx-auto mt-5 text-lg leading-relaxed text-muted" data-i18n="featuresLead">遠くからでも読める明るさとスクロール、場面別のプリセットで応援・宣伝・歓迎の文言をすぐ作れます。</p>
         </div>
 
-        <div class="mt-14 grid gap-4 sm:grid-cols-2 lg:gap-5">
-          <article class="reveal rounded-[1.75rem] bg-white p-6 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-md sm:p-7">
-            <h3 class="text-xl font-bold sm:text-2xl" data-i18n="customTitle">色・速度・フォント</h3>
-            <p class="mt-2 text-sm font-medium text-ink/70" data-i18n="customKicker">ネオンカラーからスクロール速度まで</p>
-            <p class="mt-3 text-muted" data-i18n="customBody">赤・黄・緑・青・ピンクから選び、スクロール速度と書体を応援・セール・歓迎の雰囲気に合わせます。</p>
-            <figure class="mt-6" aria-labelledby="custom-caption">
+        <div class="mt-14 grid gap-5 sm:grid-cols-2">
+          <article class="feature-card reveal">
+            <figure aria-labelledby="custom-caption">
               <picture>
                 <source type="image/webp" srcset="/screens/led-marquee.webp">
                 <img
-                  class="w-full rounded-xl border border-line bg-black"
                   src="/screens/led-marquee.png"
                   width="960"
                   height="540"
@@ -732,37 +753,40 @@
                   alt="HELLO LEDの画面例: ピンクのネオン文字 LOVE HE"
                 >
               </picture>
-              <figcaption id="custom-caption" class="mt-2 text-xs text-muted" data-i18n="customCaption">アプリ画面: 色・書体を合わせた横向き電光板の文言</figcaption>
             </figure>
-            <div class="mt-6 flex gap-2.5" aria-hidden="true">
-                <span class="h-8 w-8 rounded-full bg-neonRed shadow-sm"></span>
-                <span class="h-8 w-8 rounded-full bg-neonYellow shadow-sm"></span>
-                <span class="h-8 w-8 rounded-full bg-neonGreen shadow-sm"></span>
-                <span class="h-8 w-8 rounded-full bg-neonBlue shadow-sm"></span>
-                <span class="h-8 w-8 rounded-full bg-neonPink shadow-sm"></span>
+            <div class="feature-copy">
+              <h3 class="text-xl font-bold sm:text-2xl" data-i18n="customTitle">色・速度・フォント</h3>
+              <p class="feature-kicker" data-i18n="customKicker">ネオンカラーからスクロール速度まで</p>
+              <div class="swatches" aria-hidden="true">
+                <span class="bg-neonRed"></span>
+                <span class="bg-neonYellow"></span>
+                <span class="bg-neonGreen"></span>
+                <span class="bg-neonBlue"></span>
+                <span class="bg-neonPink"></span>
+              </div>
+              <p class="feature-body" data-i18n="customBody">赤・黄・緑・青・ピンクから選び、スクロール速度と書体を応援・セール・歓迎の雰囲気に合わせます。</p>
+              <p id="custom-caption" class="feature-note" data-i18n="customCaption">アプリ画面: 色・書体を合わせた横向き電光板の文言</p>
             </div>
           </article>
 
-          <article class="reveal rounded-[1.75rem] bg-white p-6 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-md sm:p-7">
-            <h3 class="text-xl font-bold" data-i18n="wideTitle">横向き全画面の電光掲示</h3>
-            <p class="mt-2 text-sm font-medium text-ink/70" data-i18n="wideKicker">遠くからでもはっきり読める</p>
-            <p class="mt-3 text-muted" data-i18n="wideBody">スマホを横にすると画面全体がLED電光掲示になります。会場の後方やカウンターの向こうからでも読めるように作っています。</p>
-            <div class="phone-stage mt-6" aria-hidden="true">
-              <div class="phone-tilt device rounded-[1.35rem] sm:rounded-[1.6rem]">
+          <article class="feature-card reveal">
+            <div class="phone-stage" aria-hidden="true">
+              <div class="phone-tilt device rounded-[1.15rem] sm:rounded-[1.35rem]">
                 <span class="phone-screen">HELLO LED</span>
               </div>
             </div>
+            <div class="feature-copy">
+              <h3 class="text-xl font-bold sm:text-2xl" data-i18n="wideTitle">横向き全画面の電光掲示</h3>
+              <p class="feature-kicker" data-i18n="wideKicker">遠くからでもはっきり読める</p>
+              <p class="feature-body" data-i18n="wideBody">スマホを横にすると画面全体がLED電光掲示になります。会場の後方やカウンターの向こうからでも読めるように作っています。</p>
+            </div>
           </article>
 
-          <article class="reveal rounded-[1.75rem] bg-white p-6 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-md sm:p-7">
-            <h3 class="text-xl font-bold" data-i18n="clockTitle">時計・カウントダウン・タイマー</h3>
-            <p class="mt-2 text-sm font-medium text-ink/70" data-i18n="clockKicker">文字の代わりに時間を大きく</p>
-            <p class="mt-3 text-muted" data-i18n="clockBody">現在時刻、カウントダウン、タイマーを電光掲示板に表示し、会場や店舗の向こうからも確認できます。</p>
-            <figure class="mt-6" aria-labelledby="clock-caption">
+          <article class="feature-card reveal">
+            <figure aria-labelledby="clock-caption">
               <picture>
                 <source type="image/webp" srcset="/screens/led-clock.webp">
                 <img
-                  class="w-full rounded-xl border border-line bg-black"
                   src="/screens/led-clock.png"
                   width="960"
                   height="540"
@@ -772,19 +796,20 @@
                   alt="HELLO LEDの画面例: 横向きの時計 21:48"
                 >
               </picture>
-              <figcaption id="clock-caption" class="mt-2 text-xs text-muted" data-i18n="clockCaption">アプリ画面: 横向き掲示板の時計</figcaption>
             </figure>
+            <div class="feature-copy">
+              <h3 class="text-xl font-bold sm:text-2xl" data-i18n="clockTitle">時計・カウントダウン・タイマー</h3>
+              <p class="feature-kicker" data-i18n="clockKicker">文字の代わりに時間を大きく</p>
+              <p class="feature-body" data-i18n="clockBody">現在時刻、カウントダウン、タイマーを電光掲示板に表示し、会場や店舗の向こうからも確認できます。</p>
+              <p id="clock-caption" class="feature-note" data-i18n="clockCaption">アプリ画面: 横向き掲示板の時計</p>
+            </div>
           </article>
 
-          <article class="reveal rounded-[1.75rem] bg-white p-6 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-md sm:p-7">
-            <h3 class="text-xl font-bold" data-i18n="photoTitle">写真をドット電光板に</h3>
-            <p class="mt-2 text-sm font-medium text-ink/70" data-i18n="photoKicker">画像のドット変換</p>
-            <p class="mt-3 text-muted" data-i18n="photoBody">ギャラリーの写真を端末内でドット模様に変換して表示します。サーバーへ写真は送りません。</p>
-            <figure class="mt-6" aria-labelledby="photo-caption">
+          <article class="feature-card reveal">
+            <figure aria-labelledby="photo-caption">
               <picture>
                 <source type="image/webp" srcset="/screens/led-dots.webp">
                 <img
-                  class="w-full rounded-xl border border-line bg-black"
                   src="/screens/led-dots.png"
                   width="960"
                   height="540"
@@ -794,70 +819,74 @@
                   alt="HELLO LEDの画面例: 写真から作ったピンクのハート2つ"
                 >
               </picture>
-              <figcaption id="photo-caption" class="mt-2 text-xs text-muted" data-i18n="photoCaption">アプリ画面: 写真をドット化した電光板</figcaption>
             </figure>
+            <div class="feature-copy">
+              <h3 class="text-xl font-bold sm:text-2xl" data-i18n="photoTitle">写真をドット電光板に</h3>
+              <p class="feature-kicker" data-i18n="photoKicker">画像のドット変換</p>
+              <p class="feature-body" data-i18n="photoBody">ギャラリーの写真を端末内でドット模様に変換して表示します。サーバーへ写真は送りません。</p>
+              <p id="photo-caption" class="feature-note" data-i18n="photoCaption">アプリ画面: 写真をドット化した電光板</p>
+            </div>
           </article>
-
         </div>
       </div>
     </section>
 
     <section id="how" class="px-5 py-20 sm:py-28" aria-labelledby="how-title">
       <div class="mx-auto max-w-6xl">
-        <div class="reveal max-w-2xl">
+        <div class="reveal mx-auto max-w-2xl text-center">
           <h2 id="how-title" class="text-3xl font-extrabold tracking-tight sm:text-4xl" data-i18n="howTitle">スマホをLED電光掲示にする方法</h2>
           <p class="mt-3 text-muted" data-i18n="howLead">だれでも手軽に、スマホをLED電光掲示として使えます。</p>
         </div>
-        <ol class="mt-10 grid gap-4 text-muted md:grid-cols-3">
-          <li class="reveal rounded-[1.75rem] bg-soft p-6 sm:p-7">
-            <span class="flex h-10 w-10 items-center justify-center rounded-full bg-[#FF5CA8] text-sm font-bold text-ink" aria-hidden="true">1</span>
-            <h3 class="mt-5 font-semibold text-ink" data-i18n="step1Title">文言を入力します</h3>
-            <p class="mt-2" data-i18n="step1Body">応援、セール、歓迎の文を自分で書くか、プリセットから選びます。</p>
+        <ol class="how-list">
+          <li class="how-step reveal">
+            <span class="how-index bg-[#FF5CA8]" aria-hidden="true">1</span>
+            <h3 data-i18n="step1Title">文言を入力します</h3>
+            <p data-i18n="step1Body">応援、セール、歓迎の文を自分で書くか、プリセットから選びます。</p>
           </li>
-          <li class="reveal rounded-[1.75rem] bg-soft p-6 sm:p-7">
-            <span class="flex h-10 w-10 items-center justify-center rounded-full bg-[#F5C518] text-sm font-bold text-ink" aria-hidden="true">2</span>
-            <h3 class="mt-5 font-semibold text-ink" data-i18n="step2Title">色・速度・フォントを合わせます</h3>
-            <p class="mt-2" data-i18n="step2Body">ネオンカラー、スクロール速度、書体を選んで、遠くからでも読めるように調整します。</p>
+          <li class="how-step reveal">
+            <span class="how-index bg-[#F5C518]" aria-hidden="true">2</span>
+            <h3 data-i18n="step2Title">色・速度・フォントを合わせます</h3>
+            <p data-i18n="step2Body">ネオンカラー、スクロール速度、書体を選んで、遠くからでも読めるように調整します。</p>
           </li>
-          <li class="reveal rounded-[1.75rem] bg-soft p-6 sm:p-7">
-            <span class="flex h-10 w-10 items-center justify-center rounded-full bg-[#3BA3FF] text-sm font-bold text-ink" aria-hidden="true">3</span>
-            <h3 class="mt-5 font-semibold text-ink" data-i18n="step3Title">横向きの全画面にします</h3>
-            <p class="mt-2" data-i18n="step3Body">スマホを横にすると、画面全体が電光掲示になります。</p>
+          <li class="how-step reveal">
+            <span class="how-index bg-[#3BA3FF]" aria-hidden="true">3</span>
+            <h3 data-i18n="step3Title">横向きの全画面にします</h3>
+            <p data-i18n="step3Body">スマホを横にすると、画面全体が電光掲示になります。</p>
           </li>
         </ol>
       </div>
     </section>
 
-    <section id="qa" class="px-5 py-20 sm:py-28" aria-labelledby="qa-title">
+    <section id="qa" class="px-5 py-16 sm:py-24" aria-labelledby="qa-title">
       <div class="mx-auto max-w-3xl">
         <h2 id="qa-title" class="reveal text-center text-3xl font-extrabold tracking-tight sm:text-5xl" data-i18n="faqTitle">よくある質問</h2>
-        <div class="mt-10 divide-y divide-line border-y border-line">
-          <details class="reveal group" open>
-            <summary class="flex min-h-14 cursor-pointer items-center justify-between gap-4 py-4 text-left text-lg font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
+        <div class="faq-list">
+          <details class="reveal" open>
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
               <h3 data-i18n="faq1q">複数の文言を順番に流したり、画面が消えないようにできますか？</h3>
               <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
             </summary>
-            <p class="pb-5 text-muted" data-i18n="faq1a">よく使う文言をお気に入りに保存し、最大8件まで順番に再生できます。また、LED電光掲示の表示中は画面が自動で消えないよう維持されます。</p>
+            <p class="text-muted" data-i18n="faq1a">よく使う文言をお気に入りに保存し、最大8件まで順番に再生できます。また、LED電光掲示の表示中は画面が自動で消えないよう維持されます。</p>
           </details>
-          <details class="reveal group" open>
-            <summary class="flex min-h-14 cursor-pointer items-center justify-between gap-4 py-4 text-left text-lg font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
+          <details class="reveal">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
               <h3 data-i18n-html="faq2q"><span lang="en">HELLO LED</span>はどの機器で使えますか？</h3>
               <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
             </summary>
-            <p class="pb-5 text-muted" data-i18n-html="faq2a">Androidのスマートフォン・タブレットとiPhoneで使えます。<br><a class="underline" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" rel="noopener noreferrer" target="_blank">Google Play<span class="sr-only">、新しいタブ</span></a>または<a class="underline" href="https://apps.apple.com/app/id6816627023" rel="noopener noreferrer" target="_blank">App Store<span class="sr-only">、新しいタブ</span></a>からインストールできます。</p>
+            <p class="text-muted" data-i18n-html="faq2a">Androidのスマートフォン・タブレットとiPhoneで使えます。 <a class="underline" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" rel="noopener noreferrer" target="_blank">Google Play<span class="sr-only">、新しいタブ</span></a>または<a class="underline" href="https://apps.apple.com/app/id6816627023" rel="noopener noreferrer" target="_blank">App Store<span class="sr-only">、新しいタブ</span></a>からインストールできます。</p>
           </details>
-          <details class="reveal group" open>
-            <summary class="flex min-h-14 cursor-pointer items-center justify-between gap-4 py-4 text-left text-lg font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
+          <details class="reveal">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
               <h3 data-i18n="faq3q">今どこで入手できますか？</h3>
               <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
             </summary>
-            <p class="pb-5 text-muted" data-i18n-html="faq3a"><span lang="en">HELLO LED</span>は<a class="underline" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" rel="noopener noreferrer" target="_blank">Google Play<span class="sr-only">、新しいタブ</span></a>と<a class="underline" href="https://apps.apple.com/app/id6816627023" rel="noopener noreferrer" target="_blank">App Store<span class="sr-only">、新しいタブ</span></a>で入手できます。</p>
+            <p class="text-muted" data-i18n-html="faq3a"><span lang="en">HELLO LED</span>は<a class="underline" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" rel="noopener noreferrer" target="_blank">Google Play<span class="sr-only">、新しいタブ</span></a>と<a class="underline" href="https://apps.apple.com/app/id6816627023" rel="noopener noreferrer" target="_blank">App Store<span class="sr-only">、新しいタブ</span></a>で入手できます。</p>
           </details>
         </div>
       </div>
     </section>
 
-    <section id="download" class="relative overflow-hidden px-5 py-24 sm:py-32" aria-labelledby="cta-title">
+    <section id="download" class="hero-wash relative overflow-hidden px-5 py-24 sm:py-32" aria-labelledby="cta-title">
       <div class="relative mx-auto max-w-3xl text-center">
         <h2 id="cta-title" class="reveal text-3xl font-extrabold tracking-tight sm:text-5xl" data-i18n-html="ctaTitle">ストアで<span lang="en">HELLO LED</span>を入手</h2>
         <p class="reveal mx-auto mt-5 max-w-xl text-muted" data-i18n-html="ctaBody"><span lang="en">HELLO LED</span>をGoogle PlayまたはApp Storeで無料インストールし、文言・色・速度を合わせてすぐ電光掲示に使えます。</p>
@@ -873,7 +902,7 @@
                 height="64"
                 loading="lazy"
                 decoding="async"
-                class="h-14 w-auto"
+                class="store-badge"
                 alt="Google Playで手に入れよう、新しいタブ"
               >
             </picture>
@@ -887,7 +916,7 @@
               height="40"
               loading="lazy"
               decoding="async"
-              class="h-14 w-auto"
+              class="store-badge"
               alt="App Storeからダウンロード、新しいタブ"
             >
           </a>
@@ -908,7 +937,6 @@
       </div>
     </div>
     <nav class="mx-auto mt-6 flex max-w-6xl flex-wrap gap-x-4 text-sm" aria-label="このページ" data-i18n-aria="navSections">
-      <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="#facts" data-i18n="navFacts">事実</a>
       <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="#features" data-i18n="navFeatures">機能</a>
       <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="#how" data-i18n="navHow">使い方</a>
       <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="#qa" data-i18n="navFaq">質問</a>
