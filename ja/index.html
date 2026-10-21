@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>HELLO LED | スマホLED電光掲示</title>
   <meta name="description" content="HELLO LEDはスマホの画面をLED電光掲示に変える無料アプリです。コンサートの応援、店舗のセール、空港の歓迎に使えます。">
@@ -13,6 +14,8 @@
   <link rel="alternate" hreflang="ja" href="https://helloled.yodams.com/ja/">
   <link rel="alternate" hreflang="zh-Hans" href="https://helloled.yodams.com/zh/">
   <link rel="alternate" hreflang="es-ES" href="https://helloled.yodams.com/es/">
+  <link rel="alternate" hreflang="es" href="https://helloled.yodams.com/es/">
+  <link rel="alternate" hreflang="es-419" href="https://helloled.yodams.com/es-419/">
   <link rel="alternate" hreflang="es-MX" href="https://helloled.yodams.com/es-419/">
   <link rel="alternate" hreflang="es-AR" href="https://helloled.yodams.com/es-419/">
   <link rel="alternate" hreflang="es-CO" href="https://helloled.yodams.com/es-419/">
@@ -37,6 +40,7 @@
   <link rel="icon" type="image/png" href="/favicon.png" sizes="256x256">
   <link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="alternate" type="text/plain" href="https://helloled.yodams.com/llms.txt" title="HELLO LED LLM Summary">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ja_JP">
   <meta property="og:locale:alternate" content="ko_KR">
@@ -49,6 +53,7 @@
   <meta property="og:description" content="HELLO LEDはスマホの画面をLED電光掲示に変える無料アプリです。コンサートの応援、店舗のセール、空港の歓迎に使えます。">
   <meta property="og:url" content="https://helloled.yodams.com/ja/">
   <meta property="og:image" content="https://helloled.yodams.com/og.png">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="青い円の中に HELLO LED と書かれたロゴ">
@@ -210,8 +215,13 @@
         "alternateName": "Yodam",
         "url": "https://helloled.yodams.com/",
         "email": "helloled@yodams.com",
-        "logo": "https://helloled.yodams.com/favicon.png",
-        "description": "HELLO LED is a free Android app by 요담 (Yodam) that turns a phone screen into an LED board.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://helloled.yodams.com/favicon.png",
+          "width": 256,
+          "height": 256
+        },
+        "description": "HELLO LEDは、요담（Yodam）が開発したスマホ画面をLED電光掲示板に変える無料Androidアプリです。",
         "sameAs": [
           "https://play.google.com/store/apps/details?id=com.yodam.helloled",
           "https://yodams.com/",
@@ -225,8 +235,9 @@
             "ko",
             "en",
             "ja",
-            "zh",
-            "es"
+            "zh-Hans",
+            "es",
+            "es-419"
           ]
         }
       },
@@ -234,9 +245,9 @@
         "@type": "Service",
         "@id": "https://helloled.yodams.com/#service",
         "name": "HELLO LED",
-        "serviceType": "Mobile LED board app",
-        "description": "HELLO LED is a free Android app by 요담 (Yodam) that turns a phone screen into an LED board.",
-        "url": "https://helloled.yodams.com/",
+        "serviceType": "スマホLED電光掲示板アプリ",
+        "description": "HELLO LEDは、요담（Yodam）が開発したスマホ画面をLED電光掲示板に変える無料Androidアプリです。",
+        "url": "https://helloled.yodams.com/ja/",
         "provider": {
           "@id": "https://helloled.yodams.com/#organization"
         },
@@ -251,8 +262,9 @@
             "ko",
             "en",
             "ja",
-            "zh",
-            "es"
+            "zh-Hans",
+            "es",
+            "es-419"
           ]
         },
         "offers": {
@@ -261,6 +273,31 @@
           "priceCurrency": "KRW",
           "availability": "https://schema.org/InStock",
           "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://helloled.yodams.com/#website",
+        "url": "https://helloled.yodams.com/",
+        "name": "HELLO LED",
+        "alternateName": "헬로 LED",
+        "description": "HELLO LED 公式サイト。スマホLED電光掲示板アプリをGoogle Playから無料でインストールできます。",
+        "inLanguage": "ja",
+        "publisher": {
+          "@id": "https://helloled.yodams.com/#organization"
+        },
+        "potentialAction": {
+          "@type": "DownloadAction",
+          "name": "HELLO LEDをダウンロード",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+            "actionPlatform": [
+              "https://schema.org/DesktopWebPlatform",
+              "https://schema.org/MobileWebPlatform",
+              "https://schema.org/AndroidPlatform"
+            ]
+          }
         }
       },
       {
@@ -281,8 +318,19 @@
             "@id": "https://helloled.yodams.com/#service"
           }
         ],
+        "mainEntity": {
+          "@id": "https://helloled.yodams.com/#app"
+        },
+        "hasPart": [
+          {
+            "@id": "https://helloled.yodams.com/ja/#howto"
+          },
+          {
+            "@id": "https://helloled.yodams.com/ja/#faq"
+          }
+        ],
         "datePublished": "2026-09-21",
-        "dateModified": "2026-10-06",
+        "dateModified": "2026-10-20",
         "primaryImageOfPage": {
           "@type": "ImageObject",
           "url": "https://helloled.yodams.com/og.png",
@@ -324,15 +372,27 @@
         "alternateName": "헬로 LED",
         "applicationCategory": "UtilitiesApplication",
         "operatingSystem": "Android",
+        "softwareVersion": "1.0.1",
+        "isAccessibleForFree": true,
         "inLanguage": [
           "ko",
           "en",
           "ja",
-          "zh",
-          "es"
+          "zh-Hans",
+          "es",
+          "es-419"
         ],
-        "description": "HELLO LED is a free Android app by 요담 (Yodam) that turns a phone screen into an LED board. It is used for concert cheers, shop sales, and airport welcomes.",
+        "description": "HELLO LEDはスマホの画面をLED電光掲示に変える無料アプリです。コンサートの応援、店舗のセール、空港の歓迎に使えます。",
+        "featureList": [
+          "ネオンカラー・文字サイズ・スクロール速度・11種のフォント設定",
+          "横向き・縦向きの全画面LED電光掲示板と画面スリープ防止",
+          "現在時刻の時計・Dデイカウントダウン・タイマー表示",
+          "端末内での写真ドット変換（サーバー送信なし）",
+          "応援・誕生日・お迎え・店舗など8種類の定型文プリセット",
+          "お気に入り保存と最大8件の連続再生"
+        ],
         "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+        "downloadUrl": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
         "installUrl": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
         "sameAs": [
           "https://play.google.com/store/apps/details?id=com.yodam.helloled"
@@ -380,6 +440,89 @@
             "text": "スマホを横にすると、画面全体が電光掲示になります。"
           }
         ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://helloled.yodams.com/ja/#faq",
+        "url": "https://helloled.yodams.com/ja/#qa",
+        "inLanguage": "ja",
+        "isPartOf": {
+          "@id": "https://helloled.yodams.com/ja/#webpage"
+        },
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "広告はどこに出ますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "全画面の電光掲示にバナー広告は出ません。編集画面にはバナーが出ることがあり、全画面を開く前に全画面広告が出ることがあります。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "写真はどこへ行きますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ギャラリーの写真は端末の中でドット模様に変換され、電光掲示に表示されます。サーバーには送信されません。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "アカウントは必要ですか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "アカウントは不要です。文言と設定は端末に保存されます。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "どの言語に対応していますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "アプリとこのサイトは、한국어、English、日本語、中文、Español、Español (LatAm) に対応しています。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "最初から入っている定型文は何ですか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "日本語の定型文は、応援、誕生日、お迎え、店舗、告白、試験、歓迎、感謝です。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "どこでインストールしますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HELLO LEDはAndroidアプリです。Google Playからインストールします。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "複数の文言を順番に流したり、画面が消えないようにできますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "よく使う文言をお気に入りに保存し、最大8件まで順番に再生できます。また、LED電光掲示の表示中は画面が自動で消えないよう維持されます。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "HELLO LEDはどの機器で使えますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Androidのスマートフォン・タブレットで使えます。 Google Playからインストールできます。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "今どこで入手できますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Android版HELLO LEDはGoogle Playで入手できます。"
+            }
+          }
+        ]
       }
     ]
   }
@@ -411,7 +554,7 @@
             <option value="ja" selected lang="ja">日本語</option>
             <option value="zh" lang="zh-Hans">中文</option>
             <option value="es" lang="es">Español</option>
-            <option value="es_419" lang="es">Español (LatAm)</option>
+            <option value="es_419" lang="es-419">Español (LatAm)</option>
           </select>
           <span class="lang-switch-label" aria-hidden="true">日本語</span>
         </div>
@@ -441,6 +584,8 @@
                 src="/badges/play-ja.png"
                 width="215"
                 height="64"
+                decoding="async"
+                fetchpriority="high"
                 class="h-14 w-auto"
                 alt="Google Playで手に入れよう、新しいタブ"
               >
@@ -628,10 +773,10 @@
         <div class="mt-10 divide-y divide-line border-y border-line">
           <details class="reveal group" open>
             <summary class="flex min-h-14 cursor-pointer items-center justify-between gap-4 py-4 text-left text-lg font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
-              <h3 data-i18n="faq1q">広告はどこに出ますか？</h3>
+              <h3 data-i18n="faq1q">複数の文言を順番に流したり、画面が消えないようにできますか？</h3>
               <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
             </summary>
-            <p class="pb-5 text-muted" data-i18n="faq1a">全画面の電光掲示にバナー広告は出ません。編集画面にはバナーが出ることがあり、全画面を開く前に全画面広告が出ることがあります。</p>
+            <p class="pb-5 text-muted" data-i18n="faq1a">よく使う文言をお気に入りに保存し、最大8件まで順番に再生できます。また、LED電光掲示の表示中は画面が自動で消えないよう維持されます。</p>
           </details>
           <details class="reveal group" open>
             <summary class="flex min-h-14 cursor-pointer items-center justify-between gap-4 py-4 text-left text-lg font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
@@ -665,6 +810,8 @@
                 src="/badges/play-ja.png"
                 width="215"
                 height="64"
+                loading="lazy"
+                decoding="async"
                 class="h-14 w-auto"
                 alt="Google Playで手に入れよう、新しいタブ"
               >
@@ -704,6 +851,7 @@
   </footer>
 
   <script src="/i18n.js" defer></script>
+  <script src="/ad-fallback.js" defer></script>
   <script>
     (function () {
       var input = document.getElementById('led-input');

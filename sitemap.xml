@@ -1,8 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://helloled.yodams.com/</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://helloled.yodams.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://helloled.yodams.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://helloled.yodams.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://helloled.yodams.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://helloled.yodams.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://helloled.yodams.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-AR" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-CO" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-CL" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-PE" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-VE" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-EC" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-GT" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-BO" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-DO" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-HN" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-PY" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-SV" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-NI" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-CR" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-UY" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-PR" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-CU" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://helloled.yodams.com/"/>
     <image:image>
       <image:loc>https://helloled.yodams.com/screens/led-marquee.png</image:loc>
       <image:caption>HELLO LED 문구 전광판 화면 예시: 분홍 네온으로 LOVE HE 표시</image:caption>
@@ -18,11 +46,67 @@
   </url>
   <url>
     <loc>https://helloled.yodams.com/privacy.html</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://helloled.yodams.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://helloled.yodams.com/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://helloled.yodams.com/ja/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://helloled.yodams.com/zh/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://helloled.yodams.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://helloled.yodams.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-AR" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-CO" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-CL" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-PE" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-VE" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-EC" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-GT" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-BO" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-DO" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-HN" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-PY" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-SV" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-NI" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-CR" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-UY" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-PR" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-CU" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://helloled.yodams.com/privacy.html"/>
   </url>
   <url>
     <loc>https://helloled.yodams.com/en/</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://helloled.yodams.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://helloled.yodams.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://helloled.yodams.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://helloled.yodams.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://helloled.yodams.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://helloled.yodams.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-AR" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-CO" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-CL" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-PE" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-VE" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-EC" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-GT" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-BO" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-DO" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-HN" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-PY" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-SV" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-NI" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-CR" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-UY" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-PR" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-CU" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://helloled.yodams.com/"/>
     <image:image>
       <image:loc>https://helloled.yodams.com/screens/led-marquee.png</image:loc>
       <image:caption>HELLO LED screen: pink neon text reading LOVE HE</image:caption>
@@ -38,11 +122,67 @@
   </url>
   <url>
     <loc>https://helloled.yodams.com/en/privacy.html</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://helloled.yodams.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://helloled.yodams.com/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://helloled.yodams.com/ja/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://helloled.yodams.com/zh/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://helloled.yodams.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://helloled.yodams.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-AR" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-CO" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-CL" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-PE" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-VE" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-EC" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-GT" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-BO" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-DO" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-HN" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-PY" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-SV" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-NI" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-CR" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-UY" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-PR" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-CU" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://helloled.yodams.com/privacy.html"/>
   </url>
   <url>
     <loc>https://helloled.yodams.com/ja/</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://helloled.yodams.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://helloled.yodams.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://helloled.yodams.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://helloled.yodams.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://helloled.yodams.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://helloled.yodams.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-AR" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-CO" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-CL" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-PE" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-VE" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-EC" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-GT" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-BO" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-DO" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-HN" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-PY" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-SV" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-NI" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-CR" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-UY" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-PR" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-CU" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://helloled.yodams.com/"/>
     <image:image>
       <image:loc>https://helloled.yodams.com/screens/led-marquee.png</image:loc>
       <image:caption>HELLO LEDの画面例: ピンクのネオン文字 LOVE HE</image:caption>
@@ -58,11 +198,67 @@
   </url>
   <url>
     <loc>https://helloled.yodams.com/ja/privacy.html</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://helloled.yodams.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://helloled.yodams.com/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://helloled.yodams.com/ja/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://helloled.yodams.com/zh/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://helloled.yodams.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://helloled.yodams.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-AR" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-CO" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-CL" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-PE" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-VE" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-EC" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-GT" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-BO" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-DO" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-HN" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-PY" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-SV" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-NI" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-CR" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-UY" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-PR" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-CU" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://helloled.yodams.com/privacy.html"/>
   </url>
   <url>
     <loc>https://helloled.yodams.com/zh/</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://helloled.yodams.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://helloled.yodams.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://helloled.yodams.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://helloled.yodams.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://helloled.yodams.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://helloled.yodams.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-AR" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-CO" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-CL" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-PE" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-VE" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-EC" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-GT" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-BO" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-DO" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-HN" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-PY" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-SV" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-NI" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-CR" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-UY" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-PR" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-CU" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://helloled.yodams.com/"/>
     <image:image>
       <image:loc>https://helloled.yodams.com/screens/led-marquee.png</image:loc>
       <image:caption>HELLO LED 界面示例：粉色霓虹文字 LOVE HE</image:caption>
@@ -78,11 +274,67 @@
   </url>
   <url>
     <loc>https://helloled.yodams.com/zh/privacy.html</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://helloled.yodams.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://helloled.yodams.com/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://helloled.yodams.com/ja/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://helloled.yodams.com/zh/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://helloled.yodams.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://helloled.yodams.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-AR" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-CO" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-CL" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-PE" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-VE" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-EC" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-GT" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-BO" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-DO" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-HN" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-PY" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-SV" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-NI" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-CR" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-UY" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-PR" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-CU" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://helloled.yodams.com/privacy.html"/>
   </url>
   <url>
     <loc>https://helloled.yodams.com/es/</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://helloled.yodams.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://helloled.yodams.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://helloled.yodams.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://helloled.yodams.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://helloled.yodams.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://helloled.yodams.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-AR" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-CO" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-CL" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-PE" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-VE" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-EC" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-GT" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-BO" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-DO" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-HN" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-PY" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-SV" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-NI" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-CR" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-UY" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-PR" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-CU" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://helloled.yodams.com/"/>
     <image:image>
       <image:loc>https://helloled.yodams.com/screens/led-marquee.png</image:loc>
       <image:caption>Pantalla de HELLO LED: texto LOVE HE en neón rosa</image:caption>
@@ -98,11 +350,67 @@
   </url>
   <url>
     <loc>https://helloled.yodams.com/es/privacy.html</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://helloled.yodams.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://helloled.yodams.com/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://helloled.yodams.com/ja/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://helloled.yodams.com/zh/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://helloled.yodams.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://helloled.yodams.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-AR" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-CO" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-CL" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-PE" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-VE" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-EC" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-GT" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-BO" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-DO" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-HN" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-PY" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-SV" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-NI" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-CR" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-UY" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-PR" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-CU" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://helloled.yodams.com/privacy.html"/>
   </url>
   <url>
     <loc>https://helloled.yodams.com/es-419/</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://helloled.yodams.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://helloled.yodams.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://helloled.yodams.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://helloled.yodams.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://helloled.yodams.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://helloled.yodams.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-AR" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-CO" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-CL" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-PE" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-VE" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-EC" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-GT" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-BO" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-DO" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-HN" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-PY" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-SV" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-NI" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-CR" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-UY" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-PR" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="es-CU" href="https://helloled.yodams.com/es-419/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://helloled.yodams.com/"/>
     <image:image>
       <image:loc>https://helloled.yodams.com/screens/led-marquee.png</image:loc>
       <image:caption>Pantalla de HELLO LED: texto LOVE HE en neón rosa</image:caption>
@@ -118,6 +426,34 @@
   </url>
   <url>
     <loc>https://helloled.yodams.com/es-419/privacy.html</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://helloled.yodams.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://helloled.yodams.com/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://helloled.yodams.com/ja/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://helloled.yodams.com/zh/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-ES" href="https://helloled.yodams.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://helloled.yodams.com/es/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-419" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-MX" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-AR" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-CO" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-CL" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-PE" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-US" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-VE" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-EC" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-GT" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-BO" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-DO" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-HN" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-PY" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-SV" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-NI" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-CR" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-PA" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-UY" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-PR" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es-CU" href="https://helloled.yodams.com/es-419/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://helloled.yodams.com/privacy.html"/>
   </url>
 </urlset>

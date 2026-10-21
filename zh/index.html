@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html data-page-lang="zh" lang="zh">
+<html data-page-lang="zh" lang="zh-Hans">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>HELLO LED | 手机 LED 灯牌</title>
   <meta name="description" content="HELLO LED 是一款把手机屏幕变成 LED 灯牌的免费应用，可用于演唱会应援、店铺促销和机场迎接。">
@@ -13,6 +14,8 @@
   <link rel="alternate" hreflang="ja" href="https://helloled.yodams.com/ja/">
   <link rel="alternate" hreflang="zh-Hans" href="https://helloled.yodams.com/zh/">
   <link rel="alternate" hreflang="es-ES" href="https://helloled.yodams.com/es/">
+  <link rel="alternate" hreflang="es" href="https://helloled.yodams.com/es/">
+  <link rel="alternate" hreflang="es-419" href="https://helloled.yodams.com/es-419/">
   <link rel="alternate" hreflang="es-MX" href="https://helloled.yodams.com/es-419/">
   <link rel="alternate" hreflang="es-AR" href="https://helloled.yodams.com/es-419/">
   <link rel="alternate" hreflang="es-CO" href="https://helloled.yodams.com/es-419/">
@@ -37,6 +40,7 @@
   <link rel="icon" type="image/png" href="/favicon.png" sizes="256x256">
   <link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="alternate" type="text/plain" href="https://helloled.yodams.com/llms.txt" title="HELLO LED LLM Summary">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="zh_CN">
   <meta property="og:locale:alternate" content="ko_KR">
@@ -49,6 +53,7 @@
   <meta property="og:description" content="HELLO LED 是一款把手机屏幕变成 LED 灯牌的免费应用，可用于演唱会应援、店铺促销和机场迎接。">
   <meta property="og:url" content="https://helloled.yodams.com/zh/">
   <meta property="og:image" content="https://helloled.yodams.com/og.png">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="蓝色圆圈中写着 HELLO LED 的标志">
@@ -210,8 +215,13 @@
         "alternateName": "Yodam",
         "url": "https://helloled.yodams.com/",
         "email": "helloled@yodams.com",
-        "logo": "https://helloled.yodams.com/favicon.png",
-        "description": "HELLO LED is a free Android app by 요담 (Yodam) that turns a phone screen into an LED board.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://helloled.yodams.com/favicon.png",
+          "width": 256,
+          "height": 256
+        },
+        "description": "HELLO LED 是由 요담（Yodam）开发的免费 Android 手机 LED 灯牌与滚动字幕应用。",
         "sameAs": [
           "https://play.google.com/store/apps/details?id=com.yodam.helloled",
           "https://yodams.com/",
@@ -225,8 +235,9 @@
             "ko",
             "en",
             "ja",
-            "zh",
-            "es"
+            "zh-Hans",
+            "es",
+            "es-419"
           ]
         }
       },
@@ -234,9 +245,9 @@
         "@type": "Service",
         "@id": "https://helloled.yodams.com/#service",
         "name": "HELLO LED",
-        "serviceType": "Mobile LED board app",
-        "description": "HELLO LED is a free Android app by 요담 (Yodam) that turns a phone screen into an LED board.",
-        "url": "https://helloled.yodams.com/",
+        "serviceType": "手机 LED 灯牌应用",
+        "description": "HELLO LED 是由 요담（Yodam）开发的免费 Android 手机 LED 灯牌与滚动字幕应用。",
+        "url": "https://helloled.yodams.com/zh/",
         "provider": {
           "@id": "https://helloled.yodams.com/#organization"
         },
@@ -251,8 +262,9 @@
             "ko",
             "en",
             "ja",
-            "zh",
-            "es"
+            "zh-Hans",
+            "es",
+            "es-419"
           ]
         },
         "offers": {
@@ -264,12 +276,37 @@
         }
       },
       {
+        "@type": "WebSite",
+        "@id": "https://helloled.yodams.com/#website",
+        "url": "https://helloled.yodams.com/",
+        "name": "HELLO LED",
+        "alternateName": "헬로 LED",
+        "description": "HELLO LED 官方网站。在 Google Play 免费安装手机 LED 灯牌应用。",
+        "inLanguage": "zh-Hans",
+        "publisher": {
+          "@id": "https://helloled.yodams.com/#organization"
+        },
+        "potentialAction": {
+          "@type": "DownloadAction",
+          "name": "下载 HELLO LED",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+            "actionPlatform": [
+              "https://schema.org/DesktopWebPlatform",
+              "https://schema.org/MobileWebPlatform",
+              "https://schema.org/AndroidPlatform"
+            ]
+          }
+        }
+      },
+      {
         "@type": "WebPage",
         "@id": "https://helloled.yodams.com/zh/#webpage",
         "url": "https://helloled.yodams.com/zh/",
         "name": "HELLO LED | 手机 LED 灯牌",
         "description": "HELLO LED 是一款把手机屏幕变成 LED 灯牌的免费应用，可用于演唱会应援、店铺促销和机场迎接。",
-        "inLanguage": "zh",
+        "inLanguage": "zh-Hans",
         "isPartOf": {
           "@id": "https://helloled.yodams.com/#website"
         },
@@ -281,8 +318,19 @@
             "@id": "https://helloled.yodams.com/#service"
           }
         ],
+        "mainEntity": {
+          "@id": "https://helloled.yodams.com/#app"
+        },
+        "hasPart": [
+          {
+            "@id": "https://helloled.yodams.com/zh/#howto"
+          },
+          {
+            "@id": "https://helloled.yodams.com/zh/#faq"
+          }
+        ],
         "datePublished": "2026-09-21",
-        "dateModified": "2026-10-06",
+        "dateModified": "2026-10-20",
         "primaryImageOfPage": {
           "@type": "ImageObject",
           "url": "https://helloled.yodams.com/og.png",
@@ -324,15 +372,27 @@
         "alternateName": "헬로 LED",
         "applicationCategory": "UtilitiesApplication",
         "operatingSystem": "Android",
+        "softwareVersion": "1.0.1",
+        "isAccessibleForFree": true,
         "inLanguage": [
           "ko",
           "en",
           "ja",
-          "zh",
-          "es"
+          "zh-Hans",
+          "es",
+          "es-419"
         ],
-        "description": "HELLO LED is a free Android app by 요담 (Yodam) that turns a phone screen into an LED board. It is used for concert cheers, shop sales, and airport welcomes.",
+        "description": "HELLO LED 是一款把手机屏幕变成 LED 灯牌的免费应用，可用于演唱会应援、店铺促销和机场迎接。",
+        "featureList": [
+          "自定义霓虹颜色、文字大小、滚动速度与 11 款内置字体",
+          "横屏与竖屏全屏 LED 灯牌显示及屏幕常亮防熄灭",
+          "实时时钟、D-Day 倒计时与计时器",
+          "设备本地照片转 LED 点阵（不上传服务器）",
+          "应援、生日、接机、店铺等 8 大场景预设短语",
+          "收藏常用文字并支持最多 8 条按顺序轮播"
+        ],
         "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+        "downloadUrl": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
         "installUrl": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
         "sameAs": [
           "https://play.google.com/store/apps/details?id=com.yodam.helloled"
@@ -358,7 +418,7 @@
         "@id": "https://helloled.yodams.com/zh/#howto",
         "name": "如何把手机变成 LED 灯牌",
         "description": "谁都可以轻松把手机当成 LED 灯牌来用。",
-        "inLanguage": "zh",
+        "inLanguage": "zh-Hans",
         "totalTime": "PT1M",
         "step": [
           {
@@ -378,6 +438,89 @@
             "position": 3,
             "name": "打开横屏全屏",
             "text": "把手机横过来，整个屏幕就会变成灯牌。"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://helloled.yodams.com/zh/#faq",
+        "url": "https://helloled.yodams.com/zh/#qa",
+        "inLanguage": "zh-Hans",
+        "isPartOf": {
+          "@id": "https://helloled.yodams.com/zh/#webpage"
+        },
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "广告出现在哪里？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "全屏灯牌上没有横幅广告。编辑界面可能出现横幅，进入全屏前可能出现全屏广告。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "照片会上传吗？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "相册照片在设备内转成点阵并显示在灯牌上，不会上传到服务器。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "需要账号吗？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "不需要账号。文字和设置保存在设备上。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "支持哪些语言？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "应用和本网站支持한국어、English、日本語、中文、Español、Español (LatAm)。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "预置短语有哪些？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "中文短语分类为应援、生日、接机、店铺、告白、考试、欢迎、感谢。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "在哪里安装？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HELLO LED 是 Android 应用，请在 Google Play 安装。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "可以按顺序播放多条文字并保持屏幕常亮吗？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "可以把常用文字保存到收藏，最多按顺序播放 8 条；LED 灯牌显示期间屏幕会自动保持常亮，不会自动熄灭。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "HELLO LED 可以在哪些设备上使用？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "可在 Android 手机和平板使用。 请前往 Google Play 安装。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "现在可以在哪里下载？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Android 版 HELLO LED 可在 Google Play 下载。"
+            }
           }
         ]
       }
@@ -411,7 +554,7 @@
             <option value="ja" lang="ja">日本語</option>
             <option value="zh" selected lang="zh-Hans">中文</option>
             <option value="es" lang="es">Español</option>
-            <option value="es_419" lang="es">Español (LatAm)</option>
+            <option value="es_419" lang="es-419">Español (LatAm)</option>
           </select>
           <span class="lang-switch-label" aria-hidden="true">中文</span>
         </div>
@@ -441,6 +584,8 @@
                 src="/badges/play-zh.png"
                 width="215"
                 height="64"
+                decoding="async"
+                fetchpriority="high"
                 class="h-14 w-auto"
                 alt="在 Google Play 下载，新标签页"
               >
@@ -628,10 +773,10 @@
         <div class="mt-10 divide-y divide-line border-y border-line">
           <details class="reveal group" open>
             <summary class="flex min-h-14 cursor-pointer items-center justify-between gap-4 py-4 text-left text-lg font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
-              <h3 data-i18n="faq1q">广告出现在哪里？</h3>
+              <h3 data-i18n="faq1q">可以按顺序播放多条文字并保持屏幕常亮吗？</h3>
               <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
             </summary>
-            <p class="pb-5 text-muted" data-i18n="faq1a">全屏灯牌上没有横幅广告。编辑界面可能出现横幅，进入全屏前可能出现全屏广告。</p>
+            <p class="pb-5 text-muted" data-i18n="faq1a">可以把常用文字保存到收藏，最多按顺序播放 8 条；LED 灯牌显示期间屏幕会自动保持常亮，不会自动熄灭。</p>
           </details>
           <details class="reveal group" open>
             <summary class="flex min-h-14 cursor-pointer items-center justify-between gap-4 py-4 text-left text-lg font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
@@ -665,6 +810,8 @@
                 src="/badges/play-zh.png"
                 width="215"
                 height="64"
+                loading="lazy"
+                decoding="async"
                 class="h-14 w-auto"
                 alt="在 Google Play 下载，新标签页"
               >
@@ -704,6 +851,7 @@
   </footer>
 
   <script src="/i18n.js" defer></script>
+  <script src="/ad-fallback.js" defer></script>
   <script>
     (function () {
       var input = document.getElementById('led-input');

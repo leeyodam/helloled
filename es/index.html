@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>HELLO LED | Cartel LED en el móvil</title>
   <meta name="description" content="HELLO LED es una app gratuita que convierte el móvil en un cartel LED para conciertos, tiendas y aeropuertos.">
@@ -13,6 +14,8 @@
   <link rel="alternate" hreflang="ja" href="https://helloled.yodams.com/ja/">
   <link rel="alternate" hreflang="zh-Hans" href="https://helloled.yodams.com/zh/">
   <link rel="alternate" hreflang="es-ES" href="https://helloled.yodams.com/es/">
+  <link rel="alternate" hreflang="es" href="https://helloled.yodams.com/es/">
+  <link rel="alternate" hreflang="es-419" href="https://helloled.yodams.com/es-419/">
   <link rel="alternate" hreflang="es-MX" href="https://helloled.yodams.com/es-419/">
   <link rel="alternate" hreflang="es-AR" href="https://helloled.yodams.com/es-419/">
   <link rel="alternate" hreflang="es-CO" href="https://helloled.yodams.com/es-419/">
@@ -37,6 +40,7 @@
   <link rel="icon" type="image/png" href="/favicon.png" sizes="256x256">
   <link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="alternate" type="text/plain" href="https://helloled.yodams.com/llms.txt" title="HELLO LED LLM Summary">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_ES">
   <meta property="og:locale:alternate" content="ko_KR">
@@ -49,6 +53,7 @@
   <meta property="og:description" content="HELLO LED es una app gratuita que convierte el móvil en un cartel LED para conciertos, tiendas y aeropuertos.">
   <meta property="og:url" content="https://helloled.yodams.com/es/">
   <meta property="og:image" content="https://helloled.yodams.com/og.png">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Logotipo de HELLO LED sobre un círculo azul">
@@ -210,8 +215,13 @@
         "alternateName": "Yodam",
         "url": "https://helloled.yodams.com/",
         "email": "helloled@yodams.com",
-        "logo": "https://helloled.yodams.com/favicon.png",
-        "description": "HELLO LED is a free Android app by 요담 (Yodam) that turns a phone screen into an LED board.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://helloled.yodams.com/favicon.png",
+          "width": 256,
+          "height": 256
+        },
+        "description": "HELLO LED es una aplicación gratuita de Android creada por 요담 (Yodam) que convierte la pantalla del móvil en un cartel LED.",
         "sameAs": [
           "https://play.google.com/store/apps/details?id=com.yodam.helloled",
           "https://yodams.com/",
@@ -225,8 +235,9 @@
             "ko",
             "en",
             "ja",
-            "zh",
-            "es"
+            "zh-Hans",
+            "es",
+            "es-419"
           ]
         }
       },
@@ -234,9 +245,9 @@
         "@type": "Service",
         "@id": "https://helloled.yodams.com/#service",
         "name": "HELLO LED",
-        "serviceType": "Mobile LED board app",
-        "description": "HELLO LED is a free Android app by 요담 (Yodam) that turns a phone screen into an LED board.",
-        "url": "https://helloled.yodams.com/",
+        "serviceType": "Aplicación de cartel LED móvil",
+        "description": "HELLO LED es una aplicación gratuita de Android creada por 요담 (Yodam) que convierte la pantalla del móvil en un cartel LED.",
+        "url": "https://helloled.yodams.com/es/",
         "provider": {
           "@id": "https://helloled.yodams.com/#organization"
         },
@@ -251,8 +262,9 @@
             "ko",
             "en",
             "ja",
-            "zh",
-            "es"
+            "zh-Hans",
+            "es",
+            "es-419"
           ]
         },
         "offers": {
@@ -261,6 +273,31 @@
           "priceCurrency": "KRW",
           "availability": "https://schema.org/InStock",
           "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://helloled.yodams.com/#website",
+        "url": "https://helloled.yodams.com/",
+        "name": "HELLO LED",
+        "alternateName": "헬로 LED",
+        "description": "Sitio oficial de HELLO LED. Instala gratis la app de cartel LED en Google Play.",
+        "inLanguage": "es",
+        "publisher": {
+          "@id": "https://helloled.yodams.com/#organization"
+        },
+        "potentialAction": {
+          "@type": "DownloadAction",
+          "name": "Descargar HELLO LED",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+            "actionPlatform": [
+              "https://schema.org/DesktopWebPlatform",
+              "https://schema.org/MobileWebPlatform",
+              "https://schema.org/AndroidPlatform"
+            ]
+          }
         }
       },
       {
@@ -281,8 +318,19 @@
             "@id": "https://helloled.yodams.com/#service"
           }
         ],
+        "mainEntity": {
+          "@id": "https://helloled.yodams.com/#app"
+        },
+        "hasPart": [
+          {
+            "@id": "https://helloled.yodams.com/es/#howto"
+          },
+          {
+            "@id": "https://helloled.yodams.com/es/#faq"
+          }
+        ],
         "datePublished": "2026-09-21",
-        "dateModified": "2026-10-06",
+        "dateModified": "2026-10-20",
         "primaryImageOfPage": {
           "@type": "ImageObject",
           "url": "https://helloled.yodams.com/og.png",
@@ -324,15 +372,27 @@
         "alternateName": "헬로 LED",
         "applicationCategory": "UtilitiesApplication",
         "operatingSystem": "Android",
+        "softwareVersion": "1.0.1",
+        "isAccessibleForFree": true,
         "inLanguage": [
           "ko",
           "en",
           "ja",
-          "zh",
-          "es"
+          "zh-Hans",
+          "es",
+          "es-419"
         ],
-        "description": "HELLO LED is a free Android app by 요담 (Yodam) that turns a phone screen into an LED board. It is used for concert cheers, shop sales, and airport welcomes.",
+        "description": "HELLO LED es una app gratuita que convierte el móvil en un cartel LED para conciertos, tiendas y aeropuertos.",
+        "featureList": [
+          "Colores neón, tamaño de texto, velocidad de desplazamiento y 11 fuentes",
+          "Cartel LED a pantalla completa en horizontal y vertical con pantalla siempre encendida",
+          "Reloj actual, cuenta atrás D-Day y temporizador",
+          "Conversión de fotos a puntos LED en el dispositivo (sin subir al servidor)",
+          "8 categorías de frases predeterminadas para conciertos, tiendas y aeropuertos",
+          "Favoritos y reproducción de hasta 8 mensajes en orden"
+        ],
         "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+        "downloadUrl": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
         "installUrl": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
         "sameAs": [
           "https://play.google.com/store/apps/details?id=com.yodam.helloled"
@@ -380,6 +440,89 @@
             "text": "Gira el móvil y toda la pantalla se convierte en el cartel."
           }
         ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://helloled.yodams.com/es/#faq",
+        "url": "https://helloled.yodams.com/es/#qa",
+        "inLanguage": "es",
+        "isPartOf": {
+          "@id": "https://helloled.yodams.com/es/#webpage"
+        },
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Dónde aparecen los anuncios?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El panel a pantalla completa no muestra un banner. El editor puede mostrar un banner, y puede aparecer un anuncio a pantalla completa antes de abrir el panel."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿A dónde van las fotos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La foto de la galería se convierte en un patrón de puntos en el dispositivo y se muestra en el panel. No se sube a un servidor."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Hace falta una cuenta?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No hace falta crear una cuenta. Los textos y los ajustes se guardan en el dispositivo."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué idiomas admite?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La app y este sitio admiten 한국어, English, 日本語, 中文, Español y Español (LatAm)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué frases incluye?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Las frases en español de España son Ánimo, Cumpleaños, Recogida, Tienda, Amor, Examen, Bienvenida y Gracias."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Dónde se instala?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HELLO LED es una app de Android. Se instala desde Google Play."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Puedo reproducir varios mensajes en orden y mantener la pantalla encendida?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Guarda tus mensajes favoritos en el dispositivo y reproduce hasta 8 mensajes en orden. Mientras se muestra el cartel LED, la pantalla permanece encendida."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿En qué dispositivos se puede usar HELLO LED?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Funciona en móviles y tabletas Android. Instálala desde Google Play."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Dónde puedo descargarla ahora?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HELLO LED para Android está en Google Play."
+            }
+          }
+        ]
       }
     ]
   }
@@ -411,7 +554,7 @@
             <option value="ja" lang="ja">日本語</option>
             <option value="zh" lang="zh-Hans">中文</option>
             <option value="es" selected lang="es">Español</option>
-            <option value="es_419" lang="es">Español (LatAm)</option>
+            <option value="es_419" lang="es-419">Español (LatAm)</option>
           </select>
           <span class="lang-switch-label" aria-hidden="true">Español</span>
         </div>
@@ -441,6 +584,8 @@
                 src="/badges/play-es.png"
                 width="215"
                 height="64"
+                decoding="async"
+                fetchpriority="high"
                 class="h-14 w-auto"
                 alt="Disponible en Google Play, pestaña nueva"
               >
@@ -628,10 +773,10 @@
         <div class="mt-10 divide-y divide-line border-y border-line">
           <details class="reveal group" open>
             <summary class="flex min-h-14 cursor-pointer items-center justify-between gap-4 py-4 text-left text-lg font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
-              <h3 data-i18n="faq1q">¿Dónde aparecen los anuncios?</h3>
+              <h3 data-i18n="faq1q">¿Puedo reproducir varios mensajes en orden y mantener la pantalla encendida?</h3>
               <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
             </summary>
-            <p class="pb-5 text-muted" data-i18n="faq1a">El panel a pantalla completa no muestra un banner. El editor puede mostrar un banner, y puede aparecer un anuncio a pantalla completa antes de abrir el panel.</p>
+            <p class="pb-5 text-muted" data-i18n="faq1a">Sí. Guarda tus mensajes favoritos en el dispositivo y reproduce hasta 8 mensajes en orden. Mientras se muestra el cartel LED, la pantalla permanece encendida.</p>
           </details>
           <details class="reveal group" open>
             <summary class="flex min-h-14 cursor-pointer items-center justify-between gap-4 py-4 text-left text-lg font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
@@ -665,6 +810,8 @@
                 src="/badges/play-es.png"
                 width="215"
                 height="64"
+                loading="lazy"
+                decoding="async"
                 class="h-14 w-auto"
                 alt="Disponible en Google Play, pestaña nueva"
               >
@@ -704,6 +851,7 @@
   </footer>
 
   <script src="/i18n.js" defer></script>
+  <script src="/ad-fallback.js" defer></script>
   <script>
     (function () {
       var input = document.getElementById('led-input');

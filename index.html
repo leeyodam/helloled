@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>HELLO LED | 스마트폰 LED 전광판 - 콘서트·매장·공항</title>
   <meta name="description" content="HELLO LED는 스마트폰 화면을 LED 전광판으로 바꾸는 무료 앱입니다. 콘서트 응원, 매장 세일, 공항 환영 문구 등 다양한 환경에서 손쉽게 활용할 수 있습니다.">
@@ -13,6 +14,8 @@
   <link rel="alternate" hreflang="ja" href="https://helloled.yodams.com/ja/">
   <link rel="alternate" hreflang="zh-Hans" href="https://helloled.yodams.com/zh/">
   <link rel="alternate" hreflang="es-ES" href="https://helloled.yodams.com/es/">
+  <link rel="alternate" hreflang="es" href="https://helloled.yodams.com/es/">
+  <link rel="alternate" hreflang="es-419" href="https://helloled.yodams.com/es-419/">
   <link rel="alternate" hreflang="es-MX" href="https://helloled.yodams.com/es-419/">
   <link rel="alternate" hreflang="es-AR" href="https://helloled.yodams.com/es-419/">
   <link rel="alternate" hreflang="es-CO" href="https://helloled.yodams.com/es-419/">
@@ -37,6 +40,7 @@
   <link rel="icon" type="image/png" href="/favicon.png" sizes="256x256">
   <link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="alternate" type="text/plain" href="https://helloled.yodams.com/llms.txt" title="HELLO LED LLM Summary">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ko_KR">
   <meta property="og:locale:alternate" content="en_US">
@@ -49,6 +53,7 @@
   <meta property="og:description" content="HELLO LED는 스마트폰 화면을 LED 전광판으로 바꾸는 무료 앱입니다. 콘서트 응원, 매장 세일, 공항 환영 문구 등 다양한 환경에서 손쉽게 활용할 수 있습니다.">
   <meta property="og:url" content="https://helloled.yodams.com/">
   <meta property="og:image" content="https://helloled.yodams.com/og.png">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="파란 원 안에 HELLO LED가 적힌 로고">
@@ -210,8 +215,13 @@
         "alternateName": "Yodam",
         "url": "https://helloled.yodams.com/",
         "email": "helloled@yodams.com",
-        "logo": "https://helloled.yodams.com/favicon.png",
-        "description": "HELLO LED is a free Android app by 요담 (Yodam) that turns a phone screen into an LED board.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://helloled.yodams.com/favicon.png",
+          "width": 256,
+          "height": 256
+        },
+        "description": "HELLO LED는 요담(Yodam)이 개발한 무료 Android 스마트폰 LED 전광판 앱입니다.",
         "sameAs": [
           "https://play.google.com/store/apps/details?id=com.yodam.helloled",
           "https://yodams.com/",
@@ -225,8 +235,9 @@
             "ko",
             "en",
             "ja",
-            "zh",
-            "es"
+            "zh-Hans",
+            "es",
+            "es-419"
           ]
         }
       },
@@ -234,8 +245,8 @@
         "@type": "Service",
         "@id": "https://helloled.yodams.com/#service",
         "name": "HELLO LED",
-        "serviceType": "Mobile LED board app",
-        "description": "HELLO LED is a free Android app by 요담 (Yodam) that turns a phone screen into an LED board.",
+        "serviceType": "스마트폰 LED 전광판 앱",
+        "description": "HELLO LED는 요담(Yodam)이 개발한 무료 Android 스마트폰 LED 전광판 앱입니다.",
         "url": "https://helloled.yodams.com/",
         "provider": {
           "@id": "https://helloled.yodams.com/#organization"
@@ -251,8 +262,9 @@
             "ko",
             "en",
             "ja",
-            "zh",
-            "es"
+            "zh-Hans",
+            "es",
+            "es-419"
           ]
         },
         "offers": {
@@ -268,7 +280,8 @@
         "@id": "https://helloled.yodams.com/#website",
         "url": "https://helloled.yodams.com/",
         "name": "HELLO LED",
-        "description": "HELLO LED 공식 사이트. 스마트폰 LED 전광판 앱을 Google Play에서 설치하세요.",
+        "alternateName": "헬로 LED",
+        "description": "HELLO LED 공식 사이트. 스마트폰 LED 전광판 앱을 Google Play에서 무료로 설치하세요.",
         "inLanguage": "ko",
         "publisher": {
           "@id": "https://helloled.yodams.com/#organization"
@@ -305,8 +318,19 @@
             "@id": "https://helloled.yodams.com/#service"
           }
         ],
+        "mainEntity": {
+          "@id": "https://helloled.yodams.com/#app"
+        },
+        "hasPart": [
+          {
+            "@id": "https://helloled.yodams.com/#howto"
+          },
+          {
+            "@id": "https://helloled.yodams.com/#faq"
+          }
+        ],
         "datePublished": "2026-09-21",
-        "dateModified": "2026-10-06",
+        "dateModified": "2026-10-20",
         "primaryImageOfPage": {
           "@type": "ImageObject",
           "url": "https://helloled.yodams.com/og.png",
@@ -348,15 +372,27 @@
         "alternateName": "헬로 LED",
         "applicationCategory": "UtilitiesApplication",
         "operatingSystem": "Android",
+        "softwareVersion": "1.0.1",
+        "isAccessibleForFree": true,
         "inLanguage": [
           "ko",
           "en",
           "ja",
-          "zh",
-          "es"
+          "zh-Hans",
+          "es",
+          "es-419"
         ],
-        "description": "HELLO LED is a free Android app by 요담 (Yodam) that turns a phone screen into an LED board. It is used for concert cheers, shop sales, and airport welcomes.",
+        "description": "HELLO LED는 스마트폰 화면을 LED 전광판으로 바꾸는 무료 앱입니다. 콘서트 응원, 매장 세일, 공항 환영 문구 등 다양한 환경에서 손쉽게 활용할 수 있습니다.",
+        "featureList": [
+          "네온 색상·글자 크기·스크롤 속도·11종 글꼴 맞춤 설정",
+          "가로·세로 전체화면 LED 전광판 및 화면 자동 꺼짐 방지",
+          "현재 시각 시계·디데이(D-Day) 카운트다운·타이머",
+          "기기 내 갤러리 사진 도트 전광판 변환(서버 업로드 없음)",
+          "응원·생일·공항픽업·매장 등 8가지 상황별 기본 문구 모음",
+          "즐겨찾기 저장 및 최대 8개 문구 순서대로 재생"
+        ],
         "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+        "downloadUrl": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
         "installUrl": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
         "sameAs": [
           "https://play.google.com/store/apps/details?id=com.yodam.helloled"
@@ -404,6 +440,89 @@
             "text": "휴대폰을 가로로 돌리면 화면 전체가 전광판이 됩니다."
           }
         ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://helloled.yodams.com/#faq",
+        "url": "https://helloled.yodams.com/#qa",
+        "inLanguage": "ko",
+        "isPartOf": {
+          "@id": "https://helloled.yodams.com/#webpage"
+        },
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "광고는 어디에 나오나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "전체화면 전광판에는 배너 광고가 없습니다. 편집 화면에는 배너가 나올 수 있고, 전체화면으로 들어가기 전에 전면 광고가 나올 수 있습니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "사진은 어디로 가나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "갤러리 사진은 기기 안에서 도트 패턴으로 바뀌어 전광판에 표시됩니다. 서버로 올라가지 않습니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "계정이 필요한가요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "계정을 만들지 않습니다. 문구와 설정은 기기에 저장됩니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "어떤 언어를 지원하나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "앱과 이 사이트는 한국어, English, 日本語, 中文, Español, Español (LatAm)을 지원합니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "기본 문구 모음에는 무엇이 있나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "한국어 프리셋은 응원, 생일, 공항픽업, 매장광고, 사랑고백, 시험응원, 환영, 감사입니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "어디서 설치하나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HELLO LED는 Android 앱입니다. Google Play에서 설치합니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "문구를 여러 개 저장하거나 화면이 꺼지지 않게 할 수 있나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "자주 쓰는 문구를 즐겨찾기에 저장하고 최대 8개까지 순서대로 재생할 수 있습니다. 전광판이 켜져 있는 동안에는 화면 자동 꺼짐이 방지됩니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "HELLO LED는 어떤 기기에서 사용이 가능한가요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "스마트폰·태블릿 등 Android 기기에서 사용할 수 있습니다. Google Play에서 설치하세요."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "지금 어디서 받을 수 있나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Android용 HELLO LED는 Google Play에서 받을 수 있습니다."
+            }
+          }
+        ]
       }
     ]
   }
@@ -435,7 +554,7 @@
             <option value="ja" lang="ja">日本語</option>
             <option value="zh" lang="zh-Hans">中文</option>
             <option value="es" lang="es">Español</option>
-            <option value="es_419" lang="es">Español (LatAm)</option>
+            <option value="es_419" lang="es-419">Español (LatAm)</option>
           </select>
           <span class="lang-switch-label" aria-hidden="true">한국어</span>
         </div>
@@ -465,6 +584,8 @@
                 src="/badges/play-ko.png"
                 width="215"
                 height="64"
+                decoding="async"
+                fetchpriority="high"
                 class="h-14 w-auto"
                 alt="Google Play에서 다운로드, 새 창"
               >
@@ -652,10 +773,10 @@
         <div class="mt-10 divide-y divide-line border-y border-line">
           <details class="reveal group" open>
             <summary class="flex min-h-14 cursor-pointer items-center justify-between gap-4 py-4 text-left text-lg font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
-              <h3 data-i18n="faq1q">광고는 어디에 나오나요?</h3>
+              <h3 data-i18n="faq1q">문구를 여러 개 저장하거나 화면이 꺼지지 않게 할 수 있나요?</h3>
               <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
             </summary>
-            <p class="pb-5 text-muted" data-i18n="faq1a">전체화면 전광판에는 배너 광고가 없습니다. 편집 화면에는 배너가 나올 수 있고, 전체화면으로 들어가기 전에 전면 광고가 나올 수 있습니다.</p>
+            <p class="pb-5 text-muted" data-i18n="faq1a">자주 쓰는 문구를 즐겨찾기에 저장하고 최대 8개까지 순서대로 재생할 수 있습니다. 전광판이 켜져 있는 동안에는 화면 자동 꺼짐이 방지됩니다.</p>
           </details>
           <details class="reveal group" open>
             <summary class="flex min-h-14 cursor-pointer items-center justify-between gap-4 py-4 text-left text-lg font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
@@ -689,6 +810,8 @@
                 src="/badges/play-ko.png"
                 width="215"
                 height="64"
+                loading="lazy"
+                decoding="async"
                 class="h-14 w-auto"
                 alt="Google Play에서 다운로드, 새 창"
               >
@@ -728,6 +851,7 @@
   </footer>
 
   <script src="/i18n.js" defer></script>
+  <script src="/ad-fallback.js" defer></script>
   <script>
     (function () {
       var input = document.getElementById('led-input');

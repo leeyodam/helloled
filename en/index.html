@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>HELLO LED | Free phone LED board for cheers, shops, and welcomes</title>
   <meta name="description" content="HELLO LED is a free app that turns your phone into an LED board for concert cheers, shop sales, and airport welcomes.">
@@ -13,6 +14,8 @@
   <link rel="alternate" hreflang="ja" href="https://helloled.yodams.com/ja/">
   <link rel="alternate" hreflang="zh-Hans" href="https://helloled.yodams.com/zh/">
   <link rel="alternate" hreflang="es-ES" href="https://helloled.yodams.com/es/">
+  <link rel="alternate" hreflang="es" href="https://helloled.yodams.com/es/">
+  <link rel="alternate" hreflang="es-419" href="https://helloled.yodams.com/es-419/">
   <link rel="alternate" hreflang="es-MX" href="https://helloled.yodams.com/es-419/">
   <link rel="alternate" hreflang="es-AR" href="https://helloled.yodams.com/es-419/">
   <link rel="alternate" hreflang="es-CO" href="https://helloled.yodams.com/es-419/">
@@ -37,6 +40,7 @@
   <link rel="icon" type="image/png" href="/favicon.png" sizes="256x256">
   <link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="alternate" type="text/plain" href="https://helloled.yodams.com/llms.txt" title="HELLO LED LLM Summary">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
   <meta property="og:locale:alternate" content="ko_KR">
@@ -49,6 +53,7 @@
   <meta property="og:description" content="HELLO LED is a free app that turns your phone into an LED board for concert cheers, shop sales, and airport welcomes.">
   <meta property="og:url" content="https://helloled.yodams.com/en/">
   <meta property="og:image" content="https://helloled.yodams.com/og.png">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="HELLO LED logo, with the name on a blue circle">
@@ -210,7 +215,12 @@
         "alternateName": "Yodam",
         "url": "https://helloled.yodams.com/",
         "email": "helloled@yodams.com",
-        "logo": "https://helloled.yodams.com/favicon.png",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://helloled.yodams.com/favicon.png",
+          "width": 256,
+          "height": 256
+        },
         "description": "HELLO LED is a free Android app by 요담 (Yodam) that turns a phone screen into an LED board.",
         "sameAs": [
           "https://play.google.com/store/apps/details?id=com.yodam.helloled",
@@ -225,8 +235,9 @@
             "ko",
             "en",
             "ja",
-            "zh",
-            "es"
+            "zh-Hans",
+            "es",
+            "es-419"
           ]
         }
       },
@@ -236,7 +247,7 @@
         "name": "HELLO LED",
         "serviceType": "Mobile LED board app",
         "description": "HELLO LED is a free Android app by 요담 (Yodam) that turns a phone screen into an LED board.",
-        "url": "https://helloled.yodams.com/",
+        "url": "https://helloled.yodams.com/en/",
         "provider": {
           "@id": "https://helloled.yodams.com/#organization"
         },
@@ -251,8 +262,9 @@
             "ko",
             "en",
             "ja",
-            "zh",
-            "es"
+            "zh-Hans",
+            "es",
+            "es-419"
           ]
         },
         "offers": {
@@ -261,6 +273,31 @@
           "priceCurrency": "KRW",
           "availability": "https://schema.org/InStock",
           "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://helloled.yodams.com/#website",
+        "url": "https://helloled.yodams.com/",
+        "name": "HELLO LED",
+        "alternateName": "헬로 LED",
+        "description": "Official HELLO LED website. Install the free phone LED board app on Google Play.",
+        "inLanguage": "en",
+        "publisher": {
+          "@id": "https://helloled.yodams.com/#organization"
+        },
+        "potentialAction": {
+          "@type": "DownloadAction",
+          "name": "Download HELLO LED",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+            "actionPlatform": [
+              "https://schema.org/DesktopWebPlatform",
+              "https://schema.org/MobileWebPlatform",
+              "https://schema.org/AndroidPlatform"
+            ]
+          }
         }
       },
       {
@@ -281,8 +318,19 @@
             "@id": "https://helloled.yodams.com/#service"
           }
         ],
+        "mainEntity": {
+          "@id": "https://helloled.yodams.com/#app"
+        },
+        "hasPart": [
+          {
+            "@id": "https://helloled.yodams.com/en/#howto"
+          },
+          {
+            "@id": "https://helloled.yodams.com/en/#faq"
+          }
+        ],
         "datePublished": "2026-09-21",
-        "dateModified": "2026-10-06",
+        "dateModified": "2026-10-20",
         "primaryImageOfPage": {
           "@type": "ImageObject",
           "url": "https://helloled.yodams.com/og.png",
@@ -324,15 +372,27 @@
         "alternateName": "헬로 LED",
         "applicationCategory": "UtilitiesApplication",
         "operatingSystem": "Android",
+        "softwareVersion": "1.0.1",
+        "isAccessibleForFree": true,
         "inLanguage": [
           "ko",
           "en",
           "ja",
-          "zh",
-          "es"
+          "zh-Hans",
+          "es",
+          "es-419"
         ],
-        "description": "HELLO LED is a free Android app by 요담 (Yodam) that turns a phone screen into an LED board. It is used for concert cheers, shop sales, and airport welcomes.",
+        "description": "HELLO LED is a free app that turns your phone into an LED board for concert cheers, shop sales, and airport welcomes.",
+        "featureList": [
+          "Custom neon colors, text size, scroll speed, and 11 bundled fonts",
+          "Full-screen landscape and portrait LED board with keep-screen-on",
+          "Live clock, D-Day countdown, and timer display",
+          "On-device photo-to-LED-dot conversion (no server upload)",
+          "8 preset phrase categories for cheers, birthdays, pickups, and shops",
+          "Save favorites and play up to 8 messages in sequence"
+        ],
         "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+        "downloadUrl": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
         "installUrl": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
         "sameAs": [
           "https://play.google.com/store/apps/details?id=com.yodam.helloled"
@@ -380,6 +440,89 @@
             "text": "Turn the phone sideways and the whole screen becomes the board."
           }
         ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://helloled.yodams.com/en/#faq",
+        "url": "https://helloled.yodams.com/en/#qa",
+        "inLanguage": "en",
+        "isPartOf": {
+          "@id": "https://helloled.yodams.com/en/#webpage"
+        },
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Where do ads appear?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The full-screen board does not show a banner ad. The editor can show a banner, and a full-screen ad can appear before the board opens."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where do photos go?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A gallery photo is turned into a dot pattern on the device and shown on the board. It is not uploaded to a server."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need an account?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No account is required. Messages and settings stay on the device."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which languages are supported?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The app and this site support 한국어, English, 日本語, 中文, Español, and Español (LatAm)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What preset phrases are included?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "English presets are Cheer, Birthday, Pickup, Shop, Love, Exam, Welcome, and Thanks."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where do I install it?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HELLO LED is an Android app. Install it from Google Play."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I play multiple messages in order or keep the screen awake?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Save favorite messages on your device and play up to 8 messages in sequence. While the LED board is displayed, the screen stays on automatically."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which devices can use HELLO LED?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It runs on Android phones and tablets. Install it from Google Play."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where can I download it now?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Download HELLO LED for Android on Google Play."
+            }
+          }
+        ]
       }
     ]
   }
@@ -411,7 +554,7 @@
             <option value="ja" lang="ja">日本語</option>
             <option value="zh" lang="zh-Hans">中文</option>
             <option value="es" lang="es">Español</option>
-            <option value="es_419" lang="es">Español (LatAm)</option>
+            <option value="es_419" lang="es-419">Español (LatAm)</option>
           </select>
           <span class="lang-switch-label" aria-hidden="true">English</span>
         </div>
@@ -441,6 +584,8 @@
                 src="/badges/play-en.png"
                 width="215"
                 height="64"
+                decoding="async"
+                fetchpriority="high"
                 class="h-14 w-auto"
                 alt="Get it on Google Play, new tab"
               >
@@ -628,10 +773,10 @@
         <div class="mt-10 divide-y divide-line border-y border-line">
           <details class="reveal group" open>
             <summary class="flex min-h-14 cursor-pointer items-center justify-between gap-4 py-4 text-left text-lg font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
-              <h3 data-i18n="faq1q">Where do ads appear?</h3>
+              <h3 data-i18n="faq1q">Can I play multiple messages in order or keep the screen awake?</h3>
               <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
             </summary>
-            <p class="pb-5 text-muted" data-i18n="faq1a">The full-screen board does not show a banner ad. The editor can show a banner, and a full-screen ad can appear before the board opens.</p>
+            <p class="pb-5 text-muted" data-i18n="faq1a">Yes. Save favorite messages on your device and play up to 8 messages in sequence. While the LED board is displayed, the screen stays on automatically.</p>
           </details>
           <details class="reveal group" open>
             <summary class="flex min-h-14 cursor-pointer items-center justify-between gap-4 py-4 text-left text-lg font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
@@ -665,6 +810,8 @@
                 src="/badges/play-en.png"
                 width="215"
                 height="64"
+                loading="lazy"
+                decoding="async"
                 class="h-14 w-auto"
                 alt="Get it on Google Play, new tab"
               >
@@ -704,6 +851,7 @@
   </footer>
 
   <script src="/i18n.js" defer></script>
+  <script src="/ad-fallback.js" defer></script>
   <script>
     (function () {
       var input = document.getElementById('led-input');

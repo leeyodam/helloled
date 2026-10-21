@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>HELLO LED privacy policy</title>
   <meta name="description" content="HELLO LED privacy policy. Applies from 21 September 2026.">
@@ -12,6 +13,8 @@
   <link rel="alternate" hreflang="ja" href="https://helloled.yodams.com/ja/privacy.html">
   <link rel="alternate" hreflang="zh-Hans" href="https://helloled.yodams.com/zh/privacy.html">
   <link rel="alternate" hreflang="es-ES" href="https://helloled.yodams.com/es/privacy.html">
+  <link rel="alternate" hreflang="es" href="https://helloled.yodams.com/es/privacy.html">
+  <link rel="alternate" hreflang="es-419" href="https://helloled.yodams.com/es-419/privacy.html">
   <link rel="alternate" hreflang="es-MX" href="https://helloled.yodams.com/es-419/privacy.html">
   <link rel="alternate" hreflang="es-AR" href="https://helloled.yodams.com/es-419/privacy.html">
   <link rel="alternate" hreflang="es-CO" href="https://helloled.yodams.com/es-419/privacy.html">
@@ -46,6 +49,7 @@
   <meta property="og:description" content="HELLO LED privacy policy. Applies from 21 September 2026.">
   <meta property="og:url" content="https://helloled.yodams.com/en/privacy.html">
   <meta property="og:image" content="https://helloled.yodams.com/og.png">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="HELLO LED logo, with the name on a blue circle">
@@ -57,6 +61,7 @@
   <link rel="icon" type="image/png" href="/favicon.png" sizes="256x256">
   <link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="alternate" type="text/plain" href="https://helloled.yodams.com/llms.txt" title="HELLO LED LLM Summary">
   <style>
     body { margin: 0; background: #ffffff; color: #0a0a0a; font-family: system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
     main { max-width: 42rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
@@ -135,6 +140,65 @@
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "Organization",
+        "@id": "https://helloled.yodams.com/#organization",
+        "name": "HELLO LED",
+        "legalName": "요담",
+        "alternateName": "Yodam",
+        "url": "https://helloled.yodams.com/",
+        "email": "helloled@yodams.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://helloled.yodams.com/favicon.png",
+          "width": 256,
+          "height": 256
+        },
+        "description": "HELLO LED is a free Android app by 요담 (Yodam) that turns a phone screen into an LED board.",
+        "sameAs": [
+          "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+          "https://yodams.com/",
+          "https://github.com/leeyodam/helloled"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "helloled@yodams.com",
+          "availableLanguage": [
+            "ko",
+            "en",
+            "ja",
+            "zh-Hans",
+            "es",
+            "es-419"
+          ]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://helloled.yodams.com/#website",
+        "url": "https://helloled.yodams.com/",
+        "name": "HELLO LED",
+        "alternateName": "헬로 LED",
+        "description": "Official HELLO LED website. Install the free phone LED board app on Google Play.",
+        "inLanguage": "en",
+        "publisher": {
+          "@id": "https://helloled.yodams.com/#organization"
+        },
+        "potentialAction": {
+          "@type": "DownloadAction",
+          "name": "Download HELLO LED",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+            "actionPlatform": [
+              "https://schema.org/DesktopWebPlatform",
+              "https://schema.org/MobileWebPlatform",
+              "https://schema.org/AndroidPlatform"
+            ]
+          }
+        }
+      },
+      {
         "@type": "WebPage",
         "@id": "https://helloled.yodams.com/en/privacy.html#webpage",
         "url": "https://helloled.yodams.com/en/privacy.html",
@@ -147,8 +211,11 @@
         "about": {
           "@id": "https://helloled.yodams.com/#organization"
         },
+        "breadcrumb": {
+          "@id": "https://helloled.yodams.com/en/privacy.html#breadcrumb"
+        },
         "datePublished": "2026-09-21",
-        "dateModified": "2026-10-06",
+        "dateModified": "2026-10-20",
         "primaryImageOfPage": {
           "@type": "ImageObject",
           "url": "https://helloled.yodams.com/og.png",
@@ -156,6 +223,24 @@
           "height": 630,
           "caption": "HELLO LED logo, with the name on a blue circle"
         }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://helloled.yodams.com/en/privacy.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "HELLO LED",
+            "item": "https://helloled.yodams.com/en/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "HELLO LED privacy policy",
+            "item": "https://helloled.yodams.com/en/privacy.html"
+          }
+        ]
       }
     ]
   }
@@ -174,7 +259,7 @@
           <option value="ja" lang="ja">日本語</option>
           <option value="zh" lang="zh-Hans">中文</option>
           <option value="es" lang="es">Español</option>
-          <option value="es_419" lang="es">Español (LatAm)</option>
+          <option value="es_419" lang="es-419">Español (LatAm)</option>
         </select>
         <span class="lang-switch-label" aria-hidden="true">English</span>
       </div>
