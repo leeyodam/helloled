@@ -227,7 +227,7 @@
           "@id": "https://helloled.yodams.com/en/privacy.html#breadcrumb"
         },
         "datePublished": "2026-09-21",
-        "dateModified": "2026-10-21",
+        "dateModified": "2026-11-03",
         "primaryImageOfPage": {
           "@type": "ImageObject",
           "url": "https://helloled.yodams.com/og.png",
@@ -281,10 +281,14 @@
     <h2 data-i18n="privacyPurposeTitle">1. Why personal information is processed</h2>
     <p data-i18n="privacyPurposeBody">The company processes personal information for the purposes below and will not use it for other purposes. If a purpose changes, the company will ask for consent first.
 a. Providing the app: LED messages, favorites, clock, countdown, timer, and photo-to-dot conversion
-b. Advertising: personalized and non-personalized ads that support the free service</p>
+b. Advertising: personalized and non-personalized ads that support the free service
+c. Website measurement, from 3 November 2026: pages visited, language, store-button clicks, and whether the on-page preview was used. Text typed into the preview is not collected.
+d. App measurement, from 3 November 2026: screen name, app language, device information, and approximate location. LED message text and photos are not sent.</p>
     <h2 data-i18n="privacyRetentionTitle">2. How long personal information is kept</h2>
     <p data-i18n="privacyRetentionBody">The company does not store your personal information on its servers. Messages, colors, fonts, favorites, and ad-consent status stay in storage on your device and are removed when you delete the app.
-Information an advertising SDK collects, such as an advertising identifier, follows that provider policy. The company does not keep it on a separate server.</p>
+Information an advertising SDK collects, such as an advertising identifier, follows that provider policy. The company does not keep it on a separate server.
+Website visit statistics are processed by Google Analytics and are not stored on the company's servers. Web event data is kept for 14 months.
+App usage is processed by Google Analytics and is not stored on the company's servers. App event data is kept for 14 months.</p>
     <h2 data-i18n="privacyThirdPartyTitle">3. Sharing with third parties</h2>
     <p data-i18n="privacyThirdPartyBody">The company does not provide your personal information to outside parties. An advertising partner may still process device information in order to show ads.
 a. Recipient: Google LLC (Google AdMob)
@@ -295,16 +299,25 @@ d. How long the recipient keeps it: as described in the Google privacy policy</p
     <p data-i18n="privacyDelegateBody">The company may entrust processing as follows so the service can run.
 a. Work entrusted: delivering ads and measuring ad performance
 b. Processor: Google LLC (Google AdMob)
+c. Work entrusted: measuring visits to the official website
+d. Processor: Google LLC (Google Analytics)
+Website measurement includes the page visited, approximate location, device and browser information, store clicks, and whether the preview was used. It does not include preview text or ads personalization signals.
+e. Work entrusted: measuring app usage
+f. Processor: Google LLC (Google Analytics)
+The app sends the screen name, app language, device information, and approximate location. It does not send LED message text, photos, or ads personalization signals.
 The contract requires compliance with privacy law, prohibits providing the information to another party, and states who is responsible. The company keeps that contract electronically. If the processor changes, the company will announce it and update this policy.</p>
     <h2 data-i18n="privacyRightsTitle">5. Your rights and how to use them</h2>
     <p data-i18n="privacyRightsBody">You may exercise the following rights.
 a. Ask to access, correct, or delete personal information
 b. Ask the company to stop processing it
 c. Withdraw consent in the system privacy or ad settings, or when the app shows the ad-consent form again
+You can block the website analytics cookie in your browser settings.
 Send a request to the contact below. The company will act without delay.</p>
     <h2 data-i18n="privacyItemsTitle">6. Items that are processed</h2>
     <p data-i18n="privacyItemsBody">a. Required: none (there is no sign-up and no server account)
-b. Optional: favorite messages, board settings stored on the device, an advertising identifier from the ad SDK, and photos processed on the device when you convert an image</p>
+b. Optional: favorite messages, board settings stored on the device, an advertising identifier from the ad SDK, and photos processed on the device when you convert an image
+c. Website: page visited, approximate location, device and browser information, store clicks, and whether the preview was used (not the text typed)
+d. App: screen name, app language, device information, and approximate location (not LED message text or photos)</p>
     <h2 data-i18n="privacyDeletionTitle">7. How personal information is deleted</h2>
     <p data-i18n="privacyDeletionBody">When the retention period ends, the purpose is achieved, or the information is no longer needed, the company deletes it without delay.
 a. Procedure: deleting the app, or deleting favorites and settings, removes the data on the device.
@@ -334,6 +347,7 @@ Email: <a href="mailto:helloled@yodams.com">helloled@yodams.com</a></p>
       <a data-lang="es_419" href="https://helloled.yodams.com/es-419/privacy.html" style="display:inline-flex;align-items:center;min-height:44px;">Español (LatAm)</a>
     </nav>
   </main>
+  <script src="/analytics.js" defer></script>
   <script src="/i18n.js" defer></script>
 </body>
 </html>

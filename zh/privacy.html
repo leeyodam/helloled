@@ -227,7 +227,7 @@
           "@id": "https://helloled.yodams.com/zh/privacy.html#breadcrumb"
         },
         "datePublished": "2026-09-21",
-        "dateModified": "2026-10-21",
+        "dateModified": "2026-11-03",
         "primaryImageOfPage": {
           "@type": "ImageObject",
           "url": "https://helloled.yodams.com/og.png",
@@ -281,10 +281,14 @@
     <h2 data-i18n="privacyPurposeTitle">1. 处理个人信息的目的</h2>
     <p data-i18n="privacyPurposeBody">本公司为下列目的处理个人信息，不会用于其他用途。目的变更时，将事先征得同意。
 a. 提供应用服务：灯牌文字、收藏、时钟、倒计时、计时器、图片转点阵
-b. 投放广告：为维持免费服务而展示个性化或非个性化广告</p>
+b. 投放广告：为维持免费服务而展示个性化或非个性化广告
+c. 官方网站使用情况（自 2026 年 11 月 3 日起）：访问的页面、语言、商店按钮点击，以及是否使用了灯牌预览。预览中输入的文字不会被收集。
+d. 应用使用情况（自 2026 年 11 月 3 日起）：屏幕名称、应用语言、设备信息、大致位置。不发送灯牌文字和照片。</p>
     <h2 data-i18n="privacyRetentionTitle">2. 处理与保存期限</h2>
     <p data-i18n="privacyRetentionBody">本公司原则上不把用户的个人信息保存在服务器上。文字、颜色、字体、收藏和广告同意状态保存在用户设备本地，删除应用时一并删除。
-广告 SDK 收集的广告标识等信息遵循各提供方的政策，本公司不会长期另存到服务器。</p>
+广告 SDK 收集的广告标识等信息遵循各提供方的政策，本公司不会长期另存到服务器。
+官方网站的访问统计由 Google Analytics 处理，不保存在本公司的服务器上。网站事件数据保留 14 个月。
+应用使用情况由 Google Analytics 处理，不保存在本公司的服务器上。应用事件数据保留 14 个月。</p>
     <h2 data-i18n="privacyThirdPartyTitle">3. 向第三方提供</h2>
     <p data-i18n="privacyThirdPartyBody">本公司原则上不向外部提供用户的个人信息。为投放广告，广告合作方可能会处理设备信息。
 a. 接收方：Google LLC（Google AdMob）
@@ -295,16 +299,25 @@ d. 接收方的保存期限：遵循 Google 隐私政策</p>
     <p data-i18n="privacyDelegateBody">为提供服务，本公司可能按下列方式委托处理个人信息。
 a. 委托内容：投放广告并衡量广告效果
 b. 受托方：Google LLC（Google AdMob）
+c. 委托内容：统计官方网站的访问
+d. 受托方：Google LLC（Google Analytics）
+网站统计包括访问的页面、大致位置、设备和浏览器信息、商店点击，以及是否使用了预览。不包含预览文字，也不发送广告个性化信号。
+e. 委托内容：测量应用使用情况
+f. 受托方：Google LLC（Google Analytics）
+应用发送的项目包括屏幕名称、应用语言、设备信息和大致位置。不包含灯牌文字和照片，也不发送广告个性化信号。
 委托合同明确要求遵守个人信息保护法规、禁止再向第三方提供，并约定责任。本公司以电子方式保存该合同。受托方变更时，将公告并更新本政策。</p>
     <h2 data-i18n="privacyRightsTitle">5. 用户权利及行使方式</h2>
     <p data-i18n="privacyRightsBody">用户可以行使下列权利。
 a. 要求查阅、更正或删除个人信息
 b. 要求停止处理
 c. 撤回同意（在系统隐私或广告设置中，或在应用再次显示广告同意表单时）
+可以在浏览器设置中阻止网站分析 Cookie。
 可通过下方联系方式提出。本公司将及时处理。</p>
     <h2 data-i18n="privacyItemsTitle">6. 处理的个人信息项目</h2>
     <p data-i18n="privacyItemsBody">a. 必要项目：无（不提供注册，也不使用服务器账号）
-b. 可选项目：收藏的文字、保存在设备上的灯牌设置、广告标识（广告 SDK）、照片（转换图片时在设备内处理）</p>
+b. 可选项目：收藏的文字、保存在设备上的灯牌设置、广告标识（广告 SDK）、照片（转换图片时在设备内处理）
+c. 网站：访问的页面、大致位置、设备和浏览器信息、商店点击，以及是否使用了预览（不包括输入的文字）
+d. 应用：屏幕名称、应用语言、设备信息、大致位置（不包括灯牌文字和照片）</p>
     <h2 data-i18n="privacyDeletionTitle">7. 销毁程序与方式</h2>
     <p data-i18n="privacyDeletionBody">保存期限届满、处理目的实现或个人信息不再需要时，本公司将及时销毁。
 a. 程序：删除应用，或删除收藏与设置后，设备内的数据会被移除。
@@ -334,6 +347,7 @@ b. 联系人：<span lang="ko">요담</span>（Yodam）
       <a data-lang="es_419" href="https://helloled.yodams.com/es-419/privacy.html" style="display:inline-flex;align-items:center;min-height:44px;">Español (LatAm)</a>
     </nav>
   </main>
+  <script src="/analytics.js" defer></script>
   <script src="/i18n.js" defer></script>
 </body>
 </html>
