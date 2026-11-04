@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#ffffff">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>HELLO LED | Free phone LED board for cheers, shops, and welcomes</title>
-  <meta name="description" content="HELLO LED is a free app that turns your phone into an LED board for concert cheers, shop sales, and airport welcomes.">
+  <title>Free LED Banner App for Concerts & Pickups | HELLO LED</title>
+  <meta name="description" content="Turn your phone into a scrolling LED banner. Build concert fan signs, airport pickup messages, and shop notices with neon colors, 11 fonts, and a clock.">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="canonical" href="https://helloled.yodams.com/en/">
-  <link rel="alternate" hreflang="ko" href="https://helloled.yodams.com/">
+  <link rel="alternate" hreflang="ko-KR" href="https://helloled.yodams.com/">
   <link rel="alternate" hreflang="en" href="https://helloled.yodams.com/en/">
   <link rel="alternate" hreflang="ja" href="https://helloled.yodams.com/ja/">
-  <link rel="alternate" hreflang="zh-Hans" href="https://helloled.yodams.com/zh/">
+  <link rel="alternate" hreflang="zh-CN" href="https://helloled.yodams.com/zh/">
   <link rel="alternate" hreflang="es-ES" href="https://helloled.yodams.com/es/">
   <link rel="alternate" hreflang="es" href="https://helloled.yodams.com/es/">
   <link rel="alternate" hreflang="es-419" href="https://helloled.yodams.com/es-419/">
@@ -49,19 +49,19 @@
   <meta property="og:locale:alternate" content="es_ES">
   <meta property="og:locale:alternate" content="es_MX">
   <meta property="og:site_name" content="HELLO LED">
-  <meta property="og:title" content="HELLO LED | Free phone LED board for cheers, shops, and welcomes">
-  <meta property="og:description" content="HELLO LED is a free app that turns your phone into an LED board for concert cheers, shop sales, and airport welcomes.">
+  <meta property="og:title" content="HELLO LED | Free Scrolling LED Banner App">
+  <meta property="og:description" content="Create a scrolling LED sign on your phone for concerts, airport pickups, and shop notices. Customize text colors, 11 fonts, size, and scroll speed.">
   <meta property="og:url" content="https://helloled.yodams.com/en/">
   <meta property="og:image" content="https://helloled.yodams.com/og.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="HELLO LED logo, with the name on a blue circle">
+  <meta property="og:image:alt" content="HELLO LED app logo: five colored dots and the HELLO LED name inside a blue circle">>
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="HELLO LED | Free phone LED board for cheers, shops, and welcomes">
-  <meta name="twitter:description" content="HELLO LED is a free app that turns your phone into an LED board for concert cheers, shop sales, and airport welcomes.">
+  <meta name="twitter:title" content="HELLO LED | Free Scrolling LED Banner App">
+  <meta name="twitter:description" content="Create a scrolling LED sign on your phone for concerts, airport pickups, and shop notices. Customize text colors, 11 fonts, size, and scroll speed.">
   <meta name="twitter:image" content="https://helloled.yodams.com/og.png">
-  <meta name="twitter:image:alt" content="HELLO LED logo, with the name on a blue circle">
+  <meta name="twitter:image:alt" content="HELLO LED app logo: five colored dots and the HELLO LED name inside a blue circle">>
   <link rel="dns-prefetch" href="https://play.google.com">
   <link rel="preconnect" href="https://play.google.com" crossorigin>
   <link rel="dns-prefetch" href="https://apps.apple.com">
@@ -82,7 +82,7 @@
       50% { transform: rotate(3deg); }
     }
     html { scroll-behavior: smooth; }
-    #features, #how, #qa, #download { scroll-margin-top: 3rem; }
+    #features, #uses, #how, #qa, #download { scroll-margin-top: 3rem; }
     #main { scroll-margin-top: 6.5rem; }
     #main:focus { outline: none; }
     #features .max-w-3xl > p,
@@ -238,6 +238,17 @@
       padding: 0;
       list-style: none;
     }
+    .use-grid {
+      display: grid;
+      gap: 1rem;
+      margin: 2.5rem 0 0;
+    }
+    .use-grid h3 { margin: 0; font-size: 1.125rem; font-weight: 700; color: #0a0a0a; }
+    .use-grid p { margin: 0.45rem 0 0; color: #374151; line-height: 1.6; }
+    @media (min-width: 640px) {
+      .use-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+      .use-grid h3 { font-size: 1.25rem; }
+    }
     .how-step {
       position: relative;
       border: 1px solid #ececec;
@@ -302,34 +313,74 @@
     }
   </style>
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://helloled.yodams.com/#organization",
-        "name": "HELLO LED",
-        "legalName": "요담",
-        "alternateName": "Yodam",
-        "url": "https://helloled.yodams.com/",
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://helloled.yodams.com/#organization",
+      "name": "HELLO LED",
+      "legalName": "요담",
+      "alternateName": "Yodam",
+      "url": "https://helloled.yodams.com/",
+      "email": "helloled@yodams.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://helloled.yodams.com/favicon.png",
+        "width": 256,
+        "height": 256
+      },
+      "description": "HELLO LED is a free smartphone LED banner app developed by Yodam (요담). It turns an Android phone, Android tablet, or iPhone screen into a full-screen landscape LED scrolling sign for concert fan signs, airport pickups, shop promotions, and birthday messages. It offers five preset neon colors plus a custom color, 11 fonts, adjustable text size, brightness and scroll speed, and flicker and glow effects, and it shows the current time, a D-Day countdown and a timer in LED digits. Gallery photos are converted to LED dot images on the device, favorites can hold up to 8 messages played in sequence, and messages can be matched between HELLO LED devices on the same Wi-Fi. Photo conversion and message matching use no external server. A saved message can be shown in the Android home screen widget, which is Android only. The website displays version 1.0.4.",
+      "sameAs": [
+        "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+        "https://apps.apple.com/app/id6816627023",
+        "https://yodams.com/",
+        "https://github.com/leeyodam/helloled"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
         "email": "helloled@yodams.com",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://helloled.yodams.com/favicon.png",
-          "width": 256,
-          "height": 256
+        "availableLanguage": [
+          "ko",
+          "en",
+          "ja",
+          "zh-Hans",
+          "es",
+          "es-419"
+        ]
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://helloled.yodams.com/#service",
+      "name": "HELLO LED",
+      "serviceType": "Mobile LED board app",
+      "description": "HELLO LED is a free smartphone LED banner app developed by Yodam (요담). It turns an Android phone, Android tablet, or iPhone screen into a full-screen landscape LED scrolling sign for concert fan signs, airport pickups, shop promotions, and birthday messages. It offers five preset neon colors plus a custom color, 11 fonts, adjustable text size, brightness and scroll speed, and flicker and glow effects, and it shows the current time, a D-Day countdown and a timer in LED digits. Gallery photos are converted to LED dot images on the device, favorites can hold up to 8 messages played in sequence, and messages can be matched between HELLO LED devices on the same Wi-Fi. Photo conversion and message matching use no external server. A saved message can be shown in the Android home screen widget, which is Android only. The website displays version 1.0.4.",
+      "url": "https://helloled.yodams.com/en/",
+      "provider": {
+        "@id": "https://helloled.yodams.com/#organization"
+      },
+      "isRelatedTo": {
+        "@id": "https://helloled.yodams.com/#app"
+      },
+      "areaServed": "Worldwide",
+      "availableChannel": [
+        {
+          "@type": "ServiceChannel",
+          "serviceUrl": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+          "availableLanguage": [
+            "ko",
+            "en",
+            "ja",
+            "zh-Hans",
+            "es",
+            "es-419"
+          ]
         },
-        "description": "HELLO LED is a free app by 요담 (Yodam) that turns a phone screen into an LED board on Android and iPhone.",
-        "sameAs": [
-          "https://play.google.com/store/apps/details?id=com.yodam.helloled",
-          "https://apps.apple.com/app/id6816627023",
-          "https://yodams.com/",
-          "https://github.com/leeyodam/helloled"
-        ],
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "contactType": "customer support",
-          "email": "helloled@yodams.com",
+        {
+          "@type": "ServiceChannel",
+          "serviceUrl": "https://apps.apple.com/app/id6816627023",
           "availableLanguage": [
             "ko",
             "en",
@@ -339,288 +390,325 @@
             "es-419"
           ]
         }
-      },
-      {
-        "@type": "Service",
-        "@id": "https://helloled.yodams.com/#service",
-        "name": "HELLO LED",
-        "serviceType": "Mobile LED board app",
-        "description": "HELLO LED is a free app by 요담 (Yodam) that turns a phone screen into an LED board on Android and iPhone.",
-        "url": "https://helloled.yodams.com/en/",
-        "provider": {
-          "@id": "https://helloled.yodams.com/#organization"
+      ],
+      "offers": [
+        {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "KRW",
+          "availability": "https://schema.org/InStock",
+          "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled"
         },
-        "isRelatedTo": {
-          "@id": "https://helloled.yodams.com/#app"
-        },
-        "areaServed": "Worldwide",
-        "availableChannel": [
-          {
-            "@type": "ServiceChannel",
-            "serviceUrl": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
-            "availableLanguage": [
-              "ko",
-              "en",
-              "ja",
-              "zh-Hans",
-              "es",
-              "es-419"
-            ]
-          },
-          {
-            "@type": "ServiceChannel",
-            "serviceUrl": "https://apps.apple.com/app/id6816627023",
-            "availableLanguage": [
-              "ko",
-              "en",
-              "ja",
-              "zh-Hans",
-              "es",
-              "es-419"
-            ]
-          }
-        ],
-        "offers": [
-          {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "KRW",
-            "availability": "https://schema.org/InStock",
-            "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled"
-          },
-          {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "KRW",
-            "availability": "https://schema.org/InStock",
-            "url": "https://apps.apple.com/app/id6816627023"
-          }
-        ]
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://helloled.yodams.com/#website",
-        "url": "https://helloled.yodams.com/",
-        "name": "HELLO LED",
-        "alternateName": "헬로 LED",
-        "description": "Official HELLO LED website. Install the free phone LED board app on Google Play or the App Store.",
-        "inLanguage": "en",
-        "publisher": {
-          "@id": "https://helloled.yodams.com/#organization"
-        },
-        "potentialAction": [
-          {
-            "@type": "DownloadAction",
-            "name": "Download HELLO LED",
-            "target": {
-              "@type": "EntryPoint",
-              "urlTemplate": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
-              "actionPlatform": [
-                "https://schema.org/AndroidPlatform"
-              ]
-            }
-          },
-          {
-            "@type": "DownloadAction",
-            "name": "Download HELLO LED",
-            "target": {
-              "@type": "EntryPoint",
-              "urlTemplate": "https://apps.apple.com/app/id6816627023",
-              "actionPlatform": [
-                "https://schema.org/IOSPlatform"
-              ]
-            }
-          }
-        ]
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://helloled.yodams.com/en/#webpage",
-        "url": "https://helloled.yodams.com/en/",
-        "name": "HELLO LED | Free phone LED board for cheers, shops, and welcomes",
-        "description": "HELLO LED is a free app that turns your phone into an LED board for concert cheers, shop sales, and airport welcomes.",
-        "inLanguage": "en",
-        "isPartOf": {
-          "@id": "https://helloled.yodams.com/#website"
-        },
-        "about": [
-          {
-            "@id": "https://helloled.yodams.com/#app"
-          },
-          {
-            "@id": "https://helloled.yodams.com/#service"
-          }
-        ],
-        "mainEntity": {
-          "@id": "https://helloled.yodams.com/#app"
-        },
-        "hasPart": [
-          {
-            "@id": "https://helloled.yodams.com/en/#howto"
-          },
-          {
-            "@id": "https://helloled.yodams.com/en/#faq"
-          }
-        ],
-        "datePublished": "2026-09-21",
-        "dateModified": "2026-10-21",
-        "primaryImageOfPage": {
-          "@type": "ImageObject",
-          "url": "https://helloled.yodams.com/og.png",
-          "width": 1200,
-          "height": 630,
-          "caption": "HELLO LED logo, with the name on a blue circle"
-        },
-        "image": [
-          {
-            "@type": "ImageObject",
-            "url": "https://helloled.yodams.com/screens/led-marquee.png",
-            "width": 960,
-            "height": 540,
-            "caption": "HELLO LED screen: pink neon text reading LOVE HE"
-          },
-          {
-            "@type": "ImageObject",
-            "url": "https://helloled.yodams.com/screens/led-clock.png",
-            "width": 960,
-            "height": 540,
-            "caption": "HELLO LED screen: landscape clock showing 21:48"
-          },
-          {
-            "@type": "ImageObject",
-            "url": "https://helloled.yodams.com/screens/led-dots.png",
-            "width": 960,
-            "height": 540,
-            "caption": "HELLO LED screen: two pink hearts made of dots"
-          }
-        ]
-      },
-      {
-        "@type": [
-          "SoftwareApplication",
-          "MobileApplication"
-        ],
-        "@id": "https://helloled.yodams.com/#app",
-        "name": "HELLO LED",
-        "alternateName": "헬로 LED",
-        "applicationCategory": "UtilitiesApplication",
-        "operatingSystem": "Android, iOS",
-        "softwareVersion": "1.0.4",
-        "isAccessibleForFree": true,
-        "inLanguage": [
-          "ko",
-          "en",
-          "ja",
-          "zh-Hans",
-          "es",
-          "es-419"
-        ],
-        "description": "HELLO LED is a free app that turns your phone into an LED board for concert cheers, shop sales, and airport welcomes.",
-        "featureList": [
-          "Custom neon colors, text size, scroll speed, and 11 bundled fonts",
-          "Full-screen landscape and portrait LED board with keep-screen-on",
-          "Live clock, D-Day countdown, and timer display",
-          "On-device photo-to-LED-dot conversion (no server upload)",
-          "8 preset phrase categories for cheers, birthdays, pickups, and shops",
-          "Save favorites and play up to 8 messages in sequence"
-        ],
-        "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
-        "downloadUrl": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
-        "installUrl": "https://apps.apple.com/app/id6816627023",
-        "sameAs": [
-          "https://play.google.com/store/apps/details?id=com.yodam.helloled",
-          "https://apps.apple.com/app/id6816627023"
-        ],
-        "screenshot": [
-          "https://helloled.yodams.com/screens/led-marquee.png",
-          "https://helloled.yodams.com/screens/led-clock.png",
-          "https://helloled.yodams.com/screens/led-dots.png"
-        ],
-        "offers": [
-          {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "KRW",
-            "availability": "https://schema.org/InStock",
-            "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled"
-          },
-          {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "KRW",
-            "availability": "https://schema.org/InStock",
-            "url": "https://apps.apple.com/app/id6816627023"
-          }
-        ],
-        "publisher": {
-          "@id": "https://helloled.yodams.com/#organization"
+        {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "KRW",
+          "availability": "https://schema.org/InStock",
+          "url": "https://apps.apple.com/app/id6816627023"
         }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://helloled.yodams.com/#website",
+      "url": "https://helloled.yodams.com/",
+      "name": "HELLO LED",
+      "alternateName": "헬로 LED",
+      "description": "Official HELLO LED site. Install the free phone LED banner app from Google Play or the App Store.",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://helloled.yodams.com/#organization"
       },
-      {
-        "@type": "HowTo",
-        "@id": "https://helloled.yodams.com/en/#howto",
-        "name": "How to turn a phone into an LED board",
-        "description": "Anyone can use a phone as an LED board.",
-        "inLanguage": "en",
-        "totalTime": "PT1M",
-        "step": [
-          {
-            "@type": "HowToStep",
-            "position": 1,
-            "name": "Type a message",
-            "text": "Write a cheer, a sale, or a welcome, or pick a preset."
-          },
-          {
-            "@type": "HowToStep",
-            "position": 2,
-            "name": "Set color, speed, and font",
-            "text": "Choose a neon color, scroll speed, and typeface so it stays readable from a distance."
-          },
-          {
-            "@type": "HowToStep",
-            "position": 3,
-            "name": "Turn on full-screen landscape",
-            "text": "Turn the phone sideways and the whole screen becomes the board."
+      "potentialAction": [
+        {
+          "@type": "DownloadAction",
+          "name": "Download HELLO LED",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+            "actionPlatform": [
+              "https://schema.org/AndroidPlatform"
+            ]
           }
-        ]
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://helloled.yodams.com/en/#faq",
-        "url": "https://helloled.yodams.com/en/#qa",
-        "inLanguage": "en",
-        "isPartOf": {
-          "@id": "https://helloled.yodams.com/en/#webpage"
         },
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Can I play multiple messages in order or keep the screen awake?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. Save favorite messages on your device and play up to 8 messages in sequence. While the LED board is displayed, the screen stays on automatically."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Which devices can use HELLO LED?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "It runs on Android phones and tablets, and on iPhone. Install it from Google Play or the App Store."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Where can I download it now?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Download HELLO LED on Google Play or the App Store."
-            }
+        {
+          "@type": "DownloadAction",
+          "name": "Download HELLO LED",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://apps.apple.com/app/id6816627023",
+            "actionPlatform": [
+              "https://schema.org/IOSPlatform"
+            ]
           }
-        ]
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://helloled.yodams.com/en/#webpage",
+      "url": "https://helloled.yodams.com/en/",
+      "name": "Free LED Banner App for Concerts & Pickups | HELLO LED",
+      "description": "Turn your phone into a scrolling LED banner. Build concert fan signs, airport pickup messages, and shop notices with neon colors, 11 fonts, and a clock.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://helloled.yodams.com/#website"
+      },
+      "about": [
+        {
+          "@id": "https://helloled.yodams.com/#app"
+        },
+        {
+          "@id": "https://helloled.yodams.com/#service"
+        }
+      ],
+      "mainEntity": {
+        "@id": "https://helloled.yodams.com/#app"
+      },
+      "hasPart": [
+        {
+          "@id": "https://helloled.yodams.com/en/#howto"
+        },
+        {
+          "@id": "https://helloled.yodams.com/en/#faq"
+        }
+      ],
+      "datePublished": "2026-09-21",
+      "dateModified": "2026-11-04",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://helloled.yodams.com/og.png",
+        "width": 1200,
+        "height": 630,
+        "caption": "HELLO LED logo, with the name on a blue circle"
+      },
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://helloled.yodams.com/screens/led-marquee.png",
+          "width": 960,
+          "height": 540,
+          "caption": "HELLO LED app screen showing a pink neon cheer message"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://helloled.yodams.com/screens/led-clock.png",
+          "width": 960,
+          "height": 540,
+          "caption": "HELLO LED screen: landscape clock showing 21:48"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://helloled.yodams.com/screens/led-dots.png",
+          "width": 960,
+          "height": 540,
+          "caption": "HELLO LED screen: two pink hearts made of dots"
+        }
+      ]
+    },
+    {
+      "@type": [
+        "SoftwareApplication",
+        "MobileApplication"
+      ],
+      "@id": "https://helloled.yodams.com/#app",
+      "name": "HELLO LED",
+      "alternateName": "헬로 LED",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Android, iOS",
+      "softwareVersion": "1.0.4",
+      "isAccessibleForFree": true,
+      "inLanguage": [
+        "ko",
+        "en",
+        "ja",
+        "zh-Hans",
+        "es",
+        "es-419"
+      ],
+      "description": "Turn your phone into a scrolling LED banner. Build concert fan signs, airport pickup messages, and shop notices with neon colors, 11 fonts, and a clock.",
+      "featureList": [
+        "Five preset neon colors (red, yellow, green, blue, pink) plus a custom color, text size, brightness, scroll speed, flicker and glow effects, and 11 fonts",
+        "Landscape-only full-screen LED banner that keeps the screen on",
+        "Current time, D-Day countdown, and timer",
+        "Gallery photo to LED dots on the device, with no server upload",
+        "8 preset phrase sets: cheers, birthdays, airport pickups, shops, love notes, exam support, welcomes, thanks",
+        "Favorites and playback of up to 8 messages in order",
+        "Message sync with HELLO LED on the same Wi-Fi, no server",
+        "Saved message in the Android home screen widget. Android only"
+      ],
+      "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+      "installUrl": "https://apps.apple.com/app/id6816627023",
+      "sameAs": [
+        "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+        "https://apps.apple.com/app/id6816627023"
+      ],
+      "screenshot": [
+        "https://helloled.yodams.com/screens/led-marquee.png",
+        "https://helloled.yodams.com/screens/led-clock.png",
+        "https://helloled.yodams.com/screens/led-dots.png"
+      ],
+      "offers": [
+        {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "KRW",
+          "availability": "https://schema.org/InStock",
+          "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled"
+        },
+        {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "KRW",
+          "availability": "https://schema.org/InStock",
+          "url": "https://apps.apple.com/app/id6816627023"
+        }
+      ],
+      "author": {
+        "@id": "https://helloled.yodams.com/#organization"
+      },
+      "publisher": {
+        "@id": "https://helloled.yodams.com/#organization"
       }
-    ]
-  }
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://helloled.yodams.com/en/#howto",
+      "name": "How to make a phone LED banner",
+      "description": "No extra hardware is needed: set the message and the display effects in HELLO LED.",
+      "inLanguage": "en",
+      "totalTime": "PT1M",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Type the message to show",
+          "text": "Write a concert cheer, an airport pickup name, a shop sale, or a birthday line, or pick one of the eight presets."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Set the LED text color and size",
+          "text": "Choose a neon color and font, then adjust text size, brightness, and scroll speed so the line reads from a distance. Flicker and glow effects are here too."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Open the full-screen landscape banner",
+          "text": "Turn the phone sideways and show the message on the whole screen. The screen stays on while the banner shows."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://helloled.yodams.com/en/#faq",
+      "url": "https://helloled.yodams.com/en/#qa",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://helloled.yodams.com/en/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I turn a phone into an LED banner?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. HELLO LED turns a phone screen into a full-screen landscape LED sign without extra display equipment. Type a message and set the color, size, brightness, font, and scroll speed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use it as a concert fan sign?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Type the cheer you want to send an artist, or pick a preset, then set the neon color, font, and scroll speed so the sign reads in a dark venue."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use it as an airport pickup sign?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Type the name or a welcome line and show it large on the phone. It works as a digital pickup sign at arrivals."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can the text scroll on a phone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. HELLO LED shows your message as a scrolling LED banner. Set the scroll speed and change the text color, size, and font too."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I show a clock, D-Day, or timer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Show the current time, a D-Day countdown, or a timer in large LED digits. Use it as a digital clock for a start time or the time left."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I convert a photo into LED dots?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. A gallery photo becomes an LED dot pattern on the banner. The conversion runs on the device, so the photo is not uploaded to a server."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it work on iPhone and Android?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. It runs on Android phones and tablets and on iPhone. Install it from Google Play or the App Store."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is HELLO LED free? Does it show ads?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, HELLO LED is free to install. A banner ad may appear on the editor screen, and an interstitial ad may appear before opening the full-screen LED sign. The full-screen sign that shows your LED message has no banner ad."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I save several messages or play them in order?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Save favorites and play up to 8 messages in order. The screen stays on while the banner shows."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are my photos or messages uploaded?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Photo-to-dot conversion runs on the device, and messages and settings stay on the phone. Matching messages between HELLO LED devices on the same Wi-Fi also uses no external server."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I sync messages with another phone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. HELLO LED apps on the same Wi-Fi can match messages. This also needs no external server."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it have an Android home screen widget?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The Android home screen widget shows a saved message. The widget is available on Android only."
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 </head>
 <body class="bg-white text-ink antialiased">
@@ -660,12 +748,12 @@
   <main id="main" tabindex="-1">
     <section class="hero-wash relative overflow-hidden px-5 pb-12 pt-12 sm:pb-16 sm:pt-16">
       <div class="relative mx-auto max-w-3xl text-center">
-        <p class="mb-4 text-sm font-semibold tracking-wide text-muted" data-i18n="kicker">Phone LED board</p>
+        <p class="mb-4 text-sm font-semibold tracking-wide text-muted" data-i18n="kicker">Phone LED banner app</p>
         <h1 class="text-[clamp(2.15rem,5.4vw,3.75rem)] font-extrabold leading-[1.18] tracking-[-0.035em]">
-          <span data-i18n="heroLine1">Turn your phone into an LED board</span><br>
+          <span data-i18n="heroLine1">Turn Your Phone into a Full-Screen Scrolling LED Sign</span><br>
           <span class="neon-word" lang="en" data-i18n="heroAccent">HELLO LED</span>
         </h1>
-        <p class="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted sm:text-lg" data-i18n-html="heroBody"><strong class="font-semibold text-ink" lang="en">HELLO LED</strong> is a free app that turns your phone into an LED board. Use it for concert cheers, shop sales, airport welcomes, and more.</p>
+        <p class="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted sm:text-lg" data-i18n-html="heroBody"><strong class="font-semibold text-ink" lang="en">HELLO LED</strong> is a free LED banner app that turns your Android phone, tablet, or iPhone into a full-screen landscape LED sign. Create scrolling concert fan messages, airport pickup signs, and shop announcements without extra display equipment. Customize the message with five neon colors or a custom color, 11 fonts, adjustable text size and brightness, and scroll speed. Add flicker and glow effects, or show an LED clock, D-Day countdown, or timer.</p>
         <div class="mx-auto mt-8 flex max-w-xl flex-wrap items-center justify-center gap-3" id="download-hero">
             <a class="inline-flex focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" target="_blank" rel="noopener noreferrer" aria-label="Get it on Google Play, new tab" data-i18n-aria="playAlt">
               <picture>
@@ -731,11 +819,38 @@
       </div>
     </section>
 
+    <section id="uses" class="px-5 py-20 sm:py-28" aria-labelledby="uses-title">
+      <div class="mx-auto max-w-6xl">
+        <div class="mx-auto max-w-3xl text-center">
+          <h2 id="uses-title" class="reveal text-3xl font-extrabold tracking-tight sm:text-5xl" data-i18n="usesTitle">How people use a smartphone LED sign</h2>
+          <p class="reveal mx-auto mt-5 text-lg leading-relaxed text-muted" data-i18n="usesLead">HELLO LED shows large text on a phone screen without extra display equipment. Use it for a concert fan sign, an airport pickup board, or a digital sign at a shop.</p>
+        </div>
+        <div class="use-grid">
+          <article class="how-step reveal">
+            <h3 data-i18n="useConcertTitle">Concert LED fan sign</h3>
+            <p data-i18n="useConcertBody">Show the cheer you want to send an artist on the phone LED sign. Type a short line or pick a preset, then set the neon color, font, and scroll speed so the sign reads in a dark venue.</p>
+          </article>
+          <article class="how-step reveal">
+            <h3 data-i18n="useAirportTitle">Airport pickup sign</h3>
+            <p data-i18n="useAirportBody">Show a name or a welcome line large on the phone banner. You do not need a paper sign: type the name, pick a color, and hold the phone up at arrivals.</p>
+          </article>
+          <article class="how-step reveal">
+            <h3 data-i18n="useShopTitle">Shop promotion and digital sign</h3>
+            <p data-i18n="useShopBody">Show a sale, opening hours, or pickup numbers at the door or the counter. Type a short line such as OPEN, SALE, or today's deal, and show it as scrolling LED text.</p>
+          </article>
+          <article class="how-step reveal">
+            <h3 data-i18n="usePartyTitle">Birthdays and personal messages</h3>
+            <p data-i18n="usePartyBody">Birthday, welcome, thank-you, and exam support lines work the same way. Presets cover eight kinds: cheers, birthdays, airport pickups, shops, love notes, exam support, welcomes, and thanks.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section id="features" class="px-5 py-20 sm:py-28" aria-labelledby="features-title">
       <div class="mx-auto max-w-6xl">
         <div class="mx-auto max-w-3xl text-center">
-          <h2 id="features-title" class="reveal text-3xl font-extrabold tracking-tight sm:text-5xl" data-i18n-html="featuresTitle">What <span lang="en">HELLO LED</span> can do</h2>
-          <p class="reveal mx-auto mt-5 text-lg leading-relaxed text-muted" data-i18n="featuresLead">Bright scrolling text and ready-made lines for cheers, promotions, and welcomes.</p>
+          <h2 id="features-title" class="reveal text-3xl font-extrabold tracking-tight sm:text-5xl" data-i18n-html="featuresTitle">What the <span lang="en">HELLO LED</span> LED banner app can do</h2>
+          <p class="reveal mx-auto mt-5 text-lg leading-relaxed text-muted" data-i18n="featuresLead">Use the phone as a scrolling LED sign. Set the text, color, and effect, and also show an LED clock, a D-Day countdown, a timer, or a photo in LED dots.</p>
         </div>
 
         <div class="mt-14 grid gap-5 sm:grid-cols-2">
@@ -750,13 +865,13 @@
                   loading="lazy"
                   decoding="async"
                   data-i18n-alt="marqueeAlt"
-                  alt="HELLO LED screen: pink neon text reading LOVE HE"
+                  alt="HELLO LED app screen with a pink neon concert cheer message"
                 >
               </picture>
             </figure>
             <div class="feature-copy">
-              <h3 class="text-xl font-bold sm:text-2xl" data-i18n="customTitle">Color, speed, and font</h3>
-              <p class="feature-kicker" data-i18n="customKicker">From neon color to scroll speed</p>
+              <h3 class="text-xl font-bold sm:text-2xl" data-i18n="customTitle">LED text color and scroll settings</h3>
+              <p class="feature-kicker" data-i18n="customKicker">From neon color to flicker</p>
               <div class="swatches" aria-hidden="true">
                 <span class="bg-neonRed"></span>
                 <span class="bg-neonYellow"></span>
@@ -764,8 +879,8 @@
                 <span class="bg-neonBlue"></span>
                 <span class="bg-neonPink"></span>
               </div>
-              <p class="feature-body" data-i18n="customBody">Pick red, yellow, green, blue, or pink, then match the scroll speed and typeface to a cheer, a sale, or a welcome.</p>
-              <p id="custom-caption" class="feature-note" data-i18n="customCaption">App screen: landscape board text with color and typeface</p>
+              <p class="feature-body" data-i18n="customBody">Use five preset neon colors (red, yellow, green, blue, pink) or a custom color. Adjust text size, brightness, and scroll speed, then pick flicker and glow effects and one of 11 fonts.</p>
+              <p id="custom-caption" class="feature-note" data-i18n="customCaption">App screen: landscape banner text with color and font</p>
             </div>
           </article>
 
@@ -776,9 +891,9 @@
               </div>
             </div>
             <div class="feature-copy">
-              <h3 class="text-xl font-bold sm:text-2xl" data-i18n="wideTitle">Full-screen landscape board</h3>
-              <p class="feature-kicker" data-i18n="wideKicker">Easy to read from far away</p>
-              <p class="feature-body" data-i18n="wideBody">Turn the phone sideways and the whole screen becomes an LED board, readable from the back of a venue or across a counter.</p>
+              <h3 class="text-xl font-bold sm:text-2xl" data-i18n="wideTitle">Full-screen landscape smartphone LED sign</h3>
+              <p class="feature-kicker" data-i18n="wideKicker">Text that fills the screen</p>
+              <p class="feature-body" data-i18n="wideBody">Turn the phone sideways and the whole screen becomes an LED banner, readable from the back of a venue or across a counter. The screen stays on while the banner shows.</p>
             </div>
           </article>
 
@@ -793,14 +908,14 @@
                   loading="lazy"
                   decoding="async"
                   data-i18n-alt="clockAlt"
-                  alt="HELLO LED screen: landscape clock showing 21:48"
+                  alt="HELLO LED landscape full-screen clock showing 21:48"
                 >
               </picture>
             </figure>
             <div class="feature-copy">
-              <h3 class="text-xl font-bold sm:text-2xl" data-i18n="clockTitle">Clock, countdown, and timer</h3>
+              <h3 class="text-xl font-bold sm:text-2xl" data-i18n="clockTitle">LED clock, D-Day countdown, and timer</h3>
               <p class="feature-kicker" data-i18n="clockKicker">Show time instead of text</p>
-              <p class="feature-body" data-i18n="clockBody">Put the current time, a countdown, or a timer on the board so people can read it from across a venue or shop.</p>
+              <p class="feature-body" data-i18n="clockBody">Show the current time, a D-Day countdown, or a timer in large LED digits. Use it for a start time, a countdown, or a queue at the shop.</p>
               <p id="clock-caption" class="feature-note" data-i18n="clockCaption">App screen: clock on the landscape board</p>
             </div>
           </article>
@@ -816,14 +931,14 @@
                   loading="lazy"
                   decoding="async"
                   data-i18n-alt="dotsAlt"
-                  alt="HELLO LED screen: two pink hearts made of dots"
+                  alt="A phone photo converted into a pink heart LED dot pattern"
                 >
               </picture>
             </figure>
             <div class="feature-copy">
-              <h3 class="text-xl font-bold sm:text-2xl" data-i18n="photoTitle">Photo to dot board</h3>
-              <p class="feature-kicker" data-i18n="photoKicker">On-device image conversion</p>
-              <p class="feature-body" data-i18n="photoBody">Turn a gallery photo into a dot pattern on the board. Photos stay on the device and are not uploaded.</p>
+              <h3 class="text-xl font-bold sm:text-2xl" data-i18n="photoTitle">Photo to LED dot image</h3>
+              <p class="feature-kicker" data-i18n="photoKicker">Converted on the device</p>
+              <p class="feature-body" data-i18n="photoBody">Turn a gallery photo into an LED dot pattern on the banner. The photo is converted on the device and is not uploaded to a server.</p>
               <p id="photo-caption" class="feature-note" data-i18n="photoCaption">App screen: photo converted to dots</p>
             </div>
           </article>
@@ -834,24 +949,24 @@
     <section id="how" class="px-5 py-20 sm:py-28" aria-labelledby="how-title">
       <div class="mx-auto max-w-6xl">
         <div class="reveal mx-auto max-w-2xl text-center">
-          <h2 id="how-title" class="text-3xl font-extrabold tracking-tight sm:text-4xl" data-i18n="howTitle">How to turn a phone into an LED board</h2>
-          <p class="mt-3 text-muted" data-i18n="howLead">Anyone can use a phone as an LED board.</p>
+          <h2 id="how-title" class="text-3xl font-extrabold tracking-tight sm:text-4xl" data-i18n="howTitle">How to make a phone LED banner</h2>
+          <p class="mt-3 text-muted" data-i18n="howLead">No extra hardware is needed: set the message and the display effects in HELLO LED.</p>
         </div>
         <ol class="how-list">
           <li class="how-step reveal">
             <span class="how-index bg-[#FF5CA8]" aria-hidden="true">1</span>
-            <h3 data-i18n="step1Title">Type a message</h3>
-            <p data-i18n="step1Body">Write a cheer, a sale, or a welcome, or pick a preset.</p>
+            <h3 data-i18n="step1Title">Type the message to show</h3>
+            <p data-i18n="step1Body">Write a concert cheer, an airport pickup name, a shop sale, or a birthday line, or pick one of the eight presets.</p>
           </li>
           <li class="how-step reveal">
             <span class="how-index bg-[#F5C518]" aria-hidden="true">2</span>
-            <h3 data-i18n="step2Title">Set color, speed, and font</h3>
-            <p data-i18n="step2Body">Choose a neon color, scroll speed, and typeface so it stays readable from a distance.</p>
+            <h3 data-i18n="step2Title">Set the LED text color and size</h3>
+            <p data-i18n="step2Body">Choose a neon color and font, then adjust text size, brightness, and scroll speed so the line reads from a distance. Flicker and glow effects are here too.</p>
           </li>
           <li class="how-step reveal">
             <span class="how-index bg-[#3BA3FF]" aria-hidden="true">3</span>
-            <h3 data-i18n="step3Title">Turn on full-screen landscape</h3>
-            <p data-i18n="step3Body">Turn the phone sideways and the whole screen becomes the board.</p>
+            <h3 data-i18n="step3Title">Open the full-screen landscape banner</h3>
+            <p data-i18n="step3Body">Turn the phone sideways and show the message on the whole screen. The screen stays on while the banner shows.</p>
           </li>
         </ol>
       </div>
@@ -860,36 +975,100 @@
     <section id="qa" class="px-5 py-16 sm:py-24" aria-labelledby="qa-title">
       <div class="mx-auto max-w-3xl">
         <h2 id="qa-title" class="reveal text-center text-3xl font-extrabold tracking-tight sm:text-5xl" data-i18n="faqTitle">Questions</h2>
-        <div class="faq-list">
+                <div class="faq-list">
           <details class="reveal" open>
             <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
-              <h3 data-i18n="faq1q">Can I play multiple messages in order or keep the screen awake?</h3>
+              <h3 data-i18n="faq1q">Can I turn a phone into an LED banner?</h3>
               <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
             </summary>
-            <p class="text-muted" data-i18n="faq1a">Yes. Save favorite messages on your device and play up to 8 messages in sequence. While the LED board is displayed, the screen stays on automatically.</p>
+            <p class="text-muted" data-i18n="faq1a">Yes. HELLO LED turns a phone screen into a full-screen landscape LED sign without extra display equipment. Type a message and set the color, size, brightness, font, and scroll speed.</p>
           </details>
           <details class="reveal">
             <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
-              <h3 data-i18n-html="faq2q">Which devices can use <span lang="en">HELLO LED</span>?</h3>
+              <h3 data-i18n="faq2q">Can I use it as a concert fan sign?</h3>
               <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
             </summary>
-            <p class="text-muted" data-i18n-html="faq2a">It runs on Android phones and tablets, and on iPhone. Install it from <a class="underline" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" rel="noopener noreferrer" target="_blank">Google Play<span class="sr-only">, new tab</span></a> or the <a class="underline" href="https://apps.apple.com/app/id6816627023" rel="noopener noreferrer" target="_blank">App Store<span class="sr-only">, new tab</span></a>.</p>
+            <p class="text-muted" data-i18n="faq2a">Yes. Type the cheer you want to send an artist, or pick a preset, then set the neon color, font, and scroll speed so the sign reads in a dark venue.</p>
           </details>
           <details class="reveal">
             <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
-              <h3 data-i18n="faq3q">Where can I download it now?</h3>
+              <h3 data-i18n="faq3q">Can I use it as an airport pickup sign?</h3>
               <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
             </summary>
-            <p class="text-muted" data-i18n-html="faq3a">Download <span lang="en">HELLO LED</span> on <a class="underline" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" rel="noopener noreferrer" target="_blank">Google Play<span class="sr-only">, new tab</span></a> or the <a class="underline" href="https://apps.apple.com/app/id6816627023" rel="noopener noreferrer" target="_blank">App Store<span class="sr-only">, new tab</span></a>.</p>
+            <p class="text-muted" data-i18n="faq3a">Yes. Type the name or a welcome line and show it large on the phone. It works as a digital pickup sign at arrivals.</p>
           </details>
+          <details class="reveal">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
+              <h3 data-i18n="faq4q">Can the text scroll on a phone?</h3>
+              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
+            </summary>
+            <p class="text-muted" data-i18n="faq4a">Yes. HELLO LED shows your message as a scrolling LED banner. Set the scroll speed and change the text color, size, and font too.</p>
+          </details>
+          <details class="reveal">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
+              <h3 data-i18n="faq5q">Can I show a clock, D-Day, or timer?</h3>
+              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
+            </summary>
+            <p class="text-muted" data-i18n="faq5a">Yes. Show the current time, a D-Day countdown, or a timer in large LED digits. Use it as a digital clock for a start time or the time left.</p>
+          </details>
+          <details class="reveal">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
+              <h3 data-i18n="faq6q">Can I convert a photo into LED dots?</h3>
+              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
+            </summary>
+            <p class="text-muted" data-i18n="faq6a">Yes. A gallery photo becomes an LED dot pattern on the banner. The conversion runs on the device, so the photo is not uploaded to a server.</p>
+          </details>
+          <details class="reveal">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
+              <h3 data-i18n="faq7q">Does it work on iPhone and Android?</h3>
+              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
+            </summary>
+            <p class="text-muted" data-i18n-html="faq7a">Yes. It runs on Android phones and tablets and on iPhone. Install it from <a class="underline" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" rel="noopener noreferrer" target="_blank">Google Play<span class="sr-only">, new tab</span></a> or the <a class="underline" href="https://apps.apple.com/app/id6816627023" rel="noopener noreferrer" target="_blank">App Store<span class="sr-only">, new tab</span></a>.</p>
+          </details>
+          <details class="reveal">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
+              <h3 data-i18n="faq8q">Is HELLO LED free? Does it show ads?</h3>
+              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
+            </summary>
+            <p class="text-muted" data-i18n="faq8a">Yes, HELLO LED is free to install. A banner ad may appear on the editor screen, and an interstitial ad may appear before opening the full-screen LED sign. The full-screen sign that shows your LED message has no banner ad.</p>
+          </details>
+          <details class="reveal">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
+              <h3 data-i18n="faq9q">Can I save several messages or play them in order?</h3>
+              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
+            </summary>
+            <p class="text-muted" data-i18n="faq9a">Yes. Save favorites and play up to 8 messages in order. The screen stays on while the banner shows.</p>
+          </details>
+          <details class="reveal">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
+              <h3 data-i18n="faq10q">Are my photos or messages uploaded?</h3>
+              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
+            </summary>
+            <p class="text-muted" data-i18n="faq10a">No. Photo-to-dot conversion runs on the device, and messages and settings stay on the phone. Matching messages between HELLO LED devices on the same Wi-Fi also uses no external server.</p>
+          </details>
+          <details class="reveal">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
+              <h3 data-i18n="faq11q">Can I sync messages with another phone?</h3>
+              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
+            </summary>
+            <p class="text-muted" data-i18n="faq11a">Yes. HELLO LED apps on the same Wi-Fi can match messages. This also needs no external server.</p>
+          </details>
+        <details class="reveal">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
+              <h3 data-i18n="faq12q">Does it have an Android home screen widget?</h3>
+              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
+            </summary>
+            <p class="text-muted" data-i18n="faq12a">Yes. The Android home screen widget shows a saved message. The widget is available on Android only.</p>
+          </details>
+        </div>
         </div>
       </div>
     </section>
 
     <section id="download" class="hero-wash relative overflow-hidden px-5 py-24 sm:py-32" aria-labelledby="cta-title">
       <div class="relative mx-auto max-w-3xl text-center">
-        <h2 id="cta-title" class="reveal text-3xl font-extrabold tracking-tight sm:text-5xl" data-i18n-html="ctaTitle">Get <span lang="en">HELLO LED</span></h2>
-        <p class="reveal mx-auto mt-5 max-w-xl text-muted" data-i18n-html="ctaBody">Install <span lang="en">HELLO LED</span> free on Google Play or the App Store, then set text, color, and speed for your board.</p>
+        <h2 id="cta-title" class="reveal text-3xl font-extrabold tracking-tight sm:text-5xl" data-i18n-html="ctaTitle">Turn your phone into an LED banner today</h2>
+        <p class="reveal mx-auto mt-5 max-w-xl text-muted" data-i18n-html="ctaBody">Show concert cheers, airport pickup messages, and shop notices large on the phone screen. Install <span lang="en">HELLO LED</span> free, then set the text, color, font, and scroll speed.</p>
         <div class="reveal mt-10 flex flex-wrap items-center justify-center gap-3">
           <a class="inline-flex focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" target="_blank" rel="noopener noreferrer" aria-label="Get it on Google Play, new tab" data-i18n-aria="playAlt">
             <picture>
@@ -929,7 +1108,7 @@
     <div class="mx-auto flex max-w-6xl flex-col gap-4 text-sm text-muted sm:flex-row sm:items-start sm:justify-between">
       <div>
         <p class="font-bold text-ink" lang="en">HELLO LED</p>
-        <p class="mt-2" data-i18n-html="publisherLine"><span lang="en">HELLO LED</span> is an app made by <a href="https://yodams.com/" lang="ko">요담</a> (Yodam).</p>
+        <p class="mt-2" data-i18n-html="publisherLine"><span lang="en">HELLO LED</span> is a free phone LED banner app by <a href="https://yodams.com/" lang="ko">요담</a> (Yodam). It runs on Android phones and tablets and on iPhone, for concert cheers, airport pickups, shop notices, and birthdays.</p>
       </div>
       <div class="flex flex-wrap gap-4">
         <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="/en/privacy.html" data-privacy-link data-i18n="privacyLink">Privacy policy</a>
@@ -937,6 +1116,7 @@
       </div>
     </div>
     <nav class="mx-auto mt-6 flex max-w-6xl flex-wrap gap-x-4 text-sm" aria-label="On this page" data-i18n-aria="navSections">
+      <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="#uses" data-i18n="navUses">Uses</a>
       <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="#features" data-i18n="navFeatures">Features</a>
       <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="#how" data-i18n="navHow">How it works</a>
       <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="#qa" data-i18n="navFaq">Questions</a>

@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#ffffff">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>HELLO LED | 手机 LED 灯牌</title>
-  <meta name="description" content="HELLO LED 是一款把手机屏幕变成 LED 灯牌的免费应用，可用于演唱会应援、店铺促销和机场迎接。">
+  <title>手机LED灯牌App｜演唱会应援、滚动字幕 HELLO LED</title>
+  <meta name="description" content="免费手机LED灯牌应用，把手机变成横屏全屏LED滚动字幕。适用于演唱会应援、机场接机和店铺宣传，支持11款字体、霓虹颜色、闪烁发光效果、LED时钟和计时器。">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="canonical" href="https://helloled.yodams.com/zh/">
-  <link rel="alternate" hreflang="ko" href="https://helloled.yodams.com/">
+  <link rel="alternate" hreflang="ko-KR" href="https://helloled.yodams.com/">
   <link rel="alternate" hreflang="en" href="https://helloled.yodams.com/en/">
   <link rel="alternate" hreflang="ja" href="https://helloled.yodams.com/ja/">
-  <link rel="alternate" hreflang="zh-Hans" href="https://helloled.yodams.com/zh/">
+  <link rel="alternate" hreflang="zh-CN" href="https://helloled.yodams.com/zh/">
   <link rel="alternate" hreflang="es-ES" href="https://helloled.yodams.com/es/">
   <link rel="alternate" hreflang="es" href="https://helloled.yodams.com/es/">
   <link rel="alternate" hreflang="es-419" href="https://helloled.yodams.com/es-419/">
@@ -49,19 +49,19 @@
   <meta property="og:locale:alternate" content="es_ES">
   <meta property="og:locale:alternate" content="es_MX">
   <meta property="og:site_name" content="HELLO LED">
-  <meta property="og:title" content="HELLO LED | 手机 LED 灯牌">
-  <meta property="og:description" content="HELLO LED 是一款把手机屏幕变成 LED 灯牌的免费应用，可用于演唱会应援、店铺促销和机场迎接。">
+  <meta property="og:title" content="HELLO LED｜免费手机LED灯牌与滚动字幕App">
+  <meta property="og:description" content="用手机制作全屏LED滚动字幕和演唱会应援灯牌。适用于机场接机、店铺宣传和生日祝福，可自定义颜色、字体和滚动速度。">
   <meta property="og:url" content="https://helloled.yodams.com/zh/">
   <meta property="og:image" content="https://helloled.yodams.com/og.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="蓝色圆圈中写着 HELLO LED 的标志">
+  <meta property="og:image:alt" content="HELLO LED 应用图标：蓝色圆圈内有五个彩色圆点和 HELLO LED 文字">>
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="HELLO LED | 手机 LED 灯牌">
-  <meta name="twitter:description" content="HELLO LED 是一款把手机屏幕变成 LED 灯牌的免费应用，可用于演唱会应援、店铺促销和机场迎接。">
+  <meta name="twitter:title" content="HELLO LED｜免费手机LED灯牌与滚动字幕App">
+  <meta name="twitter:description" content="用手机制作全屏LED滚动字幕和演唱会应援灯牌。适用于机场接机、店铺宣传和生日祝福，可自定义颜色、字体和滚动速度。">
   <meta name="twitter:image" content="https://helloled.yodams.com/og.png">
-  <meta name="twitter:image:alt" content="蓝色圆圈中写着 HELLO LED 的标志">
+  <meta name="twitter:image:alt" content="HELLO LED 应用图标：蓝色圆圈内有五个彩色圆点和 HELLO LED 文字">>
   <link rel="dns-prefetch" href="https://play.google.com">
   <link rel="preconnect" href="https://play.google.com" crossorigin>
   <link rel="dns-prefetch" href="https://apps.apple.com">
@@ -82,7 +82,7 @@
       50% { transform: rotate(3deg); }
     }
     html { scroll-behavior: smooth; }
-    #features, #how, #qa, #download { scroll-margin-top: 3rem; }
+    #features, #uses, #how, #qa, #download { scroll-margin-top: 3rem; }
     #main { scroll-margin-top: 6.5rem; }
     #main:focus { outline: none; }
     #features .max-w-3xl > p,
@@ -238,6 +238,17 @@
       padding: 0;
       list-style: none;
     }
+    .use-grid {
+      display: grid;
+      gap: 1rem;
+      margin: 2.5rem 0 0;
+    }
+    .use-grid h3 { margin: 0; font-size: 1.125rem; font-weight: 700; color: #0a0a0a; }
+    .use-grid p { margin: 0.45rem 0 0; color: #374151; line-height: 1.6; }
+    @media (min-width: 640px) {
+      .use-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+      .use-grid h3 { font-size: 1.25rem; }
+    }
     .how-step {
       position: relative;
       border: 1px solid #ececec;
@@ -302,34 +313,74 @@
     }
   </style>
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://helloled.yodams.com/#organization",
-        "name": "HELLO LED",
-        "legalName": "요담",
-        "alternateName": "Yodam",
-        "url": "https://helloled.yodams.com/",
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://helloled.yodams.com/#organization",
+      "name": "HELLO LED",
+      "legalName": "요담",
+      "alternateName": "Yodam",
+      "url": "https://helloled.yodams.com/",
+      "email": "helloled@yodams.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://helloled.yodams.com/favicon.png",
+        "width": 256,
+        "height": 256
+      },
+      "description": "HELLO LED 是 요담（Yodam）制作的免费手机 LED 灯牌应用。把 Android 手机、平板和 iPhone 的屏幕变成横屏全屏 LED 滚动字幕屏，可以显示演唱会应援、机场接机、店铺宣传和生日祝福。支持五种预设霓虹色和自选颜色、11 款字体、字号、亮度、滚动速度以及闪烁和发光效果，并用 LED 数字显示当前时间、D-Day 倒计时和计时器。相册照片在设备内转换成 LED 点阵图像，收藏最多可按顺序播放 8 条文字，同一 Wi-Fi 下的 HELLO LED 之间可以对上文字。照片转换和文字同步都不使用外部服务器。保存的文字可以显示在 Android 桌面小部件上，该小部件仅在 Android 提供。网站显示的版本是 1.0.4。",
+      "sameAs": [
+        "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+        "https://apps.apple.com/app/id6816627023",
+        "https://yodams.com/",
+        "https://github.com/leeyodam/helloled"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
         "email": "helloled@yodams.com",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://helloled.yodams.com/favicon.png",
-          "width": 256,
-          "height": 256
+        "availableLanguage": [
+          "ko",
+          "en",
+          "ja",
+          "zh-Hans",
+          "es",
+          "es-419"
+        ]
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://helloled.yodams.com/#service",
+      "name": "HELLO LED",
+      "serviceType": "手机 LED 灯牌应用",
+      "description": "HELLO LED 是 요담（Yodam）制作的免费手机 LED 灯牌应用。把 Android 手机、平板和 iPhone 的屏幕变成横屏全屏 LED 滚动字幕屏，可以显示演唱会应援、机场接机、店铺宣传和生日祝福。支持五种预设霓虹色和自选颜色、11 款字体、字号、亮度、滚动速度以及闪烁和发光效果，并用 LED 数字显示当前时间、D-Day 倒计时和计时器。相册照片在设备内转换成 LED 点阵图像，收藏最多可按顺序播放 8 条文字，同一 Wi-Fi 下的 HELLO LED 之间可以对上文字。照片转换和文字同步都不使用外部服务器。保存的文字可以显示在 Android 桌面小部件上，该小部件仅在 Android 提供。网站显示的版本是 1.0.4。",
+      "url": "https://helloled.yodams.com/zh/",
+      "provider": {
+        "@id": "https://helloled.yodams.com/#organization"
+      },
+      "isRelatedTo": {
+        "@id": "https://helloled.yodams.com/#app"
+      },
+      "areaServed": "Worldwide",
+      "availableChannel": [
+        {
+          "@type": "ServiceChannel",
+          "serviceUrl": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+          "availableLanguage": [
+            "ko",
+            "en",
+            "ja",
+            "zh-Hans",
+            "es",
+            "es-419"
+          ]
         },
-        "description": "HELLO LED 是由 요담（Yodam）开发的免费手机 LED 灯牌应用，支持 Android 和 iPhone。",
-        "sameAs": [
-          "https://play.google.com/store/apps/details?id=com.yodam.helloled",
-          "https://apps.apple.com/app/id6816627023",
-          "https://yodams.com/",
-          "https://github.com/leeyodam/helloled"
-        ],
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "contactType": "customer support",
-          "email": "helloled@yodams.com",
+        {
+          "@type": "ServiceChannel",
+          "serviceUrl": "https://apps.apple.com/app/id6816627023",
           "availableLanguage": [
             "ko",
             "en",
@@ -339,288 +390,325 @@
             "es-419"
           ]
         }
-      },
-      {
-        "@type": "Service",
-        "@id": "https://helloled.yodams.com/#service",
-        "name": "HELLO LED",
-        "serviceType": "手机 LED 灯牌应用",
-        "description": "HELLO LED 是由 요담（Yodam）开发的免费手机 LED 灯牌应用，支持 Android 和 iPhone。",
-        "url": "https://helloled.yodams.com/zh/",
-        "provider": {
-          "@id": "https://helloled.yodams.com/#organization"
+      ],
+      "offers": [
+        {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "KRW",
+          "availability": "https://schema.org/InStock",
+          "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled"
         },
-        "isRelatedTo": {
-          "@id": "https://helloled.yodams.com/#app"
-        },
-        "areaServed": "Worldwide",
-        "availableChannel": [
-          {
-            "@type": "ServiceChannel",
-            "serviceUrl": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
-            "availableLanguage": [
-              "ko",
-              "en",
-              "ja",
-              "zh-Hans",
-              "es",
-              "es-419"
-            ]
-          },
-          {
-            "@type": "ServiceChannel",
-            "serviceUrl": "https://apps.apple.com/app/id6816627023",
-            "availableLanguage": [
-              "ko",
-              "en",
-              "ja",
-              "zh-Hans",
-              "es",
-              "es-419"
-            ]
-          }
-        ],
-        "offers": [
-          {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "KRW",
-            "availability": "https://schema.org/InStock",
-            "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled"
-          },
-          {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "KRW",
-            "availability": "https://schema.org/InStock",
-            "url": "https://apps.apple.com/app/id6816627023"
-          }
-        ]
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://helloled.yodams.com/#website",
-        "url": "https://helloled.yodams.com/",
-        "name": "HELLO LED",
-        "alternateName": "헬로 LED",
-        "description": "HELLO LED 官方网站。在 Google Play 和 App Store 免费安装手机 LED 灯牌应用。",
-        "inLanguage": "zh-Hans",
-        "publisher": {
-          "@id": "https://helloled.yodams.com/#organization"
-        },
-        "potentialAction": [
-          {
-            "@type": "DownloadAction",
-            "name": "下载 HELLO LED",
-            "target": {
-              "@type": "EntryPoint",
-              "urlTemplate": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
-              "actionPlatform": [
-                "https://schema.org/AndroidPlatform"
-              ]
-            }
-          },
-          {
-            "@type": "DownloadAction",
-            "name": "下载 HELLO LED",
-            "target": {
-              "@type": "EntryPoint",
-              "urlTemplate": "https://apps.apple.com/app/id6816627023",
-              "actionPlatform": [
-                "https://schema.org/IOSPlatform"
-              ]
-            }
-          }
-        ]
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://helloled.yodams.com/zh/#webpage",
-        "url": "https://helloled.yodams.com/zh/",
-        "name": "HELLO LED | 手机 LED 灯牌",
-        "description": "HELLO LED 是一款把手机屏幕变成 LED 灯牌的免费应用，可用于演唱会应援、店铺促销和机场迎接。",
-        "inLanguage": "zh-Hans",
-        "isPartOf": {
-          "@id": "https://helloled.yodams.com/#website"
-        },
-        "about": [
-          {
-            "@id": "https://helloled.yodams.com/#app"
-          },
-          {
-            "@id": "https://helloled.yodams.com/#service"
-          }
-        ],
-        "mainEntity": {
-          "@id": "https://helloled.yodams.com/#app"
-        },
-        "hasPart": [
-          {
-            "@id": "https://helloled.yodams.com/zh/#howto"
-          },
-          {
-            "@id": "https://helloled.yodams.com/zh/#faq"
-          }
-        ],
-        "datePublished": "2026-09-21",
-        "dateModified": "2026-10-21",
-        "primaryImageOfPage": {
-          "@type": "ImageObject",
-          "url": "https://helloled.yodams.com/og.png",
-          "width": 1200,
-          "height": 630,
-          "caption": "蓝色圆圈中写着 HELLO LED 的标志"
-        },
-        "image": [
-          {
-            "@type": "ImageObject",
-            "url": "https://helloled.yodams.com/screens/led-marquee.png",
-            "width": 960,
-            "height": 540,
-            "caption": "HELLO LED 界面示例：粉色霓虹文字 LOVE HE"
-          },
-          {
-            "@type": "ImageObject",
-            "url": "https://helloled.yodams.com/screens/led-clock.png",
-            "width": 960,
-            "height": 540,
-            "caption": "HELLO LED 界面示例：横屏时钟 21:48"
-          },
-          {
-            "@type": "ImageObject",
-            "url": "https://helloled.yodams.com/screens/led-dots.png",
-            "width": 960,
-            "height": 540,
-            "caption": "HELLO LED 界面示例：由照片转成的两个粉色心形点阵"
-          }
-        ]
-      },
-      {
-        "@type": [
-          "SoftwareApplication",
-          "MobileApplication"
-        ],
-        "@id": "https://helloled.yodams.com/#app",
-        "name": "HELLO LED",
-        "alternateName": "헬로 LED",
-        "applicationCategory": "UtilitiesApplication",
-        "operatingSystem": "Android, iOS",
-        "softwareVersion": "1.0.4",
-        "isAccessibleForFree": true,
-        "inLanguage": [
-          "ko",
-          "en",
-          "ja",
-          "zh-Hans",
-          "es",
-          "es-419"
-        ],
-        "description": "HELLO LED 是一款把手机屏幕变成 LED 灯牌的免费应用，可用于演唱会应援、店铺促销和机场迎接。",
-        "featureList": [
-          "自定义霓虹颜色、文字大小、滚动速度与 11 款内置字体",
-          "横屏与竖屏全屏 LED 灯牌显示及屏幕常亮防熄灭",
-          "实时时钟、D-Day 倒计时与计时器",
-          "设备本地照片转 LED 点阵（不上传服务器）",
-          "应援、生日、接机、店铺等 8 大场景预设短语",
-          "收藏常用文字并支持最多 8 条按顺序轮播"
-        ],
-        "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
-        "downloadUrl": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
-        "installUrl": "https://apps.apple.com/app/id6816627023",
-        "sameAs": [
-          "https://play.google.com/store/apps/details?id=com.yodam.helloled",
-          "https://apps.apple.com/app/id6816627023"
-        ],
-        "screenshot": [
-          "https://helloled.yodams.com/screens/led-marquee.png",
-          "https://helloled.yodams.com/screens/led-clock.png",
-          "https://helloled.yodams.com/screens/led-dots.png"
-        ],
-        "offers": [
-          {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "KRW",
-            "availability": "https://schema.org/InStock",
-            "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled"
-          },
-          {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "KRW",
-            "availability": "https://schema.org/InStock",
-            "url": "https://apps.apple.com/app/id6816627023"
-          }
-        ],
-        "publisher": {
-          "@id": "https://helloled.yodams.com/#organization"
+        {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "KRW",
+          "availability": "https://schema.org/InStock",
+          "url": "https://apps.apple.com/app/id6816627023"
         }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://helloled.yodams.com/#website",
+      "url": "https://helloled.yodams.com/",
+      "name": "HELLO LED",
+      "alternateName": "헬로 LED",
+      "description": "HELLO LED 官方网站。在 Google Play 和 App Store 免费安装手机 LED 滚动字幕应用。",
+      "inLanguage": "zh-Hans",
+      "publisher": {
+        "@id": "https://helloled.yodams.com/#organization"
       },
-      {
-        "@type": "HowTo",
-        "@id": "https://helloled.yodams.com/zh/#howto",
-        "name": "如何把手机变成 LED 灯牌",
-        "description": "谁都可以轻松把手机当成 LED 灯牌来用。",
-        "inLanguage": "zh-Hans",
-        "totalTime": "PT1M",
-        "step": [
-          {
-            "@type": "HowToStep",
-            "position": 1,
-            "name": "输入文字",
-            "text": "自己写应援、促销或迎接的句子，也可以从预设里选。"
-          },
-          {
-            "@type": "HowToStep",
-            "position": 2,
-            "name": "调整颜色、速度和字体",
-            "text": "选择霓虹色、滚动速度和字体，让远处也能看清。"
-          },
-          {
-            "@type": "HowToStep",
-            "position": 3,
-            "name": "打开横屏全屏",
-            "text": "把手机横过来，整个屏幕就会变成灯牌。"
+      "potentialAction": [
+        {
+          "@type": "DownloadAction",
+          "name": "下载 HELLO LED",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+            "actionPlatform": [
+              "https://schema.org/AndroidPlatform"
+            ]
           }
-        ]
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://helloled.yodams.com/zh/#faq",
-        "url": "https://helloled.yodams.com/zh/#qa",
-        "inLanguage": "zh-Hans",
-        "isPartOf": {
-          "@id": "https://helloled.yodams.com/zh/#webpage"
         },
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "可以按顺序播放多条文字并保持屏幕常亮吗？",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "可以把常用文字保存到收藏，最多按顺序播放 8 条；LED 灯牌显示期间屏幕会自动保持常亮，不会自动熄灭。"
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "HELLO LED 可以在哪些设备上使用？",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "可在 Android 手机、平板和 iPhone 上使用。 请前往 Google Play 或 App Store 安装。"
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "现在可以在哪里下载？",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "HELLO LED 可在 Google Play 和 App Store 下载。"
-            }
+        {
+          "@type": "DownloadAction",
+          "name": "下载 HELLO LED",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://apps.apple.com/app/id6816627023",
+            "actionPlatform": [
+              "https://schema.org/IOSPlatform"
+            ]
           }
-        ]
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://helloled.yodams.com/zh/#webpage",
+      "url": "https://helloled.yodams.com/zh/",
+      "name": "手机LED灯牌App｜演唱会应援、滚动字幕 HELLO LED",
+      "description": "免费手机LED灯牌应用，把手机变成横屏全屏LED滚动字幕。适用于演唱会应援、机场接机和店铺宣传，支持11款字体、霓虹颜色、闪烁发光效果、LED时钟和计时器。",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://helloled.yodams.com/#website"
+      },
+      "about": [
+        {
+          "@id": "https://helloled.yodams.com/#app"
+        },
+        {
+          "@id": "https://helloled.yodams.com/#service"
+        }
+      ],
+      "mainEntity": {
+        "@id": "https://helloled.yodams.com/#app"
+      },
+      "hasPart": [
+        {
+          "@id": "https://helloled.yodams.com/zh/#howto"
+        },
+        {
+          "@id": "https://helloled.yodams.com/zh/#faq"
+        }
+      ],
+      "datePublished": "2026-09-21",
+      "dateModified": "2026-11-04",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://helloled.yodams.com/og.png",
+        "width": 1200,
+        "height": 630,
+        "caption": "蓝色圆圈中写着 HELLO LED 的标志"
+      },
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://helloled.yodams.com/screens/led-marquee.png",
+          "width": 960,
+          "height": 540,
+          "caption": "用手机 LED 滚动字幕应用 HELLO LED 制作的粉色霓虹应援文字界面"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://helloled.yodams.com/screens/led-clock.png",
+          "width": 960,
+          "height": 540,
+          "caption": "HELLO LED 界面示例：横屏时钟 21:48"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://helloled.yodams.com/screens/led-dots.png",
+          "width": 960,
+          "height": 540,
+          "caption": "HELLO LED 界面示例：由照片转成的两个粉色心形点阵"
+        }
+      ]
+    },
+    {
+      "@type": [
+        "SoftwareApplication",
+        "MobileApplication"
+      ],
+      "@id": "https://helloled.yodams.com/#app",
+      "name": "HELLO LED",
+      "alternateName": "헬로 LED",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Android, iOS",
+      "softwareVersion": "1.0.4",
+      "isAccessibleForFree": true,
+      "inLanguage": [
+        "ko",
+        "en",
+        "ja",
+        "zh-Hans",
+        "es",
+        "es-419"
+      ],
+      "description": "免费手机LED灯牌应用，把手机变成横屏全屏LED滚动字幕。适用于演唱会应援、机场接机和店铺宣传，支持11款字体、霓虹颜色、闪烁发光效果、LED时钟和计时器。",
+      "featureList": [
+        "五种预设霓虹色（红、黄、绿、蓝、粉）与自选颜色、字号、亮度、滚动速度、闪烁与发光效果、11 款字体",
+        "仅横屏的全屏 LED 字幕与屏幕常亮防熄灭",
+        "当前时间、D-Day 倒计时与计时器",
+        "设备内照片转 LED 点阵，不上传服务器",
+        "应援、生日、接机、店铺、表白、考试加油、欢迎、感谢 8 类预设",
+        "收藏与最多 8 条按顺序播放",
+        "同一 Wi-Fi 下的 HELLO LED 文字同步，不使用服务器",
+        "在 Android 桌面小部件上显示保存的文字。仅 Android"
+      ],
+      "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+      "installUrl": "https://apps.apple.com/app/id6816627023",
+      "sameAs": [
+        "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+        "https://apps.apple.com/app/id6816627023"
+      ],
+      "screenshot": [
+        "https://helloled.yodams.com/screens/led-marquee.png",
+        "https://helloled.yodams.com/screens/led-clock.png",
+        "https://helloled.yodams.com/screens/led-dots.png"
+      ],
+      "offers": [
+        {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "KRW",
+          "availability": "https://schema.org/InStock",
+          "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled"
+        },
+        {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "KRW",
+          "availability": "https://schema.org/InStock",
+          "url": "https://apps.apple.com/app/id6816627023"
+        }
+      ],
+      "author": {
+        "@id": "https://helloled.yodams.com/#organization"
+      },
+      "publisher": {
+        "@id": "https://helloled.yodams.com/#organization"
       }
-    ]
-  }
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://helloled.yodams.com/zh/#howto",
+      "name": "用手机制作 LED 滚动字幕的方法",
+      "description": "不需要其他设备，在 HELLO LED 里设置文字和显示效果就可以。",
+      "inLanguage": "zh-Hans",
+      "totalTime": "PT1M",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "输入要显示的文字",
+          "text": "自己写演唱会应援、机场接机名字、店铺促销、生日祝福的文字，或从八类预设里选。"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "调整 LED 文字颜色和字号",
+          "text": "选择霓虹色和字体，再调整字号、亮度和滚动速度，让文字在远处也看得清。闪烁和发光效果也在这里设置。"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "打开横屏全屏灯牌",
+          "text": "把手机横过来，在整个屏幕上显示文字。显示期间屏幕不会自动熄灭。"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://helloled.yodams.com/zh/#faq",
+      "url": "https://helloled.yodams.com/zh/#qa",
+      "inLanguage": "zh-Hans",
+      "isPartOf": {
+        "@id": "https://helloled.yodams.com/zh/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "可以把手机变成 LED 滚动字幕吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可以。用 HELLO LED 不需要额外的 LED 灯牌设备，把手机屏幕当横屏全屏 LED 灯牌用就可以。输入文字，再设置颜色、字号、亮度、字体和滚动速度。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "可以用作演唱会应援灯牌吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可以。自己写想对歌手说的应援文字或从预设里选，再调整霓虹色、字体和滚动速度，在演唱会现场更醒目。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "可以用作机场接机牌吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可以。输入名字或欢迎语，在手机上放大显示。在机场举起来就是数字接机牌。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "文字可以滚动显示吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可以。设置滚动速度后文字会横向走过屏幕。字体和颜色也能改。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "字幕上能显示时钟、D-Day 或计时器吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可以。用大号 LED 数字显示当前时间、D-Day 倒计时或计时器。需要看开场时间或剩余时间时，可以当数字时钟用。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "可以把手机照片转成 LED 点阵图像吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可以。相册照片会转成 LED 点阵图案显示在灯牌上。转换在设备内完成，照片不会上传到服务器。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "iPhone 和安卓都能用吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可以。支持 Android 手机、平板和 iPhone。请从 Google Play 或 App Store 安装。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "HELLO LED 是免费的吗？有广告吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可以免费安装。不过编辑界面可能出现横幅广告，打开横屏全屏 LED 灯牌之前也可能出现全屏广告。显示 LED 文字的全屏灯牌上没有横幅广告。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "可以保存多条文字并按顺序播放吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可以。收藏后最多可以按顺序播放 8 条。显示期间屏幕不会自动熄灭。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "照片和输入的文字会上传到服务器吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不会。相册照片的点阵转换在设备内完成，文字和设置也留在手机上。连接同一 Wi-Fi 的 HELLO LED 之间对上文字，同样不使用外部服务器。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "可以和其他手机对上文字吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可以。连接同一 Wi-Fi 的 HELLO LED 之间可以对上文字，这个功能也不使用外部服务器。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "支持 Android 桌面小部件吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "支持。在 Android 桌面小部件上可以显示保存的文字。这个小部件只在 Android 上提供。"
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 </head>
 <body class="bg-white text-ink antialiased">
@@ -660,12 +748,12 @@
   <main id="main" tabindex="-1">
     <section class="hero-wash relative overflow-hidden px-5 pb-12 pt-12 sm:pb-16 sm:pt-16">
       <div class="relative mx-auto max-w-3xl text-center">
-        <p class="mb-4 text-sm font-semibold tracking-wide text-muted" data-i18n="kicker">手机 LED 灯牌</p>
+        <p class="mb-4 text-sm font-semibold tracking-wide text-muted" data-i18n="kicker">手机 LED 滚动字幕应用</p>
         <h1 class="text-[clamp(2.15rem,5.4vw,3.75rem)] font-extrabold leading-[1.18] tracking-[-0.035em]">
-          <span data-i18n="heroLine1">把手机变成LED灯牌</span><br>
+          <span data-i18n="heroLine1">把手机变成全屏 LED 灯牌和滚动字幕屏</span><br>
           <span class="neon-word" lang="en" data-i18n="heroAccent">HELLO LED</span>
         </h1>
-        <p class="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted sm:text-lg" data-i18n-html="heroBody"><strong class="font-semibold text-ink" lang="en">HELLO LED</strong> 是一款把手机屏幕变成 LED 灯牌的免费应用。 演唱会应援、店铺促销、机场迎接，各种场合都能轻松使用。</p>
+        <p class="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted sm:text-lg" data-i18n-html="heroBody"><strong class="font-semibold text-ink" lang="en">HELLO LED</strong> 是一款免费的手机 LED 灯牌应用，可以把 Android 手机、平板和 iPhone 变成横屏全屏 LED 滚动字幕屏。演唱会应援、机场接机、店铺宣传、生日祝福都能输入文字放大显示。支持五种预设霓虹色和自选颜色、11 款字体、字号、亮度和滚动速度调整，还能加上闪烁和发光效果，并用 LED 数字显示当前时间、D-Day 倒计时和计时器。</p>
         <div class="mx-auto mt-8 flex max-w-xl flex-wrap items-center justify-center gap-3" id="download-hero">
             <a class="inline-flex focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" target="_blank" rel="noopener noreferrer" aria-label="在 Google Play 下载，新标签页" data-i18n-aria="playAlt">
               <picture>
@@ -731,11 +819,38 @@
       </div>
     </section>
 
+    <section id="uses" class="px-5 py-20 sm:py-28" aria-labelledby="uses-title">
+      <div class="mx-auto max-w-6xl">
+        <div class="mx-auto max-w-3xl text-center">
+          <h2 id="uses-title" class="reveal text-3xl font-extrabold tracking-tight sm:text-5xl" data-i18n="usesTitle">手机 LED 灯牌的使用场景</h2>
+          <p class="reveal mx-auto mt-5 text-lg leading-relaxed text-muted" data-i18n="usesLead">HELLO LED 不需要额外灯牌设备，只要在手机屏幕上显示大号文字就能用。演唱会应援牌、机场接机、店铺宣传的数字灯牌都能做。</p>
+        </div>
+        <div class="use-grid">
+          <article class="how-step reveal">
+            <h3 data-i18n="useConcertTitle">演唱会 LED 应援牌</h3>
+            <p data-i18n="useConcertBody">把想对喜欢的歌手和艺人说的应援文字显示在手机 LED 灯牌上。可以自己写短句，也可以从预设里挑，再调整霓虹色、字体和滚动速度。</p>
+          </article>
+          <article class="how-step reveal">
+            <h3 data-i18n="useAirportTitle">机场接机灯牌</h3>
+            <p data-i18n="useAirportBody">把要接的人的名字和欢迎语在手机屏幕上放大显示。不用做纸质接机牌，输入名字、选好颜色就能用。</p>
+          </article>
+          <article class="how-step reveal">
+            <h3 data-i18n="useShopTitle">店铺宣传与数字告示牌</h3>
+            <p data-i18n="useShopBody">在店门口或柜台显示促销、营业时间、取货号码。输入 OPEN、SALE、今日优惠这样的短句，用滚动文字显示出来。</p>
+          </article>
+          <article class="how-step reveal">
+            <h3 data-i18n="usePartyTitle">生日祝福与纪念信息</h3>
+            <p data-i18n="usePartyBody">生日祝福、表白、欢迎、考试加油的文字也能用同样的方法显示。预设里有应援、生日、接机、店铺、表白、考试加油、欢迎、感谢八类。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section id="features" class="px-5 py-20 sm:py-28" aria-labelledby="features-title">
       <div class="mx-auto max-w-6xl">
         <div class="mx-auto max-w-3xl text-center">
-          <h2 id="features-title" class="reveal text-3xl font-extrabold tracking-tight sm:text-5xl" data-i18n-html="featuresTitle"><span lang="en">HELLO LED</span> 的主要功能</h2>
-          <p class="reveal mx-auto mt-5 text-lg leading-relaxed text-muted" data-i18n="featuresLead">远处也能看清的亮度和滚动，加上场景预设，马上做出应援、宣传和迎接文字。</p>
+          <h2 id="features-title" class="reveal text-3xl font-extrabold tracking-tight sm:text-5xl" data-i18n-html="featuresTitle"><span lang="en">HELLO LED</span> 手机 LED 灯牌的主要功能</h2>
+          <p class="reveal mx-auto mt-5 text-lg leading-relaxed text-muted" data-i18n="featuresLead">把手机当 LED 滚动字幕屏用。可以调整文字、颜色和屏幕效果，还能显示 LED 时钟、D-Day 倒计时、计时器和照片点阵。</p>
         </div>
 
         <div class="mt-14 grid gap-5 sm:grid-cols-2">
@@ -750,13 +865,13 @@
                   loading="lazy"
                   decoding="async"
                   data-i18n-alt="marqueeAlt"
-                  alt="HELLO LED 界面示例：粉色霓虹文字 LOVE HE"
+                  alt="HELLO LED 用粉色霓虹显示演唱会应援文字的画面"
                 >
               </picture>
             </figure>
             <div class="feature-copy">
-              <h3 class="text-xl font-bold sm:text-2xl" data-i18n="customTitle">颜色、速度和字体</h3>
-              <p class="feature-kicker" data-i18n="customKicker">从霓虹色到滚动速度</p>
+              <h3 class="text-xl font-bold sm:text-2xl" data-i18n="customTitle">LED 文字颜色与滚动设置</h3>
+              <p class="feature-kicker" data-i18n="customKicker">从霓虹色到闪烁</p>
               <div class="swatches" aria-hidden="true">
                 <span class="bg-neonRed"></span>
                 <span class="bg-neonYellow"></span>
@@ -764,8 +879,8 @@
                 <span class="bg-neonBlue"></span>
                 <span class="bg-neonPink"></span>
               </div>
-              <p class="feature-body" data-i18n="customBody">可选红、黄、绿、蓝、粉，再配合滚动速度和字体，换成应援、促销或迎接的语气。</p>
-              <p id="custom-caption" class="feature-note" data-i18n="customCaption">应用界面：配色与字体调整后的横屏灯牌文案</p>
+              <p class="feature-body" data-i18n="customBody">支持红、黄、绿、蓝、粉五种基础霓虹色和自选颜色。可调整字号、亮度和滚动速度，还能选闪烁和发光效果以及 11 款字体。</p>
+              <p id="custom-caption" class="feature-note" data-i18n="customCaption">应用界面：配色和字体调整后的横屏字幕</p>
             </div>
           </article>
 
@@ -776,9 +891,9 @@
               </div>
             </div>
             <div class="feature-copy">
-              <h3 class="text-xl font-bold sm:text-2xl" data-i18n="wideTitle">横屏全屏灯牌</h3>
-              <p class="feature-kicker" data-i18n="wideKicker">远处也清晰</p>
-              <p class="feature-body" data-i18n="wideBody">把手机横过来，整个屏幕就是 LED 灯牌。场馆后排或柜台对面也能读到。</p>
+              <h3 class="text-xl font-bold sm:text-2xl" data-i18n="wideTitle">横屏全屏手机 LED 灯牌</h3>
+              <p class="feature-kicker" data-i18n="wideKicker">铺满屏幕的文字</p>
+              <p class="feature-body" data-i18n="wideBody">把手机横过来，整个屏幕就是 LED 字幕，场馆后排或柜台对面也能读到。显示期间屏幕不会自动熄灭。</p>
             </div>
           </article>
 
@@ -793,14 +908,14 @@
                   loading="lazy"
                   decoding="async"
                   data-i18n-alt="clockAlt"
-                  alt="HELLO LED 界面示例：横屏时钟 21:48"
+                  alt="HELLO LED 在横屏全屏上显示的时钟 21:48"
                 >
               </picture>
             </figure>
             <div class="feature-copy">
-              <h3 class="text-xl font-bold sm:text-2xl" data-i18n="clockTitle">时钟、倒计时与计时器</h3>
+              <h3 class="text-xl font-bold sm:text-2xl" data-i18n="clockTitle">LED 时钟与 D-Day 倒计时、计时器</h3>
               <p class="feature-kicker" data-i18n="clockKicker">用大号时间代替文字</p>
-              <p class="feature-body" data-i18n="clockBody">在灯牌上显示当前时间、倒计时或计时器，方便在活动现场或店铺对面也能看清。</p>
+              <p class="feature-body" data-i18n="clockBody">用大号 LED 数字显示当前时间、D-Day 倒计时或计时器。需要看开场时间、剩余时间或排队时间时使用。</p>
               <p id="clock-caption" class="feature-note" data-i18n="clockCaption">应用界面：横屏灯牌上的时钟</p>
             </div>
           </article>
@@ -816,14 +931,14 @@
                   loading="lazy"
                   decoding="async"
                   data-i18n-alt="dotsAlt"
-                  alt="HELLO LED 界面示例：由照片转成的两个粉色心形点阵"
+                  alt="手机照片转换成的粉色心形 LED 点阵"
                 >
               </picture>
             </figure>
             <div class="feature-copy">
-              <h3 class="text-xl font-bold sm:text-2xl" data-i18n="photoTitle">照片转点阵灯牌</h3>
-              <p class="feature-kicker" data-i18n="photoKicker">设备内图像转换</p>
-              <p class="feature-body" data-i18n="photoBody">将相册照片在设备内转为点阵图案并显示在灯牌上，不会上传到服务器。</p>
+              <h3 class="text-xl font-bold sm:text-2xl" data-i18n="photoTitle">照片转 LED 点阵图像</h3>
+              <p class="feature-kicker" data-i18n="photoKicker">在设备内转换</p>
+              <p class="feature-body" data-i18n="photoBody">把相册照片在设备内转成 LED 点阵图案显示在灯牌上。照片不会上传到服务器。</p>
               <p id="photo-caption" class="feature-note" data-i18n="photoCaption">应用界面：照片转为点阵灯牌</p>
             </div>
           </article>
@@ -834,24 +949,24 @@
     <section id="how" class="px-5 py-20 sm:py-28" aria-labelledby="how-title">
       <div class="mx-auto max-w-6xl">
         <div class="reveal mx-auto max-w-2xl text-center">
-          <h2 id="how-title" class="text-3xl font-extrabold tracking-tight sm:text-4xl" data-i18n="howTitle">如何把手机变成 LED 灯牌</h2>
-          <p class="mt-3 text-muted" data-i18n="howLead">谁都可以轻松把手机当成 LED 灯牌来用。</p>
+          <h2 id="how-title" class="text-3xl font-extrabold tracking-tight sm:text-4xl" data-i18n="howTitle">用手机制作 LED 滚动字幕的方法</h2>
+          <p class="mt-3 text-muted" data-i18n="howLead">不需要其他设备，在 HELLO LED 里设置文字和显示效果就可以。</p>
         </div>
         <ol class="how-list">
           <li class="how-step reveal">
             <span class="how-index bg-[#FF5CA8]" aria-hidden="true">1</span>
-            <h3 data-i18n="step1Title">输入文字</h3>
-            <p data-i18n="step1Body">自己写应援、促销或迎接的句子，也可以从预设里选。</p>
+            <h3 data-i18n="step1Title">输入要显示的文字</h3>
+            <p data-i18n="step1Body">自己写演唱会应援、机场接机名字、店铺促销、生日祝福的文字，或从八类预设里选。</p>
           </li>
           <li class="how-step reveal">
             <span class="how-index bg-[#F5C518]" aria-hidden="true">2</span>
-            <h3 data-i18n="step2Title">调整颜色、速度和字体</h3>
-            <p data-i18n="step2Body">选择霓虹色、滚动速度和字体，让远处也能看清。</p>
+            <h3 data-i18n="step2Title">调整 LED 文字颜色和字号</h3>
+            <p data-i18n="step2Body">选择霓虹色和字体，再调整字号、亮度和滚动速度，让文字在远处也看得清。闪烁和发光效果也在这里设置。</p>
           </li>
           <li class="how-step reveal">
             <span class="how-index bg-[#3BA3FF]" aria-hidden="true">3</span>
-            <h3 data-i18n="step3Title">打开横屏全屏</h3>
-            <p data-i18n="step3Body">把手机横过来，整个屏幕就会变成灯牌。</p>
+            <h3 data-i18n="step3Title">打开横屏全屏灯牌</h3>
+            <p data-i18n="step3Body">把手机横过来，在整个屏幕上显示文字。显示期间屏幕不会自动熄灭。</p>
           </li>
         </ol>
       </div>
@@ -860,36 +975,100 @@
     <section id="qa" class="px-5 py-16 sm:py-24" aria-labelledby="qa-title">
       <div class="mx-auto max-w-3xl">
         <h2 id="qa-title" class="reveal text-center text-3xl font-extrabold tracking-tight sm:text-5xl" data-i18n="faqTitle">常见问题</h2>
-        <div class="faq-list">
+                <div class="faq-list">
           <details class="reveal" open>
             <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
-              <h3 data-i18n="faq1q">可以按顺序播放多条文字并保持屏幕常亮吗？</h3>
+              <h3 data-i18n="faq1q">可以把手机变成 LED 滚动字幕吗？</h3>
               <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
             </summary>
-            <p class="text-muted" data-i18n="faq1a">可以把常用文字保存到收藏，最多按顺序播放 8 条；LED 灯牌显示期间屏幕会自动保持常亮，不会自动熄灭。</p>
+            <p class="text-muted" data-i18n="faq1a">可以。用 HELLO LED 不需要额外的 LED 灯牌设备，把手机屏幕当横屏全屏 LED 灯牌用就可以。输入文字，再设置颜色、字号、亮度、字体和滚动速度。</p>
           </details>
           <details class="reveal">
             <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
-              <h3 data-i18n-html="faq2q"><span lang="en">HELLO LED</span> 可以在哪些设备上使用？</h3>
+              <h3 data-i18n="faq2q">可以用作演唱会应援灯牌吗？</h3>
               <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
             </summary>
-            <p class="text-muted" data-i18n-html="faq2a">可在 Android 手机、平板和 iPhone 上使用。 请前往 <a class="underline" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" rel="noopener noreferrer" target="_blank">Google Play<span class="sr-only">，新标签页</span></a> 或 <a class="underline" href="https://apps.apple.com/app/id6816627023" rel="noopener noreferrer" target="_blank">App Store<span class="sr-only">，新标签页</span></a> 安装。</p>
+            <p class="text-muted" data-i18n="faq2a">可以。自己写想对歌手说的应援文字或从预设里选，再调整霓虹色、字体和滚动速度，在演唱会现场更醒目。</p>
           </details>
           <details class="reveal">
             <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
-              <h3 data-i18n="faq3q">现在可以在哪里下载？</h3>
+              <h3 data-i18n="faq3q">可以用作机场接机牌吗？</h3>
               <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
             </summary>
-            <p class="text-muted" data-i18n-html="faq3a"><span lang="en">HELLO LED</span> 可在 <a class="underline" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" rel="noopener noreferrer" target="_blank">Google Play<span class="sr-only">，新标签页</span></a> 和 <a class="underline" href="https://apps.apple.com/app/id6816627023" rel="noopener noreferrer" target="_blank">App Store<span class="sr-only">，新标签页</span></a> 下载。</p>
+            <p class="text-muted" data-i18n="faq3a">可以。输入名字或欢迎语，在手机上放大显示。在机场举起来就是数字接机牌。</p>
           </details>
+          <details class="reveal">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
+              <h3 data-i18n="faq4q">文字可以滚动显示吗？</h3>
+              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
+            </summary>
+            <p class="text-muted" data-i18n="faq4a">可以。设置滚动速度后文字会横向走过屏幕。字体和颜色也能改。</p>
+          </details>
+          <details class="reveal">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
+              <h3 data-i18n="faq5q">字幕上能显示时钟、D-Day 或计时器吗？</h3>
+              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
+            </summary>
+            <p class="text-muted" data-i18n="faq5a">可以。用大号 LED 数字显示当前时间、D-Day 倒计时或计时器。需要看开场时间或剩余时间时，可以当数字时钟用。</p>
+          </details>
+          <details class="reveal">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
+              <h3 data-i18n="faq6q">可以把手机照片转成 LED 点阵图像吗？</h3>
+              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
+            </summary>
+            <p class="text-muted" data-i18n="faq6a">可以。相册照片会转成 LED 点阵图案显示在灯牌上。转换在设备内完成，照片不会上传到服务器。</p>
+          </details>
+          <details class="reveal">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
+              <h3 data-i18n="faq7q">iPhone 和安卓都能用吗？</h3>
+              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
+            </summary>
+            <p class="text-muted" data-i18n-html="faq7a">可以。支持 Android 手机、平板和 iPhone。请从 <a class="underline" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" rel="noopener noreferrer" target="_blank">Google Play<span class="sr-only">，新标签页</span></a> 或 <a class="underline" href="https://apps.apple.com/app/id6816627023" rel="noopener noreferrer" target="_blank">App Store<span class="sr-only">，新标签页</span></a> 安装。</p>
+          </details>
+          <details class="reveal">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
+              <h3 data-i18n="faq8q">HELLO LED 是免费的吗？有广告吗？</h3>
+              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
+            </summary>
+            <p class="text-muted" data-i18n="faq8a">可以免费安装。不过编辑界面可能出现横幅广告，打开横屏全屏 LED 灯牌之前也可能出现全屏广告。显示 LED 文字的全屏灯牌上没有横幅广告。</p>
+          </details>
+          <details class="reveal">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
+              <h3 data-i18n="faq9q">可以保存多条文字并按顺序播放吗？</h3>
+              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
+            </summary>
+            <p class="text-muted" data-i18n="faq9a">可以。收藏后最多可以按顺序播放 8 条。显示期间屏幕不会自动熄灭。</p>
+          </details>
+          <details class="reveal">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
+              <h3 data-i18n="faq10q">照片和输入的文字会上传到服务器吗？</h3>
+              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
+            </summary>
+            <p class="text-muted" data-i18n="faq10a">不会。相册照片的点阵转换在设备内完成，文字和设置也留在手机上。连接同一 Wi-Fi 的 HELLO LED 之间对上文字，同样不使用外部服务器。</p>
+          </details>
+          <details class="reveal">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
+              <h3 data-i18n="faq11q">可以和其他手机对上文字吗？</h3>
+              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
+            </summary>
+            <p class="text-muted" data-i18n="faq11a">可以。连接同一 Wi-Fi 的 HELLO LED 之间可以对上文字，这个功能也不使用外部服务器。</p>
+          </details>
+        <details class="reveal">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
+              <h3 data-i18n="faq12q">支持 Android 桌面小部件吗？</h3>
+              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
+            </summary>
+            <p class="text-muted" data-i18n="faq12a">支持。在 Android 桌面小部件上可以显示保存的文字。这个小部件只在 Android 上提供。</p>
+          </details>
+        </div>
         </div>
       </div>
     </section>
 
     <section id="download" class="hero-wash relative overflow-hidden px-5 py-24 sm:py-32" aria-labelledby="cta-title">
       <div class="relative mx-auto max-w-3xl text-center">
-        <h2 id="cta-title" class="reveal text-3xl font-extrabold tracking-tight sm:text-5xl" data-i18n-html="ctaTitle">在应用商店下载 <span lang="en">HELLO LED</span></h2>
-        <p class="reveal mx-auto mt-5 max-w-xl text-muted" data-i18n-html="ctaBody">在 Google Play 或 App Store 免费安装 <span lang="en">HELLO LED</span>，调整文字、颜色和速度后立刻当灯牌用。</p>
+        <h2 id="cta-title" class="reveal text-3xl font-extrabold tracking-tight sm:text-5xl" data-i18n-html="ctaTitle">现在把手机变成全屏 LED 灯牌</h2>
+        <p class="reveal mx-auto mt-5 max-w-xl text-muted" data-i18n-html="ctaBody">把演唱会应援、机场接机、店铺宣传的文字放大显示在手机屏幕上。免费安装 <span lang="en">HELLO LED</span>，再调好文字、颜色、字体和滚动速度。</p>
         <div class="reveal mt-10 flex flex-wrap items-center justify-center gap-3">
           <a class="inline-flex focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" target="_blank" rel="noopener noreferrer" aria-label="在 Google Play 下载，新标签页" data-i18n-aria="playAlt">
             <picture>
@@ -929,7 +1108,7 @@
     <div class="mx-auto flex max-w-6xl flex-col gap-4 text-sm text-muted sm:flex-row sm:items-start sm:justify-between">
       <div>
         <p class="font-bold text-ink" lang="en">HELLO LED</p>
-        <p class="mt-2" data-i18n-html="publisherLine"><span lang="en">HELLO LED</span> 是由<a href="https://yodams.com/" lang="ko">요담</a>（Yodam）开发的应用。</p>
+        <p class="mt-2" data-i18n-html="publisherLine"><span lang="en">HELLO LED</span> 是 <a href="https://yodams.com/" lang="ko">요담</a>（Yodam）制作的免费手机 LED 滚动字幕应用。支持 Android 手机、平板和 iPhone，可用于演唱会应援、机场接机、店铺告示和生日祝福。</p>
       </div>
       <div class="flex flex-wrap gap-4">
         <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="/zh/privacy.html" data-privacy-link data-i18n="privacyLink">隐私政策</a>
@@ -937,8 +1116,9 @@
       </div>
     </div>
     <nav class="mx-auto mt-6 flex max-w-6xl flex-wrap gap-x-4 text-sm" aria-label="本页" data-i18n-aria="navSections">
+      <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="#uses" data-i18n="navUses">使用场景</a>
       <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="#features" data-i18n="navFeatures">功能</a>
-      <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="#how" data-i18n="navHow">用法</a>
+      <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="#how" data-i18n="navHow">使用方法</a>
       <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="#qa" data-i18n="navFaq">问题</a>
       <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="#download" data-i18n="download">下载</a>
     </nav>

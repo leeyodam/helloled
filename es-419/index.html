@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#ffffff">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>HELLO LED | Letrero LED en el celular</title>
-  <meta name="description" content="HELLO LED es una app gratuita que convierte el celular en un letrero LED para conciertos, tiendas y aeropuertos.">
+  <title>App de letrero LED para celular y conciertos | HELLO LED</title>
+  <meta name="description" content="Convierte tu celular en un letrero LED con texto en movimiento. Porras, recibir en el aeropuerto y avisos de negocio, con 5 colores neón, 11 fuentes y reloj.">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="canonical" href="https://helloled.yodams.com/es-419/">
-  <link rel="alternate" hreflang="ko" href="https://helloled.yodams.com/">
+  <link rel="alternate" hreflang="ko-KR" href="https://helloled.yodams.com/">
   <link rel="alternate" hreflang="en" href="https://helloled.yodams.com/en/">
   <link rel="alternate" hreflang="ja" href="https://helloled.yodams.com/ja/">
-  <link rel="alternate" hreflang="zh-Hans" href="https://helloled.yodams.com/zh/">
+  <link rel="alternate" hreflang="zh-CN" href="https://helloled.yodams.com/zh/">
   <link rel="alternate" hreflang="es-ES" href="https://helloled.yodams.com/es/">
   <link rel="alternate" hreflang="es" href="https://helloled.yodams.com/es/">
   <link rel="alternate" hreflang="es-419" href="https://helloled.yodams.com/es-419/">
@@ -49,19 +49,19 @@
   <meta property="og:locale:alternate" content="zh_CN">
   <meta property="og:locale:alternate" content="es_ES">
   <meta property="og:site_name" content="HELLO LED">
-  <meta property="og:title" content="HELLO LED | Letrero LED en el celular">
-  <meta property="og:description" content="HELLO LED es una app gratuita que convierte el celular en un letrero LED para conciertos, tiendas y aeropuertos.">
+  <meta property="og:title" content="HELLO LED | App gratuita de letrero LED para celular">
+  <meta property="og:description" content="Crea un letrero LED a pantalla completa en tu celular. Muestra porras, mensajes para recibir personas y avisos de negocio con colores y texto desplazable.">
   <meta property="og:url" content="https://helloled.yodams.com/es-419/">
   <meta property="og:image" content="https://helloled.yodams.com/og.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Logotipo de HELLO LED sobre un círculo azul">
+  <meta property="og:image:alt" content="Logotipo de HELLO LED: cinco puntos de colores y el nombre HELLO LED dentro de un círculo azul">>
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="HELLO LED | Letrero LED en el celular">
-  <meta name="twitter:description" content="HELLO LED es una app gratuita que convierte el celular en un letrero LED para conciertos, tiendas y aeropuertos.">
+  <meta name="twitter:title" content="HELLO LED | App gratuita de letrero LED para celular">
+  <meta name="twitter:description" content="Crea un letrero LED a pantalla completa en tu celular. Muestra porras, mensajes para recibir personas y avisos de negocio con colores y texto desplazable.">
   <meta name="twitter:image" content="https://helloled.yodams.com/og.png">
-  <meta name="twitter:image:alt" content="Logotipo de HELLO LED sobre un círculo azul">
+  <meta name="twitter:image:alt" content="Logotipo de HELLO LED: cinco puntos de colores y el nombre HELLO LED dentro de un círculo azul">>
   <link rel="dns-prefetch" href="https://play.google.com">
   <link rel="preconnect" href="https://play.google.com" crossorigin>
   <link rel="dns-prefetch" href="https://apps.apple.com">
@@ -82,7 +82,7 @@
       50% { transform: rotate(3deg); }
     }
     html { scroll-behavior: smooth; }
-    #features, #how, #qa, #download { scroll-margin-top: 3rem; }
+    #features, #uses, #how, #qa, #download { scroll-margin-top: 3rem; }
     #main { scroll-margin-top: 6.5rem; }
     #main:focus { outline: none; }
     #features .max-w-3xl > p,
@@ -238,6 +238,17 @@
       padding: 0;
       list-style: none;
     }
+    .use-grid {
+      display: grid;
+      gap: 1rem;
+      margin: 2.5rem 0 0;
+    }
+    .use-grid h3 { margin: 0; font-size: 1.125rem; font-weight: 700; color: #0a0a0a; }
+    .use-grid p { margin: 0.45rem 0 0; color: #374151; line-height: 1.6; }
+    @media (min-width: 640px) {
+      .use-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+      .use-grid h3 { font-size: 1.25rem; }
+    }
     .how-step {
       position: relative;
       border: 1px solid #ececec;
@@ -302,34 +313,74 @@
     }
   </style>
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://helloled.yodams.com/#organization",
-        "name": "HELLO LED",
-        "legalName": "요담",
-        "alternateName": "Yodam",
-        "url": "https://helloled.yodams.com/",
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://helloled.yodams.com/#organization",
+      "name": "HELLO LED",
+      "legalName": "요담",
+      "alternateName": "Yodam",
+      "url": "https://helloled.yodams.com/",
+      "email": "helloled@yodams.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://helloled.yodams.com/favicon.png",
+        "width": 256,
+        "height": 256
+      },
+      "description": "HELLO LED es una aplicación gratuita de letrero LED para celular creada por 요담 (Yodam). Convierte la pantalla de un celular, una tablet Android o un iPhone en un letrero LED horizontal a pantalla completa, para porras en conciertos, recibir a alguien en el aeropuerto, promociones del negocio y cumpleaños. Ofrece cinco colores neón y un color propio, 11 fuentes, tamaño, brillo y velocidad ajustables, y efectos de parpadeo y brillo, y muestra la hora actual, una cuenta regresiva D-Day y un temporizador con números LED. Las fotos de la galería se convierten en imágenes de puntos LED en el celular, los favoritos guardan hasta 8 mensajes que se reproducen en orden y los mensajes se pueden igualar entre apps HELLO LED en la misma Wi-Fi. La conversión de fotos y la sincronización no usan un servidor externo. Un mensaje guardado se puede mostrar en el widget de Android, disponible solo en Android. El sitio muestra la versión 1.0.4.",
+      "sameAs": [
+        "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+        "https://apps.apple.com/app/id6816627023",
+        "https://yodams.com/",
+        "https://github.com/leeyodam/helloled"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
         "email": "helloled@yodams.com",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://helloled.yodams.com/favicon.png",
-          "width": 256,
-          "height": 256
+        "availableLanguage": [
+          "ko",
+          "en",
+          "ja",
+          "zh-Hans",
+          "es",
+          "es-419"
+        ]
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://helloled.yodams.com/#service",
+      "name": "HELLO LED",
+      "serviceType": "Aplicación de letrero LED móvil",
+      "description": "HELLO LED es una aplicación gratuita de letrero LED para celular creada por 요담 (Yodam). Convierte la pantalla de un celular, una tablet Android o un iPhone en un letrero LED horizontal a pantalla completa, para porras en conciertos, recibir a alguien en el aeropuerto, promociones del negocio y cumpleaños. Ofrece cinco colores neón y un color propio, 11 fuentes, tamaño, brillo y velocidad ajustables, y efectos de parpadeo y brillo, y muestra la hora actual, una cuenta regresiva D-Day y un temporizador con números LED. Las fotos de la galería se convierten en imágenes de puntos LED en el celular, los favoritos guardan hasta 8 mensajes que se reproducen en orden y los mensajes se pueden igualar entre apps HELLO LED en la misma Wi-Fi. La conversión de fotos y la sincronización no usan un servidor externo. Un mensaje guardado se puede mostrar en el widget de Android, disponible solo en Android. El sitio muestra la versión 1.0.4.",
+      "url": "https://helloled.yodams.com/es-419/",
+      "provider": {
+        "@id": "https://helloled.yodams.com/#organization"
+      },
+      "isRelatedTo": {
+        "@id": "https://helloled.yodams.com/#app"
+      },
+      "areaServed": "Worldwide",
+      "availableChannel": [
+        {
+          "@type": "ServiceChannel",
+          "serviceUrl": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+          "availableLanguage": [
+            "ko",
+            "en",
+            "ja",
+            "zh-Hans",
+            "es",
+            "es-419"
+          ]
         },
-        "description": "HELLO LED es una aplicación gratuita creada por 요담 (Yodam) que convierte la pantalla del celular en un letrero LED en Android y iPhone.",
-        "sameAs": [
-          "https://play.google.com/store/apps/details?id=com.yodam.helloled",
-          "https://apps.apple.com/app/id6816627023",
-          "https://yodams.com/",
-          "https://github.com/leeyodam/helloled"
-        ],
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "contactType": "customer support",
-          "email": "helloled@yodams.com",
+        {
+          "@type": "ServiceChannel",
+          "serviceUrl": "https://apps.apple.com/app/id6816627023",
           "availableLanguage": [
             "ko",
             "en",
@@ -339,288 +390,325 @@
             "es-419"
           ]
         }
-      },
-      {
-        "@type": "Service",
-        "@id": "https://helloled.yodams.com/#service",
-        "name": "HELLO LED",
-        "serviceType": "Aplicación de letrero LED móvil",
-        "description": "HELLO LED es una aplicación gratuita creada por 요담 (Yodam) que convierte la pantalla del celular en un letrero LED en Android y iPhone.",
-        "url": "https://helloled.yodams.com/es-419/",
-        "provider": {
-          "@id": "https://helloled.yodams.com/#organization"
+      ],
+      "offers": [
+        {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "KRW",
+          "availability": "https://schema.org/InStock",
+          "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled"
         },
-        "isRelatedTo": {
-          "@id": "https://helloled.yodams.com/#app"
-        },
-        "areaServed": "Worldwide",
-        "availableChannel": [
-          {
-            "@type": "ServiceChannel",
-            "serviceUrl": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
-            "availableLanguage": [
-              "ko",
-              "en",
-              "ja",
-              "zh-Hans",
-              "es",
-              "es-419"
-            ]
-          },
-          {
-            "@type": "ServiceChannel",
-            "serviceUrl": "https://apps.apple.com/app/id6816627023",
-            "availableLanguage": [
-              "ko",
-              "en",
-              "ja",
-              "zh-Hans",
-              "es",
-              "es-419"
-            ]
-          }
-        ],
-        "offers": [
-          {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "KRW",
-            "availability": "https://schema.org/InStock",
-            "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled"
-          },
-          {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "KRW",
-            "availability": "https://schema.org/InStock",
-            "url": "https://apps.apple.com/app/id6816627023"
-          }
-        ]
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://helloled.yodams.com/#website",
-        "url": "https://helloled.yodams.com/",
-        "name": "HELLO LED",
-        "alternateName": "헬로 LED",
-        "description": "Sitio oficial de HELLO LED. Instala gratis la app de letrero LED en Google Play o en el App Store.",
-        "inLanguage": "es-419",
-        "publisher": {
-          "@id": "https://helloled.yodams.com/#organization"
-        },
-        "potentialAction": [
-          {
-            "@type": "DownloadAction",
-            "name": "Descargar HELLO LED",
-            "target": {
-              "@type": "EntryPoint",
-              "urlTemplate": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
-              "actionPlatform": [
-                "https://schema.org/AndroidPlatform"
-              ]
-            }
-          },
-          {
-            "@type": "DownloadAction",
-            "name": "Descargar HELLO LED",
-            "target": {
-              "@type": "EntryPoint",
-              "urlTemplate": "https://apps.apple.com/app/id6816627023",
-              "actionPlatform": [
-                "https://schema.org/IOSPlatform"
-              ]
-            }
-          }
-        ]
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://helloled.yodams.com/es-419/#webpage",
-        "url": "https://helloled.yodams.com/es-419/",
-        "name": "HELLO LED | Letrero LED en el celular",
-        "description": "HELLO LED es una app gratuita que convierte el celular en un letrero LED para conciertos, tiendas y aeropuertos.",
-        "inLanguage": "es-419",
-        "isPartOf": {
-          "@id": "https://helloled.yodams.com/#website"
-        },
-        "about": [
-          {
-            "@id": "https://helloled.yodams.com/#app"
-          },
-          {
-            "@id": "https://helloled.yodams.com/#service"
-          }
-        ],
-        "mainEntity": {
-          "@id": "https://helloled.yodams.com/#app"
-        },
-        "hasPart": [
-          {
-            "@id": "https://helloled.yodams.com/es-419/#howto"
-          },
-          {
-            "@id": "https://helloled.yodams.com/es-419/#faq"
-          }
-        ],
-        "datePublished": "2026-09-21",
-        "dateModified": "2026-10-21",
-        "primaryImageOfPage": {
-          "@type": "ImageObject",
-          "url": "https://helloled.yodams.com/og.png",
-          "width": 1200,
-          "height": 630,
-          "caption": "Logotipo de HELLO LED sobre un círculo azul"
-        },
-        "image": [
-          {
-            "@type": "ImageObject",
-            "url": "https://helloled.yodams.com/screens/led-marquee.png",
-            "width": 960,
-            "height": 540,
-            "caption": "Pantalla de HELLO LED: texto LOVE HE en neón rosa"
-          },
-          {
-            "@type": "ImageObject",
-            "url": "https://helloled.yodams.com/screens/led-clock.png",
-            "width": 960,
-            "height": 540,
-            "caption": "Pantalla de HELLO LED: reloj 21:48 en horizontal"
-          },
-          {
-            "@type": "ImageObject",
-            "url": "https://helloled.yodams.com/screens/led-dots.png",
-            "width": 960,
-            "height": 540,
-            "caption": "Pantalla de HELLO LED: dos corazones rosas hechos de puntos"
-          }
-        ]
-      },
-      {
-        "@type": [
-          "SoftwareApplication",
-          "MobileApplication"
-        ],
-        "@id": "https://helloled.yodams.com/#app",
-        "name": "HELLO LED",
-        "alternateName": "헬로 LED",
-        "applicationCategory": "UtilitiesApplication",
-        "operatingSystem": "Android, iOS",
-        "softwareVersion": "1.0.4",
-        "isAccessibleForFree": true,
-        "inLanguage": [
-          "ko",
-          "en",
-          "ja",
-          "zh-Hans",
-          "es",
-          "es-419"
-        ],
-        "description": "HELLO LED es una app gratuita que convierte el celular en un letrero LED para conciertos, tiendas y aeropuertos.",
-        "featureList": [
-          "Colores neón, tamaño de texto, velocidad de desplazamiento y 11 fuentes",
-          "Letrero LED a pantalla completa en horizontal y vertical con pantalla siempre encendida",
-          "Reloj actual, cuenta regresiva D-Day y temporizador",
-          "Conversión de fotos a puntos LED en el dispositivo (sin subir al servidor)",
-          "8 categorías de frases predeterminadas para conciertos, tiendas y aeropuertos",
-          "Favoritos y reproducción de hasta 8 mensajes en orden"
-        ],
-        "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
-        "downloadUrl": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
-        "installUrl": "https://apps.apple.com/app/id6816627023",
-        "sameAs": [
-          "https://play.google.com/store/apps/details?id=com.yodam.helloled",
-          "https://apps.apple.com/app/id6816627023"
-        ],
-        "screenshot": [
-          "https://helloled.yodams.com/screens/led-marquee.png",
-          "https://helloled.yodams.com/screens/led-clock.png",
-          "https://helloled.yodams.com/screens/led-dots.png"
-        ],
-        "offers": [
-          {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "KRW",
-            "availability": "https://schema.org/InStock",
-            "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled"
-          },
-          {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "KRW",
-            "availability": "https://schema.org/InStock",
-            "url": "https://apps.apple.com/app/id6816627023"
-          }
-        ],
-        "publisher": {
-          "@id": "https://helloled.yodams.com/#organization"
+        {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "KRW",
+          "availability": "https://schema.org/InStock",
+          "url": "https://apps.apple.com/app/id6816627023"
         }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://helloled.yodams.com/#website",
+      "url": "https://helloled.yodams.com/",
+      "name": "HELLO LED",
+      "alternateName": "헬로 LED",
+      "description": "Sitio oficial de HELLO LED. Instala gratis la app de letrero LED en Google Play o en el App Store.",
+      "inLanguage": "es-419",
+      "publisher": {
+        "@id": "https://helloled.yodams.com/#organization"
       },
-      {
-        "@type": "HowTo",
-        "@id": "https://helloled.yodams.com/es-419/#howto",
-        "name": "Cómo convertir el celular en un letrero LED",
-        "description": "Cualquiera puede usar el celular como letrero LED.",
-        "inLanguage": "es-419",
-        "totalTime": "PT1M",
-        "step": [
-          {
-            "@type": "HowToStep",
-            "position": 1,
-            "name": "Escribe un mensaje",
-            "text": "Redacta una porra, una oferta o una bienvenida, o elige un ajuste listo."
-          },
-          {
-            "@type": "HowToStep",
-            "position": 2,
-            "name": "Ajusta color, velocidad y fuente",
-            "text": "Elige un color neón, la velocidad y la fuente para que se lea desde lejos."
-          },
-          {
-            "@type": "HowToStep",
-            "position": 3,
-            "name": "Activa la pantalla completa en horizontal",
-            "text": "Gira el celular y toda la pantalla se convierte en el letrero."
+      "potentialAction": [
+        {
+          "@type": "DownloadAction",
+          "name": "Descargar HELLO LED",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+            "actionPlatform": [
+              "https://schema.org/AndroidPlatform"
+            ]
           }
-        ]
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://helloled.yodams.com/es-419/#faq",
-        "url": "https://helloled.yodams.com/es-419/#qa",
-        "inLanguage": "es-419",
-        "isPartOf": {
-          "@id": "https://helloled.yodams.com/es-419/#webpage"
         },
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "¿Puedo reproducir varios mensajes en orden y mantener la pantalla encendida?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Sí. Guarda tus mensajes favoritos en el dispositivo y reproduce hasta 8 mensajes en orden. Mientras se muestra el letrero LED, la pantalla permanece encendida."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "¿En qué dispositivos se puede usar HELLO LED?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Funciona en celulares y tablets Android, y en iPhone. Instálala desde Google Play o el App Store."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "¿Dónde puedo descargarla ahora?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "HELLO LED está en Google Play y en el App Store."
-            }
+        {
+          "@type": "DownloadAction",
+          "name": "Descargar HELLO LED",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://apps.apple.com/app/id6816627023",
+            "actionPlatform": [
+              "https://schema.org/IOSPlatform"
+            ]
           }
-        ]
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://helloled.yodams.com/es-419/#webpage",
+      "url": "https://helloled.yodams.com/es-419/",
+      "name": "App de letrero LED para celular y conciertos | HELLO LED",
+      "description": "Convierte tu celular en un letrero LED con texto en movimiento. Porras, recibir en el aeropuerto y avisos de negocio, con 5 colores neón, 11 fuentes y reloj.",
+      "inLanguage": "es-419",
+      "isPartOf": {
+        "@id": "https://helloled.yodams.com/#website"
+      },
+      "about": [
+        {
+          "@id": "https://helloled.yodams.com/#app"
+        },
+        {
+          "@id": "https://helloled.yodams.com/#service"
+        }
+      ],
+      "mainEntity": {
+        "@id": "https://helloled.yodams.com/#app"
+      },
+      "hasPart": [
+        {
+          "@id": "https://helloled.yodams.com/es-419/#howto"
+        },
+        {
+          "@id": "https://helloled.yodams.com/es-419/#faq"
+        }
+      ],
+      "datePublished": "2026-09-21",
+      "dateModified": "2026-11-04",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://helloled.yodams.com/og.png",
+        "width": 1200,
+        "height": 630,
+        "caption": "Logotipo de HELLO LED sobre un círculo azul"
+      },
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://helloled.yodams.com/screens/led-marquee.png",
+          "width": 960,
+          "height": 540,
+          "caption": "Pantalla de la app HELLO LED con una porra en neón rosa"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://helloled.yodams.com/screens/led-clock.png",
+          "width": 960,
+          "height": 540,
+          "caption": "Pantalla de HELLO LED: reloj 21:48 en horizontal"
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://helloled.yodams.com/screens/led-dots.png",
+          "width": 960,
+          "height": 540,
+          "caption": "Pantalla de HELLO LED: dos corazones rosas hechos de puntos"
+        }
+      ]
+    },
+    {
+      "@type": [
+        "SoftwareApplication",
+        "MobileApplication"
+      ],
+      "@id": "https://helloled.yodams.com/#app",
+      "name": "HELLO LED",
+      "alternateName": "헬로 LED",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Android, iOS",
+      "softwareVersion": "1.0.4",
+      "isAccessibleForFree": true,
+      "inLanguage": [
+        "ko",
+        "en",
+        "ja",
+        "zh-Hans",
+        "es",
+        "es-419"
+      ],
+      "description": "Convierte tu celular en un letrero LED con texto en movimiento. Porras, recibir en el aeropuerto y avisos de negocio, con 5 colores neón, 11 fuentes y reloj.",
+      "featureList": [
+        "Cinco colores neón (rojo, amarillo, verde, azul, rosa) o un color propio, tamaño de texto, brillo, velocidad, efectos de parpadeo y brillo y 11 fuentes",
+        "Letrero LED a pantalla completa solo en horizontal, con la pantalla siempre encendida",
+        "Hora actual, cuenta regresiva D-Day y temporizador",
+        "Fotos de la galería a puntos LED en el celular, sin subirlas a un servidor",
+        "8 categorías de frases: porras, cumpleaños, aeropuerto, tienda, amor, exámenes, bienvenida y gracias",
+        "Favoritos y reproducción de hasta 8 mensajes en orden",
+        "Sincronización de mensajes con HELLO LED en la misma Wi-Fi, sin servidor",
+        "Mensaje guardado en el widget de Android. Solo Android"
+      ],
+      "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+      "installUrl": "https://apps.apple.com/app/id6816627023",
+      "sameAs": [
+        "https://play.google.com/store/apps/details?id=com.yodam.helloled",
+        "https://apps.apple.com/app/id6816627023"
+      ],
+      "screenshot": [
+        "https://helloled.yodams.com/screens/led-marquee.png",
+        "https://helloled.yodams.com/screens/led-clock.png",
+        "https://helloled.yodams.com/screens/led-dots.png"
+      ],
+      "offers": [
+        {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "KRW",
+          "availability": "https://schema.org/InStock",
+          "url": "https://play.google.com/store/apps/details?id=com.yodam.helloled"
+        },
+        {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "KRW",
+          "availability": "https://schema.org/InStock",
+          "url": "https://apps.apple.com/app/id6816627023"
+        }
+      ],
+      "author": {
+        "@id": "https://helloled.yodams.com/#organization"
+      },
+      "publisher": {
+        "@id": "https://helloled.yodams.com/#organization"
       }
-    ]
-  }
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://helloled.yodams.com/es-419/#howto",
+      "name": "Cómo crear un letrero LED con tu celular",
+      "description": "Escribe tu mensaje, ajusta el color y la velocidad, y activa la pantalla completa en horizontal.",
+      "inLanguage": "es-419",
+      "totalTime": "PT1M",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Escribe el mensaje que quieres mostrar",
+          "text": "Crea una porra para un concierto, un mensaje para recibir a alguien en el aeropuerto, una oferta para tu negocio o una felicitación de cumpleaños. También puedes elegir una frase predeterminada."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Personaliza el color y la velocidad del texto",
+          "text": "Elige un color neón y una fuente. Ajusta el tamaño de las letras y la velocidad del desplazamiento para que el mensaje se lea de lejos."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Activa el letrero en pantalla completa",
+          "text": "Gira el celular en horizontal y muestra el mensaje en toda la pantalla. La pantalla permanece encendida mientras se muestra el letrero."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://helloled.yodams.com/es-419/#faq",
+      "url": "https://helloled.yodams.com/es-419/#qa",
+      "inLanguage": "es-419",
+      "isPartOf": {
+        "@id": "https://helloled.yodams.com/es-419/#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Puedo convertir el celular en un letrero LED?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. HELLO LED convierte la pantalla del celular en un letrero LED horizontal a pantalla completa sin otro equipo. Escribe un mensaje y ajusta color, tamaño, brillo, fuente y velocidad."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Sirve como letrero de porras en conciertos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Escribe la porra que quieres mandar a tu artista o elige un ajuste, y combina el color neón, la fuente y la velocidad para que se lea en un lugar con poca luz."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Sirve para recibir a alguien en el aeropuerto?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Escribe el nombre o una frase de bienvenida y muéstralo grande en el celular. Funciona como letrero digital en la llegada."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿El texto se puede desplazar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Ajusta la velocidad y el mensaje se mueve por la pantalla. También puedes cambiar la fuente y el color."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puedo mostrar un reloj, una cuenta regresiva D-Day o un temporizador?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Muestra la hora actual, una cuenta regresiva D-Day o un temporizador con números LED grandes. Sirve como reloj digital para la hora de inicio o el tiempo restante."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puedo convertir una foto en puntos LED?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. La foto de la galería se convierte en un patrón de puntos LED en el letrero. La conversión se hace en el celular, así que no se sube a un servidor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Funciona en iPhone y Android?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Funciona en celulares y tablets Android y en iPhone. Instálala desde Google Play o el App Store."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿HELLO LED es gratis? ¿Tiene anuncios?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, HELLO LED se instala gratis. Eso sí, en la pantalla de edición puede aparecer un anuncio de banner, y antes de abrir el letrero LED a pantalla completa puede aparecer un anuncio a pantalla completa. El letrero que muestra tu mensaje LED no lleva anuncios de banner."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puedo guardar varios mensajes y reproducirlos en orden?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Guarda favoritos y reproduce hasta 8 mensajes en orden. La pantalla sigue encendida mientras se muestra el letrero."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Se suben mis fotos o mensajes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. La conversión de fotos a puntos se hace en el celular y los mensajes y ajustes se quedan ahí. Igualar mensajes entre apps HELLO LED en la misma Wi-Fi tampoco usa un servidor externo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puedo sincronizar mensajes con otro celular?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Las apps HELLO LED conectadas a la misma Wi-Fi pueden igualar los mensajes. Esta función tampoco usa un servidor externo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Tiene widget de pantalla de inicio en Android?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. El widget de Android muestra un mensaje guardado. Este widget solo está disponible en Android."
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 </head>
 <body class="bg-white text-ink antialiased">
@@ -660,12 +748,12 @@
   <main id="main" tabindex="-1">
     <section class="hero-wash relative overflow-hidden px-5 pb-12 pt-12 sm:pb-16 sm:pt-16">
       <div class="relative mx-auto max-w-3xl text-center">
-        <p class="mb-4 text-sm font-semibold tracking-wide text-muted" data-i18n="kicker">Letrero LED en el celular</p>
+        <p class="mb-4 text-sm font-semibold tracking-wide text-muted" data-i18n="kicker">App de letrero LED para el celular</p>
         <h1 class="text-[clamp(2.15rem,5.4vw,3.75rem)] font-extrabold leading-[1.18] tracking-[-0.035em]">
-          <span data-i18n="heroLine1">Convierte el celular en un panel LED</span><br>
+          <span data-i18n="heroLine1">Convierte tu celular en un letrero LED a pantalla completa</span><br>
           <span class="neon-word" lang="en" data-i18n="heroAccent">HELLO LED</span>
         </h1>
-        <p class="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted sm:text-lg" data-i18n-html="heroBody"><strong class="font-semibold text-ink" lang="en">HELLO LED</strong> es una app gratuita que convierte la pantalla del celular en un letrero LED. Sirve para porras en conciertos, ofertas en tiendas, bienvenidas en el aeropuerto y mucho más.</p>
+        <p class="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted sm:text-lg" data-i18n-html="heroBody"><strong class="font-semibold text-ink" lang="en">HELLO LED</strong> es una app gratuita que convierte la pantalla de tu celular en un letrero LED horizontal a pantalla completa. Crea porras para conciertos, muestra nombres para recibir personas en el aeropuerto o anuncia promociones y horarios de tu negocio. Personaliza el mensaje con cinco colores neón o un color propio, 11 fuentes, tamaño de letra, brillo y velocidad de desplazamiento. También puedes agregar efectos de parpadeo y brillo, o mostrar un reloj LED, una cuenta regresiva o un temporizador.</p>
         <div class="mx-auto mt-8 flex max-w-xl flex-wrap items-center justify-center gap-3" id="download-hero">
             <a class="inline-flex focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" target="_blank" rel="noopener noreferrer" aria-label="Disponible en Google Play, pestaña nueva" data-i18n-aria="playAlt">
               <picture>
@@ -731,11 +819,38 @@
       </div>
     </section>
 
+    <section id="uses" class="px-5 py-20 sm:py-28" aria-labelledby="uses-title">
+      <div class="mx-auto max-w-6xl">
+        <div class="mx-auto max-w-3xl text-center">
+          <h2 id="uses-title" class="reveal text-3xl font-extrabold tracking-tight sm:text-5xl" data-i18n="usesTitle">Para qué usar un letrero LED en el celular</h2>
+          <p class="reveal mx-auto mt-5 text-lg leading-relaxed text-muted" data-i18n="usesLead">HELLO LED muestra texto grande en la pantalla del celular sin otro equipo de cartelería. Sirve para una porra en conciertos, para recibir a alguien en el aeropuerto o para un letrero digital en el negocio.</p>
+        </div>
+        <div class="use-grid">
+          <article class="how-step reveal">
+            <h3 data-i18n="useConcertTitle">Letrero LED de porras en conciertos</h3>
+            <p data-i18n="useConcertBody">Muestra en el celular la porra que quieres mandar a tu artista. Escribe una frase corta o elige un ajuste, y combina el color neón, la fuente y la velocidad para que se lea en un lugar con poca luz.</p>
+          </article>
+          <article class="how-step reveal">
+            <h3 data-i18n="useAirportTitle">Letrero para recibir en el aeropuerto</h3>
+            <p data-i18n="useAirportBody">Muestra grande el nombre de la persona y una frase de bienvenida. No hace falta preparar un letrero de papel: escribe el nombre, elige el color y levanta el celular.</p>
+          </article>
+          <article class="how-step reveal">
+            <h3 data-i18n="useShopTitle">Promoción y letrero digital del negocio</h3>
+            <p data-i18n="useShopBody">Muestra ofertas, horario o números de pedido en la entrada o el mostrador. Escribe frases cortas como OPEN, SALE u oferta del día y muéstralas como texto LED en movimiento.</p>
+          </article>
+          <article class="how-step reveal">
+            <h3 data-i18n="usePartyTitle">Cumpleaños y mensajes personales</h3>
+            <p data-i18n="usePartyBody">Los mensajes de cumpleaños, declaración, bienvenida y apoyo en exámenes se muestran igual. Los ajustes incluyen ocho categorías: porras, cumpleaños, aeropuerto, tienda, amor, exámenes, bienvenida y gracias.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section id="features" class="px-5 py-20 sm:py-28" aria-labelledby="features-title">
       <div class="mx-auto max-w-6xl">
         <div class="mx-auto max-w-3xl text-center">
-          <h2 id="features-title" class="reveal text-3xl font-extrabold tracking-tight sm:text-5xl" data-i18n-html="featuresTitle">Qué hace <span lang="en">HELLO LED</span></h2>
-          <p class="reveal mx-auto mt-5 text-lg leading-relaxed text-muted" data-i18n="featuresLead">Brillo y desplazamiento que se leen de lejos, y frases listas para porras, promociones y bienvenidas.</p>
+          <h2 id="features-title" class="reveal text-3xl font-extrabold tracking-tight sm:text-5xl" data-i18n-html="featuresTitle">Qué hace la app de letrero LED <span lang="en">HELLO LED</span></h2>
+          <p class="reveal mx-auto mt-5 text-lg leading-relaxed text-muted" data-i18n="featuresLead">Usa el celular como letrero LED con texto en movimiento. Ajusta el texto, el color y el efecto, y muestra también un reloj LED, una cuenta regresiva, un temporizador o una foto en puntos LED.</p>
         </div>
 
         <div class="mt-14 grid gap-5 sm:grid-cols-2">
@@ -750,13 +865,13 @@
                   loading="lazy"
                   decoding="async"
                   data-i18n-alt="marqueeAlt"
-                  alt="Pantalla de HELLO LED: texto LOVE HE en neón rosa"
+                  alt="Pantalla de HELLO LED con una porra en neón rosa"
                 >
               </picture>
             </figure>
             <div class="feature-copy">
-              <h3 class="text-xl font-bold sm:text-2xl" data-i18n="customTitle">Color, velocidad y fuente</h3>
-              <p class="feature-kicker" data-i18n="customKicker">Del neón a la velocidad de desplazamiento</p>
+              <h3 class="text-xl font-bold sm:text-2xl" data-i18n="customTitle">Color del texto LED y ajustes de desplazamiento</h3>
+              <p class="feature-kicker" data-i18n="customKicker">Del neón al parpadeo</p>
               <div class="swatches" aria-hidden="true">
                 <span class="bg-neonRed"></span>
                 <span class="bg-neonYellow"></span>
@@ -764,8 +879,8 @@
                 <span class="bg-neonBlue"></span>
                 <span class="bg-neonPink"></span>
               </div>
-              <p class="feature-body" data-i18n="customBody">Elige rojo, amarillo, verde, azul o rosa, y ajusta la velocidad y la fuente para una porra, una oferta o una bienvenida.</p>
-              <p id="custom-caption" class="feature-note" data-i18n="customCaption">Pantalla de la app: texto del panel horizontal con color y tipografía</p>
+              <p class="feature-body" data-i18n="customBody">Usa cinco colores neón (rojo, amarillo, verde, azul, rosa) o un color propio. Ajusta tamaño, brillo y velocidad, y elige efectos de parpadeo y brillo y una de las 11 fuentes.</p>
+              <p id="custom-caption" class="feature-note" data-i18n="customCaption">Pantalla de la app: texto horizontal con color y fuente</p>
             </div>
           </article>
 
@@ -776,9 +891,9 @@
               </div>
             </div>
             <div class="feature-copy">
-              <h3 class="text-xl font-bold sm:text-2xl" data-i18n="wideTitle">Letrero a pantalla completa en horizontal</h3>
-              <p class="feature-kicker" data-i18n="wideKicker">Se lee desde lejos</p>
-              <p class="feature-body" data-i18n="wideBody">Gira el celular y toda la pantalla se convierte en un letrero LED, legible al fondo de un lugar o del otro lado del mostrador.</p>
+              <h3 class="text-xl font-bold sm:text-2xl" data-i18n="wideTitle">Letrero LED a pantalla completa en el celular</h3>
+              <p class="feature-kicker" data-i18n="wideKicker">Texto que llena la pantalla</p>
+              <p class="feature-body" data-i18n="wideBody">Gira el celular y toda la pantalla se convierte en un letrero LED, legible al fondo de un lugar o del otro lado del mostrador. La pantalla sigue encendida mientras se muestra.</p>
             </div>
           </article>
 
@@ -793,14 +908,14 @@
                   loading="lazy"
                   decoding="async"
                   data-i18n-alt="clockAlt"
-                  alt="Pantalla de HELLO LED: reloj 21:48 en horizontal"
+                  alt="Reloj 21:48 en la pantalla completa horizontal de HELLO LED"
                 >
               </picture>
             </figure>
             <div class="feature-copy">
-              <h3 class="text-xl font-bold sm:text-2xl" data-i18n="clockTitle">Reloj, cuenta regresiva y temporizador</h3>
+              <h3 class="text-xl font-bold sm:text-2xl" data-i18n="clockTitle">Reloj LED, cuenta regresiva y temporizador</h3>
               <p class="feature-kicker" data-i18n="clockKicker">Muestra la hora en grande</p>
-              <p class="feature-body" data-i18n="clockBody">Pon la hora actual, una cuenta regresiva o un temporizador en el panel para leerlo desde lejos en un local o un evento.</p>
+              <p class="feature-body" data-i18n="clockBody">Muestra la hora actual, una cuenta regresiva D-Day o un temporizador con números LED grandes. Sirve para la hora de inicio, el tiempo restante o la espera en el negocio.</p>
               <p id="clock-caption" class="feature-note" data-i18n="clockCaption">Pantalla de la app: reloj en el panel horizontal</p>
             </div>
           </article>
@@ -816,14 +931,14 @@
                   loading="lazy"
                   decoding="async"
                   data-i18n-alt="dotsAlt"
-                  alt="Pantalla de HELLO LED: dos corazones rosas hechos de puntos"
+                  alt="Corazón rosa convertido de una foto a puntos LED"
                 >
               </picture>
             </figure>
             <div class="feature-copy">
-              <h3 class="text-xl font-bold sm:text-2xl" data-i18n="photoTitle">Foto a panel de puntos</h3>
-              <p class="feature-kicker" data-i18n="photoKicker">Conversión de imagen en el dispositivo</p>
-              <p class="feature-body" data-i18n="photoBody">Convierte una foto de la galería en un patrón de puntos en el panel. La foto no se sube a un servidor.</p>
+              <h3 class="text-xl font-bold sm:text-2xl" data-i18n="photoTitle">Foto a imagen de puntos LED</h3>
+              <p class="feature-kicker" data-i18n="photoKicker">Se convierte en el dispositivo</p>
+              <p class="feature-body" data-i18n="photoBody">Convierte una foto de la galería en un patrón de puntos LED en el letrero. La foto se procesa en el celular y no se sube a un servidor.</p>
               <p id="photo-caption" class="feature-note" data-i18n="photoCaption">Pantalla de la app: foto convertida en puntos</p>
             </div>
           </article>
@@ -834,24 +949,24 @@
     <section id="how" class="px-5 py-20 sm:py-28" aria-labelledby="how-title">
       <div class="mx-auto max-w-6xl">
         <div class="reveal mx-auto max-w-2xl text-center">
-          <h2 id="how-title" class="text-3xl font-extrabold tracking-tight sm:text-4xl" data-i18n="howTitle">Cómo convertir el celular en un letrero LED</h2>
-          <p class="mt-3 text-muted" data-i18n="howLead">Cualquiera puede usar el celular como letrero LED.</p>
+          <h2 id="how-title" class="text-3xl font-extrabold tracking-tight sm:text-4xl" data-i18n="howTitle">Cómo crear un letrero LED con tu celular</h2>
+          <p class="mt-3 text-muted" data-i18n="howLead">Escribe tu mensaje, ajusta el color y la velocidad, y activa la pantalla completa en horizontal.</p>
         </div>
         <ol class="how-list">
           <li class="how-step reveal">
             <span class="how-index bg-[#FF5CA8]" aria-hidden="true">1</span>
-            <h3 data-i18n="step1Title">Escribe un mensaje</h3>
-            <p data-i18n="step1Body">Redacta una porra, una oferta o una bienvenida, o elige un ajuste listo.</p>
+            <h3 data-i18n="step1Title">Escribe el mensaje que quieres mostrar</h3>
+            <p data-i18n="step1Body">Crea una porra para un concierto, un mensaje para recibir a alguien en el aeropuerto, una oferta para tu negocio o una felicitación de cumpleaños. También puedes elegir una frase predeterminada.</p>
           </li>
           <li class="how-step reveal">
             <span class="how-index bg-[#F5C518]" aria-hidden="true">2</span>
-            <h3 data-i18n="step2Title">Ajusta color, velocidad y fuente</h3>
-            <p data-i18n="step2Body">Elige un color neón, la velocidad y la fuente para que se lea desde lejos.</p>
+            <h3 data-i18n="step2Title">Personaliza el color y la velocidad del texto</h3>
+            <p data-i18n="step2Body">Elige un color neón y una fuente. Ajusta el tamaño de las letras y la velocidad del desplazamiento para que el mensaje se lea de lejos.</p>
           </li>
           <li class="how-step reveal">
             <span class="how-index bg-[#3BA3FF]" aria-hidden="true">3</span>
-            <h3 data-i18n="step3Title">Activa la pantalla completa en horizontal</h3>
-            <p data-i18n="step3Body">Gira el celular y toda la pantalla se convierte en el letrero.</p>
+            <h3 data-i18n="step3Title">Activa el letrero en pantalla completa</h3>
+            <p data-i18n="step3Body">Gira el celular en horizontal y muestra el mensaje en toda la pantalla. La pantalla permanece encendida mientras se muestra el letrero.</p>
           </li>
         </ol>
       </div>
@@ -860,36 +975,100 @@
     <section id="qa" class="px-5 py-16 sm:py-24" aria-labelledby="qa-title">
       <div class="mx-auto max-w-3xl">
         <h2 id="qa-title" class="reveal text-center text-3xl font-extrabold tracking-tight sm:text-5xl" data-i18n="faqTitle">Preguntas</h2>
-        <div class="faq-list">
+                <div class="faq-list">
           <details class="reveal" open>
             <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
-              <h3 data-i18n="faq1q">¿Puedo reproducir varios mensajes en orden y mantener la pantalla encendida?</h3>
+              <h3 data-i18n="faq1q">¿Puedo convertir el celular en un letrero LED?</h3>
               <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
             </summary>
-            <p class="text-muted" data-i18n="faq1a">Sí. Guarda tus mensajes favoritos en el dispositivo y reproduce hasta 8 mensajes en orden. Mientras se muestra el letrero LED, la pantalla permanece encendida.</p>
+            <p class="text-muted" data-i18n="faq1a">Sí. HELLO LED convierte la pantalla del celular en un letrero LED horizontal a pantalla completa sin otro equipo. Escribe un mensaje y ajusta color, tamaño, brillo, fuente y velocidad.</p>
           </details>
           <details class="reveal">
             <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
-              <h3 data-i18n-html="faq2q">¿En qué dispositivos se puede usar <span lang="en">HELLO LED</span>?</h3>
+              <h3 data-i18n="faq2q">¿Sirve como letrero de porras en conciertos?</h3>
               <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
             </summary>
-            <p class="text-muted" data-i18n-html="faq2a">Funciona en celulares y tablets Android, y en iPhone. Instálala desde <a class="underline" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" rel="noopener noreferrer" target="_blank">Google Play<span class="sr-only">, pestaña nueva</span></a> o el <a class="underline" href="https://apps.apple.com/app/id6816627023" rel="noopener noreferrer" target="_blank">App Store<span class="sr-only">, pestaña nueva</span></a>.</p>
+            <p class="text-muted" data-i18n="faq2a">Sí. Escribe la porra que quieres mandar a tu artista o elige un ajuste, y combina el color neón, la fuente y la velocidad para que se lea en un lugar con poca luz.</p>
           </details>
           <details class="reveal">
             <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
-              <h3 data-i18n="faq3q">¿Dónde puedo descargarla ahora?</h3>
+              <h3 data-i18n="faq3q">¿Sirve para recibir a alguien en el aeropuerto?</h3>
               <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
             </summary>
-            <p class="text-muted" data-i18n-html="faq3a"><span lang="en">HELLO LED</span> está en <a class="underline" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" rel="noopener noreferrer" target="_blank">Google Play<span class="sr-only">, pestaña nueva</span></a> y en el <a class="underline" href="https://apps.apple.com/app/id6816627023" rel="noopener noreferrer" target="_blank">App Store<span class="sr-only">, pestaña nueva</span></a>.</p>
+            <p class="text-muted" data-i18n="faq3a">Sí. Escribe el nombre o una frase de bienvenida y muéstralo grande en el celular. Funciona como letrero digital en la llegada.</p>
           </details>
+          <details class="reveal">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
+              <h3 data-i18n="faq4q">¿El texto se puede desplazar?</h3>
+              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
+            </summary>
+            <p class="text-muted" data-i18n="faq4a">Sí. Ajusta la velocidad y el mensaje se mueve por la pantalla. También puedes cambiar la fuente y el color.</p>
+          </details>
+          <details class="reveal">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
+              <h3 data-i18n="faq5q">¿Puedo mostrar un reloj, una cuenta regresiva D-Day o un temporizador?</h3>
+              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
+            </summary>
+            <p class="text-muted" data-i18n="faq5a">Sí. Muestra la hora actual, una cuenta regresiva D-Day o un temporizador con números LED grandes. Sirve como reloj digital para la hora de inicio o el tiempo restante.</p>
+          </details>
+          <details class="reveal">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
+              <h3 data-i18n="faq6q">¿Puedo convertir una foto en puntos LED?</h3>
+              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
+            </summary>
+            <p class="text-muted" data-i18n="faq6a">Sí. La foto de la galería se convierte en un patrón de puntos LED en el letrero. La conversión se hace en el celular, así que no se sube a un servidor.</p>
+          </details>
+          <details class="reveal">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
+              <h3 data-i18n="faq7q">¿Funciona en iPhone y Android?</h3>
+              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
+            </summary>
+            <p class="text-muted" data-i18n-html="faq7a">Sí. Funciona en celulares y tablets Android y en iPhone. Instálala desde <a class="underline" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" rel="noopener noreferrer" target="_blank">Google Play<span class="sr-only">, pestaña nueva</span></a> o el <a class="underline" href="https://apps.apple.com/app/id6816627023" rel="noopener noreferrer" target="_blank">App Store<span class="sr-only">, pestaña nueva</span></a>.</p>
+          </details>
+          <details class="reveal">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
+              <h3 data-i18n="faq8q">¿HELLO LED es gratis? ¿Tiene anuncios?</h3>
+              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
+            </summary>
+            <p class="text-muted" data-i18n="faq8a">Sí, HELLO LED se instala gratis. Eso sí, en la pantalla de edición puede aparecer un anuncio de banner, y antes de abrir el letrero LED a pantalla completa puede aparecer un anuncio a pantalla completa. El letrero que muestra tu mensaje LED no lleva anuncios de banner.</p>
+          </details>
+          <details class="reveal">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
+              <h3 data-i18n="faq9q">¿Puedo guardar varios mensajes y reproducirlos en orden?</h3>
+              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
+            </summary>
+            <p class="text-muted" data-i18n="faq9a">Sí. Guarda favoritos y reproduce hasta 8 mensajes en orden. La pantalla sigue encendida mientras se muestra el letrero.</p>
+          </details>
+          <details class="reveal">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
+              <h3 data-i18n="faq10q">¿Se suben mis fotos o mensajes?</h3>
+              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
+            </summary>
+            <p class="text-muted" data-i18n="faq10a">No. La conversión de fotos a puntos se hace en el celular y los mensajes y ajustes se quedan ahí. Igualar mensajes entre apps HELLO LED en la misma Wi-Fi tampoco usa un servidor externo.</p>
+          </details>
+          <details class="reveal">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
+              <h3 data-i18n="faq11q">¿Puedo sincronizar mensajes con otro celular?</h3>
+              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
+            </summary>
+            <p class="text-muted" data-i18n="faq11a">Sí. Las apps HELLO LED conectadas a la misma Wi-Fi pueden igualar los mensajes. Esta función tampoco usa un servidor externo.</p>
+          </details>
+        <details class="reveal">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
+              <h3 data-i18n="faq12q">¿Tiene widget de pantalla de inicio en Android?</h3>
+              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
+            </summary>
+            <p class="text-muted" data-i18n="faq12a">Sí. El widget de Android muestra un mensaje guardado. Este widget solo está disponible en Android.</p>
+          </details>
+        </div>
         </div>
       </div>
     </section>
 
     <section id="download" class="hero-wash relative overflow-hidden px-5 py-24 sm:py-32" aria-labelledby="cta-title">
       <div class="relative mx-auto max-w-3xl text-center">
-        <h2 id="cta-title" class="reveal text-3xl font-extrabold tracking-tight sm:text-5xl" data-i18n-html="ctaTitle">Consigue <span lang="en">HELLO LED</span></h2>
-        <p class="reveal mx-auto mt-5 max-w-xl text-muted" data-i18n-html="ctaBody">Instala <span lang="en">HELLO LED</span> gratis en Google Play o en el App Store y ajusta texto, color y velocidad para tu letrero.</p>
+        <h2 id="cta-title" class="reveal text-3xl font-extrabold tracking-tight sm:text-5xl" data-i18n-html="ctaTitle">Convierte hoy tu celular en un letrero LED</h2>
+        <p class="reveal mx-auto mt-5 max-w-xl text-muted" data-i18n-html="ctaBody">Muestra grande en el celular las porras de conciertos, los mensajes para recibir a alguien y los avisos de tu negocio. Instala <span lang="en">HELLO LED</span> gratis y ajusta el texto, el color, la fuente y la velocidad.</p>
         <div class="reveal mt-10 flex flex-wrap items-center justify-center gap-3">
           <a class="inline-flex focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" target="_blank" rel="noopener noreferrer" aria-label="Disponible en Google Play, pestaña nueva" data-i18n-aria="playAlt">
             <picture>
@@ -929,7 +1108,7 @@
     <div class="mx-auto flex max-w-6xl flex-col gap-4 text-sm text-muted sm:flex-row sm:items-start sm:justify-between">
       <div>
         <p class="font-bold text-ink" lang="en">HELLO LED</p>
-        <p class="mt-2" data-i18n-html="publisherLine"><span lang="en">HELLO LED</span> es una app hecha por <a href="https://yodams.com/" lang="ko">요담</a> (Yodam).</p>
+        <p class="mt-2" data-i18n-html="publisherLine"><span lang="en">HELLO LED</span> es una app gratuita de letrero LED para el celular creada por <a href="https://yodams.com/" lang="ko">요담</a> (Yodam). Funciona en celulares y tablets Android y en iPhone, para conciertos, llegadas al aeropuerto, avisos de negocio y cumpleaños.</p>
       </div>
       <div class="flex flex-wrap gap-4">
         <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="/es-419/privacy.html" data-privacy-link data-i18n="privacyLink">Política de privacidad</a>
@@ -937,6 +1116,7 @@
       </div>
     </div>
     <nav class="mx-auto mt-6 flex max-w-6xl flex-wrap gap-x-4 text-sm" aria-label="En esta página" data-i18n-aria="navSections">
+      <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="#uses" data-i18n="navUses">Usos</a>
       <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="#features" data-i18n="navFeatures">Funciones</a>
       <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="#how" data-i18n="navHow">Cómo se usa</a>
       <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="#qa" data-i18n="navFaq">Preguntas</a>
