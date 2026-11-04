@@ -295,7 +295,7 @@
     }
     @media (min-width: 768px) {
       .how-list { grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
-      .how-step:not(:last-child)::after {
+      .how-list .how-step:not(:last-child)::after {
         content: "";
         position: absolute;
         top: 2.85rem;
@@ -635,30 +635,6 @@
         },
         {
           "@type": "Question",
-          "name": "文字を流して表示できますか？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "はい。スクロール速度を設定すると文字が流れます。書体と色も変えられます。"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "電光掲示板に時計やDデイ、タイマーを出せますか？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "はい。現在時刻、Dデイのカウントダウン、タイマーを大きなLEDの数字で出せます。開演時間や残り時間を確かめるデジタル時計として使えます。"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "スマホの写真をLEDドット画像にできますか？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "はい。ギャラリーの写真をLEDドット模様に変えて電光掲示板に出せます。変換は端末内で行い、サーバーへ送りません。"
-          }
-        },
-        {
-          "@type": "Question",
           "name": "iPhoneとAndroidの両方で使えますか？",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -675,34 +651,10 @@
         },
         {
           "@type": "Question",
-          "name": "文言を複数保存したり、順番に再生したりできますか？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "はい。お気に入りに保存し、最大8件まで順番に再生できます。表示中は画面が自動で消えません。"
-          }
-        },
-        {
-          "@type": "Question",
           "name": "写真や入力した文言はサーバーへ送られますか？",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "いいえ。ギャラリー写真のドット変換は端末内で行い、文言と設定も端末に残ります。同じWi-FiにつないだHELLO LEDどうしの文言合わせも、外部サーバーを使いません。"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "ほかのスマホと文言を合わせられますか？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "はい。同じWi-FiにつないだHELLO LEDどうしで文言を合わせられます。この機能も外部サーバーを使いません。"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Androidのホーム画面ウィジェットには対応していますか？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "はい。Androidのホーム画面ウィジェットに保存した文言を表示できます。このウィジェットはAndroidのみの対応です。"
           }
         }
       ]
@@ -999,27 +951,6 @@
           </details>
           <details class="reveal">
             <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
-              <h3 data-i18n="faq4q">文字を流して表示できますか？</h3>
-              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
-            </summary>
-            <p class="text-muted" data-i18n="faq4a">はい。スクロール速度を設定すると文字が流れます。書体と色も変えられます。</p>
-          </details>
-          <details class="reveal">
-            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
-              <h3 data-i18n="faq5q">電光掲示板に時計やDデイ、タイマーを出せますか？</h3>
-              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
-            </summary>
-            <p class="text-muted" data-i18n="faq5a">はい。現在時刻、Dデイのカウントダウン、タイマーを大きなLEDの数字で出せます。開演時間や残り時間を確かめるデジタル時計として使えます。</p>
-          </details>
-          <details class="reveal">
-            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
-              <h3 data-i18n="faq6q">スマホの写真をLEDドット画像にできますか？</h3>
-              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
-            </summary>
-            <p class="text-muted" data-i18n="faq6a">はい。ギャラリーの写真をLEDドット模様に変えて電光掲示板に出せます。変換は端末内で行い、サーバーへ送りません。</p>
-          </details>
-          <details class="reveal">
-            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
               <h3 data-i18n="faq7q">iPhoneとAndroidの両方で使えますか？</h3>
               <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
             </summary>
@@ -1034,31 +965,10 @@
           </details>
           <details class="reveal">
             <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
-              <h3 data-i18n="faq9q">文言を複数保存したり、順番に再生したりできますか？</h3>
-              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
-            </summary>
-            <p class="text-muted" data-i18n="faq9a">はい。お気に入りに保存し、最大8件まで順番に再生できます。表示中は画面が自動で消えません。</p>
-          </details>
-          <details class="reveal">
-            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
               <h3 data-i18n="faq10q">写真や入力した文言はサーバーへ送られますか？</h3>
               <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
             </summary>
             <p class="text-muted" data-i18n="faq10a">いいえ。ギャラリー写真のドット変換は端末内で行い、文言と設定も端末に残ります。同じWi-FiにつないだHELLO LEDどうしの文言合わせも、外部サーバーを使いません。</p>
-          </details>
-          <details class="reveal">
-            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
-              <h3 data-i18n="faq11q">ほかのスマホと文言を合わせられますか？</h3>
-              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
-            </summary>
-            <p class="text-muted" data-i18n="faq11a">はい。同じWi-FiにつないだHELLO LEDどうしで文言を合わせられます。この機能も外部サーバーを使いません。</p>
-          </details>
-        <details class="reveal">
-            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
-              <h3 data-i18n="faq12q">Androidのホーム画面ウィジェットには対応していますか？</h3>
-              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
-            </summary>
-            <p class="text-muted" data-i18n="faq12a">はい。Androidのホーム画面ウィジェットに保存した文言を表示できます。このウィジェットはAndroidのみの対応です。</p>
           </details>
         </div>
         </div>
@@ -1104,25 +1014,25 @@
     </section>
   </main>
 
-  <footer class="border-t border-line px-5 pb-10 pt-10">
-    <div class="mx-auto flex max-w-6xl flex-col gap-4 text-sm text-muted sm:flex-row sm:items-start sm:justify-between">
-      <div>
-        <p class="font-bold text-ink" lang="en">HELLO LED</p>
-        <p class="mt-2" data-i18n-html="publisherLine"><span lang="en">HELLO LED</span>は、<a href="https://yodams.com/" lang="ko">요담</a>（Yodam）が作る無料のスマホLED電光掲示板アプリです。Androidのスマホとタブレット、iPhoneで使えます。</p>
+  <footer class="site-footer border-t border-line text-sm text-muted">
+    <div class="site-footer-grid">
+      <div class="site-footer-brand">
+        <p class="text-base font-bold text-ink" lang="en">HELLO LED</p>
+        <p class="mt-3 leading-relaxed" data-i18n-html="publisherLine"><span lang="en">HELLO LED</span>は、<a href="https://yodams.com/" lang="ko">요담</a>（Yodam）が作る無料のスマホLED電光掲示板アプリです。Androidのスマホとタブレット、iPhoneで使えます。</p>
       </div>
-      <div class="flex flex-wrap gap-4">
-        <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="/ja/privacy.html" data-privacy-link data-i18n="privacyLink">プライバシーポリシー</a>
-        <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="mailto:helloled@yodams.com">helloled@yodams.com</a>
-      </div>
-    </div>
-    <nav class="mx-auto mt-6 flex max-w-6xl flex-wrap gap-x-4 text-sm" aria-label="このページ" data-i18n-aria="navSections">
+      <nav class="site-footer-links" aria-label="このページ" data-i18n-aria="navSections">
       <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="#uses" data-i18n="navUses">使い道</a>
       <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="#features" data-i18n="navFeatures">機能</a>
       <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="#how" data-i18n="navHow">使い方</a>
       <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="#qa" data-i18n="navFaq">質問</a>
       <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="#download" data-i18n="download">ダウンロード</a>
     </nav>
-    <nav class="mx-auto mt-6 flex max-w-6xl flex-wrap gap-4 text-sm text-muted" aria-label="言語" data-i18n-aria="langLinksLabel">
+      <div class="site-footer-links">
+        <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="/ja/privacy.html" data-privacy-link data-i18n="privacyLink">プライバシーポリシー</a>
+        <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="mailto:helloled@yodams.com">helloled@yodams.com</a>
+      </div>
+    </div>
+    <nav class="site-footer-langs" aria-label="言語" data-i18n-aria="langLinksLabel">
       <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" data-lang="ko" href="https://helloled.yodams.com/">한국어</a>
       <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" data-lang="en" href="https://helloled.yodams.com/en/">English</a>
       <a class="inline-flex min-h-11 items-center font-semibold text-ink" data-lang="ja" href="https://helloled.yodams.com/ja/" aria-current="page">日本語</a>

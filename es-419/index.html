@@ -295,7 +295,7 @@
     }
     @media (min-width: 768px) {
       .how-list { grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
-      .how-step:not(:last-child)::after {
+      .how-list .how-step:not(:last-child)::after {
         content: "";
         position: absolute;
         top: 2.85rem;
@@ -635,30 +635,6 @@
         },
         {
           "@type": "Question",
-          "name": "¿El texto se puede desplazar?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Sí. Ajusta la velocidad y el mensaje se mueve por la pantalla. También puedes cambiar la fuente y el color."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Puedo mostrar un reloj, una cuenta regresiva D-Day o un temporizador?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Sí. Muestra la hora actual, una cuenta regresiva D-Day o un temporizador con números LED grandes. Sirve como reloj digital para la hora de inicio o el tiempo restante."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Puedo convertir una foto en puntos LED?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Sí. La foto de la galería se convierte en un patrón de puntos LED en el letrero. La conversión se hace en el celular, así que no se sube a un servidor."
-          }
-        },
-        {
-          "@type": "Question",
           "name": "¿Funciona en iPhone y Android?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -675,34 +651,10 @@
         },
         {
           "@type": "Question",
-          "name": "¿Puedo guardar varios mensajes y reproducirlos en orden?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Sí. Guarda favoritos y reproduce hasta 8 mensajes en orden. La pantalla sigue encendida mientras se muestra el letrero."
-          }
-        },
-        {
-          "@type": "Question",
           "name": "¿Se suben mis fotos o mensajes?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "No. La conversión de fotos a puntos se hace en el celular y los mensajes y ajustes se quedan ahí. Igualar mensajes entre apps HELLO LED en la misma Wi-Fi tampoco usa un servidor externo."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Puedo sincronizar mensajes con otro celular?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Sí. Las apps HELLO LED conectadas a la misma Wi-Fi pueden igualar los mensajes. Esta función tampoco usa un servidor externo."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Tiene widget de pantalla de inicio en Android?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Sí. El widget de Android muestra un mensaje guardado. Este widget solo está disponible en Android."
           }
         }
       ]
@@ -999,27 +951,6 @@
           </details>
           <details class="reveal">
             <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
-              <h3 data-i18n="faq4q">¿El texto se puede desplazar?</h3>
-              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
-            </summary>
-            <p class="text-muted" data-i18n="faq4a">Sí. Ajusta la velocidad y el mensaje se mueve por la pantalla. También puedes cambiar la fuente y el color.</p>
-          </details>
-          <details class="reveal">
-            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
-              <h3 data-i18n="faq5q">¿Puedo mostrar un reloj, una cuenta regresiva D-Day o un temporizador?</h3>
-              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
-            </summary>
-            <p class="text-muted" data-i18n="faq5a">Sí. Muestra la hora actual, una cuenta regresiva D-Day o un temporizador con números LED grandes. Sirve como reloj digital para la hora de inicio o el tiempo restante.</p>
-          </details>
-          <details class="reveal">
-            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
-              <h3 data-i18n="faq6q">¿Puedo convertir una foto en puntos LED?</h3>
-              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
-            </summary>
-            <p class="text-muted" data-i18n="faq6a">Sí. La foto de la galería se convierte en un patrón de puntos LED en el letrero. La conversión se hace en el celular, así que no se sube a un servidor.</p>
-          </details>
-          <details class="reveal">
-            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
               <h3 data-i18n="faq7q">¿Funciona en iPhone y Android?</h3>
               <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
             </summary>
@@ -1034,31 +965,10 @@
           </details>
           <details class="reveal">
             <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
-              <h3 data-i18n="faq9q">¿Puedo guardar varios mensajes y reproducirlos en orden?</h3>
-              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
-            </summary>
-            <p class="text-muted" data-i18n="faq9a">Sí. Guarda favoritos y reproduce hasta 8 mensajes en orden. La pantalla sigue encendida mientras se muestra el letrero.</p>
-          </details>
-          <details class="reveal">
-            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
               <h3 data-i18n="faq10q">¿Se suben mis fotos o mensajes?</h3>
               <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
             </summary>
             <p class="text-muted" data-i18n="faq10a">No. La conversión de fotos a puntos se hace en el celular y los mensajes y ajustes se quedan ahí. Igualar mensajes entre apps HELLO LED en la misma Wi-Fi tampoco usa un servidor externo.</p>
-          </details>
-          <details class="reveal">
-            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
-              <h3 data-i18n="faq11q">¿Puedo sincronizar mensajes con otro celular?</h3>
-              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
-            </summary>
-            <p class="text-muted" data-i18n="faq11a">Sí. Las apps HELLO LED conectadas a la misma Wi-Fi pueden igualar los mensajes. Esta función tampoco usa un servidor externo.</p>
-          </details>
-        <details class="reveal">
-            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
-              <h3 data-i18n="faq12q">¿Tiene widget de pantalla de inicio en Android?</h3>
-              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
-            </summary>
-            <p class="text-muted" data-i18n="faq12a">Sí. El widget de Android muestra un mensaje guardado. Este widget solo está disponible en Android.</p>
           </details>
         </div>
         </div>
@@ -1104,25 +1014,25 @@
     </section>
   </main>
 
-  <footer class="border-t border-line px-5 pb-10 pt-10">
-    <div class="mx-auto flex max-w-6xl flex-col gap-4 text-sm text-muted sm:flex-row sm:items-start sm:justify-between">
-      <div>
-        <p class="font-bold text-ink" lang="en">HELLO LED</p>
-        <p class="mt-2" data-i18n-html="publisherLine"><span lang="en">HELLO LED</span> es una app gratuita de letrero LED para el celular creada por <a href="https://yodams.com/" lang="ko">요담</a> (Yodam). Funciona en celulares y tablets Android y en iPhone, para conciertos, llegadas al aeropuerto, avisos de negocio y cumpleaños.</p>
+  <footer class="site-footer border-t border-line text-sm text-muted">
+    <div class="site-footer-grid">
+      <div class="site-footer-brand">
+        <p class="text-base font-bold text-ink" lang="en">HELLO LED</p>
+        <p class="mt-3 leading-relaxed" data-i18n-html="publisherLine"><span lang="en">HELLO LED</span> es una app gratuita de letrero LED para el celular creada por <a href="https://yodams.com/" lang="ko">요담</a> (Yodam). Funciona en celulares y tablets Android y en iPhone, para conciertos, llegadas al aeropuerto, avisos de negocio y cumpleaños.</p>
       </div>
-      <div class="flex flex-wrap gap-4">
-        <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="/es-419/privacy.html" data-privacy-link data-i18n="privacyLink">Política de privacidad</a>
-        <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="mailto:helloled@yodams.com">helloled@yodams.com</a>
-      </div>
-    </div>
-    <nav class="mx-auto mt-6 flex max-w-6xl flex-wrap gap-x-4 text-sm" aria-label="En esta página" data-i18n-aria="navSections">
+      <nav class="site-footer-links" aria-label="En esta página" data-i18n-aria="navSections">
       <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="#uses" data-i18n="navUses">Usos</a>
       <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="#features" data-i18n="navFeatures">Funciones</a>
       <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="#how" data-i18n="navHow">Cómo se usa</a>
       <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="#qa" data-i18n="navFaq">Preguntas</a>
       <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="#download" data-i18n="download">Descargar</a>
     </nav>
-    <nav class="mx-auto mt-6 flex max-w-6xl flex-wrap gap-4 text-sm text-muted" aria-label="Idiomas" data-i18n-aria="langLinksLabel">
+      <div class="site-footer-links">
+        <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="/es-419/privacy.html" data-privacy-link data-i18n="privacyLink">Política de privacidad</a>
+        <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="mailto:helloled@yodams.com">helloled@yodams.com</a>
+      </div>
+    </div>
+    <nav class="site-footer-langs" aria-label="Idiomas" data-i18n-aria="langLinksLabel">
       <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" data-lang="ko" href="https://helloled.yodams.com/">한국어</a>
       <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" data-lang="en" href="https://helloled.yodams.com/en/">English</a>
       <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" data-lang="ja" href="https://helloled.yodams.com/ja/">日本語</a>

@@ -296,7 +296,7 @@
     }
     @media (min-width: 768px) {
       .how-list { grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
-      .how-step:not(:last-child)::after {
+      .how-list .how-step:not(:last-child)::after {
         content: "";
         position: absolute;
         top: 2.85rem;
@@ -636,30 +636,6 @@
         },
         {
           "@type": "Question",
-          "name": "스마트폰에서 글자를 흘려서 표시할 수 있나요?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "네. 입력한 문구를 LED 스크롤 전광판으로 띄웁니다. 스크롤 속도를 조절하고 글자 색과 크기, 글꼴도 바꿀 수 있습니다."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "LED 전광판에 시계나 디데이, 타이머를 표시할 수 있나요?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "네. 현재 시각과 디데이 카운트다운, 타이머를 큰 LED 숫자로 띄웁니다. 행사 시작 시간이나 남은 시간을 확인하는 디지털 시계로 씁니다."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "사진을 LED 도트 이미지로 바꿀 수 있나요?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "네. 갤러리 사진을 LED 도트 패턴으로 바꿔 전광판에 띄웁니다. 사진 변환은 기기 안에서 처리하고 서버에 올리지 않습니다."
-          }
-        },
-        {
-          "@type": "Question",
           "name": "아이폰과 안드로이드에서 모두 쓸 수 있나요?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -676,34 +652,10 @@
         },
         {
           "@type": "Question",
-          "name": "LED 문구를 여러 개 저장하거나 순서대로 재생할 수 있나요?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "네. 자주 쓰는 문구를 즐겨찾기에 저장하고 최대 8개까지 순서대로 재생합니다. 전광판을 띄우는 동안 화면이 자동으로 꺼지지 않습니다."
-          }
-        },
-        {
-          "@type": "Question",
           "name": "사진이나 문구가 HELLO LED 서버로 올라가나요?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "아니요. 갤러리 사진의 LED 도트 변환은 기기 안에서 처리합니다. 문구와 설정도 기기에 저장됩니다. 같은 Wi-Fi에 연결한 HELLO LED 사이의 문구 맞추기도 별도의 외부 서버를 쓰지 않습니다."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "다른 스마트폰과 LED 문구를 맞출 수 있나요?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "네. 같은 Wi-Fi에 연결한 HELLO LED끼리 문구를 맞춥니다. 이 기능도 별도 서버를 쓰지 않습니다."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Android 홈 화면 위젯을 지원하나요?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "네. Android 홈 화면 위젯에서 저장한 문구를 볼 수 있습니다. 이 위젯은 Android에서만 지원합니다."
           }
         }
       ]
@@ -827,21 +779,45 @@
           <p class="reveal mx-auto mt-5 text-lg leading-relaxed text-muted" data-i18n-html="usesLead">무거운 피켓이나 전광판 장비 없이도 OK.<br>콘서트장부터 공항, 매장 디지털 간판까지 다양한 순간에 바로 활용하세요.</p>
         </div>
         <div class="use-grid">
-          <article class="how-step reveal">
-            <h3 data-i18n="useConcertTitle">아티스트의 시선을 사로잡는 LED 전광판</h3>
-            <p data-i18n="useConcertBody">좋아하는 가수에게 전할 응원 문구를 크게 띄워보세요. 직접 입력은 물론 프리셋 선택, 네온 색상 · 폰트 · 속도 조절까지 한 번에 가능합니다.</p>
+          <article class="use-card reveal">
+            <figure>
+              <div class="use-screen" aria-hidden="true"><span class="use-led use-led-pink">최고야</span></div>
+              <figcaption class="sr-only">예시 화면. 분홍 네온 응원 문구 최고야</figcaption>
+            </figure>
+            <div class="use-copy">
+              <h3 data-i18n="useConcertTitle">아티스트의 시선을 사로잡는 LED 전광판</h3>
+              <p data-i18n="useConcertBody">좋아하는 가수에게 전할 응원 문구를 크게 띄워보세요. 직접 입력은 물론 프리셋 선택, 네온 색상 · 폰트 · 속도 조절까지 한 번에 가능합니다.</p>
+            </div>
           </article>
-          <article class="how-step reveal">
+          <article class="use-card reveal">
+            <figure>
+              <div class="use-screen" aria-hidden="true"><span class="use-led use-led-blue">Welcome</span></div>
+              <figcaption class="sr-only">예시 화면. 파란 네온 공항 픽업 문구 Welcome</figcaption>
+            </figure>
+            <div class="use-copy">
               <h3 data-i18n="useAirportTitle">종이 없이 스마트하게, 공항 픽업 보드</h3>
-            <p data-i18n="useAirportBody">반가운 사람의 이름과 환영 메시지를 휴대폰 화면 가득 띄워보세요. 종이 피켓 대신 깔끔한 디지털 픽업 안내판으로 손님을 맞이할 수 있습니다.</p>
+              <p data-i18n="useAirportBody">반가운 사람의 이름과 환영 메시지를 휴대폰 화면 가득 띄워보세요. 종이 피켓 대신 깔끔한 디지털 픽업 안내판으로 손님을 맞이할 수 있습니다.</p>
+            </div>
           </article>
-          <article class="how-step reveal">
-            <h3 data-i18n="useShopTitle">손님의 눈길을 끄는 매장 LED 전광판</h3>
-            <p data-i18n="useShopBody">할인 행사, 영업시간, 주문/픽업 번호를 스마트폰으로 안내하세요. OPEN, SALE 등 돋보여야 할 홍보 문구를 LED 스크롤로 전달할 수 있습니다.</p>
+          <article class="use-card reveal">
+            <figure>
+              <div class="use-screen" aria-hidden="true"><span class="use-led use-led-yellow">SALE</span></div>
+              <figcaption class="sr-only">예시 화면. 노란 네온 매장 문구 SALE</figcaption>
+            </figure>
+            <div class="use-copy">
+              <h3 data-i18n="useShopTitle">손님의 눈길을 끄는 매장 LED 전광판</h3>
+              <p data-i18n="useShopBody">할인 행사, 영업시간, 주문/픽업 번호를 스마트폰으로 안내하세요. OPEN, SALE 등 돋보여야 할 홍보 문구를 LED 스크롤로 전달할 수 있습니다.</p>
+            </div>
           </article>
-          <article class="how-step reveal">
-            <h3 data-i18n="usePartyTitle">특별한 날을 빛내는 맞춤형 메시지</h3>
-            <p data-i18n="usePartyBody">생일 축하, 고백, 시험 응원, 환영의 마음을 띄워보세요. 생일·응원·사랑·감사 등 8가지 프리셋으로 필요한 순간 바로 완성할 수 있습니다.</p>
+          <article class="use-card reveal">
+            <figure>
+              <div class="use-screen" aria-hidden="true"><span class="use-led use-led-green">생일 축하해</span></div>
+              <figcaption class="sr-only">예시 화면. 초록 네온 생일 문구 생일 축하해</figcaption>
+            </figure>
+            <div class="use-copy">
+              <h3 data-i18n="usePartyTitle">특별한 날을 빛내는 맞춤형 메시지</h3>
+              <p data-i18n="usePartyBody">생일 축하, 고백, 시험 응원, 환영의 마음을 띄워보세요. 생일·응원·사랑·감사 등 8가지 프리셋으로 필요한 순간 바로 완성할 수 있습니다.</p>
+            </div>
           </article>
         </div>
       </div>
@@ -975,7 +951,7 @@
 
     <section id="qa" class="px-5 py-16 sm:py-24" aria-labelledby="qa-title">
       <div class="mx-auto max-w-3xl">
-        <h2 id="qa-title" class="reveal text-center text-3xl font-extrabold tracking-tight sm:text-5xl" data-i18n-html="faqTitle"><span lang="en">HELLO LED</span> 자주 묻는 질문</h2>
+        <h2 id="qa-title" class="reveal text-center text-3xl font-extrabold tracking-tight sm:text-5xl" data-i18n="faqTitle">자주 묻는 질문</h2>
         <div class="faq-list">
           <details class="reveal" open>
             <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
@@ -1000,27 +976,6 @@
           </details>
           <details class="reveal">
             <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
-              <h3 data-i18n="faq4q">스마트폰에서 글자를 흘려서 표시할 수 있나요?</h3>
-              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
-            </summary>
-            <p class="text-muted" data-i18n="faq4a">네. 입력한 문구를 LED 스크롤 전광판으로 띄웁니다. 스크롤 속도를 조절하고 글자 색과 크기, 글꼴도 바꿀 수 있습니다.</p>
-          </details>
-          <details class="reveal">
-            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
-              <h3 data-i18n="faq5q">LED 전광판에 시계나 디데이, 타이머를 표시할 수 있나요?</h3>
-              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
-            </summary>
-            <p class="text-muted" data-i18n="faq5a">네. 현재 시각과 디데이 카운트다운, 타이머를 큰 LED 숫자로 띄웁니다. 행사 시작 시간이나 남은 시간을 확인하는 디지털 시계로 씁니다.</p>
-          </details>
-          <details class="reveal">
-            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
-              <h3 data-i18n="faq6q">사진을 LED 도트 이미지로 바꿀 수 있나요?</h3>
-              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
-            </summary>
-            <p class="text-muted" data-i18n="faq6a">네. 갤러리 사진을 LED 도트 패턴으로 바꿔 전광판에 띄웁니다. 사진 변환은 기기 안에서 처리하고 서버에 올리지 않습니다.</p>
-          </details>
-          <details class="reveal">
-            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
               <h3 data-i18n="faq7q">아이폰과 안드로이드에서 모두 쓸 수 있나요?</h3>
               <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
             </summary>
@@ -1035,31 +990,10 @@
           </details>
           <details class="reveal">
             <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
-              <h3 data-i18n="faq9q">LED 문구를 여러 개 저장하거나 순서대로 재생할 수 있나요?</h3>
-              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
-            </summary>
-            <p class="text-muted" data-i18n="faq9a">네. 자주 쓰는 문구를 즐겨찾기에 저장하고 최대 8개까지 순서대로 재생합니다. 전광판을 띄우는 동안 화면이 자동으로 꺼지지 않습니다.</p>
-          </details>
-          <details class="reveal">
-            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
               <h3 data-i18n-html="faq10q">사진이나 문구가 <span lang="en">HELLO LED</span> 서버로 올라가나요?</h3>
               <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
             </summary>
             <p class="text-muted" data-i18n="faq10a">아니요. 갤러리 사진의 LED 도트 변환은 기기 안에서 처리합니다. 문구와 설정도 기기에 저장됩니다. 같은 Wi-Fi에 연결한 HELLO LED 사이의 문구 맞추기도 별도의 외부 서버를 쓰지 않습니다.</p>
-          </details>
-          <details class="reveal">
-            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
-              <h3 data-i18n="faq11q">다른 스마트폰과 LED 문구를 맞출 수 있나요?</h3>
-              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
-            </summary>
-            <p class="text-muted" data-i18n-html="faq11a">네. 같은 Wi-Fi에 연결한 <span lang="en">HELLO LED</span>끼리 문구를 맞춥니다. 이 기능도 별도 서버를 쓰지 않습니다.</p>
-          </details>
-        <details class="reveal">
-            <summary class="flex cursor-pointer items-center justify-between gap-4 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700">
-              <h3 data-i18n="faq12q">Android 홈 화면 위젯을 지원하나요?</h3>
-              <span class="faq-chevron shrink-0 text-muted transition-transform" aria-hidden="true">▾</span>
-            </summary>
-            <p class="text-muted" data-i18n="faq12a">네. Android 홈 화면 위젯에서 저장한 문구를 볼 수 있습니다. 이 위젯은 Android에서만 지원합니다.</p>
           </details>
         </div>
       </div>
@@ -1068,7 +1002,7 @@
     <section id="download" class="hero-wash relative overflow-hidden px-5 py-24 sm:py-32" aria-labelledby="cta-title">
       <div class="relative mx-auto max-w-3xl text-center">
         <h2 id="cta-title" class="reveal text-3xl font-extrabold tracking-tight sm:text-5xl" data-i18n="ctaTitle">지금 바로 무료로 시작하세요</h2>
-        <p class="reveal mx-auto mt-5 max-w-xl text-muted" data-i18n-html="ctaBody">콘서트 응원부터 매장 홍보까지, <span lang="en">HELLO LED</span> 하나면 준비 끝! 앱 설치 후 원하는 문구와 스타일을 자유롭게 디자인해봐요.</p>
+        <p class="reveal mx-auto mt-5 max-w-xl text-muted" data-i18n-html="ctaBody">콘서트 응원부터 매장 홍보까지, <span lang="en">HELLO LED</span> 하나면 준비 끝!<br>앱 설치 후 원하는 문구와 스타일을 자유롭게 디자인해봐요.</p>
         <div class="reveal mt-10 flex flex-wrap items-center justify-center gap-3">
           <a class="inline-flex focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="https://play.google.com/store/apps/details?id=com.yodam.helloled" target="_blank" rel="noopener noreferrer" aria-label="Google Play에서 다운로드, 새 창" data-i18n-aria="playAlt">
             <picture>
@@ -1104,25 +1038,25 @@
     </section>
   </main>
 
-  <footer class="border-t border-line px-5 pb-10 pt-10">
-    <div class="mx-auto flex max-w-6xl flex-col gap-4 text-sm text-muted sm:flex-row sm:items-start sm:justify-between">
-      <div>
-        <p class="font-bold text-ink" lang="en">HELLO LED</p>
-        <p class="mt-2" data-i18n-html="publisherLine"><span lang="en">HELLO LED</span>는 <a href="https://yodams.com/" lang="ko">요담</a>(Yodam)이 만든 무료 스마트폰 LED 전광판 앱입니다. Android 스마트폰과 태블릿, iPhone에서 쓸 수 있고 콘서트 응원, 공항 픽업, 매장 안내, 생일 축하에 LED 스크롤 전광판으로 활용합니다.</p>
+  <footer class="site-footer border-t border-line text-sm text-muted">
+    <div class="site-footer-grid">
+      <div class="site-footer-brand">
+        <p class="text-base font-bold text-ink" lang="en">HELLO LED</p>
+        <p class="mt-3 leading-relaxed" data-i18n-html="publisherLine"><span lang="en">HELLO LED</span>는 <a href="https://yodams.com/" lang="ko">요담</a>(Yodam)이 만든 무료 스마트폰 LED 전광판 앱입니다. Android 스마트폰과 태블릿, iPhone에서 쓸 수 있고 콘서트 응원, 공항 픽업, 매장 안내, 생일 축하에 LED 스크롤 전광판으로 활용합니다.</p>
       </div>
-      <div class="flex flex-wrap gap-4">
+      <nav class="site-footer-links" aria-label="이 페이지" data-i18n-aria="navSections">
+        <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="#uses" data-i18n="navUses">쓰는 곳</a>
+        <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="#features" data-i18n="navFeatures">기능</a>
+        <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="#how" data-i18n="navHow">사용 방법</a>
+        <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="#qa" data-i18n="navFaq">질문</a>
+        <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="#download" data-i18n="download">다운로드</a>
+      </nav>
+      <div class="site-footer-links">
         <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="/privacy.html" data-privacy-link data-i18n="privacyLink">개인정보처리방침</a>
         <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="mailto:helloled@yodams.com">helloled@yodams.com</a>
       </div>
     </div>
-    <nav class="mx-auto mt-6 flex max-w-6xl flex-wrap gap-x-4 text-sm" aria-label="이 페이지" data-i18n-aria="navSections">
-      <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="#uses" data-i18n="navUses">쓰는 곳</a>
-      <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="#features" data-i18n="navFeatures">기능</a>
-      <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="#how" data-i18n="navHow">사용 방법</a>
-      <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="#qa" data-i18n="navFaq">질문</a>
-      <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" href="#download" data-i18n="download">다운로드</a>
-    </nav>
-    <nav class="mx-auto mt-6 flex max-w-6xl flex-wrap gap-4 text-sm text-muted" aria-label="언어" data-i18n-aria="langLinksLabel">
+    <nav class="site-footer-langs" aria-label="언어" data-i18n-aria="langLinksLabel">
       <a class="inline-flex min-h-11 items-center font-semibold text-ink" data-lang="ko" href="https://helloled.yodams.com/" aria-current="page">한국어</a>
       <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" data-lang="en" href="https://helloled.yodams.com/en/">English</a>
       <a class="inline-flex min-h-11 items-center hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-700" data-lang="ja" href="https://helloled.yodams.com/ja/">日本語</a>
